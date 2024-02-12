@@ -2,13 +2,13 @@ import React from "react";
 import "./styles/Hero.css";
 import heroDoc from "../Assests/heroDoc.png";
 import piles from "../Assests/piles.svg";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import Form from "./Form";
 
 const Hero = () => {
   return (
     <div className="hero-cont">
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="hero-top-cont">
         <div className="hero-head-cont">
           <div className="hero-head">Welcome to Med Life Easy</div>

@@ -1,59 +1,59 @@
 import React from "react";
 import logo from "../Assests/logo.svg";
 import DropdownMenu from "./DropdownMenu";
-import './styles/Navbar.css'
+import "./styles/Navbar.css";
+import { Outlet } from "react-router-dom";
 const Navbar = () => {
-
-    const btmMenus = [
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-        {
-          name: "Proctology",
-          list: ["d1", "d2", "d3", "d4"],
-        },
-      ];
+  const btmMenus = [
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+    {
+      name: "Proctology",
+      list: ["d1", "d2", "d3", "d4"],
+    },
+  ];
   return (
     <div className="hero-nav-cont">
       <div className="hero-nav">
@@ -139,6 +139,7 @@ const Navbar = () => {
           />
         ))}
       </div>
+      <Outlet />
     </div>
   );
 };
