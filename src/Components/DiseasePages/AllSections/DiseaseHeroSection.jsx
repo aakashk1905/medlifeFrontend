@@ -7,17 +7,17 @@ const DiseaseHeroSection = ({content}) => {
       <div className="pt-4 pb-10 z-10">
         {/* Main heading */}
         <h1 className="text-5xl text-gray-600 font-semibold mb-5">
-          {content.heroHeader}
+          {content ? content.heroHeader : ""}
           {/* Advanced Laparoscopic <br /> Hernia Surgery */}
         </h1>
         {/* Sub heading */}
         <h2 className="text-4xl text-[#2ca9e1] font-semibold mb-5">
-          {content.subHeading}
+        {content ? content.subHeading : ""}
           {/* सुरक्षित एवं सफल */}
         </h2>
         {/* Description */}
         <p className="text-gray-500 mb-5">
-          {content.details}
+        {content ? content.details : ""}
           {/* लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के
           क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती
           है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के
@@ -27,6 +27,7 @@ const DiseaseHeroSection = ({content}) => {
         {/* Bullet points (Tick icons) */}
         <div className="mb-6">
           {
+            content?.subLists?.length > 0 ?
             content.subLists.map((list, idx) => 
               <div key={idx} className="flex items-center gap-2 mb-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
@@ -35,6 +36,7 @@ const DiseaseHeroSection = ({content}) => {
             <p className="font-semibold">{list}</p>
           </div>
               )
+              : "No Content Here"
           }
         </div>
 

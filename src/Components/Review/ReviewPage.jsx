@@ -26,13 +26,6 @@ const ReviewPage = () => {
       <div className='shadow-md rounded-md p-4'>
       <ReviewHeader></ReviewHeader>
       <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
-      <ReviewCard></ReviewCard>
 
       {/* Pagination buttons */}
       <div className='flex items-center justify-center mt-20 mb-3 gap-3'>

@@ -1,5 +1,6 @@
 import React from "react";
 import { IoIosArrowDown } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const ReviewHeader = () => {
   return (
@@ -7,9 +8,12 @@ const ReviewHeader = () => {
       <div className="flex flex-col">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="col-span-2">
+          <Link to={"/writeReview"}>
           <button className="w-80 bg-[#00A0AA] px-4 py-5 rounded-md text-white text-xl mb-20">
             Leave a Review
           </button>
+          </Link>
+          
 
           {/* Left side reviews section */}
 <div className="grid grid-cols-1 md:grid-cols-4 gap-3 col-span-2 mb-8">

@@ -6,22 +6,22 @@ const AboutDisease = ({content}) => {
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-0 bg-[#ecf7fc]">
         {/* Left side details */}
       <div className="py-6 px-5 md:px-16">
-        <h1 className="text-2xl font-bold mb-4">{content.aboutDisease.diseaseHeader}</h1>
+        <h1 className="text-2xl font-bold mb-4">{content?.aboutDisease?.diseaseHeader}</h1>
         <p className="mb-4">
-        {content.aboutDisease.details}
+        {content?.aboutDisease?.details}
         </p>
-        <h1 className="text-xl font-semibold mb-2">{content.aboutDisease.symptoms.symptomHeader}</h1>
+        <h1 className="text-xl font-semibold mb-2">{content?.aboutDisease?.symptoms?.symptomHeader}</h1>
         <ul className="list-disc px-5 mb-5">
           {
-            content.aboutDisease.symptoms.symptomsList.map((symptoms, idx) => 
+            content?.aboutDisease?.symptoms?.symptomsList?.map((symptoms, idx) => 
             <li key={idx}>{symptoms}</li>
             )
           }
         </ul>
 
-        <h3 className="text-xl font-semibold">{content.aboutDisease.diagnosis.diagnosisHeader}</h3>
+        <h3 className="text-xl font-semibold">{content?.aboutDisease?.diagnosis?.diagnosisHeader}</h3>
         <p className="mb-5">
-        {content.aboutDisease.diagnosis.details}
+        {content?.aboutDisease?.diagnosis?.details}
         </p>
 
         <div className="flex flex-col md:flex-row items-center gap-3 w-full">
