@@ -1,0 +1,64 @@
+[
+    {
+        "hernia" : {
+            "heroHeader" : "Hernia Surgery ",
+            "subHeading" : "सुरक्षित एवं सफल",
+            "details" : "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+            "subLists" : [
+                "उन्नत 3D तकनीक",
+                "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
+                "संक्रमण का कोई खतरा नहीं"
+    
+            ],
+            
+            "treatment" : {
+                "treatmentHeader" : [
+                    "Safe Hernia Removal  With",
+                    "Med Life Easy"
+                ],
+                "treatments" : [
+                    "Excellence in Healthcare",
+                    "Patient-Centric Care",
+                    " Personalized Approach",
+                    "State-of-the-Art Facilities",
+                    "Accepting All Insurance Plans",
+                    "Zero-Cost EMI Options Available"
+                ]
+            },
+    
+            "SurgeryForm" : {
+                "surgeryHeader" : [
+                    "Explore Affordable Laparoscopic Hernia Surgery with",
+                    "Med Life Easy"
+                ],
+                "subHeader" : "Experience a Swift Recovery with Our Expert Surgeons",
+                "typeHeader" : "Type of Surgery",
+                "type" : "Hernia Hospitalization",
+                "timeHeader" : "Time",
+                "time" : "1-2 Days",
+                "costHeader" : "Cost Range",
+                "cost": "Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
+                "footerTitle" : "For a Precise Cost Estimate and Personalized Assistance",
+                "formTitle" : "Hernia Surgery Cost Estimate"
+            },
+    
+            "aboutDisease" : {
+                "diseaseHeader" : "What is Hernia",
+                "details" : "Hernia is characterized by the protrusion of an organ or tissue through an abnormal opening. Typically affecting the stomach or intestine, hernias may manifest as a bulge, swelling, or pain. Some cases may be asymptomatic.",
+                "symptoms" : {
+                    "symptomHeader" : "Symptoms of Hernia:",
+                    "symptomsList" : [
+                        "Swelling or bulge in the groin or scrotum",
+                        "Increased pain at the bulge site",
+                        "Pain during lifting",
+                        "Progressive increase in bulge size over time"
+                    ]
+                },
+                "diagnosis" : {
+                    "diagnosisHeader" : "Diagnosis:",
+                    "details" : "A hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+                }
+            }
+        }
+    }
+]
