@@ -12,6 +12,7 @@ import Footer from "../../Footer";
 import SafeDiseaseRemoval from "../AllSections/SafeDiseaseRemoval";
 import AboutDisease from "../AllSections/AboutDisease";
 import diseaseContent from "../../../diseaseContent.json";
+import Experience from "../AllSections/Experience";
 
 const HerniaPage = () => {
   const { subDisease } = useParams();
@@ -82,8 +83,8 @@ const HerniaPage = () => {
   return (
     <div>
       <Navbar></Navbar>
-      {/* Breadcumber menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+      {/* Breadcumber menu
+      <div className="text-sm breadcrumbs px-5 md:px-10 mt-4">
         <ul>
           <li>
             <Link>Home</Link>
@@ -93,11 +94,12 @@ const HerniaPage = () => {
           </li>
           <li className="capitalize">{subDisease}</li>
         </ul>
-      </div>
-      <DiseaseHeroSection content={diseaseContent[subDisease]} ></DiseaseHeroSection>
+      </div> */}
+      <DiseaseHeroSection subDisease={subDisease} content={diseaseContent[subDisease]} ></DiseaseHeroSection>
       <SafeDiseaseRemoval content={diseaseContent[subDisease]}></SafeDiseaseRemoval>
       <DiseaseDoc docHeading={"Our Hernia Doctors"}></DiseaseDoc>
       <ExploreMedLife content={diseaseContent[subDisease]}></ExploreMedLife>
+      <Experience></Experience>
       <Patientslove></Patientslove>
       <AboutDisease content={diseaseContent[subDisease]}></AboutDisease>
       <Blogs></Blogs>

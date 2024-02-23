@@ -141,10 +141,10 @@ const ReviewHeader = () => {
 <div class="relative inline-block text-left w-full">
   <select class="block appearance-none bg-white border border-gray-300 px-4 py-2 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full rounded-md">
   <option disabled selected>By Disease</option>
-  <option value="Mumbai">Mumbai</option>
-  <option value="Patna">Patna</option>
-  <option value="Chennai">Chennai</option>
-  <option value="Kolkata"> Kolkata </option>
+  <option value="Mumbai">Hernia</option>
+  <option value="Patna">BAck Pain</option>
+  <option value="Chennai">Weight Loss</option>
+  <option value="Kolkata"> Spine Surgery </option>
   </select>
   <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
     <IoIosArrowDown></IoIosArrowDown>
@@ -155,10 +155,11 @@ const ReviewHeader = () => {
 <div class="relative inline-block text-left w-full">
   <select class="block appearance-none bg-white border border-gray-300 px-4 py-2 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full rounded-md">
   <option disabled selected>By Rating</option>
-  <option value="Mumbai">Mumbai</option>
-  <option value="Patna">Patna</option>
-  <option value="Chennai">Chennai</option>
-  <option value="Kolkata"> Kolkata </option>
+  <option value="Mumbai">5</option>
+  <option value="Patna">4</option>
+  <option value="Chennai">3</option>
+  <option value="Kolkata"> 2 </option>
+  <option value="Kolkata"> 1 </option>
   </select>
   <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
     <IoIosArrowDown></IoIosArrowDown>
@@ -179,18 +180,18 @@ Get in Touch
 </h1>
 <h2 className="text-[#5854A8] text-xl font-semibold text-center mb-3">चिकित्सा उपचार परामर्श के लिए, फॉर्म भरें</h2>
 <input
-  className="p-4 rounded-xl border border-gray-400 outline-none w-full"
+  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
   placeholder="Patient Name / रोगी का नाम"
   type="text"
 />
 <input
-  className="p-4 rounded-xl border border-gray-400 outline-none w-full"
+  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
   placeholder="Mobile No. / मोबाइल नंबर"
   type="text"
 />
 <select
   name="priority"
-  className="p-4 rounded-xl border border-gray-400 outline-none w-full"
+  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
 >
   <option disabled selected>
   Select City / शहर चुनें
@@ -204,7 +205,7 @@ Get in Touch
 
 <select
   name="priority"
-  className="p-4 rounded-xl border border-gray-400 outline-none w-full"
+  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
 >
   <option disabled selected>
   Select Disease / रोग का चयन करें

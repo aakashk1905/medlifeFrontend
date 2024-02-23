@@ -38,7 +38,7 @@ const DiseasePage = () => {
 
   return (
     <div>
-      <DiseaseHero content={mainDiseaseContent[disease]}/>
+      <DiseaseHero disease={disease} content={mainDiseaseContent[disease]}/>
       <DiseaseBlogs />
       <DiseaseConsult content={mainDiseaseContent[disease]}/>
       <DiseaseDoc docHeading={"Meet Our Doctors"}/>

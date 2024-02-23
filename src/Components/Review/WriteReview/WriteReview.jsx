@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../../Navbar";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -6,8 +6,10 @@ import Getintouch from "../../Getintouch";
 import Officeaddress from "../../Officeaddress";
 import Footer from "../../Footer";
 import useAxiosBaseUrl from "../../../hooks/useBaseUrl";
+import Rating from "react-rating";
 
 const WriteReview = () => {
+  const [rating, setRating] = useState(0);
 
   const axiosBaseUrl = useAxiosBaseUrl();
 
@@ -38,7 +40,7 @@ const WriteReview = () => {
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
         <ul>
           <li>
-            <Link>Home</Link>
+          <Link to={"/"}>Home</Link>
           </li>
           <li>Write Reviews</li>
         </ul>
@@ -90,11 +92,14 @@ const WriteReview = () => {
           Rate your experience with us
           </h2>
           <div className="flex items-center gap-3">
-          <FaStar className="text-[#B1B3B3] text-3xl"></FaStar>
-          <FaStar className="text-[#B1B3B3] text-3xl"></FaStar>
-          <FaStar className="text-[#B1B3B3] text-3xl"></FaStar>
-          <FaStar className="text-[#B1B3B3] text-3xl"></FaStar>
-          <FaStar className="text-[#B1B3B3] text-3xl"></FaStar>
+          <Rating
+           onChange={(value) => {
+            console.log("Rating:", value);
+            setRating(value);
+          }}
+  emptySymbol={<FaStar className="text-gray-300 text-3xl"></FaStar>}
+  fullSymbol={<FaStar className="text-gray-600 text-3xl"></FaStar>}
+/>
           </div>
         </div>
 

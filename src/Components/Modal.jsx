@@ -20,7 +20,7 @@ const Modal = () => {
     const startModalInterval = () => {
       modalInterval = setInterval(() => {
         openModal();
-      }, 5000);
+      }, 50000);
     };
 
     const resetModalInterval = () => {
@@ -36,7 +36,7 @@ const Modal = () => {
 
   return (
     <dialog ref={modalRef} id="my_modal_3" className="modal">
-      <div className="modal-box w-5/6 max-w-6xl p-0">
+      <div className="modal-box bg-white w-5/6 max-w-6xl p-0">
         <form method="dialog">
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-4 text-white">✕</button>
         </form>

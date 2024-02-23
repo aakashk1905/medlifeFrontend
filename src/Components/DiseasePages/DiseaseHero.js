@@ -4,13 +4,24 @@ import dhright from "../../Assests/dhright.png";
 import dhc1 from "../../Assests/dhc1.png";
 import dhc2 from "../../Assests/dhc2.png";
 import dhc3 from "../../Assests/dhc3.png";
-const DiseaseHero = ({content}) => {
+import { Link } from "react-router-dom";
+const DiseaseHero = ({content, disease}) => {
   return (
     <div className="dh-cont">
       <div className="dh-inner-cont">
         <div className="dh-left">
           <div className="dh-left-circle"></div>
-          <div className="dh-left-nav">Home {">"} Laparoscopy</div>
+          {/* Breadcumber menu */}
+      <div className="text-sm breadcrumbs mt-3 px-2">
+        <ul>
+          <li>
+            <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link className="capitalize">{disease}</Link>
+          </li>
+        </ul>
+      </div>
           <div className="dh-left-mid">
             <div className="dh-left-det-cont">
               <div className="dh-left-head flex flex-col gap-5">

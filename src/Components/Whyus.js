@@ -2,6 +2,14 @@ import React from "react";
 import "./styles/Whyus.css";
 import whyusdoc from "../Assests/whyusdoc.png";
 const Whyus = ({content}) => {
+  const lists = [
+    "Excellence in Healthcare",
+    "Patient-Centric Care",
+    "Personalized Approach",
+    "State-of-the-Art Facilities",
+    "Transparent Pricing",
+    "Coordinated Care"
+]
   return (
     <div className="wu-cont">
       <div className="wu-inner-cont">
@@ -10,18 +18,18 @@ const Whyus = ({content}) => {
             <img src={whyusdoc} alt="whyusdoc" />
           </div>
           <div className="wu-left-head">
-            {/* {content.whyChooseUs.whyChooseUsHeader} */}
+          एक स्वस्थ्य भविष्य की शुरुआत Med Life Easy के साथ
           </div>
           <div className="wu-left-text">
-          {/* {content.whyChooseUs.whyChooseUsDetails} */}
+          Med Life Easy आपको प्रदान करतें है सर्वोत्तम स्वास्थ्य सेवा उचित मूल्य पर और मिलवाते है बिहार के Best doctors की टीम से
           </div>
         </div>
         <div className="wu-right-cont">
-          {/* <div className="wu-btm-head">{content.whyChooseUs.listHeader}</div> */}
+          <div className="wu-btm-head">Why Choose Us?</div>
           <div className="wu-pts-cont">
-          {/* {
-            content.whyChooseUs.lists && 
-            content.whyChooseUs.lists.map((list, idx) => 
+          {
+            lists && 
+            lists.map((list, idx) => 
             <div key={idx} className="dh-left-pts">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +46,7 @@ const Whyus = ({content}) => {
             {list}
           </div>
               )
-          } */}
+          }
           </div>
           <div className="wu-right-cta">Book Now</div>
         </div>

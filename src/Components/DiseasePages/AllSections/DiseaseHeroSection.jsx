@@ -1,9 +1,23 @@
 import { MdOutlineDone } from "react-icons/md";
 import roundedShape from "../../../Assests/rounded-shape.png";
+import { Link } from "react-router-dom";
 
-const DiseaseHeroSection = ({content}) => {
+const DiseaseHeroSection = ({content,subDisease}) => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 bg-[#fcf8ff] px-5 md:px-10 relative">
+    <div className="bg-[#fcf8ff] px-5 md:px-10 ">
+      {/* Breadcumber menu */}
+      <div className="text-sm breadcrumbs mt-3">
+        <ul>
+          <li>
+          <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            <Link>Laparoscopy</Link>
+          </li>
+          <li className="capitalize">{subDisease}</li>
+        </ul>
+      </div>
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 relative">
       <div className="pt-4 pb-10 z-10">
         {/* Main heading */}
         <h1 className="text-5xl text-gray-600 font-semibold mb-5">
@@ -41,10 +55,10 @@ const DiseaseHeroSection = ({content}) => {
         </div>
 
         <div className="flex flex-col md:flex-row items-center gap-3 w-full">
-          <button className="w-full border border-[#00a0aa] px-4 py-2 rounded-md text-[#00a0aa]">
+          <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa]  rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <button className="w-full bg-[#00a0aa] px-4 py-2 rounded-md text-white border border-[#00a0aa]">
+          <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
             Book Your Appoinment
           </button>
         </div>
@@ -63,7 +77,7 @@ const DiseaseHeroSection = ({content}) => {
 
         {/* Bottom card */}
         <div className="absolute bottom-0 w-full">
-          <div className="bg-white py-3 px-6 flex justify-between items-center">
+          <div className="bg-white py-3 px-6 flex gap-0 lg:gap-20 2xl:gap-40 items-center rounded-2xl">
             <div className="border-r-2 pr-12">
               <h1 className="text-2xl md:text-3xl font-bold text-[#5854a8]">
                 1000+
@@ -85,6 +99,7 @@ const DiseaseHeroSection = ({content}) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

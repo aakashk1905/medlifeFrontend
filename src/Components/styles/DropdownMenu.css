@@ -25,13 +25,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-
   position: relative;
 }
 
@@ -51,6 +49,7 @@
 .dropdown-menu li {
   padding: 12px;
   cursor: pointer;
+  color: #0a0a0a;
 }
 
 .dropdown-menu li:hover {

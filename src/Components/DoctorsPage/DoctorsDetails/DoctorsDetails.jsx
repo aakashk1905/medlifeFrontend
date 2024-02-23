@@ -17,7 +17,7 @@ const DoctorsDetails = () => {
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
         <ul>
           <li>
-            <Link>Home</Link>
+          <Link to={"/"}>Home</Link>
           </li>
           <li>
             <Link>Laparoscopy</Link>
@@ -25,42 +25,42 @@ const DoctorsDetails = () => {
           <li className="capitalize">Dr.Sahajana Prasad</li>
         </ul>
       </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-10 py-10'>
-                <div className='col-span-2 p-10 rounded-lg borde'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-0 md:px-10 py-5 md:py-10'>
+                <div className='col-span-2  rounded-lg borde'>
 
                 <div className='shadow-lg p-5'>
-                <div className=" border-b border-gray-400 pb-5">
-            <div className="grid grid-cols-3 gap-0 md:gap-5">
+                <div className="border-b border-gray-400 pb-5">
+            <div className="grid grid-cols-3 gap-2 md:gap-0">
               <img
-                className="w-28 md:w-full lg:w-full h-60 rounded-lg border-teal-500"
+                className="w-full md:w-full lg:w-[210px] h-[250px] rounded-lg border-teal-500"
                 src={Rectangle}
                 alt=""
               />
 
               <div className="col-span-2">
                 <div className="border-b border-gray-400 pb-2 mb-3">
-                  <h1 className="text-[#17324A] text-2xl font-semibold mb-1">
+                  <h1 className="text-[#17324A] text-xl md:text-2xl font-semibold mb-1">
                     Dr. Sahajanad Prasad
                   </h1>
-                  <p className="text-[#17324A]">
+                  <p className="text-[#17324A] text-sm md:text-base">
                     {" "}
                     MBBS, MS-{" "}
                     <span className="text-teal-500">General sergery</span>
                   </p>
                 </div>
                 
-                <div className="flex justify-between items-center mb-2">
-                  <h2 className="text-lg font-bold text-gray-800 flex items-center gap-2">
+                <div className="flex gap-5 md:gap-16 items-center mb-2">
+                  <h2 className="text-sm md:text-lg font-bold text-gray-800 flex items-center gap-2">
                     {" "}
                     <BiMessageDetail></BiMessageDetail> 13yr+
                   </h2>
 
-                  <h2 className="text-lg font-bold text-gray-800 flex items-center gap-2">
+                  <h2 className="text-sm md:text-lg font-bold text-gray-800 flex items-center gap-2">
                     {" "}
                     <BiMessageDetail></BiMessageDetail> 2K
                   </h2>
 
-                  <h2 className="text-lg font-bold text-gray-800 flex items-center gap-2">
+                  <h2 className="text-sm md:text-lg font-bold text-gray-800 flex items-center gap-2">
                     {" "}
                     <BiMessageDetail></BiMessageDetail> Patna
                   </h2>
@@ -70,19 +70,19 @@ const DoctorsDetails = () => {
                   Specialization
                 </h3>
 
-                <div className="flex gap-3 items-center mb-4">
-                  <div className="bg-teal-100 border border-teal-500 p-1 rounded-md ">
-                    <p className="">General surgeon</p>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-3 items-center mb-4 w-5/6">
+                  <div className="bg-teal-100 border border-teal-500 p-1 rounded-md">
+                    <p className="text-xs md:text-lg">General surgeon</p>
                   </div>
                   <div className="bg-teal-100 border border-teal-500 p-1 rounded-md ">
-                    <p className="">General surgeon</p>
+                    <p className="text-xs md:text-lg">General surgeon</p>
                   </div>
                   <div className="bg-teal-100 border border-teal-500 p-1 rounded-md ">
-                    <p className="">General surgeon</p>
+                    <p className="text-xs md:text-lg">General surgeon</p>
                   </div>
                 </div>
 
-                <button className="w-80 border border-[#00a0aa] px-4 py-2 rounded-lg text-[#00a0aa] text-sm">
+                <button className="w-full md:w-[350px] h-[50px] border border-[#00a0aa] rounded-lg text-[#00a0aa] ">
                 Call now +98 765 432 10
               </button>
 
@@ -215,7 +215,9 @@ const DoctorsDetails = () => {
                 </div>
                 </div>
 
-                <Form></Form>
+               <div className='px-5 md:px-0'>
+               <Form></Form>
+               </div>
             </div>
             <Footer></Footer>
         </div>

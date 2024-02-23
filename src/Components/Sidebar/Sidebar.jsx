@@ -101,7 +101,7 @@ const Sidebar = () => {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className=" w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="w-80 min-h-full bg-white text-base-content">
         <div className="bg-teal-500 p-3 flex items-center justify-between">
             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="64" viewBox="0 0 63 64" fill="none">
   <path d="M9.2609 2.16943H53.7704C55.8809 2.16943 57.5819 3.87043 57.5819 5.98093V50.4904C57.5819 52.6009 55.8809 54.3019 53.7704 54.3019H9.2609C7.1504 54.3019 5.4494 52.6009 5.4494 50.4904V5.98093C5.4179 3.87043 7.1504 2.16943 9.2609 2.16943Z" fill="#00A79D"/>

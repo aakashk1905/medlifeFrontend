@@ -31,20 +31,20 @@ const AmbulanceBookingForm = () => {
           </h2>
           <div className='mb-5'>
             <p className='mb-2 text-[#17324A] text-xl'>Patient Name</p>
-            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full' placeholder='Patient Name / रोगी का नाम' type="text" name="" id="" />
+            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white' placeholder='Patient Name / रोगी का नाम' type="text" name="" id="" />
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5 items-center mb-5'>
           <div className=''>
             <p className='mb-2 text-[#17324A] text-xl'>Age</p>
-            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full' placeholder='Patient age / रोगी की आयु' type="text" name="" id="" />
+            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white' placeholder='Patient age / रोगी की आयु' type="text" name="" id="" />
           </div>
 
           <div>
             <p className='mb-2 text-[#17324A] text-xl'>Gender</p>
             <select
           name="priority"
-          className='border border-gray-300 rounded-lg p-3 outline-none w-full'
+          className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white'
         >
           <option disabled selected>
             Select
@@ -57,24 +57,24 @@ const AmbulanceBookingForm = () => {
 
           <div className='mb-5'>
             <p className='mb-2 text-[#17324A] text-xl'>Pickup Location</p>
-            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full' placeholder='Write address or choose on map' type="text" name="" id="" />
+            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white' placeholder='Write address or choose on map' type="text" name="" id="" />
           </div>
 
           <div className='grid grid-cols-1 md:grid-cols-2 gap-5 items-center mb-5'>
           <div className=''>
             <p className='mb-2 text-[#17324A] text-xl'>Date</p>
-            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full' placeholder='तिथि चुनें/20/2/2024' type="date" name="" id="" />
+            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white' placeholder='तिथि चुनें/20/2/2024' type="date" name="" id="" />
           </div>
 
           <div className=''>
             <p className='mb-2 text-[#17324A] text-xl'>Time</p>
-            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full' placeholder='12:00' type="time" name="" id="" />
+            <input className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white' placeholder='12:00' type="time" name="" id="" />
           </div>
           </div>
 
           <div className=''>
             <p className='mb-2 text-[#17324A] text-xl'>Any specific medical conditions/allergies</p>
-            <textarea className='border border-gray-300 rounded-lg p-3 outline-none w-full' placeholder='किसी विशिष्ट चिकित्सा स्थिति/एलर्जी' name="" id="" cols="30" rows="5"></textarea>
+            <textarea className='border border-gray-300 rounded-lg p-3 outline-none w-full bg-white' placeholder='किसी विशिष्ट चिकित्सा स्थिति/एलर्जी' name="" id="" cols="30" rows="5"></textarea>
           </div>
 
 

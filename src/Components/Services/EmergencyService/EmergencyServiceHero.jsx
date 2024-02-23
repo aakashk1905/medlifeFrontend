@@ -10,7 +10,7 @@ const EmergencyServiceHero = () => {
                 <p className='text-3xl font-semibold text-gray-500 mb-10'>We are committed to providing prompt and quality care during medical emergencies.</p>
 
                 <p className='text-3xl font-semibold text-gray-500 mb-6'>For immediate assistance, call our Emergency Helpline:</p>
-                <button className="w-96 bg-[#00a0aa] px-4 py-2 rounded-md text-white border border-[#00a0aa]">
+                <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
                 Call now +98 765 432 10 
           </button>
             </div>

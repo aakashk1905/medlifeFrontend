@@ -4,9 +4,11 @@ import { IoBagAdd } from "react-icons/io5";
 import { BiSolidUserPin } from "react-icons/bi";
 import { HiLocationMarker } from "react-icons/hi";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
+import Loader from "../Loader/Loader";
 
 const OurDoctors = () => {
   const axiosBaseUrl = useAxiosBaseUrl();
+  const [loading, setLoading] = useState(true);
 
 
   // Data fetch from API
@@ -15,7 +17,10 @@ const OurDoctors = () => {
   useEffect(() => {
     axiosBaseUrl.get("/api/v1/doctors")
       .then(res => res.data)
-      .then(data => setAllDoctors(data.doctors))
+      .then(data => {
+        setAllDoctors(data.doctors)
+        setLoading(false)
+      })
       .catch(err => console.log(err.message))
   }, [axiosBaseUrl]);
 
@@ -29,7 +34,10 @@ const OurDoctors = () => {
 
         {/* Cards */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
+        {
+          loading ? <Loader></Loader>
+          :
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
           {
             allDoctors.length > 0 ?
             allDoctors.map(doctor => 
@@ -102,6 +110,7 @@ const OurDoctors = () => {
               "No content here"
           }
         </div>
+        }
       </div>
     </div>
   );

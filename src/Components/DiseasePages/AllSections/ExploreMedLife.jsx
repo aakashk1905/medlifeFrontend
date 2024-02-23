@@ -23,7 +23,7 @@ const ExploreMedLife = ({content}) => {
         {content?.SurgeryForm?.footerTitle}
         </h2>
 
-        <button className="w-full lg:w-2/3 border border-[#00a0aa] px-4 py-3 rounded-md text-[#00a0aa]">
+        <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
           Call now +98 765 432 10
         </button>
       </div>
@@ -34,18 +34,18 @@ const ExploreMedLife = ({content}) => {
         {content?.SurgeryForm?.formTitle}
         </h1>
         <input
-          className="p-3 rounded-md border border-gray-400 outline-none"
+          className="p-3 rounded-md border border-gray-400 outline-none bg-white"
           placeholder="Patient Name"
           type="text"
         />
         <input
-          className="p-3 rounded-md border border-gray-400 outline-none"
+          className="p-3 rounded-md border border-gray-400 outline-none bg-white"
           placeholder="Mobile Number"
           type="text"
         />
         <select
           name="priority"
-          className="p-3 rounded-md border border-gray-400 outline-none"
+          className="p-3 rounded-md border border-gray-400 outline-none bg-white"
         >
           <option disabled selected>
             Select
@@ -55,7 +55,7 @@ const ExploreMedLife = ({content}) => {
           <option value="high">Chennai</option>
           <option value="most important"> Kolkata </option>
         </select>
-        <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-md text-white border border-[#00a0aa]">
+        <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa]">
           Get Cost Estimate
         </button>
       </div>

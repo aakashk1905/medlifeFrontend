@@ -18,7 +18,7 @@ const EmergencyService = () => {
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
         <ul>
           <li>
-            <Link>Home</Link>
+          <Link to={"/"}>Home</Link>
           </li>
           <li>Emergency services</li>
         </ul>

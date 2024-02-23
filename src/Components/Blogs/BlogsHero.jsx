@@ -15,7 +15,7 @@ const BlogsHero = () => {
         </p>
 
 
-          <button className="w-80 border border-[#00a0aa] px-4 py-2 rounded-md text-[#00a0aa]">
+          <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
       </div>

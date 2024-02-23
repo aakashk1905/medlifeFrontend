@@ -11,9 +11,13 @@
 }
 .dh-inner-cont {
   min-height: 754px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   display: flex;
-  width: 90%;
+  width: 100%;
   height: auto;
   gap: 0;
 }
