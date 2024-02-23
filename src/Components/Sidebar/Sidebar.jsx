@@ -102,7 +102,8 @@ const Sidebar = () => {
           className="drawer-overlay"
         ></label>
         <ul className="w-80 min-h-full bg-white text-base-content">
-        <div className="bg-teal-500 p-3 flex items-center justify-between">
+        <div className="bg-teal-500 p-3">
+            <div className="flex items-center justify-between">
             <svg xmlns="http://www.w3.org/2000/svg" width="63" height="64" viewBox="0 0 63 64" fill="none">
   <path d="M9.2609 2.16943H53.7704C55.8809 2.16943 57.5819 3.87043 57.5819 5.98093V50.4904C57.5819 52.6009 55.8809 54.3019 53.7704 54.3019H9.2609C7.1504 54.3019 5.4494 52.6009 5.4494 50.4904V5.98093C5.4179 3.87043 7.1504 2.16943 9.2609 2.16943Z" fill="#00A79D"/>
   <path d="M46.7123 34.5513H46.6493L37.5458 35.3073C36.9473 35.3703 36.8213 35.4018 36.7268 34.6143L35.4668 21.2898C35.4353 19.8408 34.5218 18.5493 33.1988 18.0138C31.6553 17.3838 29.8598 17.8563 28.8203 19.1478L13.3853 44.1273C12.4718 45.2613 12.2513 46.8048 12.8498 48.1593C13.4168 49.3878 14.6453 50.1438 15.9683 50.1123H21.5123C22.0478 50.1123 22.4573 49.6713 22.4573 49.1673V46.3323C22.4573 45.7968 22.0163 45.3873 21.5123 45.3873H19.8743C19.3388 45.3873 18.9293 44.9463 18.9293 44.4423C18.9293 44.2533 18.9923 44.0958 19.0868 43.9383L29.5448 26.9598C29.8283 26.5188 30.3953 26.3613 30.8678 26.6448C31.1198 26.8023 31.2773 27.0858 31.3088 27.3693L32.1908 36.5673C32.2853 38.5518 33.8918 40.1268 35.9078 40.1583H36.0023L43.5308 39.5283C44.0663 39.4968 44.5073 39.8748 44.5703 40.4103C44.5703 40.5678 44.5703 40.7253 44.5073 40.8513L42.9008 44.7573C42.7433 45.1353 42.3968 45.3558 42.0188 45.3558H25.0718C24.5363 45.3558 24.1268 45.7653 24.1268 46.3008V49.1358C24.1268 49.6713 24.5678 50.0808 25.0718 50.0808H42.9638C44.8853 50.0808 46.5863 48.7893 47.1218 46.9308L50.4608 38.7408C50.4608 38.7408 50.4608 38.7408 50.4608 38.7093V38.2998C50.4608 36.2523 48.7913 34.5513 46.7123 34.5513Z" fill="white"/>
@@ -121,8 +122,19 @@ const Sidebar = () => {
 </svg>
 
 <RxCross2 onClick={closeDrawer} className="text-white text-3xl cursor-pointer"></RxCross2>
+            </div>
+
+
+<div className="flex justify-between items-center mt-3">
+            <Link to={"/doctors"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Doctors</Link>
+            <Link to={"/emergencyService"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Services</Link>
+            <Link to={"/hospitals"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Hospitals</Link>
+            <Link to={"/blogs"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Blogs</Link>
+          </div>
 
             </div>
+
+           
           <div className="p-4">
             
             {btmMenus.map((menu, id) => (

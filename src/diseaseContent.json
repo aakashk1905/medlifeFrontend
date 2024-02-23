@@ -1,6 +1,8 @@
 {
     "hernia": {
         "parentDisease" : "Laproscopy",
+        "heroImg" : "https://i.ibb.co/FW9ChW6/stomach-pain.png",
+        "diseaseImg" : "https://i.ibb.co/ryXcct4/hernia.png",
         "heroHeader": "Hernia Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -58,6 +60,8 @@
     },
     "gallbladder": {
         "parentDisease" : "Laproscopy",
+        "heroImg" : "https://i.ibb.co/FW9ChW6/stomach-pain.png",
+        "diseaseImg" : "https://i.ibb.co/WsQg0w2/gallbladder.png",
         "heroHeader": "Gallbladder Stones Treatment",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -118,6 +122,8 @@
     },
     "appendix": {
         "parentDisease" : "Laproscopy",
+        "heroImg" : "https://i.ibb.co/FW9ChW6/stomach-pain.png",
+        "diseaseImg" : "https://i.ibb.co/QHqLdNB/apendix.png",
         "heroHeader": "Appendix Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -178,6 +184,8 @@
     },
     "inguinal": {
         "parentDisease" : "Laproscopy",
+        "heroImg" : "https://i.ibb.co/FW9ChW6/stomach-pain.png",
+        "diseaseImg" : "https://i.ibb.co/Jvsvvmm/lingual-Hernia.png",
         "heroHeader": "Inguinal Hernia Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -238,6 +246,8 @@
     },
     "umbilical": {
         "parentDisease" : "Laproscopy",
+        "heroImg" : "https://i.ibb.co/FW9ChW6/stomach-pain.png",
+        "diseaseImg" : "https://i.ibb.co/DtWWYfs/umblical-Hernia.png",
         "heroHeader": "Umbilical Hernia Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -296,8 +306,12 @@
             }
         }
     },
+
+
     "piles": {
         "parentDisease" : "Proctology",
+        "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+        "diseaseImg" : "https://i.ibb.co/DtCYbg2/piles.png",
         "heroHeader": "Umbilical Piles Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -358,6 +372,8 @@
     },
     "fistula": {
         "parentDisease" : "Proctology",
+        "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+        "diseaseImg" : "https://i.ibb.co/gwLGtwz/fistula.png",
         "heroHeader": "Umbilical Fistula Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -418,6 +434,8 @@
     },
     "pilonidal": {
         "parentDisease" : "Proctology",
+        "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+        "diseaseImg" : "https://i.ibb.co/7NbCt5q/sinus.png",
         "heroHeader": "Umbilical Pilonidal Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -478,6 +496,8 @@
     },
     "rectal": {
         "parentDisease" : "Proctology",
+        "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+        "diseaseImg" : "https://i.ibb.co/ZNbDJDK/rectal.png",
         "heroHeader": "Umbilical Rectal Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
@@ -536,8 +556,12 @@
             }
         }
     },
+
+
     "uterus": {
         "parentDisease" : "Gynaecology",
+        "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+        "diseaseImg" : "https://i.ibb.co/ZNbDJDK/rectal.png",
         "heroHeader": "Umbilical Uterus Surgery",
         "subHeading": "सुरक्षित एवं सफल",
         "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",

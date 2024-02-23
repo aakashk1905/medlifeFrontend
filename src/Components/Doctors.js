@@ -59,7 +59,7 @@ const Doctors = () => {
   ) : allDoctors.length > 0 ? (
     allDoctors.map((doctor, id) => (
       <div key={id} className="doc-card">
-        <img src={d1} alt={d1} />
+        <img src={doctor.avatar.url} alt="Doctor" />
         <div className="doc-det-cont">
           <div className="doc-det">
             <div className="doc-name">{doctor.doctorName}</div>

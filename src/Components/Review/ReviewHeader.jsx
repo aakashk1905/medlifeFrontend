@@ -1,18 +1,90 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { FaArrowRightToBracket } from "react-icons/fa6";
+import useAxiosBaseUrl from './../../hooks/useBaseUrl';
+import { MdError } from "react-icons/md";
 
 const ReviewHeader = () => {
+  const axiosBaseUrl = useAxiosBaseUrl();
+  const [nameError, setNameError] = useState("");
+  const [mobileError, setMobileError] = useState("");
+  // const [doctorNameError, setDoctorNameError] = useState("");
+  const [cityError, setCityError] = useState("");
+  const [diseaseError, setDiseaseError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmitDetails = (e) => {
+    e.preventDefault();
+    const name = e.target.patientName.value;
+    const mobileNumber = e.target.mobile.value;
+    const doctor = e.target.doctorName.value;
+    const city = e.target.city.value;
+    const disease = e.target.disease.value;
+
+    if (name.length === 0) {
+      setNameError("Patient name required!");
+      return;
+    } else{
+      setNameError("")
+    }
+
+    if (mobileNumber.length === 0) {
+      setMobileError("Mobile number required!");
+      return;
+    } else{
+      setMobileError("")
+    }
+
+    // if (doctor.length === 0) {
+    //   setDoctorNameError("Doctor's name required!");
+    //   return;
+    // } else{
+    //   setDoctorNameError("")
+    // }
+
+    if (city === "Select City / शहर चुनें") {
+      setCityError("City required!");
+      return;
+    } else{
+      setCityError("")
+    }
+
+    if (disease === "Select Disease / रोग का चयन करें") {
+      setDiseaseError("Disease name required!");
+      return;
+    } else{
+      setDiseaseError("")
+    }
+
+    const reviewInfo = {
+      name,
+      mobileNumber,
+      doctor,
+      city,
+      disease,
+    };
+  
+    localStorage.setItem('reviewInfo', JSON.stringify(reviewInfo));
+    if (localStorage.getItem('reviewInfo')) {
+      navigate("/writeReview");
+    } else {
+      console.error("Failed to save info, try again");
+    }
+
+    
+  };
+
   return (
     <div>
       <div className="flex flex-col">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         <div className="col-span-2">
-          <Link to={"/writeReview"}>
+          {/* <Link to={"/writeReview"}>
           <button className="w-80 bg-[#00A0AA] px-4 py-5 rounded-md text-white text-xl mb-20">
             Leave a Review
           </button>
-          </Link>
+          </Link> */}
           
 
           {/* Left side reviews section */}
@@ -174,39 +246,48 @@ const ReviewHeader = () => {
 
 
         {/* Right side form */}
-<div className="bg-white shadow-xl mb-7 md:mb-0 border p-3 rounded flex flex-col justify-center items-center gap-3">
-<h1 className="text-3xl mb-3 text-center font-semibold">
-Get in Touch
+<form onSubmit={handleSubmitDetails} className="bg-white shadow-xl mb-7 md:mb-0 border p-3 rounded flex flex-col justify-center items-center gap-3">
+<h1 className="text-3xl text-center font-semibold">
+Write A Review
 </h1>
 <h2 className="text-[#5854A8] text-xl font-semibold text-center mb-3">चिकित्सा उपचार परामर्श के लिए, फॉर्म भरें</h2>
 <input
+name="patientName"
   className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
   placeholder="Patient Name / रोगी का नाम"
   type="text"
 />
 <input
+name="mobile"
   className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
   placeholder="Mobile No. / मोबाइल नंबर"
+  type="number"
+/>
+<input
+name="doctorName"
+  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
+  placeholder="Doctor's Name"
   type="text"
 />
-<select
-  name="priority"
-  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
->
+
+<div class="relative inline-block text-left w-full">
+  <select name="city" className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white appearance-none">
   <option disabled selected>
   Select City / शहर चुनें
   </option>
-  <option value="Mumbai">Mumbai</option>
+   <option value="Mumbai">Mumbai</option>
   <option value="Patna">Patna</option>
   <option value="Chennai">Chennai</option>
   <option value="Kolkata"> Kolkata </option>
-</select>
+  </select>
+  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+    <IoIosArrowDown></IoIosArrowDown>
+  </div>
+</div>
 
 
-<select
-  name="priority"
-  className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
->
+<div class="relative inline-block text-left w-full">
+  <select name="disease" className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white appearance-none">
   <option disabled selected>
   Select Disease / रोग का चयन करें
   </option>
@@ -214,11 +295,64 @@ Get in Touch
   <option value="Cancer">Cancer</option>
   <option value="Blood Pressure">Blood Pressure</option>
   <option value="Diphtheria"> Diphtheria </option>
-</select>
-<button className=" w-full bg-[#00a0aa] px-4 py-5 rounded-xl text-white border border-[#00a0aa]">
-Book Free Appointment
-</button>
+  </select>
+  <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+    <IoIosArrowDown></IoIosArrowDown>
+  </div>
+
+  
 </div>
+
+<div className="w-full">
+{nameError ? (
+                <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
+                  <MdError></MdError> {nameError}
+                </p>
+              ) : (
+                ""
+              )}
+
+
+{mobileError ? (
+                <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
+                  <MdError></MdError> {mobileError}
+                </p>
+              ) : (
+                ""
+              )}
+
+
+{/* {doctorNameError ? (
+                <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
+                  <MdError></MdError> {doctorNameError}
+                </p>
+              ) : (
+                ""
+              )} */}
+
+
+{cityError ? (
+                <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
+                  <MdError></MdError> {cityError}
+                </p>
+              ) : (
+                ""
+              )}
+
+
+{diseaseError ? (
+                <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
+                  <MdError></MdError> {diseaseError}
+                </p>
+              ) : (
+                ""
+              )}
+</div>
+<button className=" w-full bg-[#00a0aa] px-4 py-5 rounded-xl text-white border border-[#00a0aa] flex items-center gap-2 justify-center">
+Continue
+<FaArrowRightToBracket></FaArrowRightToBracket>
+</button>
+</form>
         </div>
       </div>
     </div>

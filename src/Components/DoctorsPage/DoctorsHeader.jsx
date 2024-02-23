@@ -1,10 +1,23 @@
 import React from 'react';
 import Form from '../Form';
+import { Link } from 'react-router-dom';
 
 const DoctorsHeader = () => {
     return (
-        <div>
-            <div className='bg-[#fcf8ff] p-10 grid grid-cols-1 lg:grid-cols-3 gap-5'>
+        <div className='bg-[#fcf8ff] px-10 py-5'>
+                      {/* Breadcumber menu */}
+                      <div className="text-sm breadcrumbs ">
+        <ul>
+          <li>
+          <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+          <Link>Doctors</Link>
+          </li>
+        </ul>
+      </div>        
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 items-center'>
+
                 <div className='col-span-2'>
                 <h1 className='text-3xl md:text-6xl font-bold text-blue-500 mb-8'>Consult with Top Rated <br /> Experienced Doctors Online!</h1>
 

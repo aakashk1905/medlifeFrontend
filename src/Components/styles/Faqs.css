@@ -48,6 +48,7 @@
 } */
 
 .faqs .faq .faq-answer {
+  color: black;
   opacity: 0;
   max-height: 0;
   overflow: hidden;

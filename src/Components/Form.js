@@ -3,6 +3,7 @@ import CityDropdown from "./CityDropdown.js";
 import "./styles/Form.css";
 import { IoIosArrowDown } from "react-icons/io";
 import useAxiosBaseUrl from "../hooks/useBaseUrl.jsx";
+import { Toaster, toast } from "sonner";
 const Form = () => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
@@ -56,7 +57,18 @@ const Form = () => {
         disease: selectedDisease,
       })
       .then((response) => {
-        alert(response.data.message); ///use Toast
+        if (response.data.message) {
+          const promise = new Promise((resolve) =>
+            setTimeout(() => resolve({  }), 3000)
+          );
+          toast.promise(promise, {
+            loading: "Loading...",
+            success: () => {
+              return "Your consultation has been booked and we will get back to you soon";
+            },
+            error: "Error",
+          });
+        }
       })
       .catch((error) => {
         console.log(error);
@@ -70,7 +82,7 @@ const Form = () => {
         id="patientName"
         value={patientName}
         placeholder="Patient Name "
-        className="inp"
+        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-[78.446px] rounded-[13.074px]"
         onChange={(e) => setPatientName(e.target.value)}
       />
       <input
@@ -78,7 +90,7 @@ const Form = () => {
         id="mobileNumber"
         placeholder="Mobile Number"
         value={mobileNumber}
-        className="inp"
+        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-[78.446px] rounded-[13.074px]"
         onChange={(e) => setMobileNumber(e.target.value)}
       />
 
@@ -94,7 +106,7 @@ const Form = () => {
             </option>
           ))}
         </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
           <IoIosArrowDown></IoIosArrowDown>
         </div>
       </div>
@@ -115,12 +127,13 @@ const Form = () => {
             </option>
           ))}
         </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
           <IoIosArrowDown></IoIosArrowDown>
         </div>
       </div>
 
       <button type="submit">Book Now</button>
+      <Toaster position="top-center" />
     </form>
   );
 };

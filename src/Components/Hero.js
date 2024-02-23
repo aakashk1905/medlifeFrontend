@@ -4,6 +4,7 @@ import heroDoc from "../Assests/heroDoc.png";
 import piles from "../Assests/piles.svg";
 // import Navbar from "./Navbar";
 import Form from "./Form";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -11,6 +12,14 @@ const Hero = () => {
       {/* <Navbar /> */}
       <div className="hero-top-cont">
         <div className="hero-head-cont">
+          {/* Breadcumber menu */}
+      <div className="text-sm breadcrumbs ">
+        <ul>
+          <li>
+          <Link to={"/"}>Home</Link>
+          </li>
+        </ul>
+      </div>
           <div className="hero-head">Welcome to Med Life Easy</div>
           <div className="hero-text">Your Path to Health and Happiness</div>
           <div className="hero-img-cont">
@@ -37,6 +46,12 @@ const Hero = () => {
         </div>
       </div>
       <div className="hero-btm-cont">
+        <div className="block md:hidden">
+        <p className="text-3xl text-gray-800 mb-4">For Further Enquiries</p>
+        <button className="w-full h-[64px] border border-[#00a0aa] rounded-2xl text-[#00a0aa] mb-6">
+            Call now +98 765 432 10
+          </button>
+        </div>
         <div className="hero-btm-head">Surgeries We Perform</div>
         <div className="hero-btm-cards-cont">
           <div className="hero-btm-card">

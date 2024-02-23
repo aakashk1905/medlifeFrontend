@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../../Navbar";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
@@ -7,27 +7,54 @@ import Officeaddress from "../../Officeaddress";
 import Footer from "../../Footer";
 import useAxiosBaseUrl from "../../../hooks/useBaseUrl";
 import Rating from "react-rating";
+import { Toaster, toast } from "sonner";
 
 const WriteReview = () => {
-  const [rating, setRating] = useState(0);
-
+  const [ratings, setRatings] = useState(0);
+  const [reviewInfo, setReviewInfo] = useState({});
   const axiosBaseUrl = useAxiosBaseUrl();
+
+  useEffect(() => {
+    const storedReviewInfo = localStorage.getItem("reviewInfo");
+    if (storedReviewInfo) {
+      setReviewInfo(JSON.parse(storedReviewInfo));
+    }
+  }, []);
 
   const handleSubmitReview = (e) => {
     e.preventDefault();
     const review = e.target.review.value;
-    const date = new Date().toISOString();
+    // const date = new Date().toISOString();
 
-    const reviewInfo = { review, date };
+    const reviewDetails = {
+      name: reviewInfo.name,
+      mobileNumber: reviewInfo.mobileNumber,
+      doctor: reviewInfo.doctor,
+      city: reviewInfo.city,
+      disease: reviewInfo.disease,
+      review: review,
+      ratings:ratings
+    };
 
     axiosBaseUrl
-      .post("/api/v1/createreview", reviewInfo)
-      .then((response) => {
-        alert(response.data.message); //use toast
-      })
-      .catch((error) => {
-        console.log(error);
-      });
+    .post("/api/v1/createreview", reviewDetails)
+    .then((response) => {
+      if (response.data.message) {
+        const promise = new Promise((resolve) =>
+          setTimeout(() => resolve({  }), 2000)
+        );
+        toast.promise(promise, {
+          loading: "Posting...",
+          success: () => {
+            return 'Thank you!! Your valuable feedback is added';
+          },
+          error: "Error",
+        });
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+    });
   };
   return (
     <div>
@@ -49,9 +76,9 @@ const WriteReview = () => {
               Patient information
             </h2>
             <div>
-              <p className="text-md mb-2 text-[#17324A]">Name: Sujata Singh</p>
-              <p className="text-md mb-2 text-[#17324A]">City: PATNA</p>
-              <p className="text-md mb-2 text-[#17324A]">Disease: HERNIA</p>
+              <p className="text-md mb-2 text-[#17324A]">Name: {reviewInfo.name}</p>
+              <p className="text-md mb-2 text-[#17324A]">City: reviewInfo.city</p>
+              <p className="text-md mb-2 text-[#17324A]">Disease: {reviewInfo.disease}</p>
             </div>
           </div>
 
@@ -105,7 +132,7 @@ const WriteReview = () => {
               <Rating
                 onChange={(value) => {
                   console.log("Rating:", value);
-                  setRating(value);
+                  setRatings(value);
                 }}
                 emptySymbol={
                   <FaStar className="text-gray-300 text-3xl"></FaStar>
@@ -123,19 +150,20 @@ const WriteReview = () => {
             </h2>
             <div className="flex flex-col justify-center items-center gap-5">
               <textarea
-                className="border border-gray-400 rounded-md w-full outline-none p-3 focus:border-teal-700"
+                className="bg-white border border-gray-400 rounded-md w-full outline-none p-3 focus:border-teal-700"
                 name="review"
                 id=""
                 cols="30"
                 rows="10"
               ></textarea>
-              <button className="w-80 bg-[#00A0AA] px-4 py-2 rounded-md text-white mb-20">
+              <button className="w-full md:w-[350px] h-[64px] bg-[#00A0AA] rounded-md text-white mb-20">
                 Submit
               </button>
             </div>
           </form>
         </div>
       </div>
+      <Toaster position="top-center"/>
 
       <Getintouch></Getintouch>
       <Officeaddress></Officeaddress>

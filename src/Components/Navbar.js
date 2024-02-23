@@ -84,7 +84,7 @@ const Navbar = () => {
               className="bg-white pl-9 py-2 rounded-lg w-80 focus:outline-none"
               placeholder="Search disease, doctors, treatment"
             />
-            <IoSearchOutline className="text-2xl absolute top-2 left-2 text-gray-500"></IoSearchOutline>
+            <IoSearchOutline className="text-2xl absolute top-2  left-2 text-gray-500"></IoSearchOutline>
           </div>
           <div className="hidden lg:flex items-center gap-4">
             <Link to={"/doctors"} className="text-white hover:text-teal-100 transition duration-300">Doctors</Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
 
       
         
-      <div className="hidden lg:flex justify-between px-7">
+      <div className="hidden xl:flex justify-between px-7">
       {btmMenus.map((menu, ind) => (
           <DropdownMenu
             key={ind}

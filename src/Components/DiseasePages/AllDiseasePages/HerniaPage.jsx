@@ -97,6 +97,7 @@ const HerniaPage = () => {
       <DiseaseHeroSection
         subDisease={subDisease}
         content={diseaseContent[subDisease]}
+        diseaseName={diseaseContent[subDisease].parentDisease}
       ></DiseaseHeroSection>
       <SafeDiseaseRemoval
         content={diseaseContent[subDisease]}

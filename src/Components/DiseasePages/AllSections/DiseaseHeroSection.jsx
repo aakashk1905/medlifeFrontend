@@ -2,7 +2,7 @@ import { MdOutlineDone } from "react-icons/md";
 import roundedShape from "../../../Assests/rounded-shape.png";
 import { Link } from "react-router-dom";
 
-const DiseaseHeroSection = ({content,subDisease}) => {
+const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
   return (
     <div className="bg-[#fcf8ff] px-5 md:px-10 ">
       {/* Breadcumber menu */}
@@ -12,7 +12,7 @@ const DiseaseHeroSection = ({content,subDisease}) => {
           <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <Link>Laparoscopy</Link>
+            <Link>{diseaseName}</Link>
           </li>
           <li className="capitalize">{subDisease}</li>
         </ul>
