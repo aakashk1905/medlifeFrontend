@@ -14,20 +14,20 @@ const cities = [
 const CityDropdown = ({ onCityChange, type }) => {
   const [selectedCity, setSelectedCity] = useState("");
 
-  
-
   return (
     <>
-    
       {type === "city" && (
         <div className="cities-scroll">
           {cities.map(
             (city, ind) =>
               ind !== 0 && (
                 <div
-                  className="city-chip"
+                  className="city-chip cursor-pointer"
                   key={city}
-                  onClick={() => setSelectedCity(city)}
+                  onClick={() => {
+                    setSelectedCity(city);
+                    onCityChange(city);
+                  }}
                 >
                   {city}
                 </div>

@@ -3,7 +3,7 @@ import "./styles/DiseaseDoc.css";
 import ddcard1 from "../../Assests/ddcard1.svg";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";
-const DiseaseDoc = ({docHeading}) => {
+const DiseaseDoc = ({ docHeading, diseaseName }) => {
   const cardsContainerRef = useRef(null);
   const [loading, setLoading] = useState(true);
 
@@ -22,32 +22,31 @@ const DiseaseDoc = ({docHeading}) => {
 
   const axiosBaseUrl = useAxiosBaseUrl();
 
-
   // Data fetch from API
 
   const [allDoctors, setAllDoctors] = useState([]);
   console.log(allDoctors);
   useEffect(() => {
-    axiosBaseUrl.get("/api/v1/doctors")
-      .then(res => res.data)
-      .then(data => {
-        setAllDoctors(data.doctors)
-        setLoading(false)
+    axiosBaseUrl
+      .get(`/api/v1/doctors?diseaseHandle=${diseaseName}`)
+      .then((res) => res.data)
+      .then((data) => {
+        setAllDoctors(data.doctors);
+        setLoading(false);
       })
-      .catch(err => console.log(err.message))
-  }, [axiosBaseUrl]);
-
+      .catch((err) => console.log(err.message));
+  }, [diseaseName]);
 
   return (
     <div className="rev-cont">
-      <div className="hero-btm-head">{docHeading}</div>
+      <div className="hero-btm-head capitalize">{docHeading}</div>
 
       <div className="rev-car-cont">
         <div className="arrow-div" onClick={() => handleScroll("left")}>
           &lt;
         </div>
         <div ref={cardsContainerRef} className="rev-cards-cont">
-        {loading ? (
+          {loading ? (
             <Loader></Loader>
           ) : allDoctors.length > 0 ? (
             allDoctors.map((doctor) => (
@@ -122,7 +121,6 @@ const DiseaseDoc = ({docHeading}) => {
           ) : (
             <p>No Content available</p>
           )}
-          
         </div>
 
         <div className="arrow-div" onClick={() => handleScroll("right")}>

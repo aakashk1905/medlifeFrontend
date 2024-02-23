@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import DiseaseHeroSection from "../AllSections/DiseaseHeroSection";
 import DiseaseDoc from "../DiseaseDoc";
 import ExploreMedLife from "../AllSections/ExploreMedLife";
-import Patientslove from '../../Patientslove';
+import Patientslove from "../../Patientslove";
 import Blogs from "../../Blogs";
 import Faqs from "../../Faq";
 import Getintouch from "../../Getintouch";
@@ -71,15 +71,14 @@ const HerniaPage = () => {
     "fue",
     "fut",
     "dhi",
-    "gfc"
+    "gfc",
   ];
-    
-    
-      if (!pages.includes(subDisease)) {
-        alert("wrong URL!!!");
-        window.location.href = "/"
-      }
-    
+
+  if (!pages.includes(subDisease)) {
+    alert("wrong URL!!!");
+    window.location.href = "/";
+  }
+
   return (
     <div>
       <Navbar></Navbar>
@@ -95,9 +94,17 @@ const HerniaPage = () => {
           <li className="capitalize">{subDisease}</li>
         </ul>
       </div> */}
-      <DiseaseHeroSection subDisease={subDisease} content={diseaseContent[subDisease]} ></DiseaseHeroSection>
-      <SafeDiseaseRemoval content={diseaseContent[subDisease]}></SafeDiseaseRemoval>
-      <DiseaseDoc docHeading={"Our Hernia Doctors"}></DiseaseDoc>
+      <DiseaseHeroSection
+        subDisease={subDisease}
+        content={diseaseContent[subDisease]}
+      ></DiseaseHeroSection>
+      <SafeDiseaseRemoval
+        content={diseaseContent[subDisease]}
+      ></SafeDiseaseRemoval>
+      <DiseaseDoc
+        docHeading={`Our ${diseaseContent[subDisease].parentDisease} Doctors`}
+        diseaseName={diseaseContent[subDisease].parentDisease}
+      ></DiseaseDoc>
       <ExploreMedLife content={diseaseContent[subDisease]}></ExploreMedLife>
       <Experience></Experience>
       <Patientslove></Patientslove>
