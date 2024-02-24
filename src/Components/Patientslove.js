@@ -7,11 +7,14 @@ import { Link, useLocation } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 const Patientslove = () => {
   const cardsContainerRef = useRef(null);
+  const elementRef = useRef(null);
   const { pathname } = useLocation();
   const { scrollToTop } = useScrollToTop(pathname);
 
   const handleScroll = (direction) => {
-    const scrollAmount = 500;
+    const width = elementRef?.current.getBoundingClientRect().width + 25;
+
+    const scrollAmount = width || 500;
     const container = cardsContainerRef.current;
 
     if (container) {
@@ -30,7 +33,7 @@ const Patientslove = () => {
           &lt;
         </div>
         <div ref={cardsContainerRef} className="rev-cards-cont">
-          <div className="pl-card">
+          <div className="pl-card" ref={elementRef}>
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -341,12 +344,6 @@ const Patientslove = () => {
               आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
             </div>
           </div>
-
-        
-
-        
-
-          
         </div>
 
         <div className="arrow-div" onClick={() => handleScroll("right")}>
@@ -354,8 +351,12 @@ const Patientslove = () => {
         </div>
       </div>
       <div className="pl-cta-cont">
-        <Link onClick={scrollToTop} to={"/review"} className="pl-va">View All Reviews</Link>
-        <Link onClick={scrollToTop} to={"/writeReview"} className="pl-wr">Write A Review</Link>
+        <Link onClick={scrollToTop} to={"/review"} className="pl-va">
+          View All Reviews
+        </Link>
+        <Link onClick={scrollToTop} to={"/writeReview"} className="pl-wr">
+          Write A Review
+        </Link>
       </div>
     </div>
   );

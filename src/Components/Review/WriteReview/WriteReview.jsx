@@ -24,7 +24,6 @@ const WriteReview = () => {
   const handleSubmitReview = (e) => {
     e.preventDefault();
     const review = e.target.review.value;
-    // const date = new Date().toISOString();
 
     const reviewDetails = {
       name: reviewInfo.name,
@@ -33,28 +32,28 @@ const WriteReview = () => {
       city: reviewInfo.city,
       disease: reviewInfo.disease,
       review: review,
-      ratings:ratings
+      ratings: ratings,
     };
 
     axiosBaseUrl
-    .post("/api/v1/createreview", reviewDetails)
-    .then((response) => {
-      if (response.data.message) {
-        const promise = new Promise((resolve) =>
-          setTimeout(() => resolve({  }), 2000)
-        );
-        toast.promise(promise, {
-          loading: "Posting...",
-          success: () => {
-            return 'Thank you!! Your valuable feedback is added';
-          },
-          error: "Error",
-        });
-      }
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+      .post("/api/v1/createreview", reviewDetails)
+      .then((response) => {
+        if (response.data.success) {
+          const promise = new Promise((resolve) =>
+            setTimeout(() => resolve({}), 2000)
+          );
+          toast.promise(promise, {
+            loading: "Writing Review...",
+            success: () => {
+              return "Thank you!! Your valuable feedback is added";
+            },
+            error: "Error",
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   };
   return (
     <div>
@@ -76,9 +75,15 @@ const WriteReview = () => {
               Patient information
             </h2>
             <div>
-              <p className="text-md mb-2 text-[#17324A]">Name: {reviewInfo.name}</p>
-              <p className="text-md mb-2 text-[#17324A]">City: reviewInfo.city</p>
-              <p className="text-md mb-2 text-[#17324A]">Disease: {reviewInfo.disease}</p>
+              <p className="text-md mb-2 text-[#17324A]">
+                Name: {reviewInfo.name}
+              </p>
+              <p className="text-md mb-2 text-[#17324A]">
+                City: {reviewInfo.city}
+              </p>
+              <p className="text-md mb-2 text-[#17324A]">
+                Disease: {reviewInfo.disease}
+              </p>
             </div>
           </div>
 
@@ -163,7 +168,7 @@ const WriteReview = () => {
           </form>
         </div>
       </div>
-      <Toaster position="top-center"/>
+      <Toaster position="top-center" />
 
       <Getintouch></Getintouch>
       <Officeaddress></Officeaddress>

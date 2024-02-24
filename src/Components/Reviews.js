@@ -6,10 +6,14 @@ import revrec from "../Assests/revrec.png";
 
 const Reviews = () => {
   const cardsContainerRef = useRef(null);
+  const elementRef = useRef(null);
 
   const handleScroll = (direction) => {
-    const scrollAmount = 320;
+    const width = elementRef?.current.getBoundingClientRect().width + 25;
+
+    const scrollAmount = width || 500;
     const container = cardsContainerRef.current;
+    console.log(scrollAmount);
 
     if (container) {
       if (direction === "left") {
@@ -24,11 +28,11 @@ const Reviews = () => {
     <div className="rev-cont">
       <div className="hero-btm-head">our patient loves us</div>
       <div className="rev-car-cont">
-        <div className="arrow-div" onClick={() => handleScroll('left')}>
+        <div className="arrow-div" onClick={() => handleScroll("left")}>
           &lt;
         </div>
         <div ref={cardsContainerRef} className="rev-cards-cont">
-          <div className="rev-card">
+          <div className="rev-card" ref={elementRef}>
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -467,7 +471,7 @@ const Reviews = () => {
           </div>
         </div>
 
-        <div className="arrow-div" onClick={() => handleScroll('right')}>
+        <div className="arrow-div" onClick={() => handleScroll("right")}>
           &gt;
         </div>
       </div>

@@ -103,7 +103,7 @@ const Navbar = () => {
        </div>
         </div>
         
-        <div className="flex lg:hidden">
+        <div className="flex xl:hidden">
         <Sidebar></Sidebar>
         </div>
         </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
 
       
         
-      <div className="hidden xl:flex justify-between px-7">
+      <div className="hidden xl:flex justify-between px-10">
       {btmMenus.map((menu, ind) => (
           <DropdownMenu
             key={ind}

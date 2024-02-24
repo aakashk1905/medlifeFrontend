@@ -2,13 +2,16 @@ import React, { useEffect, useRef, useState } from "react";
 import "./styles/Doctor.css";
 import d1 from "../Assests/d1.png";
 import useAxiosBaseUrl from "../hooks/useBaseUrl";
-import Loader from './Loader/Loader';
+import Loader from "./Loader/Loader";
 const Doctors = () => {
   const cardsContainerRef = useRef(null);
   const [loading, setLoading] = useState(true);
+  const elementRef = useRef(null);
 
   const handleScroll = (direction) => {
-    const scrollAmount = 320;
+    const width = elementRef?.current.getBoundingClientRect().width + 25;
+
+    const scrollAmount = width || 320;
     const container = cardsContainerRef.current;
 
     if (container) {
@@ -20,24 +23,21 @@ const Doctors = () => {
     }
   };
 
-
   const axiosBaseUrl = useAxiosBaseUrl();
-
 
   // Data fetch from API
 
   const [allDoctors, setAllDoctors] = useState([]);
   useEffect(() => {
-    axiosBaseUrl.get("/api/v1/doctors")
-      .then(res => res.data)
-      .then(data => {
+    axiosBaseUrl
+      .get("/api/v1/doctors")
+      .then((res) => res.data)
+      .then((data) => {
         setAllDoctors(data.doctors);
-        setLoading(false)
+        setLoading(false);
       })
-      .catch(err => console.log(err.message))
+      .catch((err) => console.log(err.message));
   }, [axiosBaseUrl]);
-
-
 
   return (
     <div className="rev-cont">
@@ -53,28 +53,28 @@ const Doctors = () => {
           &lt;
         </div>
         <div ref={cardsContainerRef} className="rev-cards-cont">
-        {
-  loading ? (
-    <Loader></Loader>
-  ) : allDoctors.length > 0 ? (
-    allDoctors.map((doctor, id) => (
-      <div key={id} className="doc-card">
-        <img src={doctor.avatar.url} alt="Doctor" />
-        <div className="doc-det-cont">
-          <div className="doc-det">
-            <div className="doc-name">{doctor.doctorName}</div>
-            <div className="doc-exp">
-              {doctor.experience} |{" "}
-              <b style={{ color: "#C4C0FF" }}>{doctor.diseaseHandle}</b>
-            </div>
-          </div>
-        </div>
-      </div>
-    ))
-  ) : (
-    <p className="text-3xl font-semibold text-center">No doctor available</p>
-  )
-}
+          {loading ? (
+            <Loader></Loader>
+          ) : allDoctors.length > 0 ? (
+            allDoctors.map((doctor, id) => (
+              <div key={id} className="doc-card" ref={elementRef}>
+                <img src={doctor.avatar.url} alt="Doctor" />
+                <div className="doc-det-cont">
+                  <div className="doc-det">
+                    <div className="doc-name">{doctor.doctorName}</div>
+                    <div className="doc-exp">
+                      {doctor.experience} |{" "}
+                      <b style={{ color: "#C4C0FF" }}>{doctor.diseaseHandle}</b>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : (
+            <p className="text-3xl font-semibold text-center">
+              No doctor available
+            </p>
+          )}
         </div>
 
         <div className="arrow-div" onClick={() => handleScroll("right")}>
