@@ -12,7 +12,7 @@ const Patientslove = () => {
   const { scrollToTop } = useScrollToTop(pathname);
 
   const handleScroll = (direction) => {
-    const width = elementRef?.current.getBoundingClientRect().width + 25;
+    const width = elementRef?.current.getBoundingClientRect().width;
 
     const scrollAmount = width || 500;
     const container = cardsContainerRef.current;

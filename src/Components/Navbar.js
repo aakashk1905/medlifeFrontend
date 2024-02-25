@@ -75,7 +75,7 @@ const Navbar = () => {
 
   return (
     <div className="">
-      <div className="flex justify-between items-center bg-[#00a79d] px-5 py-2">
+      <div className="flex justify-between items-center bg-[#00a79d] px-11 py-2">
         <img src={logo} alt="logo" />
         <div className="flex items-center gap-5">
           <div className="hidden md:block relative">

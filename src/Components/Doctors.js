@@ -9,7 +9,7 @@ const Doctors = () => {
   const elementRef = useRef(null);
 
   const handleScroll = (direction) => {
-    const width = elementRef?.current.getBoundingClientRect().width + 25;
+    const width = elementRef?.current.getBoundingClientRect().width;
 
     const scrollAmount = width || 320;
     const container = cardsContainerRef.current;
