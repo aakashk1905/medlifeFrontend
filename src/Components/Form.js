@@ -10,17 +10,6 @@ const Form = () => {
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedDisease, setSelectedDisease] = useState("");
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   console.log(
-  //     "Submitted Details ",
-  //     patientName,
-  //     mobileNumber,
-  //     selectedCity,
-  //     selectedDisease
-  //   );
-  // };
-
   const cities = [
     "Select City",
     "Patna",
@@ -76,7 +65,7 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="hc-form-cont">
+    <form onSubmit={handleSubmit} className="hc-form-cont w-full">
       <input
         type="text"
         id="patientName"
@@ -106,7 +95,7 @@ const Form = () => {
             </option>
           ))}
         </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700 w-full">
           <IoIosArrowDown></IoIosArrowDown>
         </div>
       </div>

@@ -38,58 +38,62 @@ const OurDoctors = () => {
         {loading ? (
           <Loader></Loader>
         ) : (
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-9">
+          <div className="grid grid-cols-1 gap-14">
             {allDoctors.length > 0
               ? allDoctors.map((doctor) => (
                   <Link to={`/doctorsDetails/${doctor._id}`}>
                     <div
                       key={doctor._id}
-                      className="bg-white shadow-md p-2 rounded-md"
+                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 p-2 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center mb-10 w-full" 
                     >
-                      <div className="grid grid-cols-3 gap-0 md:gap-5 lg:gap-0 mb-4">
+                      <div className="grid grid-cols-3 mb-2 lg:mb-4">
+                        <div className="flex md:justify-start lg:justify-end mr-2 md:mr-0 lg:mr-4">
                         <img
-                          className="w-28 md:w-full lg:w-28 h-full rounded-lg border-teal-500"
+                          className="w-36 md:w-44 lg:w-32 md:h-[180px] h-full rounded-lg border-teal-500"
                           src={Rectangle}
                           alt=""
                         />
+                        </div>
 
-                        <div className="col-span-2">
-                          <div className="border-b border-gray-400 pb-2">
+                        <div className="col-span-2 -ml-0 md:-ml-10 lg:-ml-0">
+                          <div className="">
                             <h1 className="text-[#17324A] text-2xl font-semibold mb-1">
                               {doctor?.doctorName}
                             </h1>
-                            <p className="text-[#17324A]">
+                            <p className="text-[#17324A] mb-1">
                               {" "}
                               MBBS, MS-{" "}
                               <span className="text-teal-500">
                                 {doctor?.diseaseHandle}
                               </span>
                             </p>
+
+                            <div className="w-44 h-[1px] bg-gray-700"></div>
                           </div>
 
                           <h3 className="text-[#17324A] text-xl font-semibold mb-2">
                             Specialization
                           </h3>
 
-                          <div className="flex justify-between gap-3 items-center mb-3">
-                            <div className="bg-teal-100 border border-teal-500 p-1 rounded-md ">
+                          <div className="flex flex-wrap gap-5 items-center mb-3">
+                            <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
                               <p className="text-lg">
                                 {doctor?.specialization1}
                               </p>
                             </div>
-                            <div className="bg-teal-100 border border-teal-500 p-1 rounded-md ">
+                            <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
                               <p className="text-lg">
                                 {doctor?.specialization2}
                               </p>
                             </div>
-                            <div className="bg-teal-100 border border-teal-500 p-1 rounded-md ">
+                            <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
                               <p className="text-lg">
                                 {doctor?.specialization3}
                               </p>
                             </div>
                           </div>
 
-                          <div className="flex justify-between items-center">
+                          <div className="flex gap-3 md:gap-12 items-center">
                             <h2 className="text-lg font-bold text-gray-700 flex items-center gap-2">
                               {" "}
                               <IoBagAdd></IoBagAdd>
@@ -110,14 +114,16 @@ const OurDoctors = () => {
                         </div>
                       </div>
 
-                      <div className="flex flex-col md:flex-row items-center gap-2 w-full">
-                        <button className="w-full border border-[#00a0aa] px-4 py-2 rounded-lg text-[#00a0aa] text-sm">
+                     <div className="flex justify-start md:justify-end pr-0 lg:pr-16 w-full">
+                     <div className="grid grid-cols-2 lg:grid-cols-1 gap-5 w-full lg:w-80">
+                        <button className="w-full border border-[#00a0aa] px-4 py-3 rounded-lg text-[#00a0aa] text-xs md:text-sm">
                           Call now +98 765 432 10
                         </button>
-                        <button className="w-full bg-[#00a0aa] px-4 py-2 rounded-lg text-white border border-[#00a0aa] text-sm">
+                        <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa] text-xs md:text-sm">
                           Book Your Appoinment
                         </button>
                       </div>
+                     </div>
                     </div>
                   </Link>
                 ))

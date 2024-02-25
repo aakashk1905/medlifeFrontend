@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const DoctorsHeader = () => {
     return (
-        <div className='bg-[#fcf8ff] px-10 py-5'>
+        <div className='bg-[#fcf8ff] px-10 mt-2 mb-10'>
                       {/* Breadcumber menu */}
                       <div className="text-sm breadcrumbs ">
         <ul>
@@ -28,7 +28,10 @@ Call now +98 765 432 10
 </button>
                 </div>
 
-                <Form></Form>
+          <div className='bg-white p-5 rounded-3xl w-full'>
+          <div className="hc-head mb-5">Book Free Consultation</div>
+          <Form />
+          </div>
             </div>
         </div>
     );

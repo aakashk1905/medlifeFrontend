@@ -1,12 +1,14 @@
 import React from 'react';
-import ambulance from "../../../Assests/Ambulance-in-HYderabad 1.png"
+import ambulance from "../../../Assests/ambulance-1.png"
 
 const AmbulanceService = () => {
     return (
         <div className='mt-20'>
-            <div className='bg-[#FFF8F8] px-5 md:px-10 py-5'>
+            <div className='bg-[#FFF] px-5 md:px-10 py-5'>
                 <h1 className='text-2xl font-semibold text-[#17324A] mb-6 text-center'>Ambulance Services</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-12 items-center'>
+            <img className='' src={ambulance} alt="" />
+
             <div>
                 <p className='mb-3 text-[#17324A] text-lg'>Our fleet of ambulances is equipped with advanced life support to ensure comprehensive care during emergencies.</p>
 
@@ -23,8 +25,6 @@ const AmbulanceService = () => {
           </button>
         </div>
             </div>
-
-                <img className='' src={ambulance} alt="" />
         </div>
         </div>
         </div>
