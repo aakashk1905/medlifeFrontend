@@ -11,7 +11,7 @@ const OurBlogs = () => {
         </h1>
 
         {/* Blogs card */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
           <div className="shadow-lg rounded-lg">
             <img className="w-full mb-3 rounded-t-lg" src={kidney} alt="" />
             <div className="px-4 pb-4">

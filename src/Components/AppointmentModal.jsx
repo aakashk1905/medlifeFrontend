@@ -1,28 +1,35 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import phone from "../Assests/Modal images and icons/phone.png";
 import doctor from "../Assests/Modal images and icons/doctor.png";
 import customer from "../Assests/Modal images and icons/customer-care 1.png";
 import doctor1 from "../Assests/Modal images and icons/doctor 1.png";
 import Form from './Form';
 
-const Modal = () => {
-  useEffect(() => {
-    // Set a timeout for 5 seconds before opening the modal
-    const modalTimeout = setTimeout(() => {
-      document.getElementById('my_modal_3').showModal();
-    }, 5000);
+const AppointmentModal = (props) => {
+    const { fontWeight, fontSize, text, width, height, backgroundColor, color,borderRadius } = props;
 
-    // Clear the timeout if the component is unmounted
-    return () => clearTimeout(modalTimeout);
-  }, []); // Empty dependency array ensures that the effect runs only once on mount
+    const buttonStyles = {
+        backgroundColor: backgroundColor,
+        fontWeight: fontWeight,
+        fontSize: fontSize,
+        color: color,
+        borderRadius: borderRadius,
+        height: height,
+        width: width,
+      };
 
-  return (
-    <dialog id="my_modal_3" className="modal">
-      <div className="modal-box w-5/6 max-w-6xl p-0">
+
+    return (
+        <div>
+<button 
+style={buttonStyles}
+ onClick={()=>document.getElementById('my_modal_4').showModal()}>{text}</button>
+<dialog id="my_modal_4" className="modal">
+<div className="modal-box bg-white w-5/6 max-w-6xl p-0">
         <form method="dialog">
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-4 text-white">✕</button>
         </form>
-        <div className='bg-[#00a79d] p-3 mb-3'>
+        <div className='bg-[#00a79d] p-4 mb-3'>
           <h1 className='text-2xl font-semibold text-white text-center'>Book Your Complimentary Consultation Now</h1>
         </div>
 
@@ -42,7 +49,7 @@ const Modal = () => {
             </div>
             </div>
 {/* Bottom card */}
-<div className="w-full absolute bottom-36">
+<div className="w-full absolute bottom-44">
           <div className="bg-[#FCFCFF] shadow py-3 px-6 flex justify-between items-center">
             <div className="border-r-2 pr-12">
               <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">
@@ -90,22 +97,18 @@ const Modal = () => {
 
           </div>
 
-          <div className='flex justify-end border-dotted border-l-2 pl-6'>
+          <div className='flex justify-end border-dotted border-l-2 border-gray-600 pl-6 pb-6'>
           <div className='w-11/12'>
           <Form></Form>
           </div>
           </div>
 
           </div>
-
-
-
-
-
         </div>
       </div>
-    </dialog>
-  );
+</dialog>
+        </div>
+    );
 };
 
-export default Modal;
+export default AppointmentModal;

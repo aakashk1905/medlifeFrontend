@@ -38,19 +38,20 @@ const OurDoctors = () => {
         {loading ? (
           <Loader></Loader>
         ) : (
-          <div className="grid grid-cols-1 gap-14">
+          <div className="">
+            <div className="flex flex-col justify-center items-center gap-14">
             {allDoctors.length > 0
               ? allDoctors.map((doctor) => (
-                  <Link to={`/doctorsDetails/${doctor._id}`}>
+                  <Link className="w-full lg:w-5/6" to={`/doctorsDetails/${doctor._id}`}>
                     <div
                       key={doctor._id}
-                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 p-2 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center mb-10 w-full" 
+                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 p-2 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center" 
                     >
                       <div className="grid grid-cols-3 mb-2 lg:mb-4">
                         <div className="flex md:justify-start lg:justify-end mr-2 md:mr-0 lg:mr-4">
                         <img
-                          className="w-36 md:w-44 lg:w-32 md:h-[180px] h-full rounded-lg border-teal-500"
-                          src={Rectangle}
+                          className="w-36 md:w-40 lg:w-32 md:h-[180px] h-full rounded-lg border-teal-500"
+                          src={doctor.avatar.url}
                           alt=""
                         />
                         </div>
@@ -93,22 +94,17 @@ const OurDoctors = () => {
                             </div>
                           </div>
 
-                          <div className="flex gap-3 md:gap-12 items-center">
+                          <div className="flex gap-3 md:gap-6 items-center">
                             <h2 className="text-lg font-bold text-gray-700 flex items-center gap-2">
                               {" "}
                               <IoBagAdd></IoBagAdd>
-                              {doctor?.experience}
-                            </h2>
-
-                            <h2 className="text-lg font-bold text-gray-700 flex items-center gap-2">
-                              {" "}
-                              <BiSolidUserPin></BiSolidUserPin> 2K
+                              <p className="text-gray-600 capitalize">{doctor?.experience}</p>
                             </h2>
 
                             <h2 className="text-lg font-bold text-gray-700 flex items-center gap-2">
                               {" "}
                               <HiLocationMarker></HiLocationMarker>{" "}
-                              {doctor?.location}
+                              <p className="text-gray-600 capitalize">{doctor?.location}</p>
                             </h2>
                           </div>
                         </div>
@@ -128,6 +124,7 @@ const OurDoctors = () => {
                   </Link>
                 ))
               : "No content here"}
+          </div>
           </div>
         )}
       </div>

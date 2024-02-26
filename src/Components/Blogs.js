@@ -17,7 +17,7 @@ const Blogs = () => {
                 enhancing the well-being of the community. Amidst diverse
                 healthcare challenges, your commitment to...
               </div>
-              <div className="blog-card-cta">Contact Now</div>
+              <div className="blog-card-cta">Read More</div>
             </div>
           </div>
         ))}

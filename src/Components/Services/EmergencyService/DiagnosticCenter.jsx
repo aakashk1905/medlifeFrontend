@@ -1,6 +1,17 @@
 import diagnostic from "../../../Assests/diagnostic.png"
+import AppointmentModal from "../../AppointmentModal";
 
 const DiagnosticCenter = () => {
+  const appointmentModalProps = {
+    fontWeight: "normal",
+    fontSize: "base",
+    text: "Book Your Appointment",
+    width: "305px",
+    height: "64px",
+    backgroundColor: "#00a0aa",
+    color: "#fff",
+    borderRadius: "8px",
+  };
     return (
         <div className='mt-20'>
             <div className='bg-[#FFF] px-5 md:px-10 py-5'>
@@ -17,9 +28,7 @@ const DiagnosticCenter = () => {
           <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
-            Book Your Appoinment
-          </button>
+          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
         </div>
             </div>
 

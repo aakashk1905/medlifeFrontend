@@ -1,8 +1,9 @@
 import React from "react";
+import Form from "../../Form";
 
 const ExploreMedLife = ({content}) => {
   return (
-    <div className="bg-[#ecf7fc] px-5 md:px-10 py-10 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-0">
+    <div className="bg-[#ecf7fc] px-5 md:px-10 py-10 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-0 items-center">
       {/* Left side details */}
       <div className="col-span-2">
         <h1 className="text-2xl font-bold mb-8 text-gray-600">
@@ -29,7 +30,7 @@ const ExploreMedLife = ({content}) => {
       </div>
 
       {/* Right side form */}
-      <div className="bg-white p-3 rounded flex flex-col gap-3">
+      {/* <div className="bg-white p-3 rounded flex flex-col gap-3">
         <h1 className="text-xl mb-3 text-center font-semibold">
         {content?.SurgeryForm?.formTitle}
         </h1>
@@ -58,7 +59,11 @@ const ExploreMedLife = ({content}) => {
         <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa]">
           Get Cost Estimate
         </button>
-      </div>
+      </div> */}
+     <div className="bg-white p-7 rounded-3xl">
+          <div className="hc-head mb-5">Book Free Consultation</div>
+          <Form />
+        </div>
     </div>
   );
 };

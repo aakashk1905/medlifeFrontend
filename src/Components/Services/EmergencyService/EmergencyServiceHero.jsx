@@ -20,23 +20,22 @@ const EmergencyServiceHero = () => {
         <h1 className="text-5xl font-bold text-[#2CA9E1] mb-5">
           Welcome to Med Life Emergency Services
         </h1>
-        <p className="text-3xl font-semibold text-gray-500 mb-10">
+        <p className="text-3xl text-gray-500 mb-10">
           We are committed to providing prompt and quality care during medical
           emergencies.
         </p>
 
-        <p className="text-3xl font-semibold text-gray-500 mb-6">
+        <p className="text-3xl text-gray-500 mb-6">
           For immediate assistance, call our Emergency Helpline:
         </p>
         <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
           Call now +98 765 432 10
         </button>
       </div>
-
-      <div className="p-4 rounded-xl shadow-md bg-white w-full">
-        <div className="hc-head mb-5">Book Free Consultation</div>
-        <Form />
-      </div>
+      <div className="bg-white p-7 rounded-3xl">
+          <div className="hc-head mb-5">Book Free Consultation</div>
+          <Form />
+        </div>
     </div>
     </div>
   );

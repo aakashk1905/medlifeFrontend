@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../../Navbar";
 import { FaStar } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Getintouch from "../../Getintouch";
 import Officeaddress from "../../Officeaddress";
 import Footer from "../../Footer";
@@ -13,6 +13,7 @@ const WriteReview = () => {
   const [ratings, setRatings] = useState(0);
   const [reviewInfo, setReviewInfo] = useState({});
   const axiosBaseUrl = useAxiosBaseUrl();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedReviewInfo = localStorage.getItem("reviewInfo");
@@ -45,6 +46,7 @@ const WriteReview = () => {
           toast.promise(promise, {
             loading: "Writing Review...",
             success: () => {
+              navigate("/review")
               return "Thank you!! Your valuable feedback is added";
             },
             error: "Error",

@@ -26,7 +26,8 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    const patientName = e.target.patientName.value;
+    const mobileNumber = e.target.mobileNumber.value;
     if (
       !patientName ||
       !mobileNumber ||
@@ -35,7 +36,8 @@ const Form = () => {
       selectedCity === "Select City" ||
       selectedCity === "Select Disease"
     ) {
-      alert("Please Fill All Data");
+      toast.error("Please fill all the fields");
+      
       return;
     }
     axiosBaseUrl
@@ -53,7 +55,7 @@ const Form = () => {
           toast.promise(promise, {
             loading: "Loading...",
             success: () => {
-              return "Your consultation has been booked and we will get back to you soon";
+              return "Your consultation has been booked and we will get back to you soon.";
             },
             error: "Error",
           });
@@ -70,6 +72,7 @@ const Form = () => {
         type="text"
         id="patientName"
         value={patientName}
+        name="patientName"
         placeholder="Patient Name "
         className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-[78.446px] rounded-[13.074px]"
         onChange={(e) => setPatientName(e.target.value)}
@@ -78,6 +81,7 @@ const Form = () => {
         type="tel"
         id="mobileNumber"
         placeholder="Mobile Number"
+        name="mobileNumber"
         value={mobileNumber}
         className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-[78.446px] rounded-[13.074px]"
         onChange={(e) => setMobileNumber(e.target.value)}
@@ -95,7 +99,7 @@ const Form = () => {
             </option>
           ))}
         </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700 w-full">
+        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
           <IoIosArrowDown></IoIosArrowDown>
         </div>
       </div>
@@ -108,7 +112,7 @@ const Form = () => {
           onChange={(e) => {
             setSelectedDisease(e.target.value);
           }}
-          class="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-[78.446px] rounded-[13.074px]"
+          className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-[78.446px] rounded-[13.074px]"
         >
           {disease.map((disease) => (
             <option key={disease} value={disease}>

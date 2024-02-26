@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./styles/Getintouch.css";
 import { IoIosArrowDown } from "react-icons/io";
+import useAxiosBaseUrl from "../hooks/useBaseUrl";
+import { toast } from "sonner";
 
 const cities = [
   "Select City / शहर चुनें",
@@ -20,6 +22,8 @@ const disease = [
 ];
 
 const Getintouch = () => {
+  const [patientName, setPatientName] = useState("");
+  const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedDisease, setSelectedDisease] = useState("");
 
@@ -29,6 +33,52 @@ const Getintouch = () => {
   const handleChange1 = (e) => {
     setSelectedDisease(e.target.value);
   };
+
+  const axiosBaseUrl = useAxiosBaseUrl();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const patientName = e.target.patientName.value;
+    const mobileNumber = e.target.mobileNumber.value;
+    if (
+      !patientName ||
+      !mobileNumber ||
+      !selectedCity ||
+      !selectedDisease ||
+      selectedCity === "Select City" ||
+      selectedCity === "Select Disease"
+    ) {
+      toast.error("Please fill all the fields");
+      
+      return;
+    }
+    axiosBaseUrl
+      .post("/api/v1/createlead", {
+        name: patientName,
+        mobileNumber: mobileNumber,
+        city: selectedCity,
+        disease: selectedDisease,
+      })
+      .then((response) => {
+        if (response.data.message) {
+          const promise = new Promise((resolve) =>
+            setTimeout(() => resolve({  }), 3000)
+          );
+          toast.promise(promise, {
+            loading: "Loading...",
+            success: () => {
+              return "Your consultation has been booked and we will get back to you soon.";
+            },
+            error: "Error",
+          });
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
+
   return (
     <div className="git-cont">
       <div className="git-inner-cont">
@@ -37,15 +87,17 @@ const Getintouch = () => {
           चिकित्सा उपचार परामर्श के लिए, फॉर्म भरें
         </div>
 
-        <div className="w-full">
+        <form onSubmit={handleSubmit} className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <input
+            name="patientName"
               type="text"
               className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6"
               placeholder="Patient Name / रोगी का नाम"
             />
 
             <input
+            name="mobileNumber"
               type="number"
               className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6"
               placeholder="Mobile No. / मोबाइल नंबर"
@@ -90,16 +142,10 @@ const Getintouch = () => {
             </div>
           </div>
 
-          <input
-            type="text"
-            className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6"
-            placeholder="Type your Message here / यहाँ आपके संदेश लिखे"
-          />
-
           <div className="flex justify-center items-center">
-            <div className="git-cta">Book Free Appointment</div>
+            <button className="git-cta">Book Free Appointment</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );

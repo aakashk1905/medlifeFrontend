@@ -84,6 +84,11 @@ const Sidebar = () => {
         isSidebarOpen.checked = false;
       }
     };
+  
+    const handleLinkClick = () => {
+      closeDrawer();
+      setOpenDropdown(null);
+    };
 
 
     return (
@@ -126,10 +131,10 @@ const Sidebar = () => {
 
 
 <div className="flex justify-between items-center mt-3">
-            <Link to={"/doctors"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Doctors</Link>
-            <Link to={"/emergencyService"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Services</Link>
-            <Link to={"/hospitals"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Hospitals</Link>
-            <Link to={"/blogs"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Blogs</Link>
+            <Link onClick={handleLinkClick} to={"/doctors"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Doctors</Link>
+            <Link onClick={handleLinkClick} to={"/emergencyService"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Services</Link>
+            <Link onClick={handleLinkClick} to={"/hospitals"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Hospitals</Link>
+            <Link onClick={handleLinkClick} to={"/blogs"} className="text-white hover:text-teal-400 border rounded-md py-1 px-2 transition duration-300">Blogs</Link>
           </div>
 
             </div>
@@ -152,7 +157,7 @@ const Sidebar = () => {
                 </div>
 
                 {openDropdown === id && (
-                  <div className="origin-top-right absolute right-20 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+                  <div className="origin-top-right absolute right-20 w-56 -mt-3 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                     <div
                       className="flex flex-col gap-2 p-3"
                       role="menu"
@@ -162,6 +167,7 @@ const Sidebar = () => {
 {menu.list && menu.list.length > 0 ? (
           menu.list.map((listItem, index) => (
             <Link
+            onClick={handleLinkClick}
             className="hover:bg-gray-100 transition duration-300 p-2 rounded-md"
               to={`/treatment/${listItem.split(' ')[0].toLowerCase()}`}
               key={index}

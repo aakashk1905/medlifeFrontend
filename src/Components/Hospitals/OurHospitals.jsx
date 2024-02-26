@@ -29,7 +29,7 @@ const OurHospitals = () => {
             The Orchid Hospital is the first multi super specialty hospital in Patna, Bihar, India, which has taken an initiative to amalgamate and integrate the best in healthcare be it manpower or technology. this hospital has been set up with the vision of providing quality healthcare at affordable cost and within the reach of every individual. Equipped with 'futuristic technology' and truly 'brilliant and dedicated professionals' with the infrastructure, The Orchid Hospital team believes in working as a team and offers high quality, value and evidence based integrated healthcare...
             </p>
             <button className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800">
-              View Details
+              View Hospital
             </button>
             </div>
           </div>
@@ -50,7 +50,7 @@ const OurHospitals = () => {
             The Orchid Hospital is the first multi super specialty hospital in Patna, Bihar, India, which has taken an initiative to amalgamate and integrate the best in healthcare be it manpower or technology. this hospital has been set up with the vision of providing quality healthcare at affordable cost and within the reach of every individual. Equipped with 'futuristic technology' and truly 'brilliant and dedicated professionals' with the infrastructure, The Orchid Hospital team believes in working as a team and offers high quality, value and evidence based integrated healthcare...
             </p>
             <button className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800">
-              View Details
+              View Hospital
             </button>
             </div>
           </div>

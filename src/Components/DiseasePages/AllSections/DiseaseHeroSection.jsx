@@ -1,10 +1,25 @@
 import { MdOutlineDone } from "react-icons/md";
 import roundedShape from "../../../Assests/rounded-shape.png";
 import { Link } from "react-router-dom";
+import AppointmentModal from "../../AppointmentModal";
+import { Helmet } from "react-helmet-async";
 
 const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
+  const appointmentModalProps = {
+    fontWeight: "normal",
+    fontSize: "base",
+    text: "Book Your Appointment",
+    width: "310px",
+    height: "64px",
+    backgroundColor: "#00a0aa",
+    color: "#fff",
+    borderRadius: "8px",
+  };
   return (
-    <div className="bg-[#fcf8ff] px-5 md:px-10 ">
+    <div className="bg-[#fcf8ff] px-5 md:px-9">
+      <Helmet>
+        <title>{diseaseName} | {subDisease}</title>
+      </Helmet>
       {/* Breadcumber menu */}
       <div className="text-sm breadcrumbs mt-3">
         <ul>
@@ -58,9 +73,10 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
           <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa]  rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
+          {/* <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
             Book Your Appoinment
-          </button>
+          </button> */}
+          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
         </div>
       </div>
 

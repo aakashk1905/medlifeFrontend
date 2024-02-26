@@ -11,10 +11,14 @@ import drVivekKumer from "../../Assests/dr-vivek-kumar 1.png"
 import { MdOutlineDone } from "react-icons/md";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   return (
     <div>
+      <Helmet>
+        <title>Medlife Easy | About Us</title>
+      </Helmet>
       <Navbar></Navbar>
       {/* Breadcumber menu */}
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">

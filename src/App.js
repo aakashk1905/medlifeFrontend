@@ -23,10 +23,14 @@ import EmergencyService from "./Components/Services/EmergencyService/EmergencySe
 import DiseasePage from "./Pages/DiseasePage";
 import Landingpage from "./Pages/Landingpage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ErrorPage from "./Components/ErrorPage/ErrorPage";
+import ServiceUnavailable from "./Components/ServiceUnavailable/ServiceUnavailable";
+import { HelmetProvider } from "react-helmet-async";
 const queryClient = new QueryClient();
 function App() {
   return (
     <Router>
+      <HelmetProvider>
       <QueryClientProvider client={queryClient}>
       
       <Routes>
@@ -56,8 +60,12 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/partner" element={<Partner />} />
         <Route path="/payments" element={<Payments />} />
+        <Route path="/error" element={<ErrorPage />} />
+        <Route path="/serviceUnavailable" element={<ServiceUnavailable />} />
       </Routes>
       </QueryClientProvider>
+      </HelmetProvider>
+      
     </Router>
   );
 }

@@ -1,7 +1,18 @@
 import React from 'react';
 import emergencyProcedure from "../../../Assests/emergencyProcedure.png"
+import AppointmentModal from '../../AppointmentModal';
 
 const EmergencyProcedures = () => {
+    const appointmentModalProps = {
+        fontWeight: "normal",
+        fontSize: "base",
+        text: "Book Your Appointment",
+        width: "298px",
+        height: "64px",
+        backgroundColor: "#00a0aa",
+        color: "#fff",
+        borderRadius: "8px",
+      };
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[#FFF] px-5 md:px-10 py-5 border-b'>
             <div>
@@ -19,9 +30,7 @@ const EmergencyProcedures = () => {
           <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
-            Book Your Appoinment
-          </button>
+          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
         </div>
             </div>
 

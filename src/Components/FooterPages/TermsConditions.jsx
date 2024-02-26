@@ -2,10 +2,14 @@ import React from 'react';
 import Footer from '../Footer';
 import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 
 const TermsConditions = () => {
     return (
         <div>
+            <Helmet>
+        <title>Medlife Easy | Terms & Conditions</title>
+      </Helmet>
             <div>
             <div>
             <Navbar></Navbar>

@@ -1,17 +1,31 @@
 import React from 'react';
 import roundShape from '../../Assests/rounded-shape.png'
+import Form from '../Form';
+import { Link } from 'react-router-dom';
 
 const BlogsHero = () => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 bg-[#fcf8ff] px-5 md:px-10 relative">
-      <div className="pt-4 pb-10 z-10">
+        <div className='bg-[#fcf8ff] px-5 md:px-10 relative'>
+                      {/* Breadcumber menu */}
+      <div className="text-sm breadcrumbs mt-5">
+        <ul>
+          <li>
+          <Link to={"/"}>Home</Link>
+          </li>
+          <li>
+            Blogs
+          </li>
+        </ul>
+      </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 items-center gap-5 md:gap-10">
+      <div className="pt-4 pb-10 z-10 col-span-2">
         {/* Main heading */}
-        <h1 className="text-3xl md:text-5xl text-gray-600 font-semibold mb-5">
+        <h1 className="text-3xl md:text-6xl text-gray-600 font-semibold mb-5">
         Stay Informed with MedLifeEasy's Health Blog.
         </h1>
         {/* Description */}
-        <p className="text-gray-500 text-xl mb-5">
-        Your Source for Expert Insights, Latest Medical Discoveries, and Wellness Tips.
+        <p className="text-gray-500 text-[32px] mb-5">
+        Your Source for Expert Insights, Latest Medical <br /> Discoveries, and Wellness Tips.
         </p>
 
 
@@ -26,12 +40,12 @@ const BlogsHero = () => {
         alt=""
       />
 
-      {/* Right side image and bottom card */}
-      <div className="relative">
-        {/* hero image */}
-        
-      </div>
+<div className="bg-white p-7 rounded-3xl z-10">
+          <div className="hc-head mb-5">Book Free Consultation</div>
+          <Form />
+        </div>
     </div>
+        </div>
     );
 };
 

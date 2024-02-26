@@ -5,9 +5,13 @@ import dhc1 from "../../Assests/dhc1.png";
 import dhc2 from "../../Assests/dhc2.png";
 import dhc3 from "../../Assests/dhc3.png";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 const DiseaseHero = ({content, disease}) => {
   return (
     <div className="dh-cont">
+      <Helmet>
+        <title>Medlife Esay | {disease}</title>
+      </Helmet>
       <div className="dh-inner-cont">
         <div className="dh-left">
           <div className="dh-left-circle"></div>

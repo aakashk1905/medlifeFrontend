@@ -3,10 +3,14 @@ import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
 import bankLogo from "../../Assests/bankLogo.png"
 import Footer from '../Footer';
+import { Helmet } from 'react-helmet-async';
 
 const Payments = () => {
     return (
         <div>
+            <Helmet>
+        <title>Medlife Easy | Payment</title>
+      </Helmet>
             <Navbar></Navbar>
         {/* Breadcumber menu */}
         <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">

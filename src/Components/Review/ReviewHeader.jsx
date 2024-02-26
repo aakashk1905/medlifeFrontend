@@ -75,7 +75,7 @@ const ReviewHeader = () => {
 
   return (
     <div>
-      <div className="flex flex-col">
+      <div className="">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div className="col-span-2">
             {/* <Link to={"/writeReview"}>
@@ -326,8 +326,8 @@ const ReviewHeader = () => {
               </div>
             </div>
 
-            <div className="p-3 rounded-md shadow-md grid grid-cols-2 md:grid-cols-4 gap-3 items-center">
-              {/* Filter by city dropdown */}
+            {/* <div className="p-3 rounded-md shadow-md grid grid-cols-2 md:grid-cols-4 gap-3 items-center">
+              Filter by city dropdown
               <div class="relative inline-block text-left w-full">
                 <select class="block appearance-none bg-white border border-gray-300 px-4 py-2 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full rounded-md">
                   <option disabled selected>
@@ -343,7 +343,7 @@ const ReviewHeader = () => {
                 </div>
               </div>
 
-              {/* Filter by disease dropdown */}
+              Filter by disease dropdown
               <div class="relative inline-block text-left w-full">
                 <select class="block appearance-none bg-white border border-gray-300 px-4 py-2 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full rounded-md">
                   <option disabled selected>
@@ -359,7 +359,7 @@ const ReviewHeader = () => {
                 </div>
               </div>
 
-              {/* Filter by rating dropdown */}
+              Filter by rating dropdown
               <div class="relative inline-block text-left w-full">
                 <select class="block appearance-none bg-white border border-gray-300 px-4 py-2 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full rounded-md">
                   <option disabled selected>
@@ -379,13 +379,13 @@ const ReviewHeader = () => {
               <button className="w-full bg-[#00A0AA] px-4 py-2 rounded-md text-white">
                 Apply filter
               </button>
-            </div>
+            </div> */}
           </div>
 
           {/* Right side form */}
           <form
             onSubmit={handleSubmitDetails}
-            className="bg-white shadow-xl mb-7 md:mb-0 border p-3 rounded flex flex-col justify-center items-center gap-3"
+            className="bg-white shadow-xl mb-7 md:mb-0 border p-6 rounded-3xl flex flex-col items-center gap-3 "
           >
             <h1 className="text-3xl text-center font-semibold">
               Write A Review

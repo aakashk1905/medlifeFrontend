@@ -1,10 +1,21 @@
 import lab from "../../../Assests/lab.png"
+import AppointmentModal from "../../AppointmentModal";
 
 const LabTest = () => {
+  const appointmentModalProps = {
+    fontWeight: "normal",
+    fontSize: "base",
+    text: "Book Your Appointment",
+    width: "305px",
+    height: "64px",
+    backgroundColor: "#00a0aa",
+    color: "#fff",
+    borderRadius: "8px",
+  };
     return (
         <div className='py-20'>
             <div className='bg-[#FFF] px-5 md:px-10 py-5'>
-                <h1 className='text-2xl font-semibold text-[#17324A] mb-6 text-center'>Diagnostic Centers</h1>
+                <h1 className='text-2xl font-semibold text-[#17324A] mb-6 text-center'>Lab Test</h1>
                 <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 
 <div className="">
@@ -22,9 +33,7 @@ const LabTest = () => {
     <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
       Call now +98 765 432 10
     </button>
-    <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
-      Book Your Appointment
-    </button>
+    <AppointmentModal {...appointmentModalProps}></AppointmentModal>
   </div>
 </div>
 </div>

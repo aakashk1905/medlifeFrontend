@@ -354,7 +354,7 @@ const Patientslove = () => {
         <Link onClick={scrollToTop} to={"/review"} className="pl-va">
           View All Reviews
         </Link>
-        <Link onClick={scrollToTop} to={"/writeReview"} className="pl-wr">
+        <Link onClick={scrollToTop} to={"/review"} className="pl-wr">
           Write A Review
         </Link>
       </div>

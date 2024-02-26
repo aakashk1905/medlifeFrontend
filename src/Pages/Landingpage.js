@@ -14,9 +14,13 @@ import Getintouch from "../Components/Getintouch";
 import Officeaddress from "../Components/Officeaddress";
 import Footer from "../Components/Footer";
 import Modal from "../Components/Modal";
+import { Helmet } from "react-helmet-async";
 const Landingpage = () => {
   return (
     <div className="lp-cont">
+      <Helmet>
+        <title>Medlife Easy | Home</title>
+      </Helmet>
       <Modal></Modal>
       <Hero />
       <Specialities />

@@ -1,8 +1,13 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./styles/DiseaseDoc.css";
-import ddcard1 from "../../Assests/ddcard1.svg";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";
+import { IoBagAdd } from "react-icons/io5";
+import { BiSolidUserPin } from "react-icons/bi";
+import { HiLocationMarker } from "react-icons/hi";
+
+
+
 const DiseaseDoc = ({ docHeading, diseaseName }) => {
   const cardsContainerRef = useRef(null);
   const [loading, setLoading] = useState(true);
@@ -25,7 +30,6 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
   // Data fetch from API
 
   const [allDoctors, setAllDoctors] = useState([]);
-  console.log(allDoctors);
   useEffect(() => {
     axiosBaseUrl
       .get(`/api/v1/doctors?diseaseHandle=${diseaseName}`)
@@ -52,8 +56,8 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
             allDoctors.map((doctor) => (
               <div key={doctor._id} className="dd-card">
                 <div className="dd-top">
-                  <div className="dd-top-left">
-                    <img src={ddcard1} alt="ddrc" />
+                  <div className="dd-top-left mr-2">
+                    <img src={doctor.avatar.url} alt="ddrc" />
                   </div>
                   <div className="dd-top-right">
                     <div className="dd-top-head">{doctor.doctorName}</div>
@@ -74,40 +78,15 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                     </div>
                     <div className="dd-top-stats-cont">
                       <div className="dd-top-stats">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          {/* ... SVG path for experience ... */}
-                        </svg>
+                      <IoBagAdd></IoBagAdd>
                         {doctor.experience}
                       </div>
                       <div className="dd-top-stats">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          {/* ... SVG path for 2k ... */}
-                        </svg>
+                      <BiSolidUserPin></BiSolidUserPin>
                         2k
                       </div>
                       <div className="dd-top-stats">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="24"
-                          height="24"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                        >
-                          {/* ... SVG path for location ... */}
-                        </svg>
-                        {doctor.location}
+                      <HiLocationMarker></HiLocationMarker>         {doctor.location}
                       </div>
                     </div>
                   </div>

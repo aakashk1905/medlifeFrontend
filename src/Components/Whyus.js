@@ -1,6 +1,7 @@
 import React from "react";
 import "./styles/Whyus.css";
 import whyusdoc from "../Assests/whyusdoc.png";
+import AppointmentModal from "./AppointmentModal";
 const Whyus = ({content}) => {
   const lists = [
     "Excellence in Healthcare",
@@ -10,6 +11,18 @@ const Whyus = ({content}) => {
     "Transparent Pricing",
     "Coordinated Care"
 ]
+const appointmentModalProps = {
+  fontWeight: "normal",
+  fontSize: "base",
+  text: "Book Your Appointment",
+  width: "310px",
+  height: "64px",
+  backgroundColor: "#00a0aa",
+  color: "#fff",
+  borderRadius: "8px",
+};
+
+
   return (
     <div className="wu-cont">
       <div className="wu-inner-cont">
@@ -48,7 +61,7 @@ const Whyus = ({content}) => {
               )
           }
           </div>
-          <div className="wu-right-cta">Book Now</div>
+          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
         </div>
       </div>
     </div>

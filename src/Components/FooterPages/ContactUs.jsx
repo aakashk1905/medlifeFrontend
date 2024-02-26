@@ -7,11 +7,16 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import "../styles/Officeaddress.css";
 import Footer from "../Footer";
+import Form from "../Form";
+import { Helmet } from "react-helmet-async";
 
 
 const ContactUs = () => {
   return (
     <div>
+      <Helmet>
+        <title>Medlife Easy | Contact</title>
+      </Helmet>
       <div>
         <Navbar></Navbar>
         {/* Breadcumber menu */}
@@ -68,11 +73,10 @@ const ContactUs = () => {
             </div>
 
             {/* Form */}
-            <div className="bg-[#00A79D] px-5 md:px-16 py-5 rounded-b-lg lg:rounded-b-none lg:rounded-r-lg flex justify-center items-center">
+            {/* <div className="bg-[#00A79D] px-5 md:px-16 py-5 rounded-b-lg lg:rounded-b-none lg:rounded-r-lg flex justify-center items-center">
                 <div className="w-full">
                 <h2 className="text-2xl font-bold mb-4 text-white">Write to us</h2>
 
-{/* Name input field */}
     <div className="mb-3">
         <p className="text-white font-semibold mb-2">Name</p>
         <input
@@ -82,7 +86,6 @@ const ContactUs = () => {
 />
     </div>
 
-{/* Email input field */}
     <div className="mb-3">
         <p className="text-white font-semibold mb-2">Email</p>
         <input
@@ -92,7 +95,6 @@ const ContactUs = () => {
 />
     </div>
 
-{/* Phone input field */}
     <div className="mb-3">
         <p className="text-white font-semibold mb-2">Phone</p>
         <input
@@ -102,7 +104,6 @@ const ContactUs = () => {
 />
     </div>
 
-{/* Message input field */}
     <div className="mb-3">
         <p className="text-white font-semibold mb-2">Message</p>
         <textarea
@@ -111,13 +112,16 @@ const ContactUs = () => {
          name="" id="" cols="30" rows="10"></textarea>
     </div>
 
-            {/* Submit button */}
             <div className='flex justify-center'>
     <button className="bg-gray-800 text-white p-3 rounded-3xl w-80">Submit</button>
     </div>
                 </div>
             
-            </div>
+            </div> */}
+            <div className='bg-white shadow-lg p-5 rounded-b-lg lg:rounded-r-lg lg:rounded-b-none w-full'>
+          <div className="hc-head mb-5">Book Free Consultation</div>
+          <Form />
+          </div>
         </div>
         </div>
       </div>

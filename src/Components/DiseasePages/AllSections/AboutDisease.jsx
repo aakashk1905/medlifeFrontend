@@ -1,7 +1,18 @@
 import React from "react";
 import herniasurgery from "../../../Assests/herniasurgery.png";
+import AppointmentModal from "../../AppointmentModal";
 
 const AboutDisease = ({content}) => {
+  const appointmentModalProps = {
+    fontWeight: "normal",
+    fontSize: "base",
+    text: "Book Your Appointment",
+    width: "285px",
+    height: "64px",
+    backgroundColor: "#00a0aa",
+    color: "#fff",
+    borderRadius: "8px",
+  };
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-0 bg-[#ecf7fc]">
         {/* Left side details */}
@@ -28,9 +39,7 @@ const AboutDisease = ({content}) => {
           <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-md text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-md text-white border border-[#00a0aa]">
-            Book Your Appoinment
-          </button>
+          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
         </div>
       </div>
 
