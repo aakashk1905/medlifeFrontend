@@ -45,7 +45,7 @@ const OurDoctors = () => {
                   <Link className="w-full lg:w-5/6" to={`/doctorsDetails/${doctor._id}`}>
                     <div
                       key={doctor._id}
-                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 p-2 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center" 
+                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 px-2 py-5 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center" 
                     >
                       <div className="grid grid-cols-3 mb-2 lg:mb-4">
                         <div className="flex md:justify-start lg:justify-end mr-2 md:mr-0 lg:mr-4">

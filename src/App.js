@@ -1,7 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import BlogsDetails from "./Components/Blogs/BlogsDetails";
 import BlogsPage from "./Components/Blogs/BlogsPage";
-import Caorosel from "./Components/Caorosel";
 import HerniaPage from "./Components/DiseasePages/AllDiseasePages/HerniaPage";
 import DoctorsDetails from "./Components/DoctorsPage/DoctorsDetails/DoctorsDetails";
 import DoctorsPage from "./Components/DoctorsPage/DoctorsPage";
@@ -26,6 +25,9 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import ServiceUnavailable from "./Components/ServiceUnavailable/ServiceUnavailable";
 import { HelmetProvider } from "react-helmet-async";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Caurosel from "./Components/Caurosel";
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -40,7 +42,6 @@ function App() {
         </Route>
         <Route path="/treatment/:subDisease" element={<HerniaPage />} />
         <Route path="/modal" element={<Modal />} />
-        <Route path="/caorosel" element={<Caorosel />} />
         <Route path="/review" element={<ReviewPage />} />
         <Route path="/writeReview" element={<WriteReview />} />
         <Route path="/bookAmbulance" element={<BookAmbulance />} />
@@ -60,8 +61,14 @@ function App() {
         <Route path="/contactUs" element={<ContactUs />} />
         <Route path="/partner" element={<Partner />} />
         <Route path="/payments" element={<Payments />} />
+
+        {/* Error page */}
         <Route path="/error" element={<ErrorPage />} />
+
+        {/* Service unavailable page */}
         <Route path="/serviceUnavailable" element={<ServiceUnavailable />} />
+        <Route path="/caurosel" element={<Caurosel />} />
+
       </Routes>
       </QueryClientProvider>
       </HelmetProvider>

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const EmergencyServiceHero = () => {
   return (
-    <div className="bg-[#FCF8FF] px-10 py-5">
+    <div className="bg-[#FCF8FF] px-5 lg:px-10 py-2">
              {/* Breadcumber menu */}
              <div className="text-sm breadcrumbs mb-2">
         <ul>
@@ -15,7 +15,7 @@ const EmergencyServiceHero = () => {
           <li>Emergency services</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10">
       <div className="col-span-2">
         <h1 className="text-5xl font-bold text-[#2CA9E1] mb-5">
           Welcome to Med Life Emergency Services
@@ -32,10 +32,9 @@ const EmergencyServiceHero = () => {
           Call now +98 765 432 10
         </button>
       </div>
-      <div className="bg-white p-7 rounded-3xl">
-          <div className="hc-head mb-5">Book Free Consultation</div>
-          <Form />
-        </div>
+      <div className="mt-7 lg:-mt-7">
+          <Form header={"Book Free Consultation"} />
+          </div>
     </div>
     </div>
   );

@@ -122,13 +122,6 @@
   font-weight: 700;
   line-height: 36.608px; /* 116.667% */
 }
-.hc-form-cont {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  width: 100%;
-}
 
 .hero-btm-cont {
   width: 83%;

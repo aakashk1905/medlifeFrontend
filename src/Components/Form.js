@@ -4,7 +4,7 @@ import "./styles/Form.css";
 import { IoIosArrowDown } from "react-icons/io";
 import useAxiosBaseUrl from "../hooks/useBaseUrl.jsx";
 import { Toaster, toast } from "sonner";
-const Form = () => {
+const Form = ({header}) => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
@@ -67,14 +67,16 @@ const Form = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="hc-form-cont w-full">
+   <div className="w-full shadow-lg rounded-3xl mb-3">
+     <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full">
+     <div className="hc-head mb-1">{header}</div>
       <input
         type="text"
         id="patientName"
         value={patientName}
         name="patientName"
         placeholder="Patient Name "
-        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-[78.446px] rounded-[13.074px]"
+        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
         onChange={(e) => setPatientName(e.target.value)}
       />
       <input
@@ -83,7 +85,7 @@ const Form = () => {
         placeholder="Mobile Number"
         name="mobileNumber"
         value={mobileNumber}
-        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-[78.446px] rounded-[13.074px]"
+        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
         onChange={(e) => setMobileNumber(e.target.value)}
       />
 
@@ -91,7 +93,7 @@ const Form = () => {
         <select
           value={selectedCity}
           onChange={(e) => setSelectedCity(e.target.value)}
-          class="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-[78.446px] rounded-[13.074px]"
+          className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
         >
           {cities.map((city) => (
             <option key={city} value={city}>
@@ -112,7 +114,7 @@ const Form = () => {
           onChange={(e) => {
             setSelectedDisease(e.target.value);
           }}
-          className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-[78.446px] rounded-[13.074px]"
+          className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
         >
           {disease.map((disease) => (
             <option key={disease} value={disease}>
@@ -125,9 +127,10 @@ const Form = () => {
         </div>
       </div>
 
-      <button type="submit">Book Now</button>
+      <button className="bg-[#00a79d] px-4 w-full h-12 rounded-lg text-white" type="submit">Book Now</button>
       <Toaster position="top-center" />
     </form>
+   </div>
   );
 };
 

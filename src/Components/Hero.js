@@ -40,9 +40,8 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-contact-cont">
-          <div className="hc-head">Book Free Consultation</div>
-          <Form />
+        <div className="z-10 mt-7 lg:-mt-48 w-full lg:w-1/3">
+          <Form header={"Book Free Consultation"} />
         </div>
       </div>
       <div className="hero-btm-cont">

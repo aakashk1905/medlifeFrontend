@@ -17,12 +17,12 @@ const CityDropdown = ({ onCityChange, type }) => {
   return (
     <>
       {type === "city" && (
-        <div className="cities-scroll">
+        <div className="cities-scroll w-full">
           {cities.map(
             (city, ind) =>
               ind !== 0 && (
                 <div
-                  className="city-chip cursor-pointer"
+                  className="border rounded-md flex justify-center items-center h-10 px-2 cursor-pointer"
                   key={city}
                   onClick={() => {
                     setSelectedCity(city);

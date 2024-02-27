@@ -44,9 +44,9 @@ const Partner = () => {
         </div>
 
         <div className="px-10 py-10">
-          <div className="shadow-lg rounded-l-none md:rounded-l-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3">
+          <div className="shadow-lg rounded-l-none md:rounded-l-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
             <img
-              className="h-full rounded-tr-lg lg:rounded-tr-none col-span-2"
+              className="h-full rounded-tr-lg lg:rounded-tr-none"
               src={handshake}
               alt=""
             />
@@ -134,9 +134,11 @@ const Partner = () => {
                 </div>
             
             </div> */}
-            <div className="bg-white shadow-lg p-5 rounded-b-lg lg:rounded-r-lg lg:rounded-b-none w-full">
+            <div className="flex justify-end">
+            <div className="bg-white shadow-lg p-5 rounded-b-lg lg:rounded-r-lg lg:rounded-b-none w-11/12">
               <div className="hc-head mb-5">Book Free Consultation</div>
               <Form />
+            </div>
             </div>
           </div>
         </div>
