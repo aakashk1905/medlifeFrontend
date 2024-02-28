@@ -54,7 +54,9 @@ const Caurosel = () => {
         };
     }, [currentSlider]);
 
-    const isSmallScreen = window.innerWidth <= 768;
+const isSmallScreen = window.innerWidth <= 768;
+    const cardWidth = isSmallScreen ? "100%" : "calc(50% - 20px)";
+    const cardsPerSlide = isSmallScreen ? 1 : 2;
     return (
         <div >
             <div className="flex justify-between items-center mb-10">
@@ -84,7 +86,7 @@ const Caurosel = () => {
                     {
                 array.map((i,idx) => 
                     <div key={idx} className="dd-card">
-                <div className="dd-top">
+                <div style={{ width: cardWidth, marginRight: '20px' }} className="dd-top">
                   <div className="dd-top-left mr-2">
                     <img src="../Assests/404.png" alt="ddrc" />
                   </div>

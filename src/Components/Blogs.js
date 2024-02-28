@@ -2,6 +2,7 @@ import React from "react";
 import "./styles/Blogs.css";
 import kidney from "../Assests/kidney.png";
 const Blogs = () => {
+  
   return (
     <div className="blogs-cont">
       <div className="hero-btm-head">Check out the Blog Section</div>

@@ -51,21 +51,26 @@ Users will not be entitled for any refunds in cases where, the Practitioner is u
               License Disclaimer
               </h2>
               <p className="text-gray-600 text-justify">
-              In the event that, the Practitioner with whom User has booked a paid appointment via the Website, has not been able to meet the User, User will need to write to us at info@medlifeeasy.com within 5 days from the occurrence of such event; in which case, the entire consultation amount will be refunded to the User within the next 7 business days in the original mode of payment done by the User while booking. In case where the User, does not show up for the appointment booked with a Practitioner, without cancelling the appointment beforehand, the amount will not be refunded. However, where cancellation charges have been levied (as charged by the Practitioner/Practice), you would not be entitled to complete refund even if you have cancelled beforehand. <br />
-Users will not be entitled for any refunds in cases where, the Practitioner is unable to meet the User at the exact time of the scheduled appointment time and the User is required to wait, irrespective of the fact whether the User is required to wait or choose to not obtain the medical services from the said Practitioner.
+              All information on www.medlifeeasy.com has been compiled from the respective websites available in the public domain. While every possible care has been taken while creating and compiling the contents and materials, MEDLIFEEASY does not take any responsibility for the genuineness and authenticity of the contents and materials that provided. Users are advised to check the original (source) websites in case of any doubts. We (MEDLIFEEASY) keep updating the contents/material on its website on regular intervals to ensure high quality. <br />
+
+Nothing on any MEDLIFEEASY's website shall be construed as conferring any license under any of MEDLIFEEASY's or any third party's intellectual property rights, whether by estoppels, implication, or otherwise. <br />
+
+Content/Materials and Liability MEDLIFEEASY shall not be responsible for any errors or an omission contained on MEDLIFEEASY's website and reserves the right to make changes anytime without notice. Mention of MEDLIFEEASY products or services is provided for informational purposes only and constitutes neither an endorsement nor a recommendation by us. All our and third-party information is available on TCG's is provided on an “as is” basis. Views expressed by the Users are made of their free volition; We do not endorse the same. No claim as to the accuracy and correctness of the information on the site is made although every attempt is made to ensure that the content is not misleading. In case any inaccuracy is, or otherwise improper content is sighted on the website, please report it to report abuse or write us to info@medlifeeasy.com.
               </p>
           </div>
 
 
-         {/* License Disclaimer */}
+         {/* Disclaimer of warranty */}
          <div className="">
               <h2 className="text-2xl font-medium text-gray-700 mb-2">
-              License Disclaimer
+              Disclaimer of warranty
               </h2>
               <p className="text-gray-600 text-justify mb-2">
               MEDLIFEEASY expressly disclaims warranties of any kind for any use of or any access to www.medlifeeasy.com, to any material, information, links, or content presented on the website www.medlifeeasy.com to any external website linked thereto, and to any external material, information, links, or content linked thereto including but not limited to opinion, expert opinions placed by any users/guests that does not reflect MEDLIFEEASY point of view. Neither MEDLIFEEASY or its affiliates, nor any third-party content providers or licensors make any warranty whatsoever, including without limitation, that the operation of the website will be uninterrupted or error-free; including the server that makes it available, is free from viruses or other harmful components; as to the results that may be obtained from the use of the content or other materials on the website; or as to the accuracy, completeness, reliability, availability, suitability, quality, non-infringement or operation of any content, product or service provided on or accessible from the site. <br />
+
 Content/Materials and Liability MEDLIFEEASY shall not be responsible for any errors or an omission contained on MEDLIFEEASY's website and reserves the right to make changes anytime without notice. Mention of MEDLIFEEASY products or services is provided for informational purposes only and constitutes neither an endorsement nor a recommendation by us. All our and third-party information is available on MEDLIFEEASY's is provided on an “as is” basis. Views expressed by the Users are made of their free volition; We do not endorse the same. No claim as to the accuracy and correctness of the information on the site is made although every attempt is made to ensure that the content is not misleading. In case any inaccuracy is, or otherwise improper content is sighted on the website, please report it to report abuse or write us to info@medlifeeasy.com. <br />
-MEDLIFEEASY reserves the right without prior notice to access, read preserve and/or disclose the personal information of the User including the contents, materials if the same is required: 
+
+MEDLIFEEASY reserves the right without prior notice to access, read preserve and/or disclose the personal information of the User including the contents, materials if the same is required:
               </p>
               <li className="text-gray-600 text-justify list-disc">In order to comply with any court judgment/decree/order/directive</li>
 <li className="text-gray-600 text-justify list-disc">By any legal/government authority</li>
@@ -88,7 +93,11 @@ MEDLIFEEASY reserves the right without prior notice to access, read preserve and
 <li className="text-gray-600 text-justify list-disc">Upload, post, transmit, publish, or distribute any material or information that is unlawful, or which may potentially be perceived as being harmful, threatening, abusive, harassing, defamatory, libelous, vulgar, obscene, or racially, ethnically, or otherwise objectionable.</li>
 <li className="text-gray-600 text-justify list-disc">Reproduce, copy, modify, sell, store, distribute or otherwise exploit for any commercial purposes the website, or any component thereof (including, but not limited to any materials or information accessible through the website)</li>
 <li className="text-gray-600 text-justify list-disc">Use any device, software, or routine to interfere or attempt to interfere with the proper working of the website; or</li>
-<li className="text-gray-600 text-justify list-disc">Take any action that imposes an unreasonable or disproportionately large load on the website infrastructure</li>
+<li className="text-gray-600 text-justify list-disc mb-2">Take any action that imposes an unreasonable or disproportionately large load on the website infrastructure</li>
+
+<p className="text-gray-600 text-justify mb-2">
+THIS WEBSITE AND ALL CONTENT, PRODUCTS AND SERVICES INCLUDED IN OR ACCESSIBLE FROM THIS WEBSITE ARE PROVIDED “AS IS” AND WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND (EXPRESS, IMPLIED AND STATUTORY, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF TITLE AND NON-INFRINGEMENT AND THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE), ALL OF WHICH FEVL DISCLAIMS TO THE FULLEST EXTENT PERMITTED BY LAW. YOUR USE OF THE SITE IS AT YOUR OWN RISK.
+              </p>
 
           </div>
             </div>

@@ -5,7 +5,7 @@ import { BiMessageDetail } from "react-icons/bi";
 import { MdOutlineDone } from "react-icons/md";
 import PatientReview from "./PatientReview";
 import Footer from "../../Footer";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Rectangle from "../.././../Assests/Rectangle 19194.png";
 import useAxiosBaseUrl from "../../../hooks/useBaseUrl";
 import Loader from "../../Loader/Loader";

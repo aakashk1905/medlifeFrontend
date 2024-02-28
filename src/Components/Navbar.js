@@ -4,6 +4,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import { Link, Outlet } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoSearchOutline } from "react-icons/io5";
+import SelectCitySidebar from "./Sidebar/SelectCitySidebar";
 
 const Navbar = () => {
   // Have to fix the hover content. The menu is not dissapering after clicking any list
@@ -178,8 +179,8 @@ const Navbar = () => {
             fill="#EBFFFE"
           />
         </svg> */}
-        <img src={logo} alt="logo"/>
-        <div className="flex items-center gap-5">
+        <img className="" src={logo} alt="logo"/>
+        <div  className="flex items-center gap-5">
           <div className="hidden md:block relative">
             <input
               type="text"
@@ -217,13 +218,8 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <div className="flex items-center gap-2">
-            <div className="flex items-center gap-2">
-              <FaLocationDot className="text-white"></FaLocationDot>
-              <p className="text-white">Select</p>
-              <p className="text-white">City</p>
-            </div>
-          </div>
+          
+          <SelectCitySidebar></SelectCitySidebar>
 
           <div className="flex xl:hidden">
             <Sidebar></Sidebar>
@@ -242,7 +238,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="hidden xl:flex justify-between px-8">
+      <div className="hidden xl:flex justify-between px-8 -ml-1">
         {btmMenus.map((menu, ind) => (
           <DropdownMenu
             key={ind}

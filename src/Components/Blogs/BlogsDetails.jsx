@@ -1,12 +1,39 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Form from '../Form';
 import Footer from '../Footer';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import Navbar from '../Navbar';
-import kidney from "../../Assests/kidney.png";
 import { MdOutlineDone } from 'react-icons/md';
+import useAxiosBaseUrl from '../../hooks/useBaseUrl';
+import Loader from '../Loader/Loader';
 
 const BlogsDetails = () => {
+  const { id } = useParams();
+  const axiosBaseUrl = useAxiosBaseUrl();
+  const [loading, setLoading] = useState(true);
+
+  // Data fetch from API
+
+  const [blogDetails, setBlogDetails] = useState([]);
+  useEffect(() => {
+    axiosBaseUrl
+      .get(`/api/v1/blog/${id}`)
+      .then((res) => res.data)
+      .then((data) => {
+        console.log(data);
+        if (data.success) {
+          setBlogDetails(data.blog);
+          setLoading(false);
+        } else {
+          window.location.href = `https://${window.location.hostname}/blog`;
+        }
+      })
+      .catch(
+        (err) =>
+          (window.location.href = `https://${window.location.hostname}/blog`)
+      );
+  }, [id,axiosBaseUrl]);
+  if (loading) return <Loader />;
     return (
         <div>
             <Navbar></Navbar>
@@ -18,26 +45,21 @@ const BlogsDetails = () => {
           <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <Link>Laparoscopy</Link>
+            <Link>Blogs</Link>
           </li>
-          <li className="capitalize">Dr.Sahajana Prasad</li>
+          <li className="capitalize">{blogDetails.title.slice(0,30 )} ... ...</li>
         </ul>
       </div>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-5 px-5 md:px-10 py-5'>
-                <div className='col-span-2 p-5 rounded-lg shadow-lg'>
+            <div className='grid grid-cols-1 lg:grid-cols-5 px-5 md:px-10 '>
+                <div className='col-span-3 p-5 rounded-lg shadow-lg'>
                 <div className="">
-            <img className="w-full mb-3" src={kidney} alt="" />
+            <img className="w-full lg:w-1/2 mb-3" src={blogDetails?.avatar?.url} alt="" />
             <div className="px-4 pb-4">
-            <h1 className="text-[#17324A] text-2xl font-semibold mb-1">
-              Understanding Hernia and Finding Top Doctors in Bihar for
-              Effective Treatment
+            <h1 className="text-[#17324A] text-2xl font-semibold mb-2">
+              {blogDetails.title}
             </h1>
             <p className="text-gray-500 mb-4">
-              Your dedication to providing healthcare services in Bihar is
-              commendable. Your tireless efforts play a crucial role in
-              enhancing the well-being of the community. Amidst diverse
-              healthcare challenges, your commitment to delivering quality
-              medical care is{" "}
+              {blogDetails.about}
             </p>
 
             <h2 className='text-[#17324A] text-xl font-semibold mb-1'>What is a Hernia?</h2>
@@ -126,7 +148,11 @@ const BlogsDetails = () => {
                 
                 </div>
 
-                <Form></Form>
+               <div className='col-span-2 flex justify-end'>
+               <div className=' w-11/12'>
+               <Form></Form>
+               </div>
+               </div>
             </div>
             <Footer></Footer>
         </div>

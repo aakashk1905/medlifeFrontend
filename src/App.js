@@ -28,6 +28,7 @@ import { HelmetProvider } from "react-helmet-async";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Caurosel from "./Components/Caurosel";
+import Caurosel2 from "./Components/Caurosel2";
 const queryClient = new QueryClient();
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
         <Route path="/doctors" element={<DoctorsPage />} />
         <Route path="/doctorsDetails/:id" element={<DoctorsDetails />} />
         <Route path="/blogs" element={<BlogsPage />} />
-        <Route path="/blogsDetails" element={<BlogsDetails />} />
+        <Route path="/blogsDetails/:id" element={<BlogsDetails />} />
         <Route path="/hospitals" element={<HospitalsPage />} />
         <Route path="/hospitalDetails" element={<HospitalDetails />} />
 
@@ -68,6 +69,7 @@ function App() {
         {/* Service unavailable page */}
         <Route path="/serviceUnavailable" element={<ServiceUnavailable />} />
         <Route path="/caurosel" element={<Caurosel />} />
+        <Route path="/caurosel2" element={<Caurosel2 />} />
 
       </Routes>
       </QueryClientProvider>

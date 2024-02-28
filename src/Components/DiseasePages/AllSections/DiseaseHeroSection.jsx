@@ -3,13 +3,15 @@ import roundedShape from "../../../Assests/rounded-shape.png";
 import { Link } from "react-router-dom";
 import AppointmentModal from "../../AppointmentModal";
 import { Helmet } from "react-helmet-async";
+import Form from "../../Form";
 
 const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
   const appointmentModalProps = {
     fontWeight: "normal",
     fontSize: "base",
     text: "Book Your Appointment",
-    width: "310px",
+    minWidth: "310px",
+    width: "100%",
     height: "64px",
     backgroundColor: "#00a0aa",
     color: "#fff",
@@ -32,8 +34,8 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
           <li className="capitalize">{subDisease}</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 relative">
-      <div className="pt-4 pb-10 z-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10 relative">
+      <div className="pt-4 pb-10 z-10 col-span-2">
         {/* Main heading */}
         <h1 className="text-5xl text-gray-600 font-semibold mb-5">
           {content ? content.heroHeader : ""}
@@ -89,10 +91,14 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
       {/* Right side image and bottom card */}
       <div className="relative">
         {/* hero image */}
-        <img className="w-full h-full" src="https://65d5d8fb8875068c49d425be--genuine-kulfi-2c5ab7.netlify.app/static/media/stomach-pain.dc3c833198638390b31f.png" alt="diseasePicture" />
+        {/* <img className="w-full h-full" src="https://65d5d8fb8875068c49d425be--genuine-kulfi-2c5ab7.netlify.app/static/media/stomach-pain.dc3c833198638390b31f.png" alt="diseasePicture" /> */}
+
+        <div className="mt-1 lg:-mt-6">
+          <Form header={"Book Free Consultation"} />
+        </div>
 
         {/* Bottom card */}
-        <div className="absolute bottom-0 w-full">
+        {/* <div className="absolute bottom-0 w-full">
           <div className="bg-white py-3 px-6 flex gap-0 lg:gap-20 2xl:gap-40 items-center rounded-2xl">
             <div className="border-r-2 pr-12">
               <h1 className="text-2xl md:text-3xl font-bold text-[#5854a8]">
@@ -113,7 +119,9 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
               <p className="text-sm md:text-base">TREATMENTS</p>
             </div>
           </div>
-        </div>
+        </div> */}
+
+
       </div>
     </div>
     </div>

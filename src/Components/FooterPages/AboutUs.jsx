@@ -46,7 +46,7 @@ const AboutUs = () => {
               <h2 className="text-2xl font-medium text-gray-700 mb-2">
                 Over view of MedLifeEasy
               </h2>
-              <p className="text-gray-600 text-justify">
+              {/* <p className="text-gray-600 text-justify">
                 Pristyn Care is a new-age healthcare company with a laser-sharp
                 focus on simplifying the entire surgery journey of a patient and
                 his/her attendant by offering care and assistance at each and
@@ -74,6 +74,13 @@ const AboutUs = () => {
                 General Surgery, Ophthalmology, ENT, Urology, Gynaecology,
                 Pristyn Care, has successfully treated over 60,000 patients and
                 completed 1 Million  patient interactions.
+              </p> */}
+
+
+              <p className="text-gray-600 text-justify">
+              Medlife Easy acts as a wonderful platform to help the patient or Clients to choose doctors/Hospitals & Wellness Centers etc.
+
+Medlife Easy aims to provide a reliable & seamless connection b/w healthcare provider across various disciplines and the Patients or Clients who requires genuine & valued services for their treatments.
               </p>
             </div>
 
@@ -173,31 +180,31 @@ const AboutUs = () => {
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">Excellence in Healthcare</p>
+            <p className="font-semibold">Low Cost Treatment</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">Patient-Centric Care</p>
+            <p className="font-semibold">Top Rated Doctors</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold"> Personalized Approach</p>
+            <p className="font-semibold"> Premium Hospital Networks</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">State-of-the-Art Facilities</p>
+            <p className="font-semibold">Free Post Treatment Consultation</p>
           </div>
           
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
@@ -209,7 +216,7 @@ const AboutUs = () => {
               <MdOutlineDone></MdOutlineDone>
             </div>
             <p className="font-semibold">Zero-Cost EMI Options Available</p>
-          </div>
+          </div> */}
         </div>
       </div>
         </div>

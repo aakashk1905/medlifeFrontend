@@ -19,27 +19,22 @@ const ContactUs = () => {
       </Helmet>
       <div>
         <Navbar></Navbar>
-        {/* Breadcumber menu */}
-        <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
-          <ul>
-            <li>
-            <Link to={"/"}>Home</Link>
-            </li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
+       
 
         <div className="px-10">
-        <h1 className="text-4xl font-medium text-gray-700 text-center mb-3">
+        <h1 className="text-4xl font-medium text-gray-700 text-center mb-3 mt-5">
         Contact Us
         </h1>
         <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
         </div>
 
         <div className="px-10">
-        <h1 className="text-2xl font-medium text-gray-700 text-center mb-10">Get in touch with us</h1>
+        {/* <h1 className="text-2xl font-medium text-gray-700 text-center mb-10">Get in touch with us</h1> */}
         <div className="shadow-lg rounded-l-none md:rounded-l-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
             <div className="p-5">
+              {/* <div className="bg-gray-200 w-0.5 h-full">
+
+              </div> */}
                 <h2 className="text-gray-700 text-xl font-bold mb-4">Corporate Office</h2>
                 
                 <div className="flex items-center gap-2 mb-7">
@@ -118,9 +113,9 @@ const ContactUs = () => {
                 </div>
             
             </div> */}
-            <div className='bg-white shadow-lg p-5 rounded-b-lg lg:rounded-r-lg lg:rounded-b-none w-full'>
-          <div className="hc-head mb-5">Book Free Consultation</div>
-          <Form />
+            <div className='-mt-5'>
+          
+          <Form header={"Book Free Consultation"} />
           </div>
         </div>
         </div>
