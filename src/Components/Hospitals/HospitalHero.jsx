@@ -51,12 +51,12 @@ const HospitalHero = () => {
                 </div>
 
           <div className=''>
-            <div className='flex justify-center'>
+            <div className='flex justify-center -mt-6 lg:-mt-4 ml-6 lg:ml-0'>
             <img className='w-2/3 lg:w-full' src={ellipse} alt="" />
             </div>
 
                       {/* Card for small and medium screens */}
-<div className="w-full flex lg:hidden">
+<div className="w-full flex justify-center lg:hidden">
           <div className="bg-[#FCFCFF] py-3 px-2 md:px-8 flex gap-0 items-center justify-between rounded-md shadow-lg">
             <div className="border-r-2 pr-12">
               <h1 className="text-md md:text-3xl font-bold text-[#5854a8]">
