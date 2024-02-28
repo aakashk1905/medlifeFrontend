@@ -33,7 +33,7 @@ const AboutUs = () => {
       </div>
       <div className="pt-10">
         <div className="px-10">
-        <h1 className="text-4xl font-medium text-gray-700 text-center mb-3">
+        <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
           About Us
         </h1>
 
@@ -41,7 +41,7 @@ const AboutUs = () => {
         </div>
 
           {/* Hero Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 lg:gap-16 p-10">
             <div>
               <h2 className="text-2xl font-medium text-gray-700 mb-2">
                 Over view of MedLifeEasy
@@ -84,7 +84,9 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               </p>
             </div>
 
-            <img src={aboutUs} alt="" />
+            <div className="w-full">
+            <img className="w-full rounded" src={aboutUs} alt="" />
+            </div>
           </div>
 
           {/* Achievements Section */}
@@ -97,7 +99,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               <div className="bg-white p-3 rounded-md flex justify-between items-center">
                 <div>
                 <h3 className="text-xl text-[#5854A8] font-bold">2M+</h3>
-                <p>Happy Patients</p>
+                <p className="text-gray-800">Happy Patients</p>
                 </div>
                 <img src={patient} alt="" />
               </div>
@@ -105,7 +107,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               <div className="bg-white p-3 rounded-md flex justify-between items-center">
                 <div>
                 <h3 className="text-xl text-[#5854A8] font-bold">2M+</h3>
-                <p>Clinics</p>
+                <p className="text-gray-800">Clinics</p>
                 </div>
                 <img src={clinics} alt="" />
               </div>
@@ -113,7 +115,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               <div className="bg-white p-3 rounded-md flex justify-between items-center">
                 <div>
                 <h3 className="text-xl text-[#5854A8] font-bold">2M+</h3>
-                <p>Cities</p>
+                <p className="text-gray-800">Cities</p>
                 </div>
                 <img src={cities} alt="" />
               </div>
@@ -121,7 +123,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               <div className="bg-white p-3 rounded-md flex justify-between items-center">
                 <div>
                 <h3 className="text-xl text-[#5854A8] font-bold">2M+</h3>
-                <p>Surgeries</p>
+                <p className="text-gray-800">Surgeries</p>
                 </div>
                 <img src={surgeries} alt="" />
               </div>
@@ -129,7 +131,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               <div className="bg-white p-3 rounded-md flex justify-between items-center">
                 <div>
                 <h3 className="text-xl text-[#5854A8] font-bold">2M+</h3>
-                <p>Doctors</p>
+                <p className="text-gray-800">Doctors</p>
                 </div>
                 <img src={doctors} alt="" />
               </div>
@@ -137,7 +139,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
               <div className="bg-white p-3 rounded-md flex justify-between items-center">
                 <div>
                 <h3 className="text-xl text-[#5854A8] font-bold">2M+</h3>
-                <p>Hospitals</p>
+                <p className="text-gray-800">Hospitals</p>
                 </div>
                 <img src={hospitals} alt="" />
               </div>
@@ -146,11 +148,11 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
 
 
          { /* Meet or Team */}
-         <h2 className="text-2xl font-medium text-gray-700 text-center mt-10 mb-5">
+         <h2 className="text-2xl font-medium text-gray-700 text-center mt-10 mb-3 lg:mb-5">
          Meet Our Team
               </h2>
-         <div className="flex justify-center items-center">
-            <div className="shadow-lg p-4 rounded-lg grid grid-cols-1 md:grid-cols-2 items-center gap-5 w-2/3">
+         <div className="flex justify-center items-center px-5 lg:px-0">
+            <div className="shadow-lg p-4 rounded-lg grid grid-cols-1 md:grid-cols-2 items-center gap-5 w-full lg:w-2/3">
                 <img className="border-2 border-blue-600 rounded-lg" src={drVivekKumer} alt="" />
                 <div>
                     <h1 className="text-2xl font-bold text-gray-700 mb-3">Dr. Vivek Kumar</h1>
@@ -180,28 +182,28 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">Low Cost Treatment</p>
+            <p className="font-semibold text-gray-800">Low Cost Treatment</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">Top Rated Doctors</p>
+            <p className="font-semibold text-gray-800">Top Rated Doctors</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold"> Premium Hospital Networks</p>
+            <p className="font-semibold text-gray-800"> Premium Hospital Networks</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">Free Post Treatment Consultation</p>
+            <p className="font-semibold text-gray-800">Free Post Treatment Consultation</p>
           </div>
           
               {/* <div className="flex items-center gap-2">
