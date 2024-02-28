@@ -31,12 +31,14 @@ const OurBlogs = () => {
         {/* Blogs card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
           {loading ? (
-            <Loader />
+            <div className="flex justify-center items-center">
+              <Loader />
+            </div>
           ) : blogs?.length > 0 ? (
             blogs.map((blog) => (
               <div key={blog._id} className="shadow-lg rounded-lg">
                 <img
-                  className="w-full mb-3 rounded-t-lg"
+                  className="w-full h-64 mb-3 rounded-t-lg"
                   src={blog.avatar.url}
                   alt=""
                 />

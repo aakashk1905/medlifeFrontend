@@ -40,6 +40,13 @@ const Form = ({header}) => {
       
       return;
     }
+    if(mobileNumber.length < 10){
+      toast.error("Mobile number should be 10 digits");
+      return
+    }else if(mobileNumber.length > 10){
+      toast.error("Mobile number should not be over 10 digits");
+      return
+    }
     axiosBaseUrl
       .post("/api/v1/createlead", {
         name: patientName,
@@ -80,7 +87,7 @@ const Form = ({header}) => {
         onChange={(e) => setPatientName(e.target.value)}
       />
       <input
-        type="tel"
+        type="number"
         id="mobileNumber"
         placeholder="Mobile Number"
         name="mobileNumber"
