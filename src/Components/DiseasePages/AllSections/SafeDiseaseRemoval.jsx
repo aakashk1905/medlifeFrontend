@@ -3,7 +3,7 @@ import { MdOutlineDone } from "react-icons/md";
 
 const SafeDiseaseRemoval = ({content}) => {
   return (
-    <div className="pt-10">
+    <div className="py-10">
       <div className="p-4 bg-[#f6fcff]">
         <h1 className="text-2xl text-start md:text-center font-semibold mb-9 text-gray-600">
           {content ? content.treatment.treatmentHeader[0] : ""} {" "}

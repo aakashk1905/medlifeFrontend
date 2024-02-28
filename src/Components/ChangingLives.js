@@ -2,7 +2,7 @@ import React from "react";
 import "./styles/ChangingLives.css";
 const ChangingLives = () => {
   return (
-    <div className="cl-cont">
+    <div className="cl-cont mt-14">
       <div className="cl-inner-cont">
         <div className="hero-btm-head">MedLife Easy changing Lives!</div>
         <div className="cl-cards-cont">

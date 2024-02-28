@@ -35,26 +35,32 @@ const OurBlogs = () => {
           ) : blogs?.length > 0 ? (
             blogs.map((blog) => (
               <div key={blog._id} className="shadow-lg rounded-lg">
-                <img className="w-full mb-3 rounded-t-lg" src={blog.avatar.url} alt="" />
+                <img
+                  className="w-full mb-3 rounded-t-lg"
+                  src={blog.avatar.url}
+                  alt=""
+                />
                 <div className="px-4 pb-4">
                   <h1 className="text-[#17324A] text-2xl font-semibold mb-2">
-                    {blog.title}
+                    {blog.title.slice(0, 30)} ... ...
                   </h1>
                   {blog.about.length > 200 ? (
                     <div className=" mb-5">
                       <p className="text-gray-500 mb-2">
                         {`${blog.about.slice(0, 200)}... ...`}
                       </p>
-                    
                     </div>
                   ) : (
                     <p className="text-gray-500 mb-5">{blog.about}</p>
                   )}
-                 {blog._id && (
-  <Link to={`/blogsDetails/${blog._id}`} className="bg-gray-300 rounded-lg p-3 font-semibold text-purple-800">
-    Read More
-  </Link>
-)}
+                  {blog._id && (
+                    <Link
+                      to={`/blogsDetails/${blog._id}`}
+                      className="bg-gray-300 rounded-lg p-3 font-semibold text-purple-800"
+                    >
+                      Read More
+                    </Link>
+                  )}
                 </div>
               </div>
             ))

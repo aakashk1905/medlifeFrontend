@@ -3,7 +3,7 @@ import Form from "../../Form";
 
 const ExploreMedLife = ({content}) => {
   return (
-    <div className="bg-[#ecf7fc] px-5 md:px-10 py-10 grid grid-cols-1 lg:grid-cols-3 gap-5 lg:gap-0 items-center">
+    <div className="bg-[#ecf7fc] px-5 md:px-10 py-10 grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-5 items-center">
       {/* Left side details */}
       <div className="col-span-2">
         <h1 className="text-2xl font-bold mb-8 text-gray-600">
@@ -60,9 +60,8 @@ const ExploreMedLife = ({content}) => {
           Get Cost Estimate
         </button>
       </div> */}
-     <div className="bg-white p-7 rounded-3xl">
-          <div className="hc-head mb-5">Book Free Consultation</div>
-          <Form />
+     <div className="w-full mt-8 lg:mt-0">
+          <Form header={"Book Free Consultation"} />
         </div>
     </div>
   );

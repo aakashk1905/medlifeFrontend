@@ -15,7 +15,8 @@ const appointmentModalProps = {
   fontWeight: "normal",
   fontSize: "base",
   text: "Book Your Appointment",
-  width: "310px",
+  minWidth: "310px",
+  width: "100%",
   height: "64px",
   backgroundColor: "#00a0aa",
   color: "#fff",
@@ -43,7 +44,7 @@ const appointmentModalProps = {
           {
             lists && 
             lists.map((list, idx) => 
-            <div key={idx} className="dh-left-pts">
+            <div key={idx} className="flex items-center gap-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"

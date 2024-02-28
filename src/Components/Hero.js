@@ -40,7 +40,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="z-10 mt-7 lg:-mt-48 w-full lg:w-1/3">
+        <div className="z-10 mt-7 px-5 lg:px-0 lg:-mt-48 w-full lg:w-1/3">
           <Form header={"Book Free Consultation"} />
         </div>
       </div>

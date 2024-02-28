@@ -42,7 +42,7 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
   }, [diseaseName]);
 
   return (
-    <div className="rev-cont">
+    <div className="rev-cont mt-14">
       <div className="hero-btm-head capitalize">{docHeading}</div>
 
       <div className="rev-car-cont">

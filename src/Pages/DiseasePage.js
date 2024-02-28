@@ -12,6 +12,9 @@ import DiseaseConsult from "../Components/DiseasePages/DiseaseConsult";
 import DiseaseDoc from "../Components/DiseasePages/DiseaseDoc";
 import { useParams } from "react-router-dom";
 import mainDiseaseContent from "../mainDiseaseContent.json";
+import DiseaseInfo from "../Components/DiseasePages/DiseaseInfo";
+import OurSpecialities from "../Components/DiseasePages/OurSpecialities";
+import SafeDiseaseRemoval from "../Components/DiseasePages/AllSections/SafeDiseaseRemoval";
 
 const DiseasePage = () => {
   const { disease } = useParams();
@@ -37,10 +40,12 @@ const DiseasePage = () => {
   return (
     <div>
       <DiseaseHero disease={disease} content={mainDiseaseContent[disease]} />
-      <DiseaseBlogs />
-      <DiseaseConsult content={mainDiseaseContent[disease]} />
+      <DiseaseInfo disease={disease} content={mainDiseaseContent[disease]}></DiseaseInfo>
+      <OurSpecialities></OurSpecialities>
+      {/* <DiseaseBlogs /> */}
+      {/* <DiseaseConsult content={mainDiseaseContent[disease]} /> */}
       <DiseaseDoc docHeading={"Meet Our Doctors"} diseaseName={disease} />
-      <Whyus content={mainDiseaseContent[disease]} />
+      <SafeDiseaseRemoval content={mainDiseaseContent[disease]}></SafeDiseaseRemoval>
       <Patientslove />
       <ChangingLives />
       <Faqs />
