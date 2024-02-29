@@ -11,16 +11,16 @@ const ExploreMedLife = ({content}) => {
           <span className="text-teal-600">{content.SurgeryForm.surgeryHeader[1]}</span>
         </h1>
 
-        <h3 className="text-2xl font-semibold text-gray-800">
+        <h3 className="text-2xl font-semibold text-gray-800 mb-1">
         {content?.SurgeryForm?.subHeader}
         </h3>
-        <p className="text-sm">{content?.SurgeryForm?.typeHeader}: {content?.SurgeryForm?.type} </p>
-        <p className="text-sm">{content?.SurgeryForm?.timeHeader}: {content?.SurgeryForm?.time} </p>
-        <p className="text-sm mb-5">
+        <p className="text-sm text-gray-800">{content?.SurgeryForm?.typeHeader}: {content?.SurgeryForm?.type} </p>
+        <p className="text-sm text-gray-800">{content?.SurgeryForm?.timeHeader}: {content?.SurgeryForm?.time} </p>
+        <p className="text-sm mb-5 text-gray-800">
         {content?.SurgeryForm?.costHeader}: {content?.SurgeryForm?.cost}
         </p>
 
-        <h2 className="text-xl font-semibold mb-5">
+        <h2 className="text-xl font-semibold mb-5 text-gray-800">
         {content?.SurgeryForm?.footerTitle}
         </h2>
 

@@ -253,7 +253,7 @@ const Navbar = () => {
       <div className="relative">
         <input
           type="text"
-          className="bg-white pl-9 py-3 rounded-lg w-[333px] md:w-80 focus:outline-none"
+          className="bg-white pl-9 py-3 rounded-lg w-[320px] md:w-80 focus:outline-none"
           placeholder="Search disease, doctors, treatment"
         />
         <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500" />
