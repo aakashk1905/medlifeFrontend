@@ -11,7 +11,7 @@ const ExploreMedLife = ({content}) => {
           <span className="text-teal-600">{content.SurgeryForm.surgeryHeader[1]}</span>
         </h1>
 
-        <h3 className="text-2xl font-semibold">
+        <h3 className="text-2xl font-semibold text-gray-800">
         {content?.SurgeryForm?.subHeader}
         </h3>
         <p className="text-sm">{content?.SurgeryForm?.typeHeader}: {content?.SurgeryForm?.type} </p>

@@ -47,7 +47,7 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
           {/* सुरक्षित एवं सफल */}
         </h2>
         {/* Description */}
-        <p className="text-gray-500 mb-5">
+        <p className="text-gray-600 mb-5">
         {content ? content.details : ""}
           {/* लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के
           क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती
@@ -64,7 +64,7 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">{list}</p>
+            <p className="font-semibold text-gray-800">{list}</p>
           </div>
               )
               : "No Content Here"

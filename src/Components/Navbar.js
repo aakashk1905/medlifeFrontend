@@ -5,6 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoSearchOutline } from "react-icons/io5";
 import SelectCitySidebar from "./Sidebar/SelectCitySidebar";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   // Have to fix the hover content. The menu is not dissapering after clicking any list
@@ -110,6 +111,26 @@ const Navbar = () => {
       link: "dermatology",
     },
   ];
+
+  const [windowDimensions, setWindowDimensions] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimensions({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div className="sticky top-0 z-30">
@@ -226,16 +247,35 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
-        <div className="relative">
-          <input
-            type="text"
-            className="bg-white pl-9 py-3 rounded-lg w-[385px] md:w-80 focus:outline-none"
-            placeholder="Search disease, doctors, treatment"
-          ></input>
-          <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500"></IoSearchOutline>
-        </div>
+      {
+  (windowDimensions.width <= 375) && (
+    <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
+      <div className="relative">
+        <input
+          type="text"
+          className="bg-white pl-9 py-3 rounded-lg w-[333px] md:w-80 focus:outline-none"
+          placeholder="Search disease, doctors, treatment"
+        />
+        <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500" />
       </div>
+    </div>
+  )
+}
+
+      {
+  (windowDimensions.width >= 375) && (
+    <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
+      <div className="relative">
+        <input
+          type="text"
+          className="bg-white pl-9 py-3 rounded-lg w-[385px] md:w-80 focus:outline-none"
+          placeholder="Search disease, doctors, treatment"
+        />
+        <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500" />
+      </div>
+    </div>
+  )
+}
 
       <div className="hidden xl:flex justify-between px-8 -ml-1 bg-white">
         {btmMenus.map((menu, ind) => (

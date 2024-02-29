@@ -19,7 +19,7 @@ const SafeDiseaseRemoval = ({content}) => {
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold">{treatment}</p>
+            <p className="font-semibold text-gray-800">{treatment}</p>
           </div>
               )
               :
