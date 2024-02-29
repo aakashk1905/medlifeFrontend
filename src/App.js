@@ -29,6 +29,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Caurosel from "./Components/Caurosel";
 import Caurosel2 from "./Components/Caurosel2";
+import 'swiper/css';
+import 'swiper/css/navigation';
 const queryClient = new QueryClient();
 function App() {
   return (

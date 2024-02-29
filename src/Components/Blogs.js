@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import "./styles/Blogs.css";
-import kidney from "../Assests/kidney.png";
 import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import Loader from "./Loader/Loader";
 import { Link } from "react-router-dom";
+import pic from "../Assests/Dr-Manu-Bora-for-ACL-Treatment.jpg"
 
 
 const Blogs = () => {
@@ -41,10 +41,11 @@ const Blogs = () => {
               <div key={blog._id} className="shadow-lg rounded-lg">
                 <img
                   className="w-full h-64 mb-3 rounded-t-lg"
+                  // src={pic}
                   src={blog.avatar.url}
                   alt=""
                 />
-                <div className="px-4 pb-4">
+                <div className="px-5 pb-[30px]">
                   <h1 className="text-[#17324A] text-2xl font-semibold mb-2">
                     {blog.title.slice(0, 30)} ... ...
                   </h1>
@@ -60,7 +61,7 @@ const Blogs = () => {
                   {blog._id && (
                     <Link
                       to={`/blogsDetails/${blog._id}`}
-                      className="bg-gray-300 rounded-lg p-3 font-semibold text-purple-800"
+                      className="bg-gray-300 rounded-lg p-3 font-semibold text-purple-800 "
                     >
                       Read More
                     </Link>

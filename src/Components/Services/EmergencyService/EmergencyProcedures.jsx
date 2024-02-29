@@ -23,7 +23,7 @@ const EmergencyProcedures = () => {
                     <li className='mb-3 text-[#17324A] text-lg'>Call Emergency Services Immediately</li>
                     <li className='mb-3 text-[#17324A] text-lg'>Provide Necessary Information to the Operator</li>
                     <li className='mb-3 text-[#17324A] text-lg'>Follow Dispatcher's Instructions</li>
-                    <li>Wait for Emergency Services and Provide Assistance if Safe</li>
+                    <li className='text-gray-800'>Wait for Emergency Services and Provide Assistance if Safe</li>
                 </ul>
 
                 <div className="flex flex-col md:flex-row items-center gap-3 w-full">

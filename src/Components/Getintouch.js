@@ -92,14 +92,14 @@ const Getintouch = () => {
             <input
             name="patientName"
               type="text"
-              className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6"
+              className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6 focus:border-teal-700 transition duration-300 ease-in-out"
               placeholder="Patient Name / रोगी का नाम"
             />
 
             <input
             name="mobileNumber"
               type="number"
-              className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6"
+              className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6 focus:border-teal-700 transition duration-300 ease-in-out"
               placeholder="Mobile No. / मोबाइल नंबर"
             />
           </div>
@@ -110,7 +110,7 @@ const Getintouch = () => {
                 id="city"
                 value={selectedCity}
                 onChange={handleChange}
-                className="block appearance-none cursor-pointer bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full"
+                className="block appearance-none cursor-pointer bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full focus:border-teal-700 transition duration-300 ease-in-out"
               >
                 {cities.map((city) => (
                   <option key={city} value={city}>
@@ -128,7 +128,7 @@ const Getintouch = () => {
                 id="city"
                 value={selectedDisease}
                 onChange={handleChange1}
-                className="block appearance-none cursor-pointer bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full"
+                className="block appearance-none cursor-pointer bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full focus:border-teal-700 transition duration-300 ease-in-out"
               >
                 {disease.map((city) => (
                   <option key={city} value={city}>

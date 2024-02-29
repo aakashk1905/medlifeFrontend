@@ -15,6 +15,7 @@ import Officeaddress from "../Components/Officeaddress";
 import Footer from "../Components/Footer";
 import Modal from "../Components/Modal";
 import { Helmet } from "react-helmet-async";
+import Surgeries from "./Surgeries";
 const Landingpage = () => {
   return (
     <div className="lp-cont">
@@ -23,6 +24,7 @@ const Landingpage = () => {
       </Helmet>
       <Modal></Modal>
       <Hero />
+      <Surgeries></Surgeries>
       <Specialities />
       <SocialNews />
       <Reviews />

@@ -7,7 +7,7 @@ const AboutDisease = ({content}) => {
     fontWeight: "normal",
     fontSize: "base",
     text: "Book Your Appointment",
-    minWidth: "310px",
+    minWidth: "280px",
     width: "100%",
     height: "64px",
     backgroundColor: "#00a0aa",

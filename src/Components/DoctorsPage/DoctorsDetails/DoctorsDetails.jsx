@@ -131,7 +131,7 @@ const DoctorsDetails = () => {
               <h1 className="text-2xl font-bold text-gray-600 mb-2">
                 About {docDetails.doctorName}
               </h1>
-              <p className="text-gray-400">
+              <p className="text-gray-700">
                 Dr. Harshvardhan in Patna is one of the leading businesses in
                 the Nephrologists. Also known for Nephrologists, Kidney
                 Transplant Doctors and much more.

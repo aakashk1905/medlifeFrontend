@@ -68,22 +68,21 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                         {doctor.diseaseHandle}
                       </b>
                     </div>
+                    <div className="bg-gray-500 w-52 h-0.5">
+
+                    </div>
                     <div className="dd-top-sub-head"> Specialization</div>
                     <div className="dd-top-sp-cont">
-                      <div className="dd-top-sp text-base">
+                      <div className="dd-top-sp text-base text-gray-800">
                         {doctor.specialization1}
                       </div>
-                      <div className="dd-top-sp">{doctor.specialization2}</div>
-                      <div className="dd-top-sp">{doctor.specialization3}</div>
+                      <div className="dd-top-sp text-gray-800">{doctor.specialization2}</div>
+                      <div className="dd-top-sp text-gray-800">{doctor.specialization3}</div>
                     </div>
                     <div className="dd-top-stats-cont">
                       <div className="dd-top-stats">
                       <IoBagAdd></IoBagAdd>
                         {doctor.experience}
-                      </div>
-                      <div className="dd-top-stats">
-                      <BiSolidUserPin></BiSolidUserPin>
-                        2k
                       </div>
                       <div className="dd-top-stats">
                       <HiLocationMarker></HiLocationMarker>         {doctor.location}

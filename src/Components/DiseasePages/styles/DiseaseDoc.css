@@ -2,7 +2,7 @@
   border-radius: 10px;
   background: #fff;
   box-shadow: 0px 1px 12px 0px rgba(23, 50, 74, 0.15);
-  width: 497px !important;
+  width: 356px !important;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -16,13 +16,14 @@
 }
 .dd-top-left {
   width: 33%;
+  height: 100%;
 }
 .dd-top-right {
   width: 67%;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 12px;
+  gap: 8px;
   flex-direction: column;
 }
 
@@ -44,7 +45,7 @@
   font-size: 12.688px;
   font-style: normal;
   font-weight: 400;
-  line-height: 17px; /* 133.99% */
+  line-height: 10px; /* 133.99% */
 }
 
 .dd-top-sub-head {
@@ -63,7 +64,7 @@
   gap: 11px;
 }
 .dd-top-sp {
-  color: var(--material-theme-ref-tertiary-tertiary20, #17324a);
+  color: var(--material-theme-ref-tertiary-tertiary20, #0b151f);
 
   /* material-theme/body/small */
   font-family: Lato;
@@ -84,7 +85,7 @@
 
 .dd-top-stats-cont {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
   width: 100%;
 }
 .dd-top-stats {
@@ -104,12 +105,12 @@
 
 .dd-btm {
   display: flex;
-  gap: 26px;
+  gap: 10px;
   justify-content: center;
 }
 
 .dd-call {
-  width: 45%;
+  width: 50%;
   border-radius: 10px;
   border: 1px solid #00a0aa;
   display: flex;
@@ -126,7 +127,7 @@
 
   /* material-theme/body/medium/Text CTA-Desktop */
   font-family: Lato;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 133.333% */
@@ -134,7 +135,7 @@
 
 .dd-book {
   display: flex;
-  width: 45%;
+  width: 50%;
   box-sizing: border-box;
   height: 46px;
   /* padding: 10px 60px; */
@@ -151,7 +152,7 @@
 
   /* material-theme/body/medium/Text CTA-Desktop */
   font-family: Lato;
-  font-size: 18px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 133.333% */

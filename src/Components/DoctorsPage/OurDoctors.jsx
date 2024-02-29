@@ -78,17 +78,17 @@ const OurDoctors = () => {
 
                           <div className="flex flex-wrap gap-5 items-center mb-3">
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-lg">
+                              <p className="text-lg text-gray-800">
                                 {doctor?.specialization1}
                               </p>
                             </div>
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-lg">
+                              <p className="text-lg text-gray-800">
                                 {doctor?.specialization2}
                               </p>
                             </div>
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-lg">
+                              <p className="text-lg text-gray-800">
                                 {doctor?.specialization3}
                               </p>
                             </div>

@@ -1,193 +1,306 @@
-import { useEffect, useRef, useState } from "react";
-import { BiSolidUserPin } from "react-icons/bi";
-import { HiLocationMarker } from "react-icons/hi";
-import { IoBagAdd } from "react-icons/io5";
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import fbrev from "../Assests/fbrev.png";
+import revstars from "../Assests/revstars.png";
+import 'swiper/swiper-bundle.css';
+
+
+import Swipperbtn from './Swipperbtn';
 
 
 const Caurosel = () => {
-    const [currentSlider, setCurrentSlider] = useState(0);
-    const array = [
-        {
-          name: "Rahul",
-          specialization: ["Specialization1", "Specialization2", "Specialization3"],
-          degree: "MBBS, MS- Hernia",
-          stats: {
-            bagAdd: 45,
-            userPin: 2000,
-            location: "Hello",
-          },
-          contact: "+98 765 432 10",
-        },
-        {
-          name: "Rahul",
-          specialization: ["Specialization1", "Specialization2", "Specialization3"],
-          degree: "MBBS, MS- Hernia",
-          stats: {
-            bagAdd: 45,
-            userPin: 2000,
-            location: "Hello",
-          },
-          contact: "+98 765 432 10",
-        },
-        {
-          name: "Rahul",
-          specialization: ["Specialization1", "Specialization2", "Specialization3"],
-          degree: "MBBS, MS- Hernia",
-          stats: {
-            bagAdd: 45,
-            userPin: 2000,
-            location: "Hello",
-          },
-          contact: "+98 765 432 10",
-        },
-      ];
-    // The slider images array
-    const prevSlider = () => setCurrentSlider((currentSlider) => (currentSlider === 0 ? array.length - 2 : currentSlider - 1));
-    const nextSlider = () => setCurrentSlider((currentSlider) => (currentSlider === array.length - 2 ? 0 : currentSlider + 1));
-    // if you don't want to change the slider automatically then you can just remove the useEffect
-    useEffect(() => {
-        const intervalId = setInterval(() => {
-            nextSlider();
-        }, 3000);
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, [currentSlider]);
-
-const isSmallScreen = window.innerWidth <= 768;
-    const cardWidth = isSmallScreen ? "100%" : "calc(50% - 20px)";
-    const cardsPerSlide = isSmallScreen ? 1 : 2;
     return (
-        <div >
-            <div className="flex justify-between items-center mb-10">
-                <button onClick={prevSlider}>Prev</button>
-                <button onClick={nextSlider}>Next</button>
+      <div className='flex items-center justify-center h-screen'>
+          <Swiper slidesPerView={1}
+          breakpoints={{
+            768: {
+              slidesPerView: 2
+            },
+            375: {
+              slidesPerView: 1
+            },
+            425: {
+              slidesPerView: 1
+            },
+            1024: {
+              slidesPerView: 2
+            },
+            1366 : {
+              slidesPerView: 3
+            }
+          }}
+          modules={[]} className="carousel">
+            
+        <SwiperSlide>
+        <div className='px-10 lg:px-16'>
+        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+            <div className="flex gap-2 mb-3">
+              <img src={fbrev} alt=""/>
+              <div>
+              <p className="text-md text-gray-800">Sarvesh Mishra</p>
+              <div className="flex items-center gap-2">
+              <img src={revstars} alt="" />
+              <p className="text-md text-gray-600">4.8/5</p>
+              </div>
+              </div>
             </div>
 
-            <div className="max-w-full min-w-[350px]  mx-auto h-[400px] flex flex-row items-center overflow-hidden gap-5 lg:gap-10 px-8 md:px-16 lg:px-24">
-            <div className="relative overflow-hidden">
-                <div className="absolute w-full h-full flex items-center justify-between z-50 px-5">
-                    {/* arrow left */}
-                    <button onClick={prevSlider} className="flex justify-center items-center hover:bg-white/30 rounded-full w-6 h-6 md:w-8 md:h-8">
-                        <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="black"> <g strokeWidth="0"></g> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g> <g id="SVGRepo_iconCarrier"><path fill="black" d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z"></path></g>
-                        </svg>
-                    </button>
-                    {/* arrow right */}
-                    <button onClick={nextSlider} className="flex justify-center items-center hover:bg-white/30 rounded-full w-6 h-6 md:w-8 md:h-8">
-                        <svg viewBox="0 0 1024 1024" className="w-4 h-4 md:w-6 md:h-6 icon" xmlns="http://www.w3.org/2000/svg" fill="black" transform="rotate(180)"> <g strokeWidth="0"></g> <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g> <g id="SVGRepo_iconCarrier"> <path fill="black" d="M685.248 104.704a64 64 0 010 90.496L368.448 512l316.8 316.8a64 64 0 01-90.496 90.496L232.704 557.248a64 64 0 010-90.496l362.048-362.048a64 64 0 0190.496 0z" ></path></g>
-                        </svg>
-                    </button>
-                </div>
-                {/* slider container */}
-                <div
-                    className="ease-linear duration-300 flex"
-                    style={{transform: `translateX(-${currentSlider * (isSmallScreen ? 100 : 50)}%)`}}>
-                    {/* sliders */}
-                    {
-                array.map((i,idx) => 
-                    <div key={idx} className="dd-card">
-                <div style={{ width: cardWidth, marginRight: '20px' }} className="dd-top">
-                  <div className="dd-top-left mr-2">
-                    <img src="../Assests/404.png" alt="ddrc" />
-                  </div>
-                  <div className="dd-top-right">
-                    <div className="dd-top-head">Rahul</div>
-                    <div className="dd-top-text">
-                      {" "}
-                      MBBS, MS-{" "}
-                      <b style={{ color: "#00A0AA", fontSize: "17px" }}>
-                        Hernia
-                      </b>
-                    </div>
-                    <div className="dd-top-sub-head"> Specialization</div>
-                    <div className="dd-top-sp-cont">
-                      <div className="dd-top-sp text-base">
-                        Hello
-                      </div>
-                      <div className="dd-top-sp">Hello</div>
-                      <div className="dd-top-sp">Hello</div>
-                    </div>
-                    <div className="dd-top-stats-cont">
-                      <div className="dd-top-stats">
-                      <IoBagAdd></IoBagAdd>
-                        45
-                      </div>
-                      <div className="dd-top-stats">
-                      <BiSolidUserPin></BiSolidUserPin>
-                        2k
-                      </div>
-                      <div className="dd-top-stats">
-                      <HiLocationMarker></HiLocationMarker>         Hello
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="dd-btm">
-                  <div className="dd-call">Call now +98 765 432 10</div>
-                  <div className="dd-book">Book Appointment</div>
-                </div>
-              </div>
-                )
-            }
-                </div>
+            <div className="flex items-center gap-1 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_253_1800)">
+                  <path
+                    d="M11.1447 1.75006L6.43796 6.45679C6.12361 6.77113 5.94519 7.20442 5.94519 7.65471V16.1421C5.94519 17.0767 6.70982 17.8413 7.64437 17.8413H15.2907C15.9704 17.8413 16.5821 17.4335 16.8539 16.8133L19.6236 10.3479C20.3372 8.66572 19.1053 6.79662 17.2787 6.79662H12.4785L13.2856 2.9055C13.3706 2.48071 13.2432 2.04742 12.9373 1.74156C12.4361 1.2488 11.6374 1.2488 11.1447 1.75006ZM2.54684 17.8413C3.48138 17.8413 4.24601 17.0767 4.24601 16.1421V9.34539C4.24601 8.41084 3.48138 7.64621 2.54684 7.64621C1.61229 7.64621 0.847656 8.41084 0.847656 9.34539V16.1421C0.847656 17.0767 1.61229 17.8413 2.54684 17.8413Z"
+                    fill="#00A298"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_253_1800">
+                    <rect width="20.3901" height="20.3901" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Highly Recommends</span>
             </div>
+
+            <p className="text-gray-800">
+            एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया, जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
+            </p>
+          </div>
         </div>
-
-
-            {/* <div className="ease-linear duration-300 flex gap-10"
-                    style={{transform: `translateX(-${currentSlider * (isSmallScreen ? 100 : 50)}%)`}}>
-            {
-                array.map((i,idx) => 
-                    <div key={idx} className="dd-card">
-                <div className="dd-top">
-                  <div className="dd-top-left mr-2">
-                    <img src="../Assests/404.png" alt="ddrc" />
-                  </div>
-                  <div className="dd-top-right">
-                    <div className="dd-top-head">Rahul</div>
-                    <div className="dd-top-text">
-                      {" "}
-                      MBBS, MS-{" "}
-                      <b style={{ color: "#00A0AA", fontSize: "17px" }}>
-                        Hernia
-                      </b>
-                    </div>
-                    <div className="dd-top-sub-head"> Specialization</div>
-                    <div className="dd-top-sp-cont">
-                      <div className="dd-top-sp text-base">
-                        Hello
-                      </div>
-                      <div className="dd-top-sp">Hello</div>
-                      <div className="dd-top-sp">Hello</div>
-                    </div>
-                    <div className="dd-top-stats-cont">
-                      <div className="dd-top-stats">
-                      <IoBagAdd></IoBagAdd>
-                        45
-                      </div>
-                      <div className="dd-top-stats">
-                      <BiSolidUserPin></BiSolidUserPin>
-                        2k
-                      </div>
-                      <div className="dd-top-stats">
-                      <HiLocationMarker></HiLocationMarker>         Hello
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="dd-btm">
-                  <div className="dd-call">Call now +98 765 432 10</div>
-                  <div className="dd-book">Book Appointment</div>
-                </div>
+        </SwiperSlide>
+            
+        <SwiperSlide>
+        <div className='px-10 lg:px-16'>
+        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+            <div className="flex gap-2 mb-3">
+              <img src={fbrev} alt=""/>
+              <div>
+              <p className="text-md text-gray-800">Sarvesh Mishra</p>
+              <div className="flex items-center gap-2">
+              <img src={revstars} alt="" />
+              <p className="text-md text-gray-600">4.8/5</p>
               </div>
-                )
-            }
-              
+              </div>
+            </div>
 
-              
+            <div className="flex items-center gap-1 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_253_1800)">
+                  <path
+                    d="M11.1447 1.75006L6.43796 6.45679C6.12361 6.77113 5.94519 7.20442 5.94519 7.65471V16.1421C5.94519 17.0767 6.70982 17.8413 7.64437 17.8413H15.2907C15.9704 17.8413 16.5821 17.4335 16.8539 16.8133L19.6236 10.3479C20.3372 8.66572 19.1053 6.79662 17.2787 6.79662H12.4785L13.2856 2.9055C13.3706 2.48071 13.2432 2.04742 12.9373 1.74156C12.4361 1.2488 11.6374 1.2488 11.1447 1.75006ZM2.54684 17.8413C3.48138 17.8413 4.24601 17.0767 4.24601 16.1421V9.34539C4.24601 8.41084 3.48138 7.64621 2.54684 7.64621C1.61229 7.64621 0.847656 8.41084 0.847656 9.34539V16.1421C0.847656 17.0767 1.61229 17.8413 2.54684 17.8413Z"
+                    fill="#00A298"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_253_1800">
+                    <rect width="20.3901" height="20.3901" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Highly Recommends</span>
+            </div>
 
-              </div> */}
+            <p className="text-gray-800">
+            एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया, जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
+            </p>
+          </div>
         </div>
+        </SwiperSlide>
+            
+        <SwiperSlide>
+        <div className='px-10 lg:px-16'>
+        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+            <div className="flex gap-2 mb-3">
+              <img src={fbrev} alt=""/>
+              <div>
+              <p className="text-md text-gray-800">Sarvesh Mishra</p>
+              <div className="flex items-center gap-2">
+              <img src={revstars} alt="" />
+              <p className="text-md text-gray-600">4.8/5</p>
+              </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-1 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_253_1800)">
+                  <path
+                    d="M11.1447 1.75006L6.43796 6.45679C6.12361 6.77113 5.94519 7.20442 5.94519 7.65471V16.1421C5.94519 17.0767 6.70982 17.8413 7.64437 17.8413H15.2907C15.9704 17.8413 16.5821 17.4335 16.8539 16.8133L19.6236 10.3479C20.3372 8.66572 19.1053 6.79662 17.2787 6.79662H12.4785L13.2856 2.9055C13.3706 2.48071 13.2432 2.04742 12.9373 1.74156C12.4361 1.2488 11.6374 1.2488 11.1447 1.75006ZM2.54684 17.8413C3.48138 17.8413 4.24601 17.0767 4.24601 16.1421V9.34539C4.24601 8.41084 3.48138 7.64621 2.54684 7.64621C1.61229 7.64621 0.847656 8.41084 0.847656 9.34539V16.1421C0.847656 17.0767 1.61229 17.8413 2.54684 17.8413Z"
+                    fill="#00A298"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_253_1800">
+                    <rect width="20.3901" height="20.3901" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Highly Recommends</span>
+            </div>
+
+            <p className="text-gray-800">
+            एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया, जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
+            </p>
+          </div>
+        </div>
+        </SwiperSlide>
+            
+        <SwiperSlide>
+        <div className='px-10 lg:px-16'>
+        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+            <div className="flex gap-2 mb-3">
+              <img src={fbrev} alt=""/>
+              <div>
+              <p className="text-md text-gray-800">Sarvesh Mishra</p>
+              <div className="flex items-center gap-2">
+              <img src={revstars} alt="" />
+              <p className="text-md text-gray-600">4.8/5</p>
+              </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-1 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_253_1800)">
+                  <path
+                    d="M11.1447 1.75006L6.43796 6.45679C6.12361 6.77113 5.94519 7.20442 5.94519 7.65471V16.1421C5.94519 17.0767 6.70982 17.8413 7.64437 17.8413H15.2907C15.9704 17.8413 16.5821 17.4335 16.8539 16.8133L19.6236 10.3479C20.3372 8.66572 19.1053 6.79662 17.2787 6.79662H12.4785L13.2856 2.9055C13.3706 2.48071 13.2432 2.04742 12.9373 1.74156C12.4361 1.2488 11.6374 1.2488 11.1447 1.75006ZM2.54684 17.8413C3.48138 17.8413 4.24601 17.0767 4.24601 16.1421V9.34539C4.24601 8.41084 3.48138 7.64621 2.54684 7.64621C1.61229 7.64621 0.847656 8.41084 0.847656 9.34539V16.1421C0.847656 17.0767 1.61229 17.8413 2.54684 17.8413Z"
+                    fill="#00A298"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_253_1800">
+                    <rect width="20.3901" height="20.3901" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Highly Recommends</span>
+            </div>
+
+            <p className="text-gray-800">
+            एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया, जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
+            </p>
+          </div>
+        </div>
+        </SwiperSlide>
+            
+        <SwiperSlide>
+        <div className='px-10 lg:px-16'>
+        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+            <div className="flex gap-2 mb-3">
+              <img src={fbrev} alt=""/>
+              <div>
+              <p className="text-md text-gray-800">Sarvesh Mishra</p>
+              <div className="flex items-center gap-2">
+              <img src={revstars} alt="" />
+              <p className="text-md text-gray-600">4.8/5</p>
+              </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-1 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_253_1800)">
+                  <path
+                    d="M11.1447 1.75006L6.43796 6.45679C6.12361 6.77113 5.94519 7.20442 5.94519 7.65471V16.1421C5.94519 17.0767 6.70982 17.8413 7.64437 17.8413H15.2907C15.9704 17.8413 16.5821 17.4335 16.8539 16.8133L19.6236 10.3479C20.3372 8.66572 19.1053 6.79662 17.2787 6.79662H12.4785L13.2856 2.9055C13.3706 2.48071 13.2432 2.04742 12.9373 1.74156C12.4361 1.2488 11.6374 1.2488 11.1447 1.75006ZM2.54684 17.8413C3.48138 17.8413 4.24601 17.0767 4.24601 16.1421V9.34539C4.24601 8.41084 3.48138 7.64621 2.54684 7.64621C1.61229 7.64621 0.847656 8.41084 0.847656 9.34539V16.1421C0.847656 17.0767 1.61229 17.8413 2.54684 17.8413Z"
+                    fill="#00A298"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_253_1800">
+                    <rect width="20.3901" height="20.3901" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Highly Recommends</span>
+            </div>
+
+            <p className="text-gray-800">
+            एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया, जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
+            </p>
+          </div>
+        </div>
+        </SwiperSlide>
+            
+        <SwiperSlide>
+        <div className='px-10'>
+        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+            <div className="flex gap-2 mb-3">
+              <img src={fbrev} alt=""/>
+              <div>
+              <p className="text-md text-gray-800">Sarvesh Mishra</p>
+              <div className="flex items-center gap-2">
+              <img src={revstars} alt="" />
+              <p className="text-md text-gray-600">4.8/5</p>
+              </div>
+              </div>
+            </div>
+
+            <div className="flex items-center gap-1 mb-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="21"
+                height="21"
+                viewBox="0 0 21 21"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_253_1800)">
+                  <path
+                    d="M11.1447 1.75006L6.43796 6.45679C6.12361 6.77113 5.94519 7.20442 5.94519 7.65471V16.1421C5.94519 17.0767 6.70982 17.8413 7.64437 17.8413H15.2907C15.9704 17.8413 16.5821 17.4335 16.8539 16.8133L19.6236 10.3479C20.3372 8.66572 19.1053 6.79662 17.2787 6.79662H12.4785L13.2856 2.9055C13.3706 2.48071 13.2432 2.04742 12.9373 1.74156C12.4361 1.2488 11.6374 1.2488 11.1447 1.75006ZM2.54684 17.8413C3.48138 17.8413 4.24601 17.0767 4.24601 16.1421V9.34539C4.24601 8.41084 3.48138 7.64621 2.54684 7.64621C1.61229 7.64621 0.847656 8.41084 0.847656 9.34539V16.1421C0.847656 17.0767 1.61229 17.8413 2.54684 17.8413Z"
+                    fill="#00A298"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_253_1800">
+                    <rect width="20.3901" height="20.3901" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>Highly Recommends</span>
+            </div>
+
+            <p className="text-gray-800">
+            एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया, जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण योगदान दिया।
+            </p>
+          </div>
+        </div>
+        </SwiperSlide>
+
+
+        <div className='bottom-56'>
+        <Swipperbtn></Swipperbtn>
+        </div>
+      </Swiper>
+      </div>
     );
 };
 export default Caurosel

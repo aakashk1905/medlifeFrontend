@@ -14,7 +14,6 @@ const Navbar = () => {
       list: [
         "Piles Treatment",
         "Fistula Treatment",
-        "Fistula Treatment",
         "Pilonidal Sinus Treatment",
         "Rectal Prolapse",
       ],
@@ -113,8 +112,8 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="">
-      <div className="flex justify-between items-center bg-[#00a79d] pl-8 pr-10 py-2">
+    <div className="sticky top-0 z-30">
+      <div className="flex justify-between items-center bg-[#00a79d] pl-5 md:pl-9 lg:pl-8 pr-5 md:pr-9 lg:pr-10 py-2">
         {/* <svg
           xmlns="http://www.w3.org/2000/svg"
           width="63"
@@ -231,14 +230,14 @@ const Navbar = () => {
         <div className="relative">
           <input
             type="text"
-            className="bg-white pl-9 py-3 rounded-lg w-80 focus:outline-none"
+            className="bg-white pl-9 py-3 rounded-lg w-[385px] md:w-80 focus:outline-none"
             placeholder="Search disease, doctors, treatment"
           ></input>
           <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500"></IoSearchOutline>
         </div>
       </div>
 
-      <div className="hidden xl:flex justify-between px-8 -ml-1">
+      <div className="hidden xl:flex justify-between px-8 -ml-1 bg-white">
         {btmMenus.map((menu, ind) => (
           <DropdownMenu
             key={ind}

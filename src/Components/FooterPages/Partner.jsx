@@ -26,7 +26,7 @@ const Partner = () => {
         </div>
 
         <div className="px-10">
-          <h1 className="text-4xl font-medium text-gray-700 text-center mt-5 lg:mt-0 mb-3">
+          <h1 className="text-4xl font-medium text-gray-700 text-center mt-5 lg:mt-0 mb-4">
             Partner With Us
           </h1>
           <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
