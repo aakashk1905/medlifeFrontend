@@ -22,7 +22,7 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
 
-        <div className="mb-10">
+        <div className="mb-14">
           <div className="px-10">
             <h1 className="text-4xl font-medium text-gray-700 text-center mb-3">
               Privacy Policy

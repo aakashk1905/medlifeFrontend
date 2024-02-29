@@ -118,7 +118,7 @@ const ContactUs = () => {
       </div>
 
       {/* Map */}
-      <div className="py-10">
+      <div className="mt-10 mb-14">
         <h1 className="text-4xl font-medium text-gray-700 text-center mb-5">
           View on map
         </h1>

@@ -24,9 +24,9 @@ const RefundPolicy = () => {
       </div>
 
 
-            <div className='mb-10'>
+            <div className='mb-14'>
             <div className="px-10">
-        <h1 className="text-4xl font-medium text-gray-700 text-center mb-3">
+        <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
         Refund Policy
         </h1>
         <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
@@ -95,7 +95,7 @@ MEDLIFEEASY reserves the right without prior notice to access, read preserve and
 <li className="text-gray-600 text-justify list-disc">Use any device, software, or routine to interfere or attempt to interfere with the proper working of the website; or</li>
 <li className="text-gray-600 text-justify list-disc mb-2">Take any action that imposes an unreasonable or disproportionately large load on the website infrastructure</li>
 
-<p className="text-gray-600 text-justify mb-2">
+<p className="text-gray-600 text-justify">
 THIS WEBSITE AND ALL CONTENT, PRODUCTS AND SERVICES INCLUDED IN OR ACCESSIBLE FROM THIS WEBSITE ARE PROVIDED “AS IS” AND WITHOUT WARRANTIES OR REPRESENTATIONS OF ANY KIND (EXPRESS, IMPLIED AND STATUTORY, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF TITLE AND NON-INFRINGEMENT AND THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE), ALL OF WHICH FEVL DISCLAIMS TO THE FULLEST EXTENT PERMITTED BY LAW. YOUR USE OF THE SITE IS AT YOUR OWN RISK.
               </p>
 
