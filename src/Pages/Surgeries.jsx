@@ -14,7 +14,7 @@ const Surgeries = () => {
      <div className='px-5 md:px-10 py-10'>
         <div className='bg-white shadow-md rounded-xl px-10 py-10 border-t border-gray-100'>
         <h1 className='text-2xl md:text-4xl font-semibold text-gray-800 text-center mb-8'>Surgeries We Perform</h1>
-           <div className='grid grid-cols-2 md:grid-cols-4 gap-0 md:gap-5 lg:gap-0 lg:grid-cols-8 mb-8'>
+           <div className='grid grid-cols-2 md:grid-cols-4 gap-0 md:gap-5 lg:gap-0 lg:grid-cols-8 mb-8 px-0 md:px-10 lg:px-16'>
             <div className='flex flex-col items-center'>
                 <img className='border' src={piles} alt="" />
                 <p className='text-gray-800'>Piles</p>

@@ -9,8 +9,8 @@ const Hero = () => {
                 <div className='relative mt-3 xl:col-span-2'>
                 <h1 className='text-[28px] md:text-5xl lg:text-4xl xl:text-5xl font-bold text-[#2ca9e1] mb-0 md:mb-2 text-center lg:text-start'>Welcome to Med Life Easy</h1>
                 <h2 className='text-gray-500 text-xl md:text-3xl lg:text-2xl xl:text-3xl font-semibold text-center lg:text-start'>Your Path to Health and Happiness</h2>
-                <div className=''>
-                <img className='w-full lg:w-[464px]' src={heroDoc} alt="" />
+                <div className='flex lg:justify-start justify-center'>
+                <img className='w-full md:w-96 lg:w-[464px]' src={heroDoc} alt="" />
                 </div>
 
                 {/* Bottom card */}
@@ -20,19 +20,19 @@ const Hero = () => {
               <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">
                 1000+
               </h1>
-              <p className="text-sm md:text-base">DOCTORS</p>
+              <p className="text-xs md:text-base">DOCTORS</p>
             </div>
             <div className="border-r-2 pr-12 pl-2 md:pl-0">
               <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">
                 2000+
               </h1>
-              <p className="text-sm md:text-base">HOSPITALS</p>
+              <p className="text-xs md:text-base">HOSPITALS</p>
             </div>
             <div className='pl-2 md:pl-0'>
               <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">
                 500+
               </h1>
-              <p className="text-sm md:text-base">TREATMENTS</p>
+              <p className="text-xs md:text-base">TREATMENTS</p>
             </div>
           </div>
         </div>
