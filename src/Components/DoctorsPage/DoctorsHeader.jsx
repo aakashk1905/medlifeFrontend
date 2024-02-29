@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const DoctorsHeader = () => {
   return (
     <div className="bg-[#fcf8ff] px-5 lg:px-10 mt-2 mb-10">
-      {/* Breadcumber menu */}
+      {/* Breadcrumbs menu */}
       <div className="text-sm breadcrumbs ">
         <ul>
           <li>

@@ -60,7 +60,7 @@ const WriteReview = () => {
   return (
     <div>
       <Navbar></Navbar>
-      {/* Breadcumber menu */}
+      {/* Breadcrumbs menu */}
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
         <ul>
           <li>

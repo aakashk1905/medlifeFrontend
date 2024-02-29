@@ -9,7 +9,7 @@ const DiseaseHero = ({content, disease}) => {
       <Helmet>
         <title>Medlife Easy | {disease}</title>
       </Helmet>
-      {/* Breadcumber menu */}
+      {/* Breadcrumbs menu */}
       <div className="text-sm breadcrumbs mt-3">
         <ul>
           <li>

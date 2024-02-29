@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Rectangle from "../../Assests/Rectangle 19194.png";
 import { IoBagAdd } from "react-icons/io5";
-import { BiSolidUserPin } from "react-icons/bi";
 import { HiLocationMarker } from "react-icons/hi";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";

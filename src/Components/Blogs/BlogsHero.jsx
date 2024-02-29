@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const BlogsHero = () => {
   return (
     <div className="bg-[#fcf8ff] px-5 lg:px-10 relative">
-      {/* Breadcumber menu */}
+      {/* Breadcrumbs menu */}
       <div className="text-sm breadcrumbs mt-2">
         <ul>
           <li>

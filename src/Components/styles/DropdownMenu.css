@@ -54,6 +54,7 @@
 
 .dropdown-menu li:hover {
   background-color: #ddd;
+  transition-duration: 400ms;
 }
 
 /* .dropdown:hover .dropdown-menu {

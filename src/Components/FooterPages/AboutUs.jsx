@@ -20,7 +20,7 @@ const AboutUs = () => {
         <title>Medlife Easy | About Us</title>
       </Helmet>
       <Navbar></Navbar>
-      {/* Breadcumber menu */}
+      {/* Breadcrumbs menu */}
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
         <ul>
           <li>

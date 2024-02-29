@@ -37,7 +37,7 @@ const BlogsDetails = () => {
     <div>
       <Navbar></Navbar>
 
-      {/* Breadcumber menu */}
+      {/* Breadcrumbs menu */}
       <div className="text-sm breadcrumbs px-5 md:px-5 lg:px-10 mt-5 mb-3">
         <ul>
           <li>

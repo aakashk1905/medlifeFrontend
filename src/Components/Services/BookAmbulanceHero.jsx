@@ -3,11 +3,21 @@ import ambulance from "../../Assests/ambulance.png";
 import duty from "../../Assests/duty.png";
 import doctor from "../../Assests/doctor.png";
 import bed from "../../Assests/bed.png";
+import { Link } from 'react-router-dom';
 
 const BookAmbulanceHero = () => {
     return (
-        <div>
-            <div className='bg-gradient-to-r from-teal-50 via-transparent to-teal-50 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 px-5 md:px-20 py-5 md:py-20'>
+        <div className='bg-gradient-to-r from-teal-50 via-transparent to-teal-50 px-5 lg:px-10 pt-3'>
+            {/* Breadcrumbs menu */}
+      <div className="text-sm breadcrumbs mb-2">
+        <ul>
+          <li>
+          <Link to={"/"}>Home</Link>
+          </li>
+          <li>Book Ambulence</li>
+        </ul>
+      </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-0 '>
                 <div>
                 <h1 className='text-[#17324A] text-3xl md:text-5xl font-semibold mb-7'> Our Ambulence service</h1>
                 

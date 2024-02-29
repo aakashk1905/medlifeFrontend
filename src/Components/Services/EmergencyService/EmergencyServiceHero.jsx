@@ -6,18 +6,18 @@ import { Link } from "react-router-dom";
 const EmergencyServiceHero = () => {
   return (
     <div className="bg-[#FCF8FF] px-5 lg:px-10 py-2">
-             {/* Breadcumber menu */}
+             {/* Breadcrumbs menu */}
              <div className="text-sm breadcrumbs mb-2">
         <ul>
           <li>
-          <Link to={"/"}>Home</Link>
+          <Link className="text-gray-800" to={"/"}>Home</Link>
           </li>
-          <li>Emergency services</li>
+          <li lang="text-gray-800">Emergency services</li>
         </ul>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10">
       <div className="col-span-2">
-        <h1 className="text-5xl font-bold text-[#2CA9E1] mb-5">
+        <h1 className="text-5xl font-bold text-gray-600 mb-5">
           Welcome to Med Life Emergency Services
         </h1>
         <p className="text-3xl text-gray-500 mb-10">

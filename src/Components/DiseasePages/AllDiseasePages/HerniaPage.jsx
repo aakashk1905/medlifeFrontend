@@ -82,7 +82,7 @@ const HerniaPage = () => {
   return (
     <div>
       <Navbar></Navbar>
-      {/* Breadcumber menu
+      {/* Breadcrumbs menu
       <div className="text-sm breadcrumbs px-5 md:px-10 mt-4">
         <ul>
           <li>
