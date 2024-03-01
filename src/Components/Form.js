@@ -153,7 +153,7 @@ const Form = ({ header }) => {
   };
 
   return (
-    <div className="w-full shadow-lg rounded-3xl mb-3">
+      <div style={{maxWidth:"500px"}} className="w-full xl:w-11/12 shadow-lg rounded-3xl mb-3 ">
       <form
         onSubmit={handleSubmit}
         className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full"

@@ -8,6 +8,7 @@ const Swipperbtn = () => {
     return (
         <div className='flex items-center justify-between'>
             <button className='' onClick={() => swipper.slidePrev()}><IoIosArrowDropleftCircle className='text-blue-500 text-4xl'></IoIosArrowDropleftCircle></button>
+
             <button onClick={() => swipper.slideNext()}><IoIosArrowDroprightCircle className='text-blue-500 text-4xl'></IoIosArrowDroprightCircle></button>
             
         </div>

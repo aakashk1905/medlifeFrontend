@@ -10,7 +10,7 @@ import Swipperbtn from './Swipperbtn';
 
 const Caurosel = () => {
     return (
-      <div className='flex items-center justify-center h-screen'>
+      <div className='flex items-center justify-center h-screen relative mx-9'>
           <Swiper slidesPerView={1}
           breakpoints={{
             768: {
@@ -32,8 +32,8 @@ const Caurosel = () => {
           modules={[]} className="carousel">
             
         <SwiperSlide>
-        <div className='px-10 lg:px-16'>
-        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+        <div className='px-[20px]'>
+        <div className="bg-white w-full h-auto p-3 rounded-xl shadow-md">
             <div className="flex gap-2 mb-3">
               <img src={fbrev} alt=""/>
               <div>
@@ -76,8 +76,8 @@ const Caurosel = () => {
         </SwiperSlide>
             
         <SwiperSlide>
-        <div className='px-10 lg:px-16'>
-        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+        <div className='px-[20px]'>
+        <div className="bg-white w-full h-auto p-3 rounded-xl shadow-md">
             <div className="flex gap-2 mb-3">
               <img src={fbrev} alt=""/>
               <div>
@@ -120,8 +120,8 @@ const Caurosel = () => {
         </SwiperSlide>
             
         <SwiperSlide>
-        <div className='px-10 lg:px-16'>
-        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+        <div className='px-[20px]'>
+        <div className="bg-white w-full h-auto p-3 rounded-xl shadow-md">
             <div className="flex gap-2 mb-3">
               <img src={fbrev} alt=""/>
               <div>
@@ -164,8 +164,8 @@ const Caurosel = () => {
         </SwiperSlide>
             
         <SwiperSlide>
-        <div className='px-10 lg:px-16'>
-        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+        <div className='px-[20px]'>
+        <div className="bg-white w-full h-auto p-3 rounded-xl shadow-md">
             <div className="flex gap-2 mb-3">
               <img src={fbrev} alt=""/>
               <div>
@@ -208,8 +208,8 @@ const Caurosel = () => {
         </SwiperSlide>
             
         <SwiperSlide>
-        <div className='px-10 lg:px-16'>
-        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+        <div className='px-[20px]'>
+        <div className="bg-white w-full h-auto p-3 rounded-xl shadow-md">
             <div className="flex gap-2 mb-3">
               <img src={fbrev} alt=""/>
               <div>
@@ -253,7 +253,7 @@ const Caurosel = () => {
             
         <SwiperSlide>
         <div className='px-10'>
-        <div className="bg-white w-[340px] h-auto p-3 rounded-xl shadow-md">
+        <div className="bg-white w-full h-auto p-3 rounded-xl shadow-md">
             <div className="flex gap-2 mb-3">
               <img src={fbrev} alt=""/>
               <div>
@@ -296,7 +296,7 @@ const Caurosel = () => {
         </SwiperSlide>
 
 
-        <div className='bottom-56'>
+        <div className='absolute top-56 w-full z-10'>
         <Swipperbtn></Swipperbtn>
         </div>
       </Swiper>

@@ -31,6 +31,7 @@ import Caurosel from "./Components/Caurosel";
 import Caurosel2 from "./Components/Caurosel2";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import "./App.css"
 const queryClient = new QueryClient();
 function App() {
   return (

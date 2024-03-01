@@ -107,7 +107,7 @@ const HerniaPage = () => {
         diseaseName={diseaseContent[subDisease].parentDisease}
       ></DiseaseDoc>
       <ExploreMedLife content={diseaseContent[subDisease]}></ExploreMedLife>
-      <Experience></Experience>
+      {/* <Experience></Experience> */}
       <Patientslove></Patientslove>
       <AboutDisease content={diseaseContent[subDisease]}></AboutDisease>
       <Blogs></Blogs>

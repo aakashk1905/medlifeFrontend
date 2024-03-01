@@ -34,8 +34,8 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
           <li className="capitalize">{subDisease}</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10 relative">
-      <div className="pt-4 pb-10 z-10 col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 lg:gap-10 relative">
+      <div className="pt-4 pb-10 z-10 col-span-3">
         {/* Main heading */}
         <h1 className="text-5xl text-gray-600 font-semibold mb-5">
           {content ? content.heroHeader : ""}
@@ -83,17 +83,17 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
       </div>
 
       <img
-        className="hidden lg:flex absolute bottom-0 left-[600px] w-[350px]"
+        className="hidden xl:flex absolute bottom-0 left-[600px] w-[350px]"
         src={roundedShape}
         alt=""
-      />
+      /> 
 
       {/* Right side image and bottom card */}
-      <div className="relative">
+      <div className="relative col-span-2">
         {/* hero image */}
         {/* <img className="w-full h-full" src="https://65d5d8fb8875068c49d425be--genuine-kulfi-2c5ab7.netlify.app/static/media/stomach-pain.dc3c833198638390b31f.png" alt="diseasePicture" /> */}
 
-        <div className="mt-1 lg:-mt-6">
+        <div className="mt-1 lg:-mt-6 flex md:justify-center lg:justify-end">
           <Form header={"Book Free Consultation"} />
         </div>
 

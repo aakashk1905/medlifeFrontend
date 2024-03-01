@@ -1,4 +1,8 @@
-
+.swiper-slide{
+  /* width: fit-content !important; */
+  display: flex !important;
+  justify-content: center !important;
+}
 
 .App {
   text-align: center;
