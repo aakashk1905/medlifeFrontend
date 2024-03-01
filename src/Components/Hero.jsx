@@ -14,7 +14,7 @@ const Hero = () => {
                 </div>
 
                 {/* Bottom card */}
-<div className="absolute bottom-2 w-full lg:w-[480px]">
+<div className="absolute bottom-7 w-full lg:w-[480px]">
           <div className="bg-[#FCFCFF] shadow py-3 px-6 flex justify-between items-center rounded-xl">
             <div className="border-r-2 pr-12">
               <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">

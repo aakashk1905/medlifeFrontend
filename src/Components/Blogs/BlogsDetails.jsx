@@ -44,7 +44,7 @@ const BlogsDetails = () => {
             <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <Link>Blogs</Link>
+            <Link to={"/blogs"}>Blogs</Link>
           </li>
           <li className="capitalize">
             {blogDetails.title.slice(0, 30)} ... ...

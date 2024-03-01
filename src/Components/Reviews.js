@@ -25,7 +25,7 @@ const Reviews = () => {
 
   return (
     <div className="rev-cont">
-      <div className="hero-btm-head">our patient loves us</div>
+      <div className="hero-btm-head">Our patient loves us</div>
       <div className="rev-car-cont">
         <div className="arrow-div" onClick={() => handleScroll("left")}>
           &lt;

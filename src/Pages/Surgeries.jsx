@@ -1,12 +1,12 @@
 import React from 'react';
 import piles from "../Assests/surgeries image/piles (2).png"
-import analFistula from "../Assests/surgeries image/piles (2).png"
-import analFissure from "../Assests/surgeries image/piles (2).png"
-import gallstones from "../Assests/surgeries image/piles (2).png"
-import kidneyStones from "../Assests/surgeries image/piles (2).png"
-import cotaract from "../Assests/surgeries image/piles (2).png"
-import lasikEye from "../Assests/surgeries image/piles (2).png"
-import hernia from "../Assests/surgeries image/piles (2).png"
+import analFistula from "../Assests/surgeries image/anal fistula.png"
+import analFissure from "../Assests/surgeries image/anal fissure.png"
+import gallstones from "../Assests/surgeries image/gallstones.png"
+import kidneyStones from "../Assests/surgeries image/kidney stone.png"
+import cotaract from "../Assests/surgeries image/catract.png"
+import lasikEye from "../Assests/surgeries image/lasik eye.png"
+import hernia from "../Assests/surgeries image/hernia (2).png"
 import { MdKeyboardArrowDown } from "react-icons/md";
 
 const Surgeries = () => {
@@ -21,31 +21,31 @@ const Surgeries = () => {
             </div>
             <div className='flex flex-col items-center'>
                 <img className='border' src={analFistula} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <p className='text-gray-800'>Anal Fistula</p>
             </div>
             <div className='flex flex-col items-center'>
-                <img className='border' src={analFissure} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <img className='border mb-0.5' src={analFissure} alt="" />
+                <p className='text-gray-800'>Anal Fissure</p>
             </div>
             <div className='flex flex-col items-center'>
-                <img className='border' src={gallstones} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <img className='border mb-0.5' src={gallstones} alt="" />
+                <p className='text-gray-800'>Gallstones</p>
             </div>
             <div className='flex flex-col items-center'>
-                <img className='border' src={kidneyStones} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <img className='border mb-0.5' src={kidneyStones} alt="" />
+                <p className='text-gray-800'>Kidney Stones</p>
             </div>
             <div className='flex flex-col items-center'>
-                <img className='border' src={cotaract} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <img className='border mb-0.5' src={cotaract} alt="" />
+                <p className='text-gray-800'>Cataract</p>
             </div>
             <div className='flex flex-col items-center'>
-                <img className='border' src={lasikEye} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <img className='border mb-0.5' src={lasikEye} alt="" />
+                <p className='text-gray-800'>Lasik Eye Surgery</p>
             </div>
             <div className='flex flex-col items-center'>
-                <img className='border' src={hernia} alt="" />
-                <p className='text-gray-800'>Piles</p>
+                <img className='border mb-0.5' src={hernia} alt="" />
+                <p className='text-gray-800'>Hernia</p>
             </div>
 
             
