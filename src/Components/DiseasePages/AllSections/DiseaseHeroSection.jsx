@@ -18,12 +18,12 @@ const DiseaseHeroSection = ({content,subDisease, diseaseName}) => {
     borderRadius: "8px",
   };
   return (
-    <div className="bg-[#fcf8ff] px-5 md:px-9">
+    <div className="bg-[#fcf8ff] px-5 md:px-9 py-2">
       <Helmet>
         <title>{diseaseName} | {subDisease}</title>
       </Helmet>
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs mt-3">
+      <div className="text-sm breadcrumbs">
         <ul>
           <li>
           <Link to={"/"}>Home</Link>

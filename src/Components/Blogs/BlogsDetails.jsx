@@ -38,7 +38,7 @@ const BlogsDetails = () => {
       <Navbar></Navbar>
 
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-5 lg:px-10 mt-5 mb-3">
+      <div className="text-sm breadcrumbs px-5 md:px-5 lg:px-9 py-4">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -51,7 +51,7 @@ const BlogsDetails = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5 gap-0 lg:gap-5 md:px-5 lg:px-10 mb-10">
+      <div className="grid grid-cols-1 lg:grid-cols-3 px-5 gap-0 lg:gap-5 md:px-5 lg:px-9 mb-10">
           <div className="col-span-2 rounded-3xl shadow-lg h-full lg:h-[413px]">
             <img
               className="w-full h-full rounded-b-3xl rounded-t-3xl"
@@ -61,9 +61,9 @@ const BlogsDetails = () => {
             />
           </div>
 
-          <div className="border-t border-gray-100 rounded-3xl mt-7 lg:mt-0 hidden lg:block">
-            <Form></Form>
-          </div>
+          <div className="z-10 -mt-6 md:justify-center lg:justify-end hidden lg:flex">
+          <Form header={"Book Free Consultation"} />
+        </div>
       </div>
 
       <div>
@@ -76,9 +76,9 @@ const BlogsDetails = () => {
             </p>
             </div>
 
-            <div className="border-t border-gray-100 rounded-3xl mt-7 lg:mt-0 block lg:hidden px-5 mb-10">
-            <Form></Form>
-          </div>
+            <div className="z-10 -mt-6 flex md:justify-center lg:hidden">
+          <Form header={"Book Free Consultation"} />
+        </div>
       </div>
       <Footer></Footer>
     </div>

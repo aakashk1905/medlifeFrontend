@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const DoctorsHeader = () => {
   return (
-    <div className="bg-[#fcf8ff] px-5 lg:px-10 mt-2 mb-10">
+    <div className="bg-[#fcf8ff] px-5 lg:px-9 py-2 mb-10">
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs ">
+      <div className="text-sm breadcrumbs">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -31,7 +31,7 @@ const DoctorsHeader = () => {
           </button>
         </div>
 
-          <div className="mt-5 lg:-mt-6">
+          <div className="mt-5 lg:-mt-6 flex md:justify-center lg:justify-end">
           <Form header={"Book Free Consultation"} />
           </div>
       </div>

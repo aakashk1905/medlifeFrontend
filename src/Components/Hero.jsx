@@ -14,7 +14,8 @@ const Hero = () => {
                 </div>
 
                 {/* Bottom card */}
-<div className="absolute bottom-7 w-full lg:w-[480px]">
+<div className='flex justify-center lg:justify-start'>
+<div className="absolute bottom-2 lg:bottom-4 w-full md:w-3/4 lg:w-[480px]">
           <div className="bg-[#FCFCFF] shadow py-3 px-6 flex justify-between items-center rounded-xl">
             <div className="border-r-2 pr-12">
               <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">
@@ -36,9 +37,10 @@ const Hero = () => {
             </div>
           </div>
         </div>
+</div>
                 </div>
 
-                <div className="w-full mt-5">
+                <div className="w-full mt-5 flex justify-center lg:justify-end">
           <Form header={"Book Free Consultation"} />
         </div>
             </div>

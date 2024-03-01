@@ -434,7 +434,7 @@ const DoctorsDetails = () => {
           </div>
         </div>
 
-        <div className="px-5 md:px-0">
+        <div className="px-5 md:px-0 flex md:justify-center lg:justify-end">
           <Form></Form>
         </div>
       </div>

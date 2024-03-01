@@ -76,13 +76,8 @@ const ReviewHeader = () => {
   return (
     <div>
       <div className="">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10">
           <div className="col-span-2">
-            {/* <Link to={"/writeReview"}>
-          <button className="w-80 bg-[#00A0AA] px-4 py-5 rounded-md text-white text-xl mb-20">
-            Leave a Review
-          </button>
-          </Link> */}
 
             {/* Left side reviews section */}
             <div className="grid grid-cols-1 md:grid-cols-4 gap-3 col-span-2 mb-8">
@@ -103,7 +98,7 @@ const ReviewHeader = () => {
                 <h2 className="text-xl font-semibold text-center">
                   Average Rating
                 </h2>
-                <div className="flex items-center justify-center gap-5">
+                <div className="flex flex-wrap items-center justify-center gap-5">
                   <h2 className="text-xl font-semibold">4.7</h2>
                   <div className="flex items-center gap-2">
                     <svg
@@ -383,6 +378,7 @@ const ReviewHeader = () => {
           </div>
 
           {/* Right side form */}
+          <div className="w-full -mt-0 lg:-mt-10 mb-2 md:mb-10 lg:mb-0">
           <form
             onSubmit={handleSubmitDetails}
             className="bg-white shadow-xl mb-7 md:mb-0 border p-6 rounded-3xl flex flex-col items-center gap-3 "
@@ -395,19 +391,19 @@ const ReviewHeader = () => {
             </h2>
             <input
               name="patientName"
-              className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
+              className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
               placeholder="Patient Name / रोगी का नाम"
               type="text"
             />
             <input
               name="mobile"
-              className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
+              className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
               placeholder="Mobile No. / मोबाइल नंबर"
               type="number"
             />
             <input
               name="doctorName"
-              className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white"
+              className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
               placeholder="Doctor's Name"
               type="text"
             />
@@ -415,7 +411,7 @@ const ReviewHeader = () => {
             <div class="relative inline-block text-left w-full">
               <select
                 name="city"
-                className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white appearance-none"
+                className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg appearance-none"
               >
                 <option disabled selected>
                   Select City / शहर चुनें
@@ -433,7 +429,7 @@ const ReviewHeader = () => {
             <div class="relative inline-block text-left w-full">
               <select
                 name="disease"
-                className="p-4 rounded-xl border border-gray-400 outline-none w-full bg-white appearance-none"
+                className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg appearance-none"
               >
                 <option disabled selected>
                   Select Disease / रोग का चयन करें
@@ -494,6 +490,7 @@ const ReviewHeader = () => {
               <FaArrowRightToBracket></FaArrowRightToBracket>
             </button>
           </form>
+          </div>
         </div>
       </div>
     </div>

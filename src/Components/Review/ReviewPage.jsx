@@ -13,7 +13,7 @@ const ReviewPage = () => {
         <div>
             <Navbar></Navbar>
             {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+      <div className="text-sm breadcrumbs px-5 md:px-9 mt-2">
         <ul>
           <li>
           <Link to={"/"}>Home</Link>
@@ -22,7 +22,7 @@ const ReviewPage = () => {
         </ul>
       </div>
 
-      <div className='px-5 md:px-10'>
+      <div className='px-5 lg:px-9'>
       <div className='shadow-md rounded-md p-4'>
       <ReviewHeader></ReviewHeader>
       <ReviewCard></ReviewCard>

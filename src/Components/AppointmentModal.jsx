@@ -103,7 +103,7 @@ const AppointmentModal = (props) => {
         {text}
       </button>
       <dialog id="my_modal_4" className="modal">
-        <div className="modal-box bg-white w-5/6 max-w-6xl p-0">
+        <div className="modal-box bg-white w-11/12 md:w-5/6 max-w-6xl p-0">
           <form method="dialog">
             <button className="btn btn-sm btn-circle btn-ghost absolute right-1 lg:right-2 top-[10px] lg:top-4 text-white">
               ✕
@@ -116,7 +116,7 @@ const AppointmentModal = (props) => {
           </div>
 
           <div>
-            <div className="mb-5 px-7">
+            <div className="mb-9 px-2">
               <h1 className="text-gray-700 font-semibold text-xl mb-1 text-center lg:text-start">
                 Elevating Your Surgical Experience
               </h1>
@@ -192,10 +192,10 @@ const AppointmentModal = (props) => {
               </div>
 
               {/* Form */}
-              <div className="-mt-6 lg:-mt-[75px] px-3">
+              <div className="-mt-6 lg:-mt-[75px] px-2">
               <div className="w-full shadow-lg rounded-3xl mb-3 border-t border-gray-100">
      <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full">
-     <div className="text-[#5854a8] text-2xl font-semibold mb-1">Book Free Consultation</div>
+     <div className="text-[#5854a8] text-md md:text-2xl font-semibold mb-1">Book Free Consultation</div>
       <input
         type="text"
         id="patientName"

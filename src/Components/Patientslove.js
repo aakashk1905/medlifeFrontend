@@ -1,8 +1,5 @@
 import React, { useRef } from "react";
 import "./styles/Patientslove.css";
-
-import fbrev from "../Assests/fbrev.png";
-import revstars from "../Assests/revstars.png";
 import { Link, useLocation } from "react-router-dom";
 import useScrollToTop from "../hooks/useScrollToTop";
 import Caurosel from "./Caurosel";

@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const BlogsHero = () => {
   return (
-    <div className="bg-[#fcf8ff] px-5 lg:px-10 relative">
+    <div className="bg-[#fcf8ff] px-5 lg:px-9 py-2 relative">
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs mt-2">
+      <div className="text-sm breadcrumbs">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -38,7 +38,7 @@ const BlogsHero = () => {
           alt=""
         />
 
-        <div className="z-10 -mt-6">
+        <div className="z-10 -mt-6 flex md:justify-center lg:justify-end">
           <Form header={"Book Free Consultation"} />
         </div>
       </div>

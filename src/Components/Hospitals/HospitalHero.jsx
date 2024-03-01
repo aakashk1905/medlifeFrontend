@@ -4,9 +4,9 @@ import ellipse from "../../Assests/Ellipse 21.png"
 
 const HospitalHero = () => {
     return (
-        <div className='bg-[#fcf8ff] px-10 mt-2 mb-10'>
+        <div className='bg-[#fcf8ff] px-5 lg:px-9 py-2 mb-10'>
                {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs py-5">
+      <div className="text-sm breadcrumbs">
         <ul>
           <li>
           <Link to={"/"}>Home</Link>

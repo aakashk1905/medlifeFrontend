@@ -5,12 +5,12 @@ import Form from "../Form";
 
 const DiseaseHero = ({content, disease}) => {
   return (
-    <div className="bg-[#fcf8ff] px-5 md:px-9">
+    <div className="bg-[#fcf8ff] px-5 md:px-9 py-2">
       <Helmet>
         <title>Medlife Easy | {disease}</title>
       </Helmet>
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs mt-3">
+      <div className="text-sm breadcrumbs">
         <ul>
           <li>
           <Link to={"/"}>Home</Link>
@@ -41,7 +41,7 @@ const DiseaseHero = ({content, disease}) => {
       {/* Right side image and bottom card */}
       <div className="relative">
 
-        <div className="mt-1 lg:-mt-6">
+        <div className="mt-1 lg:-mt-6 flex justify-center lg:justify-end">
           <Form header={"Book Free Consultation"} />
         </div>
 

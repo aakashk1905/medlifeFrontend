@@ -11,7 +11,7 @@ const cities = [
   "Bihar Sharif",
 ];
 
-const CityDropdown = ({ onCityChange, type }) => {
+const CityDropdown = ({ onCityChange, type, cityName }) => {
   const [selectedCity, setSelectedCity] = useState("");
 
   return (

@@ -5,7 +5,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import useAxiosBaseUrl from "../hooks/useBaseUrl.jsx";
 import { Toaster, toast } from "sonner";
 
-const Form = ({ header }) => {
+const Form = ({ header, cityName }) => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
@@ -158,7 +158,7 @@ const Form = ({ header }) => {
         onSubmit={handleSubmit}
         className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full"
       >
-        <div className="hc-head mb-1">{header}</div>
+        <div className="text-center text-2xl font-bold text-[#5854a8] mb-1">{header}</div>
         <input
           type="text"
           id="patientName"
