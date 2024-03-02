@@ -32,11 +32,13 @@ import Caurosel2 from "./Components/Caurosel2";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import "./App.css"
+import FormProvider from "./Components/Provider/FormProvider";
 const queryClient = new QueryClient();
 function App() {
   return (
     <Router>
       <HelmetProvider>
+      <FormProvider>
       <QueryClientProvider client={queryClient}>
       
       <Routes>
@@ -76,6 +78,7 @@ function App() {
 
       </Routes>
       </QueryClientProvider>
+      </FormProvider>
       </HelmetProvider>
       
     </Router>

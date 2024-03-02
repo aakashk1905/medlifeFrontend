@@ -1,25 +1,60 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import CityDropdown from "./CityDropdown.js";
 import "./styles/Form.css";
 import { IoIosArrowDown } from "react-icons/io";
 import useAxiosBaseUrl from "../hooks/useBaseUrl.jsx";
 import { Toaster, toast } from "sonner";
+import { formContext } from "./Provider/FormProvider.jsx";
 
-const Form = ({ header, cityName }) => {
+const Form = ({ header }) => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
-  const [selectedCity, setSelectedCity] = useState(localStorage.getItem("selectedCity") || "");
+  const [selectedCity, setSelectedCity] = useState();
   const [selectedDisease, setSelectedDisease] = useState("");
+  const {cityName, setCityName} = useContext(formContext);
 
   const cities = [
-    "Select City",
     "Patna",
     "Gaya",
     "Bhagalpur",
     "Muzaffarpur",
     "Purnia",
     "Darbhanga",
-    "Bihar Sharif",
+    "Arrah",
+    "Begusarai",
+    "Katihar",
+    "Munger",
+    "Chhapra",
+    "Danapur",
+    "Bettiah",
+    "Saharsa",
+    "Sasaram",
+    "Hajipur",
+    "Dehri",
+    "Siwan",
+    "Motihari",
+    "Nawada",
+    "Bagaha",
+    "Buxar",
+    "Kishanganj",
+    "Sitamarhi",
+    "Jamalpur",
+    "Jehanabad",
+    "Aurangabad",
+    "Lakhisarai",
+    "Sheikhpura",
+    "Madhubani",
+    "Samastipur",
+    "Buxar",
+    "Supaul",
+    "Bhabua",
+    "Barh",
+    "Mokama",
+    "Forbesganj",
+    "Araria",
+    "Sherghati",
+    "Raxaul",
+    "Nokha",
   ];
 
 
@@ -154,23 +189,6 @@ const Form = ({ header, cityName }) => {
       });
   };
 
-  // const handleLocalStorageChange = () => {
-  //   setSelectedCity(localStorage.getItem("selectedCity") || "")
-  //   console.log("object");
-  // }
-
-  useEffect(() => {
-    const handleLocalStorageChange = () => {
-      setSelectedCity(localStorage.getItem("selectedCity") || "")
-      console.log("object");
-    }
-    window.addEventListener("storage", handleLocalStorageChange)
-  }, [])
-
-  useEffect(() => {
-      console.log(selectedCity);
-  }, [selectedCity])
-
   return (
       <div style={{maxWidth:"500px"}} className="w-full xl:w-11/12 shadow-lg rounded-3xl mb-3 ">
       <form
@@ -183,7 +201,7 @@ const Form = ({ header, cityName }) => {
           id="patientName"
           value={patientName}
           name="patientName"
-          placeholder="Patient Name "
+          placeholder="Patient Name"
           className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
           onChange={(e) => setPatientName(e.target.value)}
         />
@@ -196,11 +214,11 @@ const Form = ({ header, cityName }) => {
           className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
           onChange={(e) => setMobileNumber(e.target.value)}
         />
-
+        {/* <p className="text-gray-700">{cityName}</p> */}
         <div className="relative inline-block text-left w-full">
           <select
-            value={selectedCity}
-            onChange={(e) => setSelectedCity(e.target.value)}
+            value={cityName}
+            onChange={(e) => setCityName(e.target.value)}
             className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
             {cities.map((city) => (
@@ -214,7 +232,7 @@ const Form = ({ header, cityName }) => {
           </div>
         </div>
 
-        <CityDropdown onCityChange={setSelectedCity} type="city" />
+        <CityDropdown onCityChange={setSelectedCity} setCityName={setCityName} type="city" />
 
         <div className="relative inline-block text-left w-full">
           <select

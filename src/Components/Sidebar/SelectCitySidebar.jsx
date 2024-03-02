@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaLocationDot } from "react-icons/fa6";
 import { RxCross2 } from "react-icons/rx";
 import Form from "../Form";
 import { FaAngleDown } from "react-icons/fa6";
+import { formContext } from "../Provider/FormProvider";
 
 const SelectCitySidebar = () => {
   const biharCities = [
@@ -54,6 +55,8 @@ const SelectCitySidebar = () => {
   const [filteredCities, setFilteredCities] = useState(biharCities);
   const [selectedCity, setSelectedCity] = useState("");
 
+  const { cityName, setCityName } = useContext(formContext);
+
   useEffect(() => {
     const storedCity = localStorage.getItem("selectedCity");
     if (storedCity) {
@@ -82,12 +85,11 @@ const SelectCitySidebar = () => {
 
   const handleCityClick = (city) => {
     setSearchInput(city);
-    setSelectedCity(city);
+    setCityName(city);
     setFilteredCities(filteredCities);
-
+    console.log(cityName);
     localStorage.setItem("selectedCity", city);
   };
-
 
   return (
     <div className="drawer drawer-end">
@@ -98,7 +100,7 @@ const SelectCitySidebar = () => {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-2">
               <FaLocationDot className="text-white"></FaLocationDot>
-              <p className="text-white">{selectedCity}</p>
+              <p className="text-white">{cityName}</p>
             </div>
           </div>
         </label>
@@ -176,7 +178,7 @@ const SelectCitySidebar = () => {
                   fill="#EBFFFE"
                 />
               </svg>
-{/* 
+              {/* 
               <h1 className="text-xl font-semibold text-gray-100 px-4 mt-2 mb-3 flex items-center gap-2">Select your City <FaAngleDown></FaAngleDown></h1> */}
 
               <RxCross2
@@ -187,26 +189,37 @@ const SelectCitySidebar = () => {
           </div>
 
           <div className="sticky top-0 z-30">
-          <h1 className="text-xl font-semibold text-teal-500 px-4 mt-2 mb-3 flex items-center gap-2">Select your City <FaAngleDown></FaAngleDown></h1>
+            <h1 className="text-xl font-semibold text-teal-500 px-4 mt-2 mb-3 flex items-center gap-2">
+              Select your City <FaAngleDown></FaAngleDown>
+            </h1>
 
-{/* Content here */}
-<div className="px-4 pb-5">
-    <input value={searchInput}
-onChange={(e) => handleInputChange(e.target.value)} placeholder="Find Your City" type="text" className="bg-gray-50 p-3 rounded-lg w-full outline-none focus:border-teal-400 transition duration-300 border hover:border-teal-600" />
-  </div>
+            {/* Content here */}
+            <div className="px-4 pb-5">
+              <input
+                value={searchInput}
+                onChange={(e) => handleInputChange(e.target.value)}
+                placeholder="Find Your City"
+                type="text"
+                className="bg-gray-50 p-3 rounded-lg w-full outline-none focus:border-teal-400 transition duration-300 border hover:border-teal-600"
+              />
+            </div>
           </div>
 
-           <div className="px-4">
-           {
-            filteredCities.map((city, index) => 
-              <p onClick={() => handleCityClick(city)} key={index} className="text-gray-500 font-semibold border-b border-gray-300 pb-1 mb-2 cursor-pointer">{city}</p>
-              )
-           }
-           </div>
+          <div className="px-4">
+            {filteredCities.map((city, index) => (
+              <p
+                onClick={() => handleCityClick(city)}
+                key={index}
+                className="text-gray-500 font-semibold border-b border-gray-300 pb-1 mb-2 cursor-pointer"
+              >
+                {city}
+              </p>
+            ))}
+          </div>
 
-           <div className="hidden">
-           <Form cityName={selectedCity}></Form>
-           </div>
+          <div className="hidden">
+            {selectedCity && <Form cityName={cityName} />}
+          </div>
 
           <div className="p-4"></div>
         </ul>
