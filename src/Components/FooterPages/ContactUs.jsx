@@ -28,7 +28,7 @@ const ContactUs = () => {
 
         <div className="px-10">
           {/* <h1 className="text-2xl font-medium text-gray-700 text-center mb-10">Get in touch with us</h1> */}
-          <div className="shadow-lg rounded-l-none md:rounded-l-lg grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          <div className="shadow-lg rounded-l-none md:rounded-l-lg flex gap-20 flex-wrap justify-center items-center">
             <div className="p-5">
               {/* <div className="bg-gray-200 w-0.5 h-full">
 

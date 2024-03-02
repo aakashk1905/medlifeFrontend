@@ -29,6 +29,10 @@ const Caurosel = () => {
               slidesPerView: 3
             }
           }}
+          pagination = {{
+              clickable: true
+          }}
+          
           modules={[]} className="carousel">
             
         <SwiperSlide>

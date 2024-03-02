@@ -145,15 +145,16 @@ const Sidebar = () => {
             {btmMenus.map((menu, id) => (
               <div key={id} className="text-left">
                 <div className="flex">
-                  <button
+                  <Link
+                    to={`/${menu.link}`}
                     type="button"
-                    onClick={() => toggleDropdown(id)}
+                    onMouseEnter={() => toggleDropdown(id)}
                     className="flex items-center justify-between w-full text-base font-medium text-gray-700 mb-5"
                   >
                     {menu.name}
                     <IoIosArrowDown></IoIosArrowDown>
                     
-                  </button>
+                  </Link>
                 </div>
 
                 {openDropdown === id && (
@@ -172,7 +173,7 @@ const Sidebar = () => {
               to={`/treatment/${listItem.split(' ')[0].toLowerCase()}`}
               key={index}
             >
-              <li>{listItem}</li>
+              <li className="text-gray-700">{listItem}</li>
             </Link>
           ))
         ) : (

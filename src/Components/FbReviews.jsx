@@ -2,6 +2,11 @@ import fbrev from "../Assests/fbrev.png";
 import revstars from "../Assests/revstars.png";
 import revrec from "../Assests/revrec.png";
 import Swipperbtn from "./Swipperbtn";
+import 'swiper/css/pagination';
+
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -24,13 +29,16 @@ breakpoints={{
     slidesPerView: 1
   },
   1024: {
-    slidesPerView: 2
+    slidesPerView: 3
   },
   1366 : {
     slidesPerView: 3
   }
+  
 }}
-modules={[]} className="carousel">
+pagination={{
+  clickable:true}}
+modules={[Pagination]} className="carousel">
   
 <SwiperSlide>
 <div className="rev-card">

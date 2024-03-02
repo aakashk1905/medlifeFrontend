@@ -2,7 +2,6 @@ import logo from "../Assests/logo.svg";
 import DropdownMenu from "./DropdownMenu";
 import Sidebar from "./Sidebar/Sidebar";
 import { Link, Outlet } from "react-router-dom";
-import { FaLocationDot } from "react-icons/fa6";
 import { IoSearchOutline } from "react-icons/io5";
 import SelectCitySidebar from "./Sidebar/SelectCitySidebar";
 import { useEffect, useState } from "react";

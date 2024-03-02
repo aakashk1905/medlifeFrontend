@@ -28,7 +28,7 @@ const Patientslove = () => {
       <div className="text-gray-800 mb-7 text-3xl font-bold text-center">Our Patient Love Us</div>
 
       <Caurosel></Caurosel>
-      <div className="pl-cta-cont">
+      <div className="pl-cta-cont mt-7">
         <Link onClick={scrollToTop} to={"/review"} className="pl-va">
           View All Reviews
         </Link>

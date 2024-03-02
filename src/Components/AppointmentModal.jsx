@@ -194,8 +194,8 @@ const AppointmentModal = (props) => {
               {/* Form */}
               <div className="-mt-6 lg:-mt-[75px] px-2">
               <div className="w-full shadow-lg rounded-3xl mb-3 border-t border-gray-100">
-     <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full">
-     <div className="text-[#5854a8] text-md md:text-2xl font-semibold mb-1">Book Free Consultation</div>
+     <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3 bg-white p-3 rounded-3xl w-full">
+     <div className="text-[#5854a8] text-lg md:text-2xl font-semibold mb-1">Book Free Consultation</div>
       <input
         type="text"
         id="patientName"

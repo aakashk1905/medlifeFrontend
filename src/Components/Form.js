@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import CityDropdown from "./CityDropdown.js";
 import "./styles/Form.css";
 import { IoIosArrowDown } from "react-icons/io";
@@ -8,7 +8,7 @@ import { Toaster, toast } from "sonner";
 const Form = ({ header, cityName }) => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
-  const [selectedCity, setSelectedCity] = useState("");
+  const [selectedCity, setSelectedCity] = useState(localStorage.getItem("selectedCity") || "");
   const [selectedDisease, setSelectedDisease] = useState("");
 
   const cities = [
@@ -21,6 +21,8 @@ const Form = ({ header, cityName }) => {
     "Darbhanga",
     "Bihar Sharif",
   ];
+
+
   const disease = [
     "Select Disease",
     "Proctology",
@@ -152,6 +154,23 @@ const Form = ({ header, cityName }) => {
       });
   };
 
+  // const handleLocalStorageChange = () => {
+  //   setSelectedCity(localStorage.getItem("selectedCity") || "")
+  //   console.log("object");
+  // }
+
+  useEffect(() => {
+    const handleLocalStorageChange = () => {
+      setSelectedCity(localStorage.getItem("selectedCity") || "")
+      console.log("object");
+    }
+    window.addEventListener("storage", handleLocalStorageChange)
+  }, [])
+
+  useEffect(() => {
+      console.log(selectedCity);
+  }, [selectedCity])
+
   return (
       <div style={{maxWidth:"500px"}} className="w-full xl:w-11/12 shadow-lg rounded-3xl mb-3 ">
       <form
@@ -178,7 +197,7 @@ const Form = ({ header, cityName }) => {
           onChange={(e) => setMobileNumber(e.target.value)}
         />
 
-        <div class="relative inline-block text-left w-full">
+        <div className="relative inline-block text-left w-full">
           <select
             value={selectedCity}
             onChange={(e) => setSelectedCity(e.target.value)}
@@ -190,14 +209,14 @@ const Form = ({ header, cityName }) => {
               </option>
             ))}
           </select>
-          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
             <IoIosArrowDown></IoIosArrowDown>
           </div>
         </div>
 
         <CityDropdown onCityChange={setSelectedCity} type="city" />
 
-        <div class="relative inline-block text-left w-full">
+        <div className="relative inline-block text-left w-full">
           <select
             value={selectedDisease}
             onChange={(e) => {
@@ -211,7 +230,7 @@ const Form = ({ header, cityName }) => {
               </option>
             ))}
           </select>
-          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+          <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
             <IoIosArrowDown></IoIosArrowDown>
           </div>
         </div>

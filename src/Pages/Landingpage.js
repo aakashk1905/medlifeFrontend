@@ -16,6 +16,7 @@ import Footer from "../Components/Footer";
 import Modal from "../Components/Modal";
 import { Helmet } from "react-helmet-async";
 import Surgeries from "./Surgeries";
+import FbReviews from "../Components/FbReviews";
 const Landingpage = () => {
   return (
     <div className="lp-cont">
@@ -23,6 +24,7 @@ const Landingpage = () => {
         <title>Medlife Easy | Home</title>
       </Helmet>
       <Modal></Modal>
+      {/* <FbReviews></FbReviews> */}
       <Hero />
       <Surgeries></Surgeries>
       <Specialities />

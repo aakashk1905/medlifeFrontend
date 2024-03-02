@@ -186,13 +186,15 @@ const SelectCitySidebar = () => {
             </div>
           </div>
 
+          <div className="sticky top-0 z-30">
           <h1 className="text-xl font-semibold text-teal-500 px-4 mt-2 mb-3 flex items-center gap-2">Select your City <FaAngleDown></FaAngleDown></h1>
 
-          {/* Content here */}
-          <div className="px-4 pb-5">
-              <input value={searchInput}
-  onChange={(e) => handleInputChange(e.target.value)} placeholder="Find Your City" type="text" className="bg-gray-50 p-3 rounded-lg w-full outline-none focus:border-teal-400 transition duration-300 border hover:border-teal-600" />
-            </div>
+{/* Content here */}
+<div className="px-4 pb-5">
+    <input value={searchInput}
+onChange={(e) => handleInputChange(e.target.value)} placeholder="Find Your City" type="text" className="bg-gray-50 p-3 rounded-lg w-full outline-none focus:border-teal-400 transition duration-300 border hover:border-teal-600" />
+  </div>
+          </div>
 
            <div className="px-4">
            {
