@@ -190,19 +190,19 @@ const Form = ({ header }) => {
   };
 
   return (
-      <div style={{maxWidth:"500px"}} className="w-full xl:w-11/12 shadow-lg rounded-3xl mb-3 ">
+      <div style={{maxWidth:"550px"}} className="w-full xl:w-11/12 shadow-lg rounded-3xl mb-3 h-full">
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full"
+        className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full h-full justify-evenly"
       >
-        <div className="text-center text-2xl font-bold text-[#5854a8] mb-1">{header}</div>
+        <div className="text-center text-2xl font-bold text-[#5854a8] mb-1" style={{fontSize:'clamp(24px, 2vw, 48px)'}}>{header}</div>
         <input
           type="text"
           id="patientName"
           value={patientName}
           name="patientName"
           placeholder="Patient Name"
-          className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
+          className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 2xl:h-16 rounded-lg"
           onChange={(e) => setPatientName(e.target.value)}
         />
         <input
@@ -211,7 +211,7 @@ const Form = ({ header }) => {
           placeholder="Mobile Number"
           name="mobileNumber"
           value={mobileNumber}
-          className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg"
+          className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg 2xl:h-16"
           onChange={(e) => setMobileNumber(e.target.value)}
         />
         {/* <p className="text-gray-700">{cityName}</p> */}
@@ -219,7 +219,7 @@ const Form = ({ header }) => {
           <select
             value={cityName}
             onChange={(e) => setCityName(e.target.value)}
-            className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
+            className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition 2xl:h-16 duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
             {cities.map((city) => (
               <option key={city} value={city}>
@@ -240,7 +240,7 @@ const Form = ({ header }) => {
             onChange={(e) => {
               setSelectedDisease(e.target.value);
             }}
-            className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
+            className="block appearance-none bg-white border 2xl:h-16 border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
             {disease.map((disease) => (
               <option key={disease} value={disease}>
@@ -254,7 +254,7 @@ const Form = ({ header }) => {
         </div>
 
         <button
-          className="bg-[#00a79d] hover:bg-teal-600 transition duration-300 px-4 w-full h-12 rounded-lg text-white"
+          className="bg-[#00a79d] hover:bg-teal-600 transition duration-300 px-4 w-full h-12 2xl:h-16 rounded-lg text-white"
           type="submit"
         >
           Book Now

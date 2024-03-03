@@ -3,8 +3,7 @@ import "./styles/Blogs.css";
 import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import Loader from "./Loader/Loader";
 import { Link } from "react-router-dom";
-import pic from "../Assests/Dr-Manu-Bora-for-ACL-Treatment.jpg"
-
+import pic from "../Assests/Dr-Manu-Bora-for-ACL-Treatment.jpg";
 
 const Blogs = () => {
   const axiosBaseUrl = useAxiosBaseUrl();
@@ -23,16 +22,15 @@ const Blogs = () => {
       })
       .catch((err) => console.log(err.message));
   }, [axiosBaseUrl]);
-  
+
   return (
-    <div className="py-7 px-5">
-      <div>
+    <div className="py-7 w-full flex flex-col items-center">
+      <div className=" w-[95%] md:w-4/5">
         {/* Headline */}
         <h1 className="text-gray-700 text-4xl font-semibold text-center mb-10">
           Our Recent Blogs
         </h1>
 
-        {/* Blogs card */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
           {loading ? (
             <Loader />

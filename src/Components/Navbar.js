@@ -132,96 +132,81 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className="sticky top-0 z-30">
-      <div className="flex justify-between items-center bg-[#00a79d] pl-5 md:pl-9 lg:pl-8 pr-5 md:pr-9 lg:pr-10 py-2">
-        <img className="" src={logo} alt="logo"/>
-        <div  className="flex items-center gap-5">
-          <div className="hidden md:block relative">
+    <div className="sticky top-0 z-30 +">
+      <div className=" bg-[#00a79d] py-[12px] flex items-center justify-center">
+        <div className="w-[95%] lg:w-[90%] flex justify-between items-center pr-[13px]">
+          <img className="" src={logo} alt="logo" />
+          <div className="flex items-center gap-5">
+            <div className="hidden md:block relative">
+              <input
+                type="text"
+                className="bg-white pl-9 py-2 rounded-lg w-80 focus:outline-none"
+                placeholder="Search disease, doctors, treatment"
+              />
+              <IoSearchOutline className="text-2xl absolute top-2  left-2 text-gray-500"></IoSearchOutline>
+            </div>
+            <div className="hidden lg:flex items-center gap-4">
+              <Link
+                to={"/doctors"}
+                className="text-white hover:text-teal-100 transition duration-300"
+              >
+                Doctors
+              </Link>
+              <Link
+                to={"/emergencyService"}
+                className="text-white hover:text-teal-100 transition duration-300"
+              >
+                Services
+              </Link>
+              <Link
+                to={"/hospitals"}
+                className="text-white hover:text-teal-100 transition duration-300"
+              >
+                Hospitals
+              </Link>
+              <Link
+                to={"/blogs"}
+                className="text-white hover:text-teal-100 transition duration-300"
+              >
+                Blogs
+              </Link>
+            </div>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <SelectCitySidebar></SelectCitySidebar>
+
+            <div className="flex xl:hidden">
+              <Sidebar></Sidebar>
+            </div>
+          </div>
+        </div>
+      </div>
+      {windowDimensions.width <= 600 && (
+        <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
+          <div className="relative w-full flex justify-center">
             <input
               type="text"
-              className="bg-white pl-9 py-2 rounded-lg w-80 focus:outline-none"
+              className="bg-white pl-9 py-3 rounded-lg w-[90%] md:w-80 focus:outline-none"
               placeholder="Search disease, doctors, treatment"
             />
-            <IoSearchOutline className="text-2xl absolute top-2  left-2 text-gray-500"></IoSearchOutline>
-          </div>
-          <div className="hidden lg:flex items-center gap-4">
-            <Link
-              to={"/doctors"}
-              className="text-white hover:text-teal-100 transition duration-300"
-            >
-              Doctors
-            </Link>
-            <Link
-              to={"/emergencyService"}
-              className="text-white hover:text-teal-100 transition duration-300"
-            >
-              Services
-            </Link>
-            <Link
-              to={"/hospitals"}
-              className="text-white hover:text-teal-100 transition duration-300"
-            >
-              Hospitals
-            </Link>
-            <Link
-              to={"/blogs"}
-              className="text-white hover:text-teal-100 transition duration-300"
-            >
-              Blogs
-            </Link>
+            <IoSearchOutline className="text-2xl absolute top-3 left-[6.5%] text-gray-500" />
           </div>
         </div>
+      )}
 
-        <div className="flex items-center gap-3">
-          
-          <SelectCitySidebar></SelectCitySidebar>
-
-          <div className="flex xl:hidden">
-            <Sidebar></Sidebar>
-          </div>
+      <div className="hidden xl:flex justify-center">
+        <div className=" flex justify-between -ml-1 bg-white w-[90%]">
+          {btmMenus.map((menu, ind) => (
+            <DropdownMenu
+              key={ind}
+              st={"btm"}
+              link={menu.link}
+              name={menu.name}
+              list={menu.list}
+            />
+          ))}
         </div>
-      </div>
-
-      {
-  (windowDimensions.width <= 375) && (
-    <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
-      <div className="relative">
-        <input
-          type="text"
-          className="bg-white pl-9 py-3 rounded-lg w-[320px] md:w-80 focus:outline-none"
-          placeholder="Search disease, doctors, treatment"
-        />
-        <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500" />
-      </div>
-    </div>
-  )
-}
-
-      {
-  (windowDimensions.width >= 375) && (
-    <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
-      <div className="relative">
-        <input
-          type="text"
-          className="bg-white pl-9 py-3 rounded-lg w-[388px] md:w-80 focus:outline-none"
-          placeholder="Search disease, doctors, treatment"
-        />
-        <IoSearchOutline className="text-2xl absolute top-3 left-2 text-gray-500" />
-      </div>
-    </div>
-  )
-}
-
-      <div className="hidden xl:flex justify-between px-8 -ml-1 bg-white">
-        {btmMenus.map((menu, ind) => (
-          <DropdownMenu
-            key={ind}
-            st={"btm"}
-            link={menu.link}
-            name={menu.name}
-            list={menu.list}
-          />
-        ))}
       </div>
       <Outlet />
     </div>

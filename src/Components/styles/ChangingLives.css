@@ -60,6 +60,13 @@
   line-height: 32px; /* 133.333% */
 }
 
+@media screen and (max-width: 1000px) {
+  .cl-cards-cont {
+    display: flex;
+    gap: 19px;
+    width: 100%;
+  }
+}
 @media screen and (max-width: 768px) {
   .cl-inner-cont {
     width: 95%;
