@@ -4,9 +4,9 @@ import Form from "./Form";
 
 const Hero = () => {
   return (
-    <div className="mb-10 pt-5 bg-[#fcf8ff] w-full flex justify-center">
+    <div className="mb-10 bg-[#fcf8ff] w-full flex justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-0 lg:gap-5 w-[95%] md:w-[80vw]">
-        <div className="relative mt-3 flex justify-center flex-col items-center  gap-[20px]">
+        <div className="relative mt-3 flex justify-center flex-col items-center  gap-[10px]">
           <h1 className="text-[28px] md:text-5xl lg:text-[clamp(28px,3vw,64px)] font-bold text-[#2ca9e1]  text-center lg:text-start">
             Welcome to Med Life Easy
           </h1>

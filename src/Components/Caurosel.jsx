@@ -34,7 +34,7 @@ const Caurosel = () => {
         className="carousel"
       >
         <SwiperSlide>
-          <div className="px-[20px] flex justify-center items-center">
+          <div className="px-[20px] py-5 flex justify-center items-center">
             <div className="bg-white w-full  p-3 rounded-xl shadow-md cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
               <div className="flex gap-2 mb-3">
                 <img src={fbrev} alt="" />

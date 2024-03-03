@@ -8,15 +8,13 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const OurSpecialities = () => {
   return (
-    <div>
-      <div className="bg-[#F2F4F5] py-10 px-5 lg:px-10">
+    <div className="w-full flex bg-[#F2F4F5] justify-center py-16">
+      <div className=" w-[95%] md:w-4/5">
         <h1 className="text-2xl font-semibold mb-4 text-center">
           Our Specialities
         </h1>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 items-center">
-
-
           {/* card */}
           <div className="bg-white rounded-2xl shadow-md">
             <img

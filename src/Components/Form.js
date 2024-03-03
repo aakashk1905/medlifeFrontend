@@ -11,7 +11,7 @@ const Form = ({ header }) => {
   const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState();
   const [selectedDisease, setSelectedDisease] = useState("");
-  const {cityName, setCityName} = useContext(formContext);
+  const { cityName, setCityName } = useContext(formContext);
 
   const cities = [
     "Patna",
@@ -56,7 +56,6 @@ const Form = ({ header }) => {
     "Raxaul",
     "Nokha",
   ];
-
 
   const disease = [
     "Select Disease",
@@ -190,12 +189,20 @@ const Form = ({ header }) => {
   };
 
   return (
-      <div style={{maxWidth:"550px"}} className="w-full xl:w-11/12 shadow-lg rounded-3xl mb-3 h-full">
+    <div
+      style={{ maxWidth: "550px" }}
+      className="w-full shadow-lg rounded-3xl mb-3 h-full"
+    >
       <form
         onSubmit={handleSubmit}
         className="flex flex-col items-center gap-3 bg-white p-7 rounded-3xl w-full h-full justify-evenly"
       >
-        <div className="text-center text-2xl font-bold text-[#5854a8] mb-1" style={{fontSize:'clamp(24px, 2vw, 48px)'}}>{header}</div>
+        <div
+          className="text-center text-2xl font-bold text-[#5854a8] mb-1"
+          style={{ fontSize: "clamp(24px, 2vw, 48px)" }}
+        >
+          {header}
+        </div>
         <input
           type="text"
           id="patientName"
@@ -221,8 +228,8 @@ const Form = ({ header }) => {
             onChange={(e) => setCityName(e.target.value)}
             className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition 2xl:h-16 duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
-            {cities.map((city) => (
-              <option key={city} value={city}>
+            {cities.map((city, ind) => (
+              <option key={ind} value={city}>
                 {city}
               </option>
             ))}
@@ -232,7 +239,11 @@ const Form = ({ header }) => {
           </div>
         </div>
 
-        <CityDropdown onCityChange={setSelectedCity} setCityName={setCityName} type="city" />
+        <CityDropdown
+          onCityChange={setSelectedCity}
+          setCityName={setCityName}
+          type="city"
+        />
 
         <div className="relative inline-block text-left w-full">
           <select
@@ -242,8 +253,8 @@ const Form = ({ header }) => {
             }}
             className="block appearance-none bg-white border 2xl:h-16 border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
-            {disease.map((disease) => (
-              <option key={disease} value={disease}>
+            {disease.map((disease, ind) => (
+              <option key={ind} value={disease}>
                 {disease}
               </option>
             ))}

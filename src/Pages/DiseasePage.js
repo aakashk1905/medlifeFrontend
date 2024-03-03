@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import DiseaseHero from "../Components/DiseasePages/DiseaseHero";
 import DiseaseBlogs from "../Components/DiseasePages/DiseaseBlogs";
 import Whyus from "../Components/Whyus";
@@ -10,7 +10,7 @@ import Footer from "../Components/Footer";
 import ChangingLives from "../Components/ChangingLives";
 import DiseaseConsult from "../Components/DiseasePages/DiseaseConsult";
 import DiseaseDoc from "../Components/DiseasePages/DiseaseDoc";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import mainDiseaseContent from "../mainDiseaseContent.json";
 import DiseaseInfo from "../Components/DiseasePages/DiseaseInfo";
 import OurSpecialities from "../Components/DiseasePages/OurSpecialities";
@@ -18,6 +18,7 @@ import SafeDiseaseRemoval from "../Components/DiseasePages/AllSections/SafeDisea
 
 const DiseasePage = () => {
   const { disease } = useParams();
+  const naviagate = useNavigate();
   const pages = [
     "proctology",
     "laparoscopy",
@@ -33,19 +34,25 @@ const DiseasePage = () => {
     "dermatology",
   ];
 
-  if (!pages.includes(disease)) {
-    // window.location.href = "/"
-  }
-
+  useEffect(() => {
+    if (!pages.includes(disease)) {
+      naviagate("/error");
+    }
+  }, []);
   return (
     <div>
       <DiseaseHero disease={disease} content={mainDiseaseContent[disease]} />
-      <DiseaseInfo disease={disease} content={mainDiseaseContent[disease]}></DiseaseInfo>
+      <DiseaseInfo
+        disease={disease}
+        content={mainDiseaseContent[disease]}
+      ></DiseaseInfo>
       <OurSpecialities></OurSpecialities>
       {/* <DiseaseBlogs /> */}
       {/* <DiseaseConsult content={mainDiseaseContent[disease]} /> */}
       <DiseaseDoc docHeading={"Meet Our Doctors"} diseaseName={disease} />
-      <SafeDiseaseRemoval content={mainDiseaseContent[disease]}></SafeDiseaseRemoval>
+      <SafeDiseaseRemoval
+        content={mainDiseaseContent[disease]}
+      ></SafeDiseaseRemoval>
       <Patientslove />
       <ChangingLives />
       <Faqs />

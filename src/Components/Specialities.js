@@ -23,7 +23,7 @@ const Specialities = () => {
         <div className="hero-btm-head">Our Specialities</div>
         <div className="spe-card-cont">
           {Array.from({ length: 10 }, (_, i) => (
-            <div className="spe-card">
+            <div className="spe-card" key={i}>
               <img src={proctospe} alt="procto" />
               <div className="spe-card-inner-cont">
                 <div className="spe-card-head">Proctology</div>
@@ -44,7 +44,7 @@ const Specialities = () => {
           </div>
           <div ref={cardsContainerRef} className="rev-cards-cont">
             {Array.from({ length: 10 }, (_, i) => (
-              <div className="spe-card">
+              <div className="spe-card" key={i}>
                 <img src={proctospe} alt="procto" />
                 <div className="spe-card-inner-cont">
                   <div className="spe-card-head">Proctology</div>

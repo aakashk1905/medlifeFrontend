@@ -44,7 +44,9 @@ const OurBlogs = () => {
                 />
                 <div className="px-4 pb-4">
                   <h1 className="text-[#17324A] text-2xl font-semibold mb-2">
-                    {blog.title.slice(0, 30)} ... ...
+                    {blog.title.length <= 30
+                      ? blog.title
+                      : `${blog.title.slice(0, 30)} ...`}
                   </h1>
                   {blog.about.length > 200 ? (
                     <div className=" mb-5">
