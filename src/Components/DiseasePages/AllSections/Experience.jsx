@@ -7,8 +7,8 @@ import healthCare from "../../../Assests/timeline/healthcare 1.png";
 
 const Experience = () => {
     return (
-        <div className='px-10 py-16'>
-            <div>
+        <div className='flex flex-col items-center'>
+            <div className='w-[95%] lg:w-4/5'>
                 <h1 className='text-[32px] text-gray-800 text-center mb-6 font-semibold'>Your experience with us</h1>
 
 
