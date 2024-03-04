@@ -24,8 +24,8 @@ const OurDoctors = () => {
   }, [axiosBaseUrl]);
 
   return (
-    <div className="py-10 px-5">
-      <div>
+    <div className="py-7 w-full flex flex-col  items-center">
+      <div className="w-[90%] md:w-[95%]">
         {/* Headline */}
         <h1 className="text-gray-700 text-4xl font-bold text-center mb-10">
           Our Doctors

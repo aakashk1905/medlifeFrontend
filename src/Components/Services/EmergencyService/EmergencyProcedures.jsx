@@ -3,19 +3,10 @@ import emergencyProcedure from "../../../Assests/emergencyProcedure.png"
 import AppointmentModal from '../../AppointmentModal';
 
 const EmergencyProcedures = () => {
-    const appointmentModalProps = {
-        fontWeight: "normal",
-        fontSize: "base",
-        text: "Book Your Appointment",
-        width: "305px",
-        minWidth: "0px",
-        height: "64px",
-        backgroundColor: "#00a0aa",
-        color: "#fff",
-        borderRadius: "8px",
-      };
+
     return (
-        <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center bg-[#FFF] px-5 md:px-10 py-5 border-b'>
+        <div className='bg-[#FFF] flex flex-col items-center'>
+            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-4 border-b w-[90%] md:w-[88%] lg:w-4/5'>
             <div>
                 <h1 className='text-2xl font-semibold text-[#17324A] mb-6'>Emergency Procedures</h1>
                 <p className='text-sm mb-6 text-gray-900'>In case of an emergency, follow these steps:</p>
@@ -27,17 +18,18 @@ const EmergencyProcedures = () => {
                     <li className='text-gray-800'>Wait for Emergency Services and Provide Assistance if Safe</li>
                 </ul>
 
-                <div className="flex flex-col md:flex-row items-center gap-3 w-full">
-          <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+                <div className="flex flex-col xl:flex-row gap-3 w-full">
+          <button className="w-full md:w-full lg:w-full xl:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
+          <AppointmentModal className="w-full md:w-full lg:w-full xl:w-[280px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
         </div>
             </div>
 
             <div className='p-4 rounded-md flex justify-center items-center'>
                 <img className='' src={emergencyProcedure} alt="" />
             </div>
+        </div>
         </div>
     );
 };

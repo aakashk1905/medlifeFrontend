@@ -11,17 +11,6 @@ const Whyus = ({content}) => {
     "Transparent Pricing",
     "Coordinated Care"
 ]
-const appointmentModalProps = {
-  fontWeight: "normal",
-  fontSize: "base",
-  text: "Book Your Appointment",
-  minWidth: "310px",
-  width: "100%",
-  height: "64px",
-  backgroundColor: "#00a0aa",
-  color: "#fff",
-  borderRadius: "8px",
-};
 
 
   return (
@@ -62,7 +51,7 @@ const appointmentModalProps = {
               )
           }
           </div>
-          <AppointmentModal {...appointmentModalProps}></AppointmentModal>
+          <AppointmentModal className="w-full md:w-full lg:w-full xl:w-[280px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
         </div>
       </div>
     </div>

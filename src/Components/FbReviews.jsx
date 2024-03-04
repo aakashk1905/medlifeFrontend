@@ -16,7 +16,9 @@ import 'swiper/swiper-bundle.css';
 const FbReviews = () => {
     return (
 
-<div className='flex justify-center relative mx-2  lg:mx-9'>
+<div className="bg-[#f6fafb] p-9 my-10">
+  <h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-10">Our Patient Loves us</h1>
+<div className='flex justify-center relative mx-2 lg:mx-9'>
 <Swiper slidesPerView={1}
 breakpoints={{
   768: {
@@ -33,6 +35,9 @@ breakpoints={{
   },
   1366 : {
     slidesPerView: 3
+  },
+  1920 : {
+    slidesPerView: 4
   }
   
 }}
@@ -486,10 +491,11 @@ modules={[Pagination]} className="carousel">
 </SwiperSlide>
 
 
-<div className='absolute top-56 w-full z-10'>
+<div className='absolute top-44 w-full z-10'>
 <Swipperbtn></Swipperbtn>
 </div>
 </Swiper>
+</div>
 </div>
     );
 };

@@ -15,13 +15,17 @@ import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className="">
       <Helmet>
         <title>Medlife Easy | About Us</title>
       </Helmet>
       <Navbar></Navbar>
-      {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+
+
+
+<div className="flex flex-col items-center">
+        {/* Breadcrumbs menu */}
+        <div className="text-sm breadcrumbs px-5 md:px-10 mt-5 w-[95%]">
         <ul>
           <li>
           <Link to={"/"}>Home</Link>
@@ -31,8 +35,9 @@ const AboutUs = () => {
           </li>
         </ul>
       </div>
-      <div className="pt-10">
-        <div className="px-10">
+
+<div className="mt-5 w-[95%] lg:w-4/5">
+        <div className="">
         <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
           About Us
         </h1>
@@ -41,40 +46,12 @@ const AboutUs = () => {
         </div>
 
           {/* Hero Section */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 lg:gap-16 p-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 lg:gap-16 mb-16">
             <div>
               <h2 className="text-2xl font-medium text-gray-700 mb-2">
                 Over view of MedLifeEasy
               </h2>
-              {/* <p className="text-gray-600 text-justify">
-                Pristyn Care is a new-age healthcare company with a laser-sharp
-                focus on simplifying the entire surgery journey of a patient and
-                his/her attendant by offering care and assistance at each and
-                every step. <br />
-                Pristyn Care ensures that the patient’s experience right from
-                the discovery of the right doctor, to booking an appointment at
-                the clinic, getting a detailed diagnosis done, booking tests at
-                a diagnostic center, getting insurance paperwork done, commuting
-                from home to the hospital & back on the day of the surgery,
-                admission-discharge processes at the hospital, and follow-up
-                consultation after the surgery – is hassle-free and care-filled.{" "}
-                <br />
-                Pristyn Care commits to enhancing access and ensuring high
-                quality secondary-care surgeries through an innovative care
-                model. Pristyn Care operates on an innovative full- stack Care
-                delivery model  to ensure that high quality surgical care is
-                offered to patients at an affordable cost. The company has
-                partnerships with health insurance companies and financing
-                providers. These partnerships help in easy and faster cashless
-                claim approvals and EMIs facilities at 0% interest. <br />
-                Pristyn Care surgical centers are currently functional across 7
-                metro cities – Mumbai, Pune, Delhi, Bangalore, Hyderabad,
-                Chennai and Kolkata – and  35 tier 2 & 3 cities across the
-                country. Operating in over 12 surgical categories such as
-                General Surgery, Ophthalmology, ENT, Urology, Gynaecology,
-                Pristyn Care, has successfully treated over 60,000 patients and
-                completed 1 Million  patient interactions.
-              </p> */}
+             
 
 
               <p className="text-gray-600 text-justify">
@@ -90,7 +67,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
           </div>
 
           {/* Achievements Section */}
-          <div className="px-8 py-4 bg-[#F1F9F8] ">
+          <div className="px-8 py-4 bg-[#F1F9F8] rounded-xl">
           <h2 className="text-2xl font-medium text-gray-700 mb-7 text-center">
           Unveiling Our Achievements
               </h2>
@@ -169,7 +146,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
 
         {/* Benefits section */}
          <div className="py-16">
-      <div className="p-8 bg-[#F6FCFF]">
+      <div className="p-8 bg-[#F6FCFF] rounded-xl">
         <h1 className="text-2xl text-start md:text-center font-semibold mb-9 text-gray-600">
         Your Benefits With
           <span className="text-teal-600 ml-2">Med Life Easy</span>
@@ -206,26 +183,15 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
             <p className="font-semibold text-gray-800">Free Post Treatment Consultation</p>
           </div>
           
-              {/* <div className="flex items-center gap-2">
-            <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
-              <MdOutlineDone></MdOutlineDone>
-            </div>
-            <p className="font-semibold">Accepting All Insurance Plans</p>
-          </div>
-          
-              <div className="flex items-center gap-2">
-            <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
-              <MdOutlineDone></MdOutlineDone>
-            </div>
-            <p className="font-semibold">Zero-Cost EMI Options Available</p>
-          </div> */}
         </div>
       </div>
         </div>
 
-    <Footer></Footer>
+   
 
       </div>
+      <Footer></Footer>
+</div>
     </div>
   );
 };

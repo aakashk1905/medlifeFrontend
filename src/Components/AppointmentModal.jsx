@@ -8,30 +8,11 @@ import { IoIosArrowDown } from "react-icons/io";
 import { Toaster, toast } from "sonner";
 import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import CityDropdown from "./CityDropdown";
+import { twMerge } from "tailwind-merge";
 
-const AppointmentModal = (props) => {
-  const {
-    fontWeight,
-    fontSize,
-    text,
-    width,
-    height,
-    backgroundColor,
-    color,
-    borderRadius,
-    minWidth,
-  } = props;
+const AppointmentModal = ({text, className}) => {
 
-  const buttonStyles = {
-    backgroundColor: backgroundColor,
-    fontWeight: fontWeight,
-    fontSize: fontSize,
-    color: color,
-    borderRadius: borderRadius,
-    height: height,
-    width: width,
-    minWidth: minWidth,
-  };
+
 
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
@@ -93,11 +74,14 @@ const AppointmentModal = (props) => {
         console.log(error);
       });
   };
-
+  // w-full xl:w-[255px] h-[64px] 
   return (
-    <div className="w-full md:w-1/2 lg:w-[350px]">
+    <div className="">
       <button
-        style={buttonStyles}
+      className={twMerge(
+        "border border-[#00a0aa] bg-[#00a0aa] rounded-lg text-white",
+        className
+      )}
         onClick={() => document.getElementById("my_modal_4").showModal()}
       >
         {text}

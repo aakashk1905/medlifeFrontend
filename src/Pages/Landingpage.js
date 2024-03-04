@@ -24,12 +24,12 @@ const Landingpage = () => {
         <title>Medlife Easy | Home</title>
       </Helmet>
       <Modal></Modal>
-      {/* <FbReviews></FbReviews> */}
       <Hero />
       <Surgeries></Surgeries>
       <Specialities />
       <SocialNews />
-      <Reviews />
+      <FbReviews></FbReviews>
+      {/* <Reviews /> */}
       <ChangingLives />
       <Doctors />
       <Whyus />

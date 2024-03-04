@@ -12,7 +12,8 @@ const RefundPolicy = () => {
       </Helmet>
             <Navbar></Navbar>
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+<div className='flex items-center flex-col mt-2 mb-10'>
+<div className="text-sm breadcrumbs w-[89.5%]">
         <ul>
           <li>
           <Link to={"/"}>Home</Link>
@@ -24,15 +25,15 @@ const RefundPolicy = () => {
       </div>
 
 
-            <div className='mb-14'>
-            <div className="px-10">
+            <div className='w-[95%] lg:w-4/5'>
+            <div className="">
         <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
         Refund Policy
         </h1>
         <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
         </div>
 
-        <div className='px-10'>
+        <div className=''>
          {/* Refund & Cancellation Policy Section */}
          <div className="mb-9">
               <h2 className="text-2xl font-medium text-gray-700 mb-2">
@@ -102,6 +103,7 @@ THIS WEBSITE AND ALL CONTENT, PRODUCTS AND SERVICES INCLUDED IN OR ACCESSIBLE FR
           </div>
             </div>
             </div>
+</div>
 
             <Footer></Footer>
         </div>

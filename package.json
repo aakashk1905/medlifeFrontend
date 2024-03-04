@@ -27,6 +27,7 @@
     "sonner": "^1.4.1",
     "sort-by": "^1.2.0",
     "swiper": "^11.0.6",
+    "tailwind-merge": "^2.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

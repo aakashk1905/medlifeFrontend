@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const DoctorsHeader = () => {
   return (
-    <div className="bg-[#fcf8ff] px-5 lg:px-9 py-2 mb-10">
+    <div className="bg-[#fcf8ff] flex flex-col items-center">
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs">
+      <div className="text-sm breadcrumbs w-[95%] lg:w-[89.5%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -17,13 +17,13 @@ const DoctorsHeader = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-5 items-center">
-        <div className="col-span-2">
-          <h1 className="text-3xl md:text-6xl font-bold text-blue-500 mb-8">
-            Consult with Top Rated <br /> Experienced Doctors Online!
+      <div className="flex flex-col w-[95%] lg:w-4/5 lg:flex-row gap-10 items-center justify-center">
+        <div className="flex flex-col gap-4 w-[95%] lg:w-[55%] xl:w-[60%]">
+          <h1 className="text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-bold text-gray-600">
+            Consult with Top Rated Experienced Doctors Online!
           </h1>
 
-          <h3 className="text-[#17324A] text-2xl md:text-4xl font-semibold mb-8">
+          <h3 className="text-gray-500 text-2xl lg:text-[clamp(28px, 2vw, 48px)] font-semibold">
             Get Free Quotation on Your <br /> Planned Surgery
           </h3>
 
@@ -32,9 +32,13 @@ const DoctorsHeader = () => {
           </button>
         </div>
 
-          <div className="mt-5 lg:-mt-6 flex md:justify-center lg:justify-end">
-          <Form header={"Book Free Consultation"} />
+         {/* Right side form */}
+        <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center lg:-mt-6 box-border ">
+          <div className=" w-full flex justify-center max-w-[550px] ">
+            <Form header={"Book Free Consultation"} />
           </div>
+        </div>
+        
       </div>
     </div>
   );

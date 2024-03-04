@@ -13,10 +13,11 @@ const Partner = () => {
       <Helmet>
         <title>Medlife Easy | Our Partner</title>
       </Helmet>
-      <div>
         <Navbar></Navbar>
+<div className="flex items-center flex-col mt-2 mb-10">
+
         {/* Breadcrumbs menu */}
-        <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+        <div className="text-sm breadcrumbs w-[89.5%]">
           <ul>
             <li>
               <Link to={"/"}>Home</Link>
@@ -25,7 +26,9 @@ const Partner = () => {
           </ul>
         </div>
 
-        <div className="px-10">
+
+        <div className="w-[95%] lg:w-4/5 flex flex-col items-center">
+        <div className="flex flex-col items-center justify-center">
           <h1 className="text-4xl font-medium text-gray-700 text-center mt-5 lg:mt-0 mb-4">
             Partner With Us
           </h1>
@@ -39,12 +42,16 @@ const Partner = () => {
           </p>
         </div>
 
-        <div className="flex justify-center mb-10">
-        <div className="w-full lg:w-1/2">
-          <Form header={"Book Free Consultation"} />
+         {/* Right side form */}
+        <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center mt-3 box-border">
+          <div className=" w-full flex justify-center max-w-[550px]">
+            <Form header={"Book Free Consultation"} />
+          </div>
         </div>
-        </div>
+
+
       </div>
+</div>
 
       <Footer></Footer>
     </div>

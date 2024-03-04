@@ -195,8 +195,8 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="hidden xl:flex justify-center">
-        <div className=" flex justify-between -ml-1 bg-white w-[90%]">
+      <div className="hidden xl:flex justify-center bg-white w-full">
+        <div className=" flex justify-between -ml-1  w-[90%]">
           {btmMenus.map((menu, ind) => (
             <DropdownMenu
               key={ind}

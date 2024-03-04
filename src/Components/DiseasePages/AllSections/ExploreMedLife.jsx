@@ -3,7 +3,8 @@ import Form from "../../Form";
 
 const ExploreMedLife = ({content}) => {
   return (
-    <div className="bg-[#ecf7fc] px-5 md:px-10 py-10 grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-5 items-center">
+   <div className="bg-[#ecf7fc] flex flex-col items-center">
+     <div className="w-[95%] lg:w-4/5 grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-3 items-center py-2">
       {/* Left side details */}
       <div className="col-span-2">
         <h1 className="text-2xl font-bold mb-8 text-gray-600">
@@ -29,41 +30,12 @@ const ExploreMedLife = ({content}) => {
         </button>
       </div>
 
-      {/* Right side form */}
-      {/* <div className="bg-white p-3 rounded flex flex-col gap-3">
-        <h1 className="text-xl mb-3 text-center font-semibold">
-        {content?.SurgeryForm?.formTitle}
-        </h1>
-        <input
-          className="p-3 rounded-md border border-gray-400 outline-none bg-white"
-          placeholder="Patient Name"
-          type="text"
-        />
-        <input
-          className="p-3 rounded-md border border-gray-400 outline-none bg-white"
-          placeholder="Mobile Number"
-          type="text"
-        />
-        <select
-          name="priority"
-          className="p-3 rounded-md border border-gray-400 outline-none bg-white"
-        >
-          <option disabled selected>
-            Select
-          </option>
-          <option value="low">Mumbai</option>
-          <option value="moderate">Patna</option>
-          <option value="high">Chennai</option>
-          <option value="most important"> Kolkata </option>
-        </select>
-        <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa]">
-          Get Cost Estimate
-        </button>
-      </div> */}
-     <div className="w-full mt-8 lg:mt-0">
+
+     <div className="w-full flex justify-center mt-4 lg:mt-0">
           <Form header={"Book Free Consultation"} />
         </div>
     </div>
+   </div>
   );
 };
 

@@ -40,7 +40,7 @@ const Doctors = () => {
   }, [axiosBaseUrl]);
 
   return (
-    <div className="rev-cont">
+    <div className="rev-cont my-10">
       <div className="hero-btm-head">Meet your Doctors!</div>
       <div className="doc-text">
         Meet our exceptional team of doctors. Highly qualified and

@@ -10,10 +10,10 @@ const PrivacyPolicy = () => {
       <Helmet>
         <title>Medlife Easy | Privacy Policy</title>
       </Helmet>
-      <div>
         <Navbar></Navbar>
+      <div className="flex items-center flex-col mt-2 mb-10">
         {/* Breadcrumbs menu */}
-        <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+        <div className="text-sm breadcrumbs w-[89.5%]">
           <ul>
             <li>
               <Link to={"/"}>Home</Link>
@@ -22,9 +22,9 @@ const PrivacyPolicy = () => {
           </ul>
         </div>
 
-        <div className="mb-14">
-          <div className="px-10">
-            <h1 className="text-4xl font-medium text-gray-700 text-center mb-3">
+        <div className="w-[95%] lg:w-4/5">
+          <div className="">
+            <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
               Privacy Policy
             </h1>
             <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
@@ -34,7 +34,7 @@ const PrivacyPolicy = () => {
             </p>
           </div>
 
-          <div className="px-10">
+          <div className="">
             {/* What information does the Application obtain and how is it used? User Provided Information Section */}
             <div className="mb-9">
               <h2 className="text-2xl font-medium text-gray-700 mb-2">
@@ -168,8 +168,8 @@ We may also use the information you provided us to contact your from time to tim
           </div>
         </div>
 
-        <Footer></Footer>
       </div>
+        <Footer></Footer>
     </div>
   );
 };

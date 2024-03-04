@@ -37,8 +37,9 @@ const BlogsDetails = () => {
     <div>
       <Navbar></Navbar>
 
-      {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-5 lg:px-9 py-4">
+<div className="py-2 flex flex-col items-center">
+        {/* Breadcrumbs menu */}
+        <div className="text-sm breadcrumbs w-[95%] lg:w-[89.5%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -51,11 +52,12 @@ const BlogsDetails = () => {
           </li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 px-5 gap-0 lg:gap-5 md:px-5 lg:px-9 mb-10">
-          <div className="col-span-2 rounded-3xl shadow-lg h-full lg:h-[413px]">
+      
+      <div className=" w-[95%] lg:w-[89.5%] grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-5 mb-5 lg:mb-10">
+          <div className="col-span-2 rounded-3xl shadow-lg h-full lg:h-[430px] 2xl:h-[510px]">
             <img
               className="w-full h-full rounded-b-3xl rounded-t-3xl"
-              src={pic}
+              src={blogDetails.avatar.url}
               // src={blogDetails?.avatar?.url}
               alt=""
             />
@@ -66,20 +68,24 @@ const BlogsDetails = () => {
         </div>
       </div>
 
-      <div>
-      <div className="px-5 lg:px-10 mb-5 lg:mb-10">
-            <h1 className="text-[#17324A] text-2xl font-semibold mb-3">
+      <div className="w-[95%] lg:w-[89.5%]">
+      <div className="mb-5 lg:mb-10 flex flex-col gap-3">
+            <h1 className="text-[#17324A] text-2xl font-semibold ">
               {blogDetails.title}
             </h1>
-            <p className="text-gray-500 mb-4 leading-8">
+            <p className="text-gray-500 leading-8 text-justify">
               {blogDetails.about}
             </p>
             </div>
 
-            <div className="z-10 -mt-6 flex md:justify-center lg:hidden">
-          <Form header={"Book Free Consultation"} />
+
+        <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex md:justify-center items-center lg:hidden mt-6 lg:-mt-6 box-border ">
+          <div className=" w-full flex justify-center max-w-[560px] ">
+            <Form header={"Book Free Consultation"} />
+          </div>
         </div>
       </div>
+</div>
       <Footer></Footer>
     </div>
   );

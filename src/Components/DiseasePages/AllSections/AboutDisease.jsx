@@ -3,17 +3,7 @@ import herniasurgery from "../../../Assests/herniasurgery.png";
 import AppointmentModal from "../../AppointmentModal";
 
 const AboutDisease = ({ content }) => {
-  const appointmentModalProps = {
-    fontWeight: "normal",
-    fontSize: "base",
-    text: "Book Your Appointment",
-    minWidth: "280px",
-    width: "100%",
-    height: "64px",
-    backgroundColor: "#00a0aa",
-    color: "#fff",
-    borderRadius: "8px",
-  };
+
   return (
     <div className=" bg-[#ecf7fc] w-full flex justify-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-0 w-[95%] lg:w-4/5">
@@ -44,10 +34,12 @@ const AboutDisease = ({ content }) => {
           </p>
 
           <div className="flex flex-col md:flex-row items-center gap-3 w-full">
-            <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-md text-[#00a0aa]">
+            <button className="w-full xl:w-[420px] h-[64px] border border-[#00a0aa] rounded-md text-[#00a0aa]">
               Call now +98 765 432 10
             </button>
-            <AppointmentModal {...appointmentModalProps}></AppointmentModal>
+            <div className="w-full">
+            <AppointmentModal className="w-full xl:w-[240px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+            </div>
           </div>
         </div>
 

@@ -12,8 +12,9 @@ const Payments = () => {
         <title>Medlife Easy | Payment</title>
       </Helmet>
             <Navbar></Navbar>
-        {/* Breadcrumbs menu */}
-        <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+ <div className='flex items-center flex-col mt-2 mb-10'>
+           {/* Breadcrumbs menu */}
+           <div className="text-sm breadcrumbs w-[89.5%]">
           <ul>
             <li>
             <Link to={"/"}>Home</Link>
@@ -23,6 +24,7 @@ const Payments = () => {
         </div>
 
 
+            <div className='w-[95%] lg:w-4/5'>
             <div>
             <div className="px-10">
         <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
@@ -41,6 +43,8 @@ const Payments = () => {
                 <p className='mb-1'><span className='font-bold text-gray-800'>Branch:</span> <span className='text-gray-700'> ICICI BANK KANKARBAGH, PATNA</span></p>
             </div>
             </div>
+            </div>
+ </div>
 
             <Footer></Footer>
         </div>

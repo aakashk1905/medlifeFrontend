@@ -21,8 +21,8 @@ const OurBlogs = () => {
       .catch((err) => console.log(err.message));
   }, [axiosBaseUrl]);
   return (
-    <div className="py-10 px-5">
-      <div>
+    <div className="py-7 w-full flex flex-col items-center">
+      <div  className=" w-[95%] md:w-4/5">
         {/* Headline */}
         <h1 className="text-gray-700 text-4xl font-semibold text-center mb-10">
           Our Recent Blogs
@@ -36,26 +36,26 @@ const OurBlogs = () => {
             </div>
           ) : blogs?.length > 0 ? (
             blogs.map((blog) => (
-              <div key={blog._id} className="shadow-lg rounded-lg">
+              <div key={blog._id} className="shadow-lg rounded-lg flex flex-col">
                 <img
-                  className="w-full h-64 mb-3 rounded-t-lg"
+                  className="w-full h-64 rounded-t-lg"
                   src={blog.avatar.url}
                   alt=""
                 />
-                <div className="px-4 pb-4">
-                  <h1 className="text-[#17324A] text-2xl font-semibold mb-2">
+                <div className="p-4 h-full flex flex-col items-start justify-between gap-[9px] box-border">
+                  <h1 className="text-[#17324A] text-2xl font-semibold">
                     {blog.title.length <= 30
                       ? blog.title
                       : `${blog.title.slice(0, 30)} ...`}
                   </h1>
                   {blog.about.length > 200 ? (
-                    <div className=" mb-5">
-                      <p className="text-gray-500 mb-2">
+                    <div className="">
+                      <p className="text-gray-500">
                         {`${blog.about.slice(0, 200)}... ...`}
                       </p>
                     </div>
                   ) : (
-                    <p className="text-gray-500 mb-5">{blog.about}</p>
+                    <p className="text-gray-500">{blog.about}</p>
                   )}
                   {blog._id && (
                     <Link

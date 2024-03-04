@@ -6,8 +6,8 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const OurHospitals = () => {
     return (
-        <div className="mt-10 mb-16 px-10">
-      <div>
+        <div className="py-7 w-full flex flex-col items-center">
+      <div className='w-[95%] md:w-4/5'>
         {/* Headline */}
         <h1 className="text-gray-700 text-4xl font-semibold text-center mb-10">
         Our Hospital Partners 
@@ -31,7 +31,7 @@ const OurHospitals = () => {
             </h1>
             
             <p className="text-gray-500 mb-3 text-justify flex gap-2">
-              <FaLocationDot className='mt-1 text-lg'></FaLocationDot>
+              <FaLocationDot className='text-3xl'></FaLocationDot>
             4th Cross Rd, opposite bank of India atm, Srinivasanagara, Hanumanthnagar, Banashankari 1st Stage, Banashankari, Bengaluru, Karnataka 560019, India
             </p>
             <button className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800">
@@ -54,7 +54,7 @@ const OurHospitals = () => {
             </h1>
             
             <p className="text-gray-500 mb-3 text-justify flex gap-2">
-              <FaLocationDot className='mt-1 text-lg'></FaLocationDot>
+              <FaLocationDot className='text-3xl'></FaLocationDot>
             4th Cross Rd, opposite bank of India atm, Srinivasanagara, Hanumanthnagar, Banashankari 1st Stage, Banashankari, Bengaluru, Karnataka 560019, India
             </p>
             <button className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800">
@@ -77,7 +77,7 @@ const OurHospitals = () => {
             </h1>
             
             <p className="text-gray-500 mb-3 text-justify flex gap-2">
-              <FaLocationDot className='mt-1 text-lg'></FaLocationDot>
+              <FaLocationDot className='text-3xl'></FaLocationDot>
             4th Cross Rd, opposite bank of India atm, Srinivasanagara, Hanumanthnagar, Banashankari 1st Stage, Banashankari, Bengaluru, Karnataka 560019, India
             </p>
             <button className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800">

@@ -31,7 +31,7 @@ const Patientslove = () => {
         </div>
 
         <Caurosel></Caurosel>
-        <div className="pl-cta-cont mt-7">
+        <div className="pl-cta-cont ">
           <Link onClick={scrollToTop} to={"/review"} className="pl-va">
             View All Reviews
           </Link>

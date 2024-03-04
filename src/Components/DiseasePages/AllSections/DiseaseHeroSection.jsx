@@ -18,14 +18,14 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
     borderRadius: "8px",
   };
   return (
-    <div className="bg-[#fcf8ff] px-5 md:px-9 py-2">
+    <div className="bg-[#fcf8ff] flex flex-col items-center">
       <Helmet>
         <title>
           {diseaseName} | {subDisease}
         </title>
       </Helmet>
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs">
+      <div className="text-sm breadcrumbs w-[94%] lg:w-[89.5%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -36,7 +36,8 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
           <li className="capitalize">{subDisease}</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 lg:gap-10 relative">
+
+      <div className="w-[94%] lg:w-[90%] xl:w-4/5 grid grid-cols-1 lg:grid-cols-5 gap-0 lg:gap-10 relative">
         <div className="pt-4 pb-10 z-10 col-span-3">
           {/* Main heading */}
           <h1 className="text-5xl text-gray-600 font-semibold mb-5">
@@ -63,15 +64,12 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
               : "No Content Here"}
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-3 w-full">
-            <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa]  rounded-lg text-[#00a0aa]">
-              Call now +98 765 432 10
-            </button>
-            {/* <button className="w-full md:w-[350px] h-[64px] bg-[#00a0aa] rounded-lg text-white border border-[#00a0aa]">
-            Book Your Appoinment
-          </button> */}
-            <AppointmentModal {...appointmentModalProps}></AppointmentModal>
-          </div>
+          <div className="flex flex-col lg:flex-row gap-3 w-full">
+          <button className="w-full md:w-full lg:w-[220px] xl:w-[250px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+            Call now +98 765 432 10
+          </button>
+          <AppointmentModal className="w-full lg:w-[220px] xl:w-[240px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+        </div>
         </div>
 
         <img
@@ -82,37 +80,11 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
 
         {/* Right side image and bottom card */}
         <div className="relative col-span-2">
-          {/* hero image */}
-          {/* <img className="w-full h-full" src="https://65d5d8fb8875068c49d425be--genuine-kulfi-2c5ab7.netlify.app/static/media/stomach-pain.dc3c833198638390b31f.png" alt="diseasePicture" /> */}
-
-          <div className="mt-1 lg:-mt-6 flex md:justify-center lg:justify-end">
+          <div className="mt-1 lg:-mt-4 flex md:justify-center lg:justify-end">
             <Form header={"Book Free Consultation"} />
           </div>
-
-          {/* Bottom card */}
-          {/* <div className="absolute bottom-0 w-full">
-          <div className="bg-white py-3 px-6 flex gap-0 lg:gap-20 2xl:gap-40 items-center rounded-2xl">
-            <div className="border-r-2 pr-12">
-              <h1 className="text-2xl md:text-3xl font-bold text-[#5854a8]">
-                1000+
-              </h1>
-              <p className="text-sm md:text-base">DOCTORS</p>
-            </div>
-            <div className="border-r-2 pr-12">
-              <h1 className="text-2xl md:text-3xl font-bold text-[#5854a8]">
-                2000+
-              </h1>
-              <p className="text-sm md:text-base">HOSPITALS</p>
-            </div>
-            <div>
-              <h1 className="text-2xl md:text-3xl font-bold text-[#5854a8]">
-                500+
-              </h1>
-              <p className="text-sm md:text-base">TREATMENTS</p>
-            </div>
-          </div>
-        </div> */}
         </div>
+
       </div>
     </div>
   );

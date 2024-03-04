@@ -55,7 +55,10 @@ const DoctorsDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+
+<div className="flex flex-col items-center">
+        {/* Breadcrumb */}
+        <div className="text-sm breadcrumbs w-[95%] lg:w-[89.5%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -66,13 +69,15 @@ const DoctorsDetails = () => {
           <li className="capitalize">{docDetails.doctorName}</li>
         </ul>
       </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-0 md:px-10 pt-3 pb-16">
-        <div className="col-span-2  rounded-lg borde">
+
+
+<div className="w-[95%] lg:w-[89.5%] grid grid-cols-1 lg:grid-cols-3 gap-5">
+        <div className="col-span-2 rounded-lg border">
           <div className="shadow-lg p-5">
             <div className="border-b border-gray-400 pb-5">
-              <div className="grid grid-cols-3 gap-2 md:gap-0">
+              <div className="grid grid-cols-3 gap-3 xl:gap-0">
                 <img
-                  className="w-full md:w-full lg:w-[210px] h-[250px] rounded-lg border-teal-500"
+                  className="w-full md:w-full lg:w-[210px] h-[256px] rounded-lg border-teal-500"
                   src={Rectangle}
                   alt=""
                 />
@@ -267,6 +272,8 @@ const DoctorsDetails = () => {
             </div>
           </div>
 
+
+            {/* Patient reviews section */}
           <div className="shadow-lg p-5">
             <h1 className="text-2xl font-bold text-gray-600 mb-2">
               Patients Reviews
@@ -296,21 +303,6 @@ const DoctorsDetails = () => {
                 <p className='text-[#47617A] text-xs'>Would Recommend</p>
                 </div>
 
-                {/* <div className="flex items-center gap-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                  >
-                    <path
-                      d="M21.0078 8.00007C21.5411 8.00007 22.0078 8.20007 22.4078 8.60007C22.8078 9.00007 23.0078 9.46674 23.0078 10.0001V12.0001C23.0078 12.1167 22.9951 12.2417 22.9698 12.3751C22.9445 12.5084 22.9071 12.6334 22.8578 12.7501L19.8578 19.8001C19.7078 20.1334 19.4578 20.4167 19.1078 20.6501C18.7578 20.8834 18.3911 21.0001 18.0078 21.0001H10.0078C9.45781 21.0001 8.98715 20.8044 8.59581 20.4131C8.20448 20.0217 8.00848 19.5507 8.00781 19.0001V8.82507C8.00781 8.5584 8.06215 8.3044 8.17081 8.06307C8.27948 7.82174 8.42515 7.60907 8.60781 7.42507L14.0328 2.02507C14.2828 1.79174 14.5788 1.65007 14.9208 1.60007C15.2628 1.55007 15.5918 1.6084 15.9078 1.77507C16.2245 1.94174 16.4538 2.17507 16.5958 2.47507C16.7378 2.77507 16.7668 3.0834 16.6828 3.40007L15.5578 8.00007H21.0078ZM4.00781 21.0001C3.45781 21.0001 2.98715 20.8044 2.59581 20.4131C2.20448 20.0217 2.00848 19.5507 2.00781 19.0001V10.0001C2.00781 9.45007 2.20381 8.97941 2.59581 8.58807C2.98781 8.19674 3.45848 8.00074 4.00781 8.00007C4.55781 8.00007 5.02881 8.19607 5.42081 8.58807C5.81281 8.98007 6.00848 9.45074 6.00781 10.0001V19.0001C6.00781 19.5501 5.81215 20.0211 5.42081 20.4131C5.02948 20.8051 4.55848 21.0007 4.00781 21.0001Z"
-                      fill="#2CA9E1"
-                    />
-                  </svg>
-                  <p className="text-[#47617A] text-xl">Would Recommend</p>
-                </div> */}
               </div>
 
               {/* Reviews Card with star icon */}
@@ -434,10 +426,13 @@ const DoctorsDetails = () => {
           </div>
         </div>
 
-        <div className="px-5 md:px-0 flex md:justify-center lg:justify-end">
+        <div className="h-fit md:px-0 flex md:justify-center lg:justify-end w-full">
           <Form></Form>
         </div>
+
+
       </div>
+</div>
       <Footer></Footer>
     </div>
   );

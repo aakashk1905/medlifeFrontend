@@ -16,19 +16,20 @@ const ContactUs = () => {
       <Helmet>
         <title>Medlife Easy | Contact</title>
       </Helmet>
-      <div>
         <Navbar></Navbar>
+      <div className="flex items-center flex-col mt-2 mb-10">
 
-        <div className="px-10">
-          <h1 className="text-4xl font-medium text-gray-700 text-center mb-3 mt-5">
+        <div className="w-[95%] lg:w-4/5">
+        <div className="">
+          <h1 className="text-4xl font-medium text-gray-700 text-center mb-4 mt-5">
             Contact Us
           </h1>
           <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
         </div>
 
-        <div className="px-10">
+        <div className="">
           {/* <h1 className="text-2xl font-medium text-gray-700 text-center mb-10">Get in touch with us</h1> */}
-          <div className="shadow-lg rounded-l-none md:rounded-l-lg flex gap-20 flex-wrap justify-center items-center">
+          <div className="shadow-lg rounded-l-none md:rounded-l-lg py-3 flex gap-20 flex-wrap justify-center items-center">
             <div className="p-5">
               {/* <div className="bg-gray-200 w-0.5 h-full">
 
@@ -64,56 +65,17 @@ const ContactUs = () => {
               </div>
             </div>
 
-            {/* Form */}
-            {/* <div className="bg-[#00A79D] px-5 md:px-16 py-5 rounded-b-lg lg:rounded-b-none lg:rounded-r-lg flex justify-center items-center">
-                <div className="w-full">
-                <h2 className="text-2xl font-bold mb-4 text-white">Write to us</h2>
-
-    <div className="mb-3">
-        <p className="text-white font-semibold mb-2">Name</p>
-        <input
-  type="text"
-  className="bg-white p-3 rounded-lg focus:outline-none w-full"
-  placeholder="Enter Name"
-/>
-    </div>
-
-    <div className="mb-3">
-        <p className="text-white font-semibold mb-2">Email</p>
-        <input
-  type="email"
-  className="bg-white p-3 rounded-lg focus:outline-none w-full"
-  placeholder="Enter Your Email"
-/>
-    </div>
-
-    <div className="mb-3">
-        <p className="text-white font-semibold mb-2">Phone</p>
-        <input
-  type="number"
-  className="bg-white p-3 rounded-lg focus:outline-none w-full"
-  placeholder="Enter Your Phone Number"
-/>
-    </div>
-
-    <div className="mb-3">
-        <p className="text-white font-semibold mb-2">Message</p>
-        <textarea
-        className="bg-white p-3 rounded-lg focus:outline-none w-full"
-        placeholder="Write Your Message Here"
-         name="" id="" cols="30" rows="10"></textarea>
-    </div>
-
-            <div className='flex justify-center'>
-    <button className="bg-gray-800 text-white p-3 rounded-3xl w-80">Submit</button>
-    </div>
-                </div>
             
-            </div> */}
-            <div className="-mt-5">
-              <Form header={"Book Free Consultation"} />
-            </div>
+             {/* Right side form */}
+          <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center box-border">
+          <div className=" w-full flex justify-center max-w-[550px] ">
+            <Form header={"Book Free Consultation"} />
           </div>
+        </div>
+
+
+          </div>
+        </div>
         </div>
       </div>
 
