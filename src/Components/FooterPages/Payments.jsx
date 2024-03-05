@@ -7,12 +7,12 @@ import { Helmet } from 'react-helmet-async';
 
 const Payments = () => {
     return (
-        <div>
+        <div className='h-[100vh] flex flex-col'>
             <Helmet>
         <title>Medlife Easy | Payment</title>
       </Helmet>
             <Navbar></Navbar>
- <div className='flex items-center flex-col mt-2 mb-10'>
+ <div className='flex items-center flex-col mt-2 mb-10 h-full'>
            {/* Breadcrumbs menu */}
            <div className="text-sm breadcrumbs w-[89.5%]">
           <ul>

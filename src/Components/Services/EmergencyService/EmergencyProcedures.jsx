@@ -22,7 +22,7 @@ const EmergencyProcedures = () => {
           <button className="w-full md:w-full lg:w-full xl:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <AppointmentModal className="w-full md:w-full lg:w-full xl:w-[280px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+          <AppointmentModal className="w-full md:w-full lg:w-full xl:w-[250px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
         </div>
             </div>
 

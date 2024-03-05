@@ -41,44 +41,45 @@ function App() {
         <FormProvider>
           <QueryClientProvider client={queryClient}>
             <Routes>
-              <Route path="/" element={<Navbar />}>
+              <Route path="/">
                 <Route path="" element={<Landingpage />} />
-                <Route path="/:disease" element={<DiseasePage />} />
-              </Route>
-              <Route path="/treatment/:subDisease" element={<HerniaPage />} />
-              <Route path="/modal" element={<Modal />} />
-              <Route path="/review" element={<ReviewPage />} />
-              <Route path="/writeReview" element={<WriteReview />} />
-              <Route path="/bookAmbulance" element={<BookAmbulance />} />
-              <Route path="/emergencyService" element={<EmergencyService />} />
-              <Route path="/doctors" element={<DoctorsPage />} />
-              <Route path="/doctorsDetails/:id" element={<DoctorsDetails />} />
-              <Route path="/blogs" element={<BlogsPage />} />
-              <Route path="/blogsDetails/:id" element={<BlogsDetails />} />
-              <Route path="/hospitals" element={<HospitalsPage />} />
-              <Route path="/hospitalDetails" element={<HospitalDetails />} />
+                <Route path=":disease" element={<DiseasePage />} />
+              
+              <Route path="treatment/:subDisease" element={<HerniaPage />} />
+              <Route path="modal" element={<Modal />} />
+              <Route path="review" element={<ReviewPage />} />
+              <Route path="writeReview" element={<WriteReview />} />
+              <Route path="bookAmbulance" element={<BookAmbulance />} />
+              <Route path="emergencyService" element={<EmergencyService />} />
+              <Route path="doctors" element={<DoctorsPage />} />
+              <Route path="doctorsDetails/:id" element={<DoctorsDetails />} />
+              <Route path="blogs" element={<BlogsPage />} />
+              <Route path="blogsDetails/:id" element={<BlogsDetails />} />
+              <Route path="hospitals" element={<HospitalsPage />} />
+              <Route path="hospitalDetails" element={<HospitalDetails />} />
 
               {/* Footer pages */}
-              <Route path="/aboutUs" element={<AboutUs />} />
-              <Route path="/refundPolicy" element={<RefundPolicy />} />
-              <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
-              <Route path="/termsConditions" element={<TermsConditions />} />
-              <Route path="/contactUs" element={<ContactUs />} />
-              <Route path="/partner" element={<Partner />} />
-              <Route path="/payments" element={<Payments />} />
+              <Route path="aboutUs" element={<AboutUs />} />
+              <Route path="refundPolicy" element={<RefundPolicy />} />
+              <Route path="privacyPolicy" element={<PrivacyPolicy />} />
+              <Route path="termsConditions" element={<TermsConditions />} />
+              <Route path="contactUs" element={<ContactUs />} />
+              <Route path="partner" element={<Partner />} />
+              <Route path="payments" element={<Payments />} />
 
               {/* Service unavailable page */}
               <Route
-                path="/serviceUnavailable"
+                path="serviceUnavailable"
                 element={<ServiceUnavailable />}
               />
-              <Route path="/caurosel" element={<Caurosel />} />
-              <Route path="/caurosel2" element={<Caurosel2 />} />
+              <Route path="caurosel" element={<Caurosel />} />
+              <Route path="caurosel2" element={<Caurosel2 />} />
 
               {/* Error page */}
-              <Route path="/error" element={<ErrorPage />} />
+              <Route path="error" element={<ErrorPage />} />
               {/* Error page */}
               <Route path="*" element={<ErrorPage />} />
+              </Route>
             </Routes>
           </QueryClientProvider>
         </FormProvider>

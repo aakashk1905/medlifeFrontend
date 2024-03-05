@@ -15,6 +15,7 @@ import mainDiseaseContent from "../mainDiseaseContent.json";
 import DiseaseInfo from "../Components/DiseasePages/DiseaseInfo";
 import OurSpecialities from "../Components/DiseasePages/OurSpecialities";
 import SafeDiseaseRemoval from "../Components/DiseasePages/AllSections/SafeDiseaseRemoval";
+import Navbar from "../Components/Navbar";
 
 const DiseasePage = () => {
   const { disease } = useParams();
@@ -41,6 +42,7 @@ const DiseasePage = () => {
   }, []);
   return (
     <div>
+      <Navbar></Navbar>
       <DiseaseHero disease={disease} content={mainDiseaseContent[disease]} />
       <DiseaseInfo
         disease={disease}

@@ -23,11 +23,11 @@ const DropdownMenu = ({ name, list, st, link }) => {
 
   return (
     <div
-      className="dropdown z-20"
+      className="dropdown z-20 my-[10px]"
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <Link to={`/${link}`}>
+      <Link className="" to={`/${link}`}>
         <button className={`ddm-btn ${st ? "btm" : ""}`}>
           {name}
           <svg

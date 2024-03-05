@@ -17,12 +17,14 @@ import Modal from "../Components/Modal";
 import { Helmet } from "react-helmet-async";
 import Surgeries from "./Surgeries";
 import FbReviews from "../Components/FbReviews";
+import Navbar from "../Components/Navbar";
 const Landingpage = () => {
   return (
     <div className="lp-cont">
       <Helmet>
         <title>Medlife Easy | Home</title>
       </Helmet>
+      <Navbar></Navbar>
       <Modal></Modal>
       <Hero />
       <Surgeries></Surgeries>

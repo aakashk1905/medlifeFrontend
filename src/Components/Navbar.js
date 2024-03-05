@@ -6,6 +6,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import SelectCitySidebar from "./Sidebar/SelectCitySidebar";
 import { useEffect, useState } from "react";
 
+
 const Navbar = () => {
   // Have to fix the hover content. The menu is not dissapering after clicking any list
   const btmMenus = [
@@ -111,10 +112,12 @@ const Navbar = () => {
     },
   ];
 
+
   const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -124,20 +127,21 @@ const Navbar = () => {
       });
     };
 
+
     window.addEventListener("resize", handleResize);
+
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+
   return (
-    <div className="sticky top-0 z-30 +">
+    <div className="sticky top-0 z-30">
       <div className=" bg-[#00a79d] py-[12px] flex items-center justify-center">
         <div className="w-[95%] lg:w-[90%] flex justify-between items-center pr-[13px]">
-          <Link to={"/"}>
           <img className="" src={logo} alt="logo" />
-          </Link>
           <div className="flex items-center gap-5">
             <div className="hidden md:block relative">
               <input
@@ -175,8 +179,10 @@ const Navbar = () => {
             </div>
           </div>
 
+
           <div className="flex items-center gap-3">
             <SelectCitySidebar></SelectCitySidebar>
+
 
             <div className="flex xl:hidden">
               <Sidebar></Sidebar>
@@ -197,8 +203,9 @@ const Navbar = () => {
         </div>
       )}
 
-      <div className="hidden xl:flex justify-center bg-white w-[90%]">
-        <div className=" flex justify-between -ml-1  ">
+
+      <div className="hidden xl:flex justify-center bg-white">
+        <div className=" flex justify-between w-[90%]">
           {btmMenus.map((menu, ind) => (
             <DropdownMenu
               key={ind}
@@ -215,4 +222,8 @@ const Navbar = () => {
   );
 };
 
+
 export default Navbar;
+
+
+

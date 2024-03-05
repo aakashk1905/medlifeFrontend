@@ -16,9 +16,10 @@ import 'swiper/swiper-bundle.css';
 const FbReviews = () => {
     return (
 
-<div className="bg-[#f6fafb] p-9 my-10">
-  <h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-10">Our Patient Loves us</h1>
-<div className='flex justify-center relative mx-2 lg:mx-9'>
+<div className="bg-[#f6fafb] w-full flex flex-col items-center">
+<div className="w-[95%] md:w-4/5">
+<h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-10">Our Patient Loves us</h1>
+<div className='flex justify-center relative'>
 <Swiper slidesPerView={1}
 breakpoints={{
   768: {
@@ -46,7 +47,7 @@ pagination={{
 modules={[Pagination]} className="carousel">
   
 <SwiperSlide>
-<div className="rev-card">
+<div className="rev-card my-6">
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -120,7 +121,7 @@ modules={[Pagination]} className="carousel">
           </div>
 </SwiperSlide>
 <SwiperSlide>
-<div className="rev-card">
+<div className="rev-card my-6">
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -194,7 +195,7 @@ modules={[Pagination]} className="carousel">
           </div>
 </SwiperSlide>
 <SwiperSlide>
-<div className="rev-card">
+<div className="rev-card my-6">
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -268,7 +269,7 @@ modules={[Pagination]} className="carousel">
           </div>
 </SwiperSlide>
 <SwiperSlide>
-<div className="rev-card">
+<div className="rev-card my-6">
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -342,7 +343,7 @@ modules={[Pagination]} className="carousel">
           </div>
 </SwiperSlide>
 <SwiperSlide>
-<div className="rev-card">
+<div className="rev-card my-6">
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -416,7 +417,7 @@ modules={[Pagination]} className="carousel">
           </div>
 </SwiperSlide>
 <SwiperSlide>
-<div className="rev-card">
+<div className="rev-card my-6">
             <div className="rev-card-img-cont">
               <div className="rev-card-img">
                 <img src={fbrev} alt="review" />
@@ -491,10 +492,11 @@ modules={[Pagination]} className="carousel">
 </SwiperSlide>
 
 
-<div className='absolute top-44 w-full z-10'>
+<div className='absolute top-52 w-full z-10'>
 <Swipperbtn></Swipperbtn>
 </div>
 </Swiper>
+</div>
 </div>
 </div>
     );
