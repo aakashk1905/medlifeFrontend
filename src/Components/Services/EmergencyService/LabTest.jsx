@@ -30,10 +30,10 @@ const LabTest = () => {
   <p className='mb-10 text-[#17324A] text-lg text-justify'>Committed to health excellence, our certified diagnostic partners ensure quality and precision.</p>
 
   <div className="flex flex-col xl:flex-row gap-3 w-full">
-          <button className="w-full md:w-full lg:w-full xl:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-full md:w-1/2 lg:w-full xl:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <AppointmentModal text={"Book Your Appointment"}></AppointmentModal>
+          <AppointmentModal className="w-full md:w-1/2 lg:w-full xl:w-[254px] 2xl:w-[340px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
         </div>
         
 </div>

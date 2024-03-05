@@ -13,6 +13,7 @@ import SafeDiseaseRemoval from "../AllSections/SafeDiseaseRemoval";
 import AboutDisease from "../AllSections/AboutDisease";
 import diseaseContent from "../../../diseaseContent.json";
 import Experience from "../AllSections/Experience";
+import ExperienceCopy from "../AllSections/ExperienceCopy";
 
 const HerniaPage = () => {
   const { subDisease } = useParams();
@@ -107,6 +108,7 @@ const HerniaPage = () => {
         diseaseName={diseaseContent[subDisease].parentDisease}
       ></DiseaseDoc>
       <ExploreMedLife content={diseaseContent[subDisease]}></ExploreMedLife>
+      <ExperienceCopy></ExperienceCopy>
       <Experience></Experience>
       <Patientslove></Patientslove>
       <AboutDisease content={diseaseContent[subDisease]}></AboutDisease>

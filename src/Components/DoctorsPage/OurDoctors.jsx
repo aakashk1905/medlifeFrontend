@@ -4,6 +4,7 @@ import { HiLocationMarker } from "react-icons/hi";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";
 import { Link } from "react-router-dom";
+import AppointmentModal from "../AppointmentModal";
 
 const OurDoctors = () => {
   const axiosBaseUrl = useAxiosBaseUrl();
@@ -23,6 +24,9 @@ const OurDoctors = () => {
       .catch((err) => console.log(err.message));
   }, [axiosBaseUrl]);
 
+
+
+  // to={`/doctorsDetails/${doctor._id}`}
   return (
     <div className="py-7 w-full flex flex-col  items-center">
       <div className="w-[90%] md:w-[95%]">
@@ -40,7 +44,7 @@ const OurDoctors = () => {
             <div className="flex flex-col justify-center items-center gap-14">
             {allDoctors.length > 0
               ? allDoctors.map((doctor) => (
-                  <Link className="w-full lg:w-5/6" to={`/doctorsDetails/${doctor._id}`}>
+                  <div className="w-full lg:w-5/6">
                     <div
                       key={doctor._id}
                       className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 px-2 py-5 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center" 
@@ -110,16 +114,17 @@ const OurDoctors = () => {
 
                      <div className="flex justify-start md:justify-end pr-0 lg:pr-16 w-full">
                      <div className="grid grid-cols-2 lg:grid-cols-1 gap-5 w-full lg:w-80">
-                        <button className="w-full border border-[#00a0aa] px-4 py-3 rounded-lg text-[#00a0aa] text-xs md:text-sm">
+                        <button className="w-full border border-[#00a0aa] px-4 py-3 rounded-lg text-[#00a0aa] text-[9px] md:text-sm">
                           Call now +98 765 432 10
                         </button>
-                        <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa] text-xs md:text-sm">
+                        <AppointmentModal className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa] text-[9px] md:text-sm" text={"Book Your Appointment"}></AppointmentModal>
+                        {/* <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa] text-xs md:text-sm">
                           Book Your Appoinment
-                        </button>
+                        </button> */}
                       </div>
                      </div>
                     </div>
-                  </Link>
+                  </div>
                 ))
               : "No content here"}
           </div>

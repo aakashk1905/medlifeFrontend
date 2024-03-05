@@ -1,17 +1,15 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import CityDropdown from "./CityDropdown.js";
 import "./styles/Form.css";
 import { IoIosArrowDown } from "react-icons/io";
 import useAxiosBaseUrl from "../hooks/useBaseUrl.jsx";
 import { Toaster, toast } from "sonner";
-import { formContext } from "./Provider/FormProvider.jsx";
 
 const Form = ({ header }) => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState();
   const [selectedDisease, setSelectedDisease] = useState("");
-  const { cityName, setCityName } = useContext(formContext);
 
   const cities = [
     "Patna",
@@ -224,8 +222,8 @@ const Form = ({ header }) => {
         {/* <p className="text-gray-700">{cityName}</p> */}
         <div className="relative inline-block text-left w-full">
           <select
-            value={cityName}
-            onChange={(e) => setCityName(e.target.value)}
+            value={selectedCity}
+            onChange={(e) => setSelectedCity(e.target.value)}
             className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition 2xl:h-16 duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
             {cities.map((city, ind) => (
@@ -241,7 +239,7 @@ const Form = ({ header }) => {
 
         <CityDropdown
           onCityChange={setSelectedCity}
-          setCityName={setCityName}
+          setCityName={setSelectedCity}
           type="city"
         />
 

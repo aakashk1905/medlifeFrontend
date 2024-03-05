@@ -12,15 +12,7 @@ const ReviewPage = () => {
     return (
         <div>
             <Navbar></Navbar>
-            {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-9 mt-2">
-        <ul>
-          <li>
-          <Link to={"/"}>Home</Link>
-          </li>
-          <li>All Reviews</li>
-        </ul>
-      </div>
+
 
       <div className='px-5 lg:px-9'>
       <div className='shadow-md rounded-md p-4'>

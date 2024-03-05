@@ -55,7 +55,6 @@ const SelectCitySidebar = () => {
   const [filteredCities, setFilteredCities] = useState(biharCities);
   const [selectedCity, setSelectedCity] = useState("");
 
-  const { cityName, setCityName } = useContext(formContext);
 
   useEffect(() => {
     const storedCity = localStorage.getItem("selectedCity");
@@ -85,9 +84,8 @@ const SelectCitySidebar = () => {
 
   const handleCityClick = (city) => {
     setSearchInput(city);
-    setCityName(city);
+    setSelectedCity(city);
     setFilteredCities(filteredCities);
-    console.log(cityName);
     localStorage.setItem("selectedCity", city);
   };
 
@@ -100,7 +98,7 @@ const SelectCitySidebar = () => {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-2">
               <FaLocationDot className="text-white"></FaLocationDot>
-              <p className="text-white">{cityName}</p>
+              <p className="text-white">{selectedCity === "null" ? "Select City" : selectedCity }</p>
             </div>
           </div>
         </label>
@@ -218,7 +216,7 @@ const SelectCitySidebar = () => {
           </div>
 
           <div className="hidden">
-            {selectedCity && <Form cityName={cityName} />}
+            {selectedCity && <Form />}
           </div>
 
           <div className="p-4"></div>

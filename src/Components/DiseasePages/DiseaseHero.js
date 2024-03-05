@@ -32,7 +32,7 @@ const DiseaseHero = ({ content, disease }) => {
             {content?.details ? content.details : ""}
           </p>
 
-          <button className="px-10 py-4 border w-fit border-[#00a0aa] lg:text-[clamp(18px,1.8vw,36px)] rounded-lg text-[#00a0aa]">
+          <button className="w-full md:w-[300px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
         </div>
