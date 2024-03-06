@@ -128,7 +128,6 @@ const Navbar = () => {
   const [searchedResult, setSearchedResult] = useState("");
   const [suggestions, setSuggestions] = useState([]);
 
-  const navigate = useNavigate();
 
   const [suggestionShow, setSuggestionShow] = useState(false);
 
