@@ -7,7 +7,7 @@ const EmergencyServiceHero = () => {
   return (
     <div className="bg-[#FCF8FF] flex flex-col items-center">
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs w-[95%] lg:w-[89.5%]">
+      <div className="text-sm breadcrumbs w-[95%] lg:w-[90%]">
         <ul>
           <li>
             <Link className="text-gray-800" to={"/"}>

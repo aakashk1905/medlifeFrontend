@@ -25,7 +25,7 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
         </title>
       </Helmet>
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs w-[94%] lg:w-[89.5%]">
+      <div className="text-sm breadcrumbs w-[94%] lg:w-[90%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>

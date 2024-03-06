@@ -18,17 +18,17 @@ const DiseaseHero = ({ content, disease }) => {
         </ul>
       </div>
       <div className="flex w-[95%] lg:w-4/5 flex-col gap-10 lg:flex-row items-center justify-center">
-        <div className="flex flex-col gap-7 w-[95%] lg:w-[55%] xl:w-[60%]">
+        <div className="flex flex-col gap-4 lg:gap-7 w-[95%] lg:w-[55%] xl:w-[60%]">
           {/* Main heading */}
-          <h1 className="text-5xl text-gray-600 font-semibold lg:text-[clamp(28px,3vw,64px)]">
+          <h1 className="text-3xl text-gray-600 font-semibold lg:text-[clamp(28px,3vw,64px)] font-lato">
             {content?.heroHeader ? content.heroHeader : ""}
           </h1>
           {/* Sub heading */}
-          <h2 className="text-4xl text-[#2ca9e1] font-semibold lg:text-[clamp(28px,2.8vw,48px)]">
+          <h2 className="text-2xl text-[#2ca9e1] font-semibold lg:text-[clamp(28px,2.8vw,48px)] font-lato">
             {content?.subHeading ? content.subHeading : ""}
           </h2>
           {/* Description */}
-          <p className="text-gray-500  w-[75%] lg:text-[clamp(18px,1.5vw,28px)]">
+          <p className="text-gray-500  w-[75%] lg:text-[clamp(18px,1.5vw,28px)] font-lato">
             {content?.details ? content.details : ""}
           </p>
 

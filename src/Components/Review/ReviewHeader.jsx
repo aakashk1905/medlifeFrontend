@@ -130,16 +130,10 @@ const ReviewHeader = () => {
     setStar(nextValue);
   };
 
-  const [sliderValue, setSliderValue] = useState(50);
-
-  const handleSliderChange = (value) => {
-    setSliderValue(value);
-  };
-
   return (
     <div className="flex flex-col items-center">
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs w-[95%] lg:w-[90%]">
+      <div className="text-sm breadcrumbs w-[95%] lg:w-[97%] 2xl:w-[95%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -148,12 +142,12 @@ const ReviewHeader = () => {
         </ul>
       </div>
 
-      <div className="">
+      <div className="w-[95%]">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10">
-          <div className="col-span-2 flex items-center">
+          <div className="col-span-2 flex items-center justify-center">
             {/* Left side reviews section */}
-            <div className=" grid grid-cols-1 md:grid-cols-4 gap-3 col-span-2 mb-8">
-              <div className="border-b md:border-b-0 md:border-r pb-2 md:pb-0 border-gray-700">
+            <div className=" grid grid-cols-2 md:grid-cols-4 gap-0 lg:gap-3 col-span-2 mb-8 ">
+              <div className="border-b md:border-b-0 border-r lg:border-r pb-2 md:pb-0 border-gray-700">
                 <h2 className="text-xl font-semibold text-center mb-4">
                   Total Reviews
                 </h2>
@@ -184,12 +178,12 @@ const ReviewHeader = () => {
                     />
                   </div>
                 </div>
-                <p className="text-center">Average rating this year</p>
+                <p className="text-center ml-1 md:ml-0">Average rating this year</p>
               </div>
 
               {/* Rating counter section */}
 
-              <div className="md:col-span-2">
+              <div className="md:col-span-2 ml-0 md:ml-2 lg:ml-0">
                 {/* 5 star  */}
                 <div className="flex items-center gap-4">
                   {/* Left Round circle */}
@@ -215,7 +209,15 @@ const ReviewHeader = () => {
                   <div className="w-4 h-4 rounded-full bg-[#D9D9D9]"></div>
                   <p>4</p>
                   <div className="w-full">
-                    <ProgressBar completed={percentageOfFourStarReviews} />
+                    <div className="w-full">
+                    <ProgressBar
+                      barContainerClassName="progressContainer"
+                      height="7px"
+                      isLabelVisible={false}
+                      completed={percentageOfFourStarReviews}
+                      bgColor="#FFB4AA"
+                    />
+                  </div>
                   </div>
                   <h3 className="text-xl font-semibold">
                     {numberOfFourStarReviews}
@@ -228,7 +230,13 @@ const ReviewHeader = () => {
                   <div className="w-4 h-4 rounded-full bg-[#D9D9D9]"></div>
                   <p>3</p>
                   <div className="w-full">
-                    <ProgressBar completed={percentageOfThreeStarReviews} />
+                    <ProgressBar
+                      barContainerClassName="progressContainer"
+                      height="7px"
+                      isLabelVisible={false}
+                      completed={percentageOfThreeStarReviews}
+                      bgColor="#A6A1FC"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold">
                     {numberOfThreeStarReviews}
@@ -241,7 +249,13 @@ const ReviewHeader = () => {
                   <div className="w-4 h-4 rounded-full bg-[#D9D9D9]"></div>
                   <p>2</p>
                   <div className="w-full">
-                    <ProgressBar completed={percentageOfTwoStarReviews} />
+                    <ProgressBar
+                      barContainerClassName="progressContainer"
+                      height="7px"
+                      isLabelVisible={false}
+                      completed={percentageOfTwoStarReviews}
+                      bgColor="#2CA9E1"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold">
                     {numberOfTwoStarReviews}
@@ -254,7 +268,13 @@ const ReviewHeader = () => {
                   <div className="w-4 h-4 rounded-full bg-[#D9D9D9]"></div>
                   <p>1</p>
                   <div className="w-full">
-                    <ProgressBar completed={percentageOfOneStarReviews} />
+                    <ProgressBar
+                      barContainerClassName="progressContainer"
+                      height="7px"
+                      isLabelVisible={false}
+                      completed={percentageOfOneStarReviews}
+                      bgColor="#C0000C"
+                    />
                   </div>
                   <h3 className="text-xl font-semibold">
                     {numberOfOneStarReviews}

@@ -71,9 +71,15 @@ const Doctors = () => {
     // </div>
     <div className="bg-[#f6fafb] w-full flex flex-col items-center">
       <div className="w-[95%] md:w-4/5">
-        <h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-10">
-          Our Patient Loves us
+        <h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-3">
+        Meet your Doctors!
         </h1>
+        <p className="text-gray-500 text-center">
+        Meet our exceptional team of doctors. Highly qualified and
+       compassionate, they're dedicated to your well-being. With
+       expertiseacross diverse specialties, trust them to provide top-notch
+       medical care.
+        </p>
         <div className="flex justify-center relative  ">
           <Swiper
             slidesPerView={1}

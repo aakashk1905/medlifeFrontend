@@ -1,14 +1,13 @@
 import logo from "../Assests/logo.svg";
 import DropdownMenu from "./DropdownMenu";
 import Sidebar from "./Sidebar/Sidebar";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import { IoSearchOutline } from "react-icons/io5";
 import SelectCitySidebar from "./Sidebar/SelectCitySidebar";
 import { useEffect, useState } from "react";
 
-
 const Navbar = () => {
-  // Have to fix the hover content. The menu is not dissapering after clicking any list
+
   const btmMenus = [
     {
       name: "Proctology",
@@ -112,12 +111,68 @@ const Navbar = () => {
     },
   ];
 
+  const suggestionName = [
+    "Piles Treatment",
+    "Hernia Treatment",
+    "Uterus Removal",
+    "Tympanoplasty",
+    "Adenoidectomy",
+    "Sinus Treatment",
+    "Septoplasty",
+    "Mastoidectomy",
+    "FESS Surgery",
+    "Thyroidectomy",
+    "Tonsillectomy",
+  ];
+
+  const [searchedResult, setSearchedResult] = useState("");
+  const [suggestions, setSuggestions] = useState([]);
+
+  const navigate = useNavigate();
+
+  const [suggestionShow, setSuggestionShow] = useState(false);
+
+  const handleSearch = (e) => {
+    const query = e.target.value;
+    setSearchedResult(query);
+
+    const suggestions = btmMenus
+      .flatMap((menu) => menu.list)
+      .filter((item) => item.toLowerCase().includes(query.toLowerCase()))
+      .slice(0, 5);
+
+    setSuggestions(suggestions);
+    setSuggestionShow(true)
+  };
+
+
+
+  const handleSuggestionShow = () => {
+    setSuggestionShow(!suggestionShow);
+
+    setSuggestions(suggestionName.slice(0, 5));
+  };
+
+
+  const handleSuggestionClick = (suggestion) => {
+    setSearchedResult(suggestion);
+
+    const suggestionLink = btmMenus.find(menu => menu.list.includes(suggestion))?.link;
+
+    if (suggestionLink) {
+      window.location.href = `/${suggestionLink}`;
+    }
+
+    setSearchedResult("");
+    setSuggestions([]);
+  };
+
+  
 
   const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
     height: window.innerHeight,
   });
-
 
   useEffect(() => {
     const handleResize = () => {
@@ -127,15 +182,12 @@ const Navbar = () => {
       });
     };
 
-
     window.addEventListener("resize", handleResize);
-
 
     return () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
 
   return (
     <div className="sticky top-0 z-30">
@@ -145,11 +197,29 @@ const Navbar = () => {
           <div className="flex items-center gap-5">
             <div className="hidden md:block relative">
               <input
+              value={searchedResult}
+              onChange={handleSearch}
+              onClick={() => setSuggestionShow(!suggestionShow)}
+              // onClick={handleSuggestionShow}
                 type="text"
                 className="bg-white pl-9 py-2 rounded-lg w-80 focus:outline-none"
                 placeholder="Search disease, doctors, treatment"
               />
               <IoSearchOutline className="text-2xl absolute top-2  left-2 text-gray-500"></IoSearchOutline>
+              {suggestions.length > 0 && (
+            <div className="absolute mt-2 w-80 bg-white border border-gray-300 rounded-md shadow-md z-40">
+              {suggestions.map((suggestion, index) => (
+                <div
+                  key={index}
+                  className="p-2 cursor-pointer hover:bg-gray-100"
+                  onClick={() => handleSuggestionClick(suggestion)}
+                >
+                  {suggestion}
+                </div>
+              ))}
+            </div>
+          )}
+
             </div>
             <div className="hidden lg:flex items-center gap-4">
               <Link
@@ -179,10 +249,8 @@ const Navbar = () => {
             </div>
           </div>
 
-
           <div className="flex items-center gap-3">
             <SelectCitySidebar></SelectCitySidebar>
-
 
             <div className="flex xl:hidden">
               <Sidebar></Sidebar>
@@ -194,15 +262,30 @@ const Navbar = () => {
         <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
           <div className="relative w-full flex justify-center">
             <input
+            value={searchedResult}
+            onChange={handleSearch}
+            // onClick={handleSuggestionShow}
               type="text"
               className="bg-white pl-9 py-3 rounded-lg w-[90%] md:w-80 focus:outline-none"
               placeholder="Search disease, doctors, treatment"
             />
             <IoSearchOutline className="text-2xl absolute top-3 left-[6.5%] text-gray-500" />
+            {suggestions.length > 0 && (
+            <div className="absolute mt-14 w-80 bg-white border border-gray-300 rounded-md shadow-md z-40">
+              {suggestions.map((suggestion, index) => (
+                <div
+                  key={index}
+                  className="p-2 cursor-pointer hover:bg-gray-100"
+                  onClick={() => handleSuggestionClick(suggestion)}
+                >
+                  {suggestion}
+                </div>
+              ))}
+            </div>
+          )}
           </div>
         </div>
       )}
-
 
       <div className="hidden xl:flex justify-center bg-white">
         <div className=" flex justify-between w-[90%]">
@@ -222,8 +305,4 @@ const Navbar = () => {
   );
 };
 
-
 export default Navbar;
-
-
-

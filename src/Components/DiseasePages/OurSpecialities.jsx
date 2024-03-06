@@ -10,7 +10,7 @@ const OurSpecialities = () => {
   return (
     <div className="w-full flex bg-[#F2F4F5] justify-center py-16 my-10">
       <div className=" w-[95%] md:w-4/5">
-        <h1 className="text-2xl font-semibold mb-4 text-center">
+        <h1 className="text-2xl font-semibold mb-4 text-center font-lato">
           Our Specialities
         </h1>
 
@@ -23,8 +23,8 @@ const OurSpecialities = () => {
               alt=""
             />
             <div className="px-4">
-              <h1 className="text-lg font-semibold mb-1">Hernia</h1>
-              <p className="mb-2">
+              <h1 className="text-lg font-semibold mb-1 font-lato">Hernia</h1>
+              <p className="mb-2 font-lato">
                 Specialised & advanced <br />
                 treatment for Anorectal Disease…
               </p>
@@ -42,8 +42,8 @@ const OurSpecialities = () => {
               alt=""
             />
             <div className="px-4">
-              <h1 className="text-lg font-semibold mb-1">Hernia</h1>
-              <p className="mb-2">
+              <h1 className="text-lg font-semibold mb-1 font-lato">Gallstones</h1>
+              <p className="mb-2 font-lato">
                 Specialised & advanced <br />
                 treatment for Anorectal Disease…
               </p>
@@ -61,8 +61,8 @@ const OurSpecialities = () => {
               alt=""
             />
             <div className="px-4">
-              <h1 className="text-lg font-semibold mb-1">Hernia</h1>
-              <p className="mb-2">
+              <h1 className="text-lg font-semibold mb-1 font-lato">Appendicitis</h1>
+              <p className="mb-2 font-lato">
                 Specialised & advanced <br />
                 treatment for Anorectal Disease…
               </p>
@@ -80,8 +80,8 @@ const OurSpecialities = () => {
               alt=""
             />
             <div className="px-4">
-              <h1 className="text-lg font-semibold mb-1">Hernia</h1>
-              <p className="mb-2">
+              <h1 className="text-lg font-semibold mb-1 font-lato">Inguinal Hernia</h1>
+              <p className="mb-2 font-lato">
                 Specialised & advanced <br />
                 treatment for Anorectal Disease…
               </p>
@@ -99,8 +99,8 @@ const OurSpecialities = () => {
               alt=""
             />
             <div className="px-4">
-              <h1 className="text-lg font-semibold mb-1">Hernia</h1>
-              <p className="mb-2">
+              <h1 className="text-lg font-semibold mb-1 font-lato">Umbilical Hernia</h1>
+              <p className="mb-2 font-lato">
                 Specialised & advanced <br />
                 treatment for Anorectal Disease…
               </p>

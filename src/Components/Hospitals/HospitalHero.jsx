@@ -6,7 +6,7 @@ const HospitalHero = () => {
   return (
     <div className="bg-[#fcf8ff] flex flex-col items-center">
       {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs w-[95%] lg:w-[89.5%]">
+      <div className="text-sm breadcrumbs w-[95%] lg:w-[90%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
