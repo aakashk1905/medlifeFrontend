@@ -114,7 +114,83 @@ const Navbar = () => {
   const searchValues = [
     { name: "Proctology", link: "/proctology" },
     { name: "Laparoscopy", link: "/laparoscopy" },
+    { name: "Gynaecology", link: "/gynaecology" },
+    { name: "ENT", link: "/ent" },
+    { name: "Vascular", link: "/vascular" },
+    { name: "Aesthetics", link: "/aesthetics" },
+    { name: "Orthopedics", link: "/orthopedics" },
+    { name: "Ophthalmology", link: "/ophthalmology" },
+    { name: "Fertility", link: "/fertility" },
+    { name: "Dentistry", link: "/dentistry" },
+    { name: "Weight Loss", link: "/weight Loss" },
+    { name: "Dermatology", link: "/dermatology" },
+
+    // Sub disease
     { name: "Piles Treatment", link: "/treatment/piles" },
+    { name: "Fistula Treatment", link: "/treatment/piles" },
+    { name: "Pilonidal Sinus Treatment", link: "/treatment/piles" },
+    { name: "Rectal Prolapse", link: "/treatment/piles" },
+
+    { name: "Hernia Treatment", link: "/treatment/hernia" },
+    { name: "Gallbladder Treatment", link: "/treatment/gallbladder" },
+    { name: "Inguinal Hernia Treatment", link: "/treatment/inguinal" },
+    { name: "Umbilical Hernia Treatment", link: "/treatment/umbilical" },
+    { name: "Rectal Prolapse Treatment", link: "/treatment/rectal" },
+
+    { name: "Uterus Removal", link: "/treatment/uterus" },
+  { name: "Ovarian Cyst", link: "/treatment/ovarian" },
+
+
+  { name: "Tympanoplasty", link: "/treatment/tympanoplasty" },
+  { name: "Adenoidectomy", link: "/treatment/adenoidectomy" },
+  { name: "Sinus Treatment", link: "/treatment/sinus" },
+  { name: "Septoplasty", link: "/treatment/septoplasty" },
+  { name: "Mastoidectomy", link: "/treatment/mastoidectomy" },
+  { name: "FESS Surgery", link: "/treatment/fess" },
+  { name: "Thyroidectomy", link: "/treatment/thyroidectomy" },
+  { name: "Tonsillectomy", link: "/treatment/tonsillectomy" },
+  { name: "Stapedectomy", link: "/treatment/stapedectomy" },
+  { name: "Myringotomy", link: "/treatment/myringotomy" },
+  { name: "Throat Surgery", link: "/treatment/throat" },
+  { name: "Ear Surgery", link: "/treatment/ear" },
+  { name: "Vocal Cord Polyps", link: "/treatment/vocal" },
+  { name: "Nasal Polyps", link: "/treatment/nasal" },
+  { name: "Turbinate Reduction", link: "/treatment/turbinate" },
+
+  { name: "Varicose Veins Treatment", link: "/treatment/varicose" },
+  { name: "Varicocele Treatment", link: "/treatment/varicocele" },
+
+  { name: "Gynecomastia", link: "/treatment/gynecomastia" },
+  { name: "Liposuction", link: "/treatment/liposuction" },
+  { name: "Hair Transplant", link: "/treatment/hair" },
+
+  { name: "Knee Replacement", link: "/treatment/kneet" },
+  { name: "ACL Tear Treatment", link: "/treatment/acl" },
+  { name: "Hip Replacement Surgery", link: "/treatment/hip" },
+  { name: "Spine Surgery", link: "/treatment/spine" },
+
+
+  { name: "Lasik Eye Surgery", link: "/treatment/lasik" },
+  { name: "Cataract Surgery", link: "/treatment/cataract" },
+  { name: "Phaco Surgery", link: "/treatment/phaco" },
+
+  { name: "IVF Treatment", link: "/treatment/ivf" },
+  { name: "IUI Treatment", link: "/treatment/iui" },
+  { name: "Dental Implant Surgery", link: "/treatment/dental" },
+  { name: "Dental Braces", link: "/treatment/dental" },
+  { name: "Teeth Aligners", link: "/treatment/teeth" },
+  { name: "Bariatric Surgery", link: "/treatment/bariatric" },
+  { name: "Intragastric Balloon", link: "/treatment/intragastric" },
+  { name: "Botox", link: "/treatment/botox" },
+  { name: "Vampire Facial", link: "/treatment/vampire" },
+  { name: "Face Threadlift", link: "/treatment/face" },
+  { name: "Hair Transplant", link: "/treatment/hair" },
+  { name: "FUE", link: "/treatment/fue" },
+  { name: "FUT", link: "/treatment/fut" },
+  { name: "DHI Hair Transplant", link: "/treatment/dhi" },
+  { name: "GFC Hair Transplant", link: "/treatment/gfc" }
+
+
   ];
 
   const suggestionName = [{ name: "Piles Treatment", link: "treatment/piles" }];
