@@ -245,7 +245,9 @@ const Navbar = () => {
     <div className="sticky top-0 z-30">
       <div className=" bg-[#00a79d] py-[12px] flex items-center justify-center">
         <div className="w-[95%] lg:w-[90%] flex justify-between items-center pr-[13px]">
+          <Link to={"/"}>
           <img className="" src={logo} alt="logo" />
+          </Link>
           <div className="flex items-center gap-5">
             <div className="hidden md:block relative">
               <input
