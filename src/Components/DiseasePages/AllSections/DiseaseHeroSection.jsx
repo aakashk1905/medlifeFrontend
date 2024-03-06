@@ -6,17 +6,17 @@ import { Helmet } from "react-helmet-async";
 import Form from "../../Form";
 
 const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
-  const appointmentModalProps = {
-    fontWeight: "normal",
-    fontSize: "base",
-    text: "Book Your Appointment",
-    minWidth: "280px",
-    width: "100%",
-    height: "64px",
-    backgroundColor: "#00a0aa",
-    color: "#fff",
-    borderRadius: "8px",
-  };
+  // const appointmentModalProps = {
+  //   fontWeight: "normal",
+  //   fontSize: "base",
+  //   text: "Book Your Appointment",
+  //   minWidth: "280px",
+  //   width: "100%",
+  //   height: "64px",
+  //   backgroundColor: "#00a0aa",
+  //   color: "#fff",
+  //   borderRadius: "8px",
+  // };
   return (
     <div className="bg-[#fcf8ff] flex flex-col items-center">
       <Helmet>
@@ -31,7 +31,7 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
             <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <Link>{diseaseName}</Link>
+            <Link to={`/${diseaseName.toLowerCase()}`}>{diseaseName}</Link>
           </li>
           <li className="capitalize">{subDisease}</li>
         </ul>
@@ -64,12 +64,15 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
               : "No Content Here"}
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-3 w-full">
-          <button className="w-full md:w-full lg:w-[220px] xl:w-[250px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
-            Call now +98 765 432 10
-          </button>
-          <AppointmentModal className="w-full lg:w-[220px] xl:w-[240px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
-        </div>
+          <div className="flex flex-col lg:flex-row gap-3 w-full md:max-w-[350px] lg:max-w-full">
+            <button className="w-full md:w-full lg:w-[220px] xl:w-[250px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+              Call now +98 765 432 10
+            </button>
+            <AppointmentModal
+              className="w-full lg:w-[220px] xl:w-[240px] h-[64px]"
+              text={"Book Your Appointment"}
+            ></AppointmentModal>
+          </div>
         </div>
 
         <img
@@ -84,7 +87,6 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
             <Form header={"Book Free Consultation"} />
           </div>
         </div>
-
       </div>
     </div>
   );
