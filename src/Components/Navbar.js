@@ -1,13 +1,12 @@
 import logo from "../Assests/logo.svg";
 import DropdownMenu from "./DropdownMenu";
 import Sidebar from "./Sidebar/Sidebar";
-import { Link, Outlet, useNavigate } from "react-router-dom";
+import { Link, Navigate, Outlet, useNavigate } from "react-router-dom";
 import { IoSearchOutline } from "react-icons/io5";
 import SelectCitySidebar from "./Sidebar/SelectCitySidebar";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {
-
   const btmMenus = [
     {
       name: "Proctology",
@@ -110,24 +109,18 @@ const Navbar = () => {
       link: "dermatology",
     },
   ];
+  const navigate = useNavigate();
 
-  const suggestionName = [
-    "Piles Treatment",
-    "Hernia Treatment",
-    "Uterus Removal",
-    "Tympanoplasty",
-    "Adenoidectomy",
-    "Sinus Treatment",
-    "Septoplasty",
-    "Mastoidectomy",
-    "FESS Surgery",
-    "Thyroidectomy",
-    "Tonsillectomy",
+  const searchValues = [
+    { name: "Proctology", link: "/proctology" },
+    { name: "Laparoscopy", link: "/laparoscopy" },
+    { name: "Piles Treatment", link: "/treatment/piles" },
   ];
+
+  const suggestionName = [{ name: "Piles Treatment", link: "treatment/piles" }];
 
   const [searchedResult, setSearchedResult] = useState("");
   const [suggestions, setSuggestions] = useState([]);
-
 
   const [suggestionShow, setSuggestionShow] = useState(false);
 
@@ -135,38 +128,22 @@ const Navbar = () => {
     const query = e.target.value;
     setSearchedResult(query);
 
-    const suggestions = btmMenus
-      .flatMap((menu) => menu.list)
-      .filter((item) => item.toLowerCase().includes(query.toLowerCase()))
+    const suggestions = searchValues
+      .filter((item) => item.name.toLowerCase().includes(query.toLowerCase()))
       .slice(0, 5);
 
     setSuggestions(suggestions);
-    setSuggestionShow(true)
+    if (query === "") {
+      setSuggestions([]);
+    }
   };
-
-
-
-  const handleSuggestionShow = () => {
-    setSuggestionShow(!suggestionShow);
-
-    setSuggestions(suggestionName.slice(0, 5));
-  };
-
 
   const handleSuggestionClick = (suggestion) => {
-    setSearchedResult(suggestion);
-
-    const suggestionLink = btmMenus.find(menu => menu.list.includes(suggestion))?.link;
-
-    if (suggestionLink) {
-      window.location.href = `/${suggestionLink}`;
-    }
+    console.log("suggestion.link", suggestion.link);
+    navigate(suggestion.link);
 
     setSearchedResult("");
-    setSuggestions([]);
   };
-
-  
 
   const [windowDimensions, setWindowDimensions] = useState({
     width: window.innerWidth,
@@ -196,29 +173,28 @@ const Navbar = () => {
           <div className="flex items-center gap-5">
             <div className="hidden md:block relative">
               <input
-              value={searchedResult}
-              onChange={handleSearch}
-              onClick={() => setSuggestionShow(!suggestionShow)}
-              // onClick={handleSuggestionShow}
+                value={searchedResult}
+                onChange={handleSearch}
                 type="text"
                 className="bg-white pl-9 py-2 rounded-lg w-80 focus:outline-none"
-                placeholder="Search disease, doctors, treatment"
+                placeholder="Search disease or treatment"
               />
               <IoSearchOutline className="text-2xl absolute top-2  left-2 text-gray-500"></IoSearchOutline>
               {suggestions.length > 0 && (
-            <div className="absolute mt-2 w-80 bg-white border border-gray-300 rounded-md shadow-md z-40">
-              {suggestions.map((suggestion, index) => (
                 <div
-                  key={index}
-                  className="p-2 cursor-pointer hover:bg-gray-100"
-                  onClick={() => handleSuggestionClick(suggestion)}
+                  className={`absolute mt-2 w-80 bg-white border border-gray-300 rounded-md shadow-md z-40 `}
                 >
-                  {suggestion}
+                  {suggestions.map((suggestion, index) => (
+                    <div
+                      key={index}
+                      className="p-2 cursor-pointer hover:bg-gray-100"
+                      onClick={() => handleSuggestionClick(suggestion)}
+                    >
+                      {suggestion.name}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          )}
-
+              )}
             </div>
             <div className="hidden lg:flex items-center gap-4">
               <Link
@@ -261,27 +237,27 @@ const Navbar = () => {
         <div className="bg-[#00a79d] p-2 flex justify-center md:hidden">
           <div className="relative w-full flex justify-center">
             <input
-            value={searchedResult}
-            onChange={handleSearch}
-            // onClick={handleSuggestionShow}
+              value={searchedResult}
+              onChange={handleSearch}
+              // onClick={handleSuggestionShow}
               type="text"
               className="bg-white pl-9 py-3 rounded-lg w-[90%] md:w-80 focus:outline-none"
               placeholder="Search disease, doctors, treatment"
             />
             <IoSearchOutline className="text-2xl absolute top-3 left-[6.5%] text-gray-500" />
             {suggestions.length > 0 && (
-            <div className="absolute mt-14 w-80 bg-white border border-gray-300 rounded-md shadow-md z-40">
-              {suggestions.map((suggestion, index) => (
-                <div
-                  key={index}
-                  className="p-2 cursor-pointer hover:bg-gray-100"
-                  onClick={() => handleSuggestionClick(suggestion)}
-                >
-                  {suggestion}
-                </div>
-              ))}
-            </div>
-          )}
+              <div className="absolute mt-14 w-80 bg-white border border-gray-300 rounded-md shadow-md z-40">
+                {suggestions.map((suggestion, index) => (
+                  <div
+                    key={index}
+                    className="p-2 cursor-pointer hover:bg-gray-100"
+                    onClick={() => handleSuggestionClick(suggestion)}
+                  >
+                    {suggestion}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
         </div>
       )}
