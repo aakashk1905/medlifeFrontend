@@ -39,13 +39,14 @@
   padding: 20px;
   justify-content: center;
   align-items: flex-start;
-  gap: 20px;
+  gap: 10px;
+  width: 100%;
 }
 
 @media screen and (max-width: 395px) {
   .pl-cta-cont {
     flex-direction: column;
-    align-items: center; /* or any other styles you want for smaller screens */
+    align-items: center;
   }
 }
 
@@ -53,6 +54,7 @@
   display: flex;
   height: 48px;
   padding: 11px 20px;
+
   justify-content: center;
   align-items: center;
   color: var(--material-theme-sys-light-secondary, #5854a8);
@@ -74,6 +76,7 @@
 .pl-wr {
   box-sizing: border-box;
   display: flex;
+
   padding: 11px 21px;
   flex-direction: column;
   justify-content: center;
@@ -91,5 +94,12 @@
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 150% */
+}
+
+@media screen and (max-width: 395px) {
+  .pl-wr, .pl-va {
+    width: 100%;
+    width: 100%;
+  }
 }
 

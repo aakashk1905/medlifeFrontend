@@ -21,7 +21,7 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
             <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <Link>{diseaseName}</Link>
+            <Link to={`/${diseaseName.toLowerCase()}`}>{diseaseName}</Link>
           </li>
           <li className="capitalize">{subDisease}</li>
         </ul>
@@ -76,7 +76,6 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
             <Form header={"Book Free Consultation"} />
           </div>
         </div>
-
       </div>
     </div>
   );

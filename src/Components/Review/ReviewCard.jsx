@@ -15,6 +15,24 @@ const ReviewCard = () => {
       .then((data) => setAllReviews(data.review))
       .catch((err) => console.log(err.message));
   }, [axiosBaseUrl]);
+
+  const calculateTimeAgo = (createdAt) => {
+    const currentDate = new Date();
+    const reviewDate = new Date(createdAt);
+    const timeDifference = currentDate - reviewDate;
+  
+    // Calculate time in days if less than a month
+    if (timeDifference < 30 * 24 * 60 * 60 * 1000) {
+      const daysAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+      return `${daysAgo} ${daysAgo === 1 ? 'day' : 'days'} ago`;
+    }
+  
+    // Calculate time in months
+    const monthsAgo = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 30));
+    return `${monthsAgo} ${monthsAgo === 1 ? 'month' : 'months'} ago`;
+  };
+
+
   return (
     <div className="flex flex-col items-center">
       {allReviews.length > 0
@@ -47,7 +65,7 @@ const ReviewCard = () => {
                       activeColors={["#FFCE00"]}
                     />
                     <h2 className="text-md md:text-lg font-semibold">
-                      ( 11 Months ago)
+                      ({calculateTimeAgo(review?.createdAt)})
                     </h2>
                   </div>
                 </div>

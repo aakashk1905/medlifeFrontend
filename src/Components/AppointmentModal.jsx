@@ -10,10 +10,7 @@ import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import CityDropdown from "./CityDropdown";
 import { twMerge } from "tailwind-merge";
 
-const AppointmentModal = ({text, className}) => {
-
-
-
+const AppointmentModal = ({ text, className }) => {
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState("");
@@ -46,7 +43,7 @@ const AppointmentModal = ({text, className}) => {
       selectedCity === "Select Disease"
     ) {
       toast.error("Please fill all the fields");
-      
+
       return;
     }
     axiosBaseUrl
@@ -59,7 +56,7 @@ const AppointmentModal = ({text, className}) => {
       .then((response) => {
         if (response.data.message) {
           const promise = new Promise((resolve) =>
-            setTimeout(() => resolve({  }), 3000)
+            setTimeout(() => resolve({}), 3000)
           );
           toast.promise(promise, {
             loading: "Loading...",
@@ -74,14 +71,14 @@ const AppointmentModal = ({text, className}) => {
         console.log(error);
       });
   };
-  // w-full xl:w-[255px] h-[64px] 
+  // w-full xl:w-[255px] h-[64px]
   return (
     <div className="">
       <button
-      className={twMerge(
-        "border border-[#00a0aa] bg-[#00a0aa] rounded-lg text-white",
-        className
-      )}
+        className={twMerge(
+          "border border-[#00a0aa] bg-[#00a0aa] rounded-lg text-white",
+          className
+        )}
         onClick={() => document.getElementById("my_modal_4").showModal()}
       >
         {text}
@@ -119,9 +116,7 @@ const AppointmentModal = ({text, className}) => {
                     </div>
                   </div>
 
-                  <div className="bg-gray-200 w-0.5 h-32 absolute right-[340px] bottom-[230px]">
-
-                  </div>
+                  <div className="bg-gray-200 w-0.5 h-32 absolute right-[340px] bottom-[230px]"></div>
                   {/* Bottom card */}
                   <div className="w-5/6 absolute bottom-10">
                     <div className="bg-[#FCFCFF] shadow py-3 px-6 flex justify-between items-center">
@@ -177,72 +172,81 @@ const AppointmentModal = ({text, className}) => {
 
               {/* Form */}
               <div className="-mt-6 lg:-mt-[75px] px-2">
-              <div className="w-full shadow-lg rounded-3xl mb-3 border-t border-gray-100">
-     <form onSubmit={handleSubmit} className="flex flex-col items-center gap-3 bg-white p-3 rounded-3xl w-full">
-     <div className="text-[#5854a8] text-lg md:text-2xl font-semibold mb-1">Book Free Consultation</div>
-      <input
-        type="text"
-        id="patientName"
-        value={patientName}
-        name="patientName"
-        placeholder="Patient Name "
-        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
-        onChange={(e) => setPatientName(e.target.value)}
-      />
-      <input
-        type="tel"
-        id="mobileNumber"
-        placeholder="Mobile Number"
-        name="mobileNumber"
-        value={mobileNumber}
-        className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
-        onChange={(e) => setMobileNumber(e.target.value)}
-      />
+                <div className="w-full shadow-lg rounded-3xl mb-3 border-t border-gray-100">
+                  <form
+                    onSubmit={handleSubmit}
+                    className="flex flex-col items-center gap-3 bg-white p-3 rounded-3xl w-full"
+                  >
+                    <div className="text-[#5854a8] text-lg md:text-2xl font-semibold mb-1">
+                      Book Free Consultation
+                    </div>
+                    <input
+                      type="text"
+                      id="patientName"
+                      value={patientName}
+                      name="patientName"
+                      placeholder="Patient Name "
+                      className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
+                      onChange={(e) => setPatientName(e.target.value)}
+                    />
+                    <input
+                      type="tel"
+                      id="mobileNumber"
+                      placeholder="Mobile Number"
+                      name="mobileNumber"
+                      value={mobileNumber}
+                      className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
+                      onChange={(e) => setMobileNumber(e.target.value)}
+                    />
 
-      <div class="relative inline-block text-left w-full">
-        <select
-          value={selectedCity}
-          onChange={(e) => setSelectedCity(e.target.value)}
-          className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
-        >
-          {cities.map((city) => (
-            <option key={city} value={city}>
-              {city}
-            </option>
-          ))}
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
-          <IoIosArrowDown></IoIosArrowDown>
-        </div>
-      </div>
+                    <div class="relative inline-block text-left w-full">
+                      <select
+                        value={selectedCity}
+                        onChange={(e) => setSelectedCity(e.target.value)}
+                        className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
+                      >
+                        {cities.map((city) => (
+                          <option key={city} value={city}>
+                            {city}
+                          </option>
+                        ))}
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+                        <IoIosArrowDown></IoIosArrowDown>
+                      </div>
+                    </div>
 
-      <CityDropdown onCityChange={setSelectedCity} type="city" />
+                    <CityDropdown onCityChange={setSelectedCity} type="city" />
 
-      <div class="relative inline-block text-left w-full">
-        <select
-          value={selectedDisease}
-          onChange={(e) => {
-            setSelectedDisease(e.target.value);
-          }}
-          className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
-        >
-          {disease.map((disease) => (
-            <option key={disease} value={disease}>
-              {disease}
-            </option>
-          ))}
-        </select>
-        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
-          <IoIosArrowDown></IoIosArrowDown>
-        </div>
-      </div>
+                    <div class="relative inline-block text-left w-full">
+                      <select
+                        value={selectedDisease}
+                        onChange={(e) => {
+                          setSelectedDisease(e.target.value);
+                        }}
+                        className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
+                      >
+                        {disease.map((disease) => (
+                          <option key={disease} value={disease}>
+                            {disease}
+                          </option>
+                        ))}
+                      </select>
+                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+                        <IoIosArrowDown></IoIosArrowDown>
+                      </div>
+                    </div>
 
-      <button className="bg-[#00a79d] px-4 w-full h-12 rounded-lg text-white" type="submit">Book Now</button>
-      <Toaster position="top-center" />
-    </form>
-   </div>
+                    <button
+                      className="bg-[#00a79d] px-4 w-full h-12 rounded-lg text-white"
+                      type="submit"
+                    >
+                      Book Now
+                    </button>
+                    <Toaster position="top-center" />
+                  </form>
+                </div>
               </div>
-
             </div>
           </div>
         </div>

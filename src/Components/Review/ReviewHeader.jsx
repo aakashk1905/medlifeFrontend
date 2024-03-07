@@ -122,13 +122,11 @@ const ReviewHeader = () => {
   }
 
   // Calculate the average
-  let average = sum / reviews.length;
+  let average = sum / reviews.length || 0;
 
-  const [star, setStar] = useState(5);
-
-  const onChange = (nextValue) => {
-    setStar(nextValue);
-  };
+  // const onChange = (nextValue) => {
+  //   setStar(nextValue);
+  // };
 
   return (
     <div className="flex flex-col items-center">
@@ -144,11 +142,11 @@ const ReviewHeader = () => {
       </div>
 
       <div className="w-full flex justify-center">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10 w-[95%] md:w-4/5">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-10 w-[95%] md:w-4/5 ">
           <div className="col-span-2 flex items-center justify-center">
             {/* Left side reviews section */}
-            <div className=" grid grid-cols-2 md:grid-cols-4 gap-0 lg:gap-3 col-span-2 mb-8 ">
-              <div className="border-b md:border-b-0 border-r lg:border-r pb-2 md:pb-0 border-gray-700">
+            <div className=" grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 2xl:grid-cols-4 gap-0 lg:gap-3 col-span-2 mb-8 ">
+              <div className="border-b md:border-b-0 border-r lg:border-r md:p-2 lg:p-4 p-4  md:pb-0 border-gray-700">
                 <h2 className="text-xl font-semibold text-center mb-4">
                   Total Reviews
                 </h2>
@@ -161,30 +159,32 @@ const ReviewHeader = () => {
               </div>
 
               {/* Reviews Card with star icon */}
-              <div className="border-b md:border-b-0 md:border-r pb-2 md:pb-0 border-gray-700 flex flex-col gap-4">
+              <div className="border-b md:border-b-0  md:border-r lg:border-0 p-4 md:p-2 lg:p-4 2xl:border-r md:pb-0 border-gray-700 flex flex-col gap-4">
                 <h2 className="text-xl font-semibold text-center">
                   Average Rating
                 </h2>
                 <div className="flex flex-wrap items-center justify-center gap-5">
                   <h2 className="text-xl font-semibold">
-                    {average.toFixed(2)}
+                    {average?.toFixed(2) || 0}
                   </h2>
                   {/* <h2 className="text-xl font-semibold">4.7</h2> */}
                   <div className="">
                     <ReactStars
-                      onChange={onChange}
+                      // onChange={onChange}
                       value={average}
                       edit={true}
                       activeColors={["#FFCE00"]}
                     />
                   </div>
                 </div>
-                <p className="text-center ml-1 md:ml-0">Average rating this year</p>
+                <p className="text-center ml-1 md:ml-0">
+                  Average rating this year
+                </p>
               </div>
 
               {/* Rating counter section */}
 
-              <div className="md:col-span-2 ml-0 md:ml-2 lg:ml-0">
+              <div className="col-span-2 ml-0 md:p-2 lg:p-4 lg:ml-0 p-4">
                 {/* 5 star  */}
                 <div className="flex items-center gap-4">
                   {/* Left Round circle */}
@@ -255,14 +255,14 @@ const ReviewHeader = () => {
                   </div>
                   <div className="w-full">
                     <div className="w-full">
-                    <ProgressBar
-                      barContainerClassName="progressContainer"
-                      height="7px"
-                      isLabelVisible={false}
-                      completed={percentageOfFourStarReviews}
-                      bgColor="#FFB4AA"
-                    />
-                  </div>
+                      <ProgressBar
+                        barContainerClassName="progressContainer"
+                        height="7px"
+                        isLabelVisible={false}
+                        completed={percentageOfFourStarReviews}
+                        bgColor="#FFB4AA"
+                      />
+                    </div>
                   </div>
                   <h3 className="text-xl font-semibold">
                     {numberOfFourStarReviews}
@@ -393,12 +393,10 @@ const ReviewHeader = () => {
                 </div>
               </div>
             </div>
-
-            
           </div>
 
           {/* Right side form */}
-          <div className="w-full -mt-0 lg:-mt-10 mb-2 md:mb-10 lg:mb-0">
+          <div className="w-[95%] md:w-4/5 lg:w-full max-w-[500px] 2xl:w-full -mt-0 lg:-mt-10 mb-2 md:mb-10 lg:mb-0 justify-self-center">
             <form
               onSubmit={handleSubmitDetails}
               className="bg-white shadow-xl mb-7 md:mb-0 border p-6 rounded-3xl flex flex-col items-center gap-3 "
@@ -406,7 +404,7 @@ const ReviewHeader = () => {
               <h1 className="text-2xl 2xl:text-3xl text-center font-semibold">
                 Write A Review
               </h1>
-              <h2 className="text-[#5854A8] text-md 2xl:text-xl font-semibold text-center mb-3">
+              <h2 className="text-[#5854A8]  font-semibold text-center mb-1" style={{fontSize: "clamp(12px, 1.1vw, 18px)"}}>
                 चिकित्सा उपचार परामर्श के लिए, फॉर्म भरें
               </h2>
               <input
@@ -464,47 +462,39 @@ const ReviewHeader = () => {
                 </div>
               </div>
 
-              <div className="w-full">
-                {nameError ? (
+              
+                {nameError && (
+                  <div className="w-full">
                   <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
                     <MdError></MdError> {nameError}
                   </p>
-                ) : (
-                  ""
+                  </div>
                 )}
 
-                {mobileError ? (
+                {mobileError && (
+                  <div className="w-full">
                   <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
                     <MdError></MdError> {mobileError}
                   </p>
-                ) : (
-                  ""
-                )}
+                  </div>
+                ) }
 
-                {/* {doctorNameError ? (
-                <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
-                  <MdError></MdError> {doctorNameError}
-                </p>
-              ) : (
-                ""
-              )} */}
-
-                {cityError ? (
+                {cityError && (
+                  <div className="w-full">
                   <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
                     <MdError></MdError> {cityError}
                   </p>
-                ) : (
-                  ""
+                  </div>
                 )}
 
-                {diseaseError ? (
+                {diseaseError && (
+                  <div className="w-full">
                   <p className="bg-rose-600 p-2 rounded-lg text-white flex items-center gap-2">
                     <MdError></MdError> {diseaseError}
                   </p>
-                ) : (
-                  ""
-                )}
-              </div>
+                  </div>
+                ) 
+                }
               <button className=" w-full bg-[#00a0aa] px-4 py-3 rounded-xl text-white border border-[#00a0aa] flex items-center gap-2 justify-center">
                 Continue
                 <FaArrowRightToBracket></FaArrowRightToBracket>

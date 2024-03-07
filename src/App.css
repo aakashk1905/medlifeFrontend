@@ -1,12 +1,9 @@
-.progressContainer{
+.progressContainer {
   background-color: transparent;
   border-radius: 5px;
 }
 
-
-
 .swiper-slide {
-  /* width: fit-content !important; */
   display: flex !important;
   justify-content: center !important;
 }
