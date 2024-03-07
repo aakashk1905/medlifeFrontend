@@ -32,7 +32,7 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
 
 
   return (
-    <div className="rev-cont my-14">
+    <div className="rev-cont mb-10">
       <div className="hero-btm-head capitalize">{docHeading}</div>
 
       {
@@ -151,9 +151,6 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
 
         <div className="w-full flex flex-col items-center">
         <div className="w-[95%] lg:w-[90%]">
-          <div className="text-gray-800 mb-7 text-3xl font-bold text-center font-lato">
-            Our Patient Loves us
-          </div>
   
           <div className="flex justify-center relative py-[12px]">
         <Swiper

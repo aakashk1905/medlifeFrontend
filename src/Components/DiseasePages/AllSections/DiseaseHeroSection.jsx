@@ -30,25 +30,28 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
       <div className="w-[94%] lg:w-[90%] xl:w-4/5 grid grid-cols-1 lg:grid-cols-5 gap-0 lg:gap-10 relative">
         <div className="pt-4 pb-10 z-10 col-span-3">
           {/* Main heading */}
-          <h1 className="text-5xl text-gray-600 font-semibold mb-5">
-            {content ? content.heroHeader : ""}
+          <h1 className="text-5xl text-gray-600 font-semibold mb-3 font-lato">
+            {content ? content?.heroHeader : ""}
           </h1>
           {/* Sub heading */}
-          <h2 className="text-4xl text-[#2ca9e1] font-semibold mb-5">
-            {content ? content.subHeading : ""}
+          <h2 className="text-4xl text-[#2ca9e1] font-semibold mb-3 font-lato">
+            {content ? content?.subHeading : ""}
           </h2>
           {/* Description */}
-          <p className="text-gray-600 mb-5">{content ? content.details : ""}</p>
+          <p className="text-gray-600 mb-5 font-lato">{content ? content?.details : ""}</p>
 
           {/* Bullet points (Tick icons) */}
+          <h2 className="text-md text-[#2ca9e1] font-semibold mb-3 font-lato">
+            {content ? content?.listHeading : ""}
+          </h2>
           <div className="mb-6">
             {content?.subLists?.length > 0
-              ? content.subLists.map((list, idx) => (
+              ? content?.subLists?.map((list, idx) => (
                   <div key={idx} className="flex items-center gap-2 mb-2">
                     <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
                       <MdOutlineDone></MdOutlineDone>
                     </div>
-                    <p className="font-semibold text-gray-800">{list}</p>
+                    <p className="font-semibold text-gray-800 font-lato">{list}</p>
                   </div>
                 ))
               : "No Content Here"}

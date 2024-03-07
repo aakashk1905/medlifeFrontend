@@ -312,13 +312,16 @@
         "parentDisease" : "Proctology",
         "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
         "diseaseImg" : "https://i.ibb.co/DtCYbg2/piles.png",
-        "heroHeader": "Umbilical Piles Surgery",
-        "subHeading": "सुरक्षित एवं सफल",
-        "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+        "heroHeader": "Piles Treatment",
+        "subHeading": "Laser Surgery Procedure & Operation Benefits",
+        "details": "One of the most common anorectal medical conditions, yet least talked about is piles. Piles, or hemorrhoids, are swollen tissues and blood vessels found inside the skin in the rectal region. You can get the best treatment for piles at Pristyn Care, with top-notch medical technologies and equipment. Book a consultation today with Pristyn Care to get rid of piles.",
+        "listHeading" : "Are you going through any of these symptoms?",
         "subLists": [
-            "उन्नत 3D तकनीक",
-            "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-            "संक्रमण का कोई खतरा नहीं"
+            "Swelling in Anal Region",
+            "Itching, Redness and Swelling around Anal Region",
+            "Pain while Making Bowel Movements",
+            "Feeling Painful Lumps around Anus",
+            "Blood in Stool"
         ],
         "treatment": {
             "treatmentHeader": [
@@ -336,18 +339,17 @@
         },
         "SurgeryForm": {
             "surgeryHeader": [
-                "Explore Affordable Umbilical Hernia Surgery With",
-                "Med Life Easy"
+                "Understanding Piles (Hemorrhoids) and How to Manage Them"
             ],
-            "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-            "typeHeader": "Type of Surgery",
-            "type": "Umbilical Hernia Surgery",
-            "timeHeader": "Time",
-            "time": "1-2 Days",
-            "costHeader": "Cost Range",
-            "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-            "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-            "formTitle": "Umbilical Herniya Surgery Cost Estimate"
+            "surgerydetails" : "Piles, also known as hemorrhoids, happen when the veins around the bottom area become swollen. They can be inside the rectum or outside around the anus. Anyone can get piles, but they're more common in people between 50 and 60 years old. While they can be uncomfortable, piles usually aren't serious and can be managed with simple changes and home remedies. To ease symptoms, try increasing fiber in your diet, drinking lots of water, keeping the area clean, using creams or ointments you can buy, and avoiding pushing too hard during bowel movements. If they're severe, Med Life Easy can provide surgical options. At Med Life Easy, we offer various treatments for piles, focusing on simple solutions first and surgery only when necessary.",
+            "typeHeader": "Disease name",
+            "type": "Piles (Hemorrhoids)",
+            "surgeryNameHeader": "Surgery name",
+            "surgeryName": "Haemorrhoidectomy",
+            "timeHeader": "Duration ",
+            "time": "15 to 20 Minutes",
+            "costHeader": "Treated by",
+            "cost": "General Surgeon"
         },
         "aboutDisease": {
             "diseaseHeader": "What is Umbilical Herniya ",
@@ -365,8 +367,20 @@
                 ]
             },
             "diagnosis": {
-                "diagnosisHeader": "Diagnosis:",
-                "details": "Umbilical Hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+                "diagnosisHeader": "Diagnosing Piles:",
+                "diagnosisLists" : [
+                    "1. **Medical History:** Your healthcare provider will inquire about your symptoms, such as pain, itching, bleeding, or changes in bowel movements. They will also review your medical history, including any previous occurrences of piles.",
+
+                    "2. **Physical Examination:** A thorough physical examination of the anal region will be conducted to assess for external and internal piles. This involves visually inspecting the area and gently examining the anus and rectum for abnormalities, swelling, or lumps.",
+
+                    "3. **Digital Rectal Examination (DRE):** In some cases, a DRE may be performed. It entails inserting a lubricated, gloved finger into the rectum to assess internal piles and check for other rectal abnormalities. This procedure is typically quick and minimally uncomfortable.",
+
+                    "4. **Anoscopy or Proctoscopy:** These procedures involve using a small, lighted tube (anoscope or proctoscope) to closely examine the anal canal and rectum. Anoscopy and proctoscopy provide direct visualization, allowing for a detailed assessment of piles and other rectal disorders. They help determine the location, size, and severity of the piles, aiding in treatment planning.",
+
+                    "5. **Sigmoidoscopy:** This procedure utilizes a sigmoidoscope (lighted tube with a camera) to view the lower part of the colon and rectum. It helps visualize the rectum and lower sigmoid colon, aiding in identifying various conditions, including piles.",
+
+                    "6. **Colonoscopy:** Colonoscopy examines the entire colon and rectum to check for abnormalities. It's particularly useful for evaluating rectal bleeding due to piles or other causes and ruling out more serious conditions. This comprehensive examination guides the healthcare provider in recommending the most appropriate treatment for piles."
+                ]
             }
         }
     },

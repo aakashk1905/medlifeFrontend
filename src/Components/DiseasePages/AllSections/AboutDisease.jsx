@@ -5,11 +5,11 @@ import AppointmentModal from "../../AppointmentModal";
 const AboutDisease = ({ content }) => {
 
   return (
-    <div className=" bg-[#ecf7fc] w-full flex justify-center">
+    <div className=" bg-[#ecf7fc] w-full flex justify-center my-5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-0 w-[95%] lg:w-4/5">
         {/* Left side details */}
         <div className="py-6  ">
-          <h1 className="text-2xl font-bold mb-4 text-gray-800">
+          {/* <h1 className="text-2xl font-bold mb-4 text-gray-800">
             {content?.aboutDisease?.diseaseHeader}
           </h1>
           <p className="mb-4 text-gray-800">{content?.aboutDisease?.details}</p>
@@ -24,14 +24,20 @@ const AboutDisease = ({ content }) => {
                 </li>
               )
             )}
-          </ul>
+          </ul> */}
 
           <h3 className="text-xl font-semibold text-gray-800">
             {content?.aboutDisease?.diagnosis?.diagnosisHeader}
           </h3>
-          <p className="mb-5 text-gray-800">
+          {/* <p className="mb-5 text-gray-800">
             {content?.aboutDisease?.diagnosis?.details}
-          </p>
+          </p> */}
+
+          {
+            content?.aboutDisease?.diagnosis?.diagnosisLists?.map((list, index) => 
+            <p className="mb-2 text-gray-800" key={index}>{list}</p>
+            )
+          }
 
           <div className="flex flex-col md:flex-row gap-3 w-full">
           <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
