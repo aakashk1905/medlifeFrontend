@@ -6,17 +6,7 @@ import { Helmet } from "react-helmet-async";
 import Form from "../../Form";
 
 const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
-  const appointmentModalProps = {
-    fontWeight: "normal",
-    fontSize: "base",
-    text: "Book Your Appointment",
-    minWidth: "280px",
-    width: "100%",
-    height: "64px",
-    backgroundColor: "#00a0aa",
-    color: "#fff",
-    borderRadius: "8px",
-  };
+
   return (
     <div className="bg-[#fcf8ff] flex flex-col items-center">
       <Helmet>
@@ -65,15 +55,17 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
           </div>
 
           <div className="flex flex-col lg:flex-row gap-3 w-full">
-          <button className="w-full md:w-full lg:w-[220px] xl:w-[250px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <AppointmentModal className="w-full lg:w-[220px] xl:w-[240px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+         <div className='w-full'>
+         <AppointmentModal className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+         </div>
         </div>
         </div>
 
         <img
-          className="hidden xl:flex absolute bottom-0 left-[600px] w-[350px]"
+          className="hidden lg:block absolute bottom-0 lg:left-[400px] left-[600px]  2xl:left-[600px]  w-[350px]"
           src={roundedShape}
           alt=""
         />

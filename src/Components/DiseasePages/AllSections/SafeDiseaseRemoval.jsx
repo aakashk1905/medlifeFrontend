@@ -13,7 +13,7 @@ const SafeDiseaseRemoval = ({ content }) => {
         </h1>
 
         {/* Bullet points (Tick icons) */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
           {content?.treatment.treatments.length > 0
             ? content?.treatment.treatments.map((treatment, idx) => (
                 <div key={idx} className="flex gap-2 ">

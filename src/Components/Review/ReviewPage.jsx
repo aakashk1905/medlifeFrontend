@@ -10,12 +10,13 @@ import Footer from '../Footer';
 
 const ReviewPage = () => {
     return (
-        <div className='w-full'>
-            <Navbar></Navbar>
+           <div>
+             <Navbar></Navbar>
+        <div className='w-full flex flex-col items-center'>
 
 
       <div className=''>
-      <div className='shadow-md border w-full rounded-md p-4'>
+      <div className='shadow-md rounded-md py-4'>
       <ReviewHeader></ReviewHeader>
       <ReviewCard></ReviewCard>
 
@@ -44,6 +45,7 @@ const ReviewPage = () => {
       <Officeaddress></Officeaddress>
       <Footer></Footer>
         </div>
+           </div>
     );
 };
 

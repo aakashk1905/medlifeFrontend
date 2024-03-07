@@ -17,10 +17,12 @@ const AmbulanceService = () => {
                 </ul>
 
                 <div className="flex flex-col xl:flex-row gap-3 w-full">
-          <button className="w-full md:w-full lg:w-full xl:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-full md:w-4/5 h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
-          <AppointmentModal className="w-full md:w-full lg:w-full xl:w-[260px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+         <div className='w-full'>
+         <AppointmentModal className="w-full md:w-4/5 h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+         </div>
         </div>
             </div>
         </div>

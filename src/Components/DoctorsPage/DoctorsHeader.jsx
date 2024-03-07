@@ -18,16 +18,16 @@ const DoctorsHeader = () => {
         </ul>
       </div>
       <div className="flex flex-col w-[95%] lg:w-4/5 lg:flex-row gap-10 items-center justify-center">
-        <div className="flex flex-col gap-4 w-[95%] lg:w-[55%] xl:w-[60%]">
-          <h1 className="text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-bold text-gray-600">
+        <div className="flex flex-col gap-4 w-[95%] lg:w-[55%] xl:w-[60%] items-center lg:items-start lg:justify-start justify-center">
+          <h1 className="text-center lg:text-start text-[28px] md:text-4xl lg:text-[clamp(28px, 3vw, 64px)] font-bold text-gray-600">
             Consult with Top Rated Experienced Doctors Online!
           </h1>
 
-          <h3 className="text-gray-500 text-2xl lg:text-[clamp(28px, 2vw, 48px)] font-semibold">
+          <h3 className="text-center lg:text-start text-gray-500 text-2xl lg:text-[clamp(28px, 2vw, 48px)] font-semibold">
             Get Free Quotation on Your <br /> Planned Surgery
           </h3>
 
-          <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-[70%] md:w-[60%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
         </div>

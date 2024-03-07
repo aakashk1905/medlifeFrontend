@@ -19,19 +19,19 @@ const EmergencyServiceHero = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row w-[99%] lg:w-4/5 justify-center items-center">
-        <div className="flex flex-col gap-4 w-[95%] lg:w-[55%] xl:w-[60%]">
-          <h1 className="text-[28px] md:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-bold text-gray-600">
+        <div className="flex flex-col gap-4 w-[95%] lg:w-[55%] xl:w-[60%] items-center lg:items-start">
+          <h1 className="text-center lg:text-start text-[28px] md:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-gray-600">
             Welcome to Med Life Emergency Services
           </h1>
-          <p className="text-gray-500  w-[75%] lg:text-[clamp(18px,1.5vw,28px)]">
+          <p className="text-center lg:text-start text-gray-500 w-[100%] lg:w-[75%] lg:text-[clamp(18px,1.5vw,28px)]">
             We are committed to providing prompt and quality care during medical
             emergencies.
           </p>
 
-          <p className="text-gray-500  w-[75%] lg:text-[clamp(18px,1.5vw,28px)]">
+          <p className="text-center lg:text-start text-gray-500  w-[100%] lg:w-[75%] lg:text-[clamp(18px,1.5vw,28px)]">
             For immediate assistance, call our Emergency Helpline:
           </p>
-          <button className="w-full md:w-[350px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-[70%] md:w-[60%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
         </div>

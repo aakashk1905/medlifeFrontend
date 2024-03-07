@@ -24,19 +24,19 @@ const Blogs = () => {
   }, [axiosBaseUrl]);
 
   return (
-    <div className="py-7 w-full flex flex-col items-center">
+    <div className="py-7 w-full flex flex-col items-center ">
       <div className=" w-[95%] md:w-4/5">
         {/* Headline */}
         <h1 className="text-gray-700 text-4xl font-semibold text-center mb-10">
           Our Recent Blogs
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-9">
           {loading ? (
             <Loader />
           ) : blogs?.length > 0 ? (
             blogs.map((blog, ind) => (
-              <div key={ind} className="shadow-lg rounded-lg flex flex-col">
+              <div key={ind} className="shadow-lg rounded-lg flex flex-col ">
                 <img
                   className="w-full h-64  rounded-t-lg"
                   // src={pic}

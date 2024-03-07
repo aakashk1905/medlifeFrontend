@@ -53,12 +53,12 @@ const HospitalHero = () => {
         </div>
 
         <div className="w-[95%] md:w-[45%] xl:w-[35%] flex justify-center mt-6 lg:-mt-4 box-border">
-          <div className="w-full">
+          <div className="w-full flex justify-center">
             <img className="" src={ellipse} alt="" />
           </div>
         </div>
           {/* Card */}
-          <div className="block lg:hidden w-[99%] md:w-[70%] lg:w-[65%] 2xl:w-[60%]">
+          <div className="block lg:hidden w-[99%] sm:w-[50%] md:w-[70%] lg:w-[65%] 2xl:w-[60%]">
             <div className="bg-[#FCFCFF] py-3 px-3 flex justify-between rounded-2xl shadow-lg">
               <div className="border-r-2 pr-12">
                 <h1 className="text-[20px] lg:text-[clamp(25px,2vw,30px)] font-bold text-[#5854a8]">

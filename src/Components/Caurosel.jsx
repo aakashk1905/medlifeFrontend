@@ -14,6 +14,9 @@ const Caurosel = () => {
           700: {
             slidesPerView: 1,
           },
+          768: {
+            slidesPerView: 1,
+          },
           375: {
             slidesPerView: 1,
           },
@@ -70,7 +73,7 @@ const Caurosel = () => {
                 <span>Highly Recommends</span>
               </div>
 
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                 मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                 चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
@@ -125,7 +128,7 @@ const Caurosel = () => {
                 <span>Highly Recommends</span>
               </div>
 
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                 मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                 चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
@@ -180,7 +183,7 @@ const Caurosel = () => {
                 <span>Highly Recommends</span>
               </div>
 
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                 मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                 चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
@@ -235,7 +238,7 @@ const Caurosel = () => {
                 <span>Highly Recommends</span>
               </div>
 
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                 मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                 चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
@@ -290,7 +293,7 @@ const Caurosel = () => {
                 <span>Highly Recommends</span>
               </div>
 
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                 मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                 चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
@@ -345,7 +348,7 @@ const Caurosel = () => {
                 <span>Highly Recommends</span>
               </div>
 
-              <p className="text-gray-800">
+              <p className="text-gray-800 text-sm md:text-base">
                 एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                 मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                 चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और

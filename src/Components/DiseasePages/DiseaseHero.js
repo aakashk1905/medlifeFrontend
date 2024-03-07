@@ -31,8 +31,7 @@ const DiseaseHero = ({ content, disease }) => {
           <p className="text-gray-500  w-[75%] lg:text-[clamp(18px,1.5vw,28px)] font-lato">
             {content?.details ? content.details : ""}
           </p>
-
-          <button className="w-full md:w-[300px] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-full sm:w-[70%] md:w-[60%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
         </div>

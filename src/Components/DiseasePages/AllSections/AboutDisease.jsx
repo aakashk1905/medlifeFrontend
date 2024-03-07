@@ -33,18 +33,18 @@ const AboutDisease = ({ content }) => {
             {content?.aboutDisease?.diagnosis?.details}
           </p>
 
-          <div className="flex flex-col md:flex-row items-center gap-3 w-full">
-            <button className="w-full xl:w-[420px] h-[64px] border border-[#00a0aa] rounded-md text-[#00a0aa]">
-              Call now +98 765 432 10
-            </button>
-            <div className="w-full">
-            <AppointmentModal className="w-full xl:w-[240px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
-            </div>
-          </div>
+          <div className="flex flex-col md:flex-row gap-3 w-full">
+          <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+            Call now +98 765 432 10
+          </button>
+         <div className='w-full'>
+         <AppointmentModal className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+         </div>
+        </div>
         </div>
 
         {/* Right side image */}
-        <div className="flex justify-end">
+        <div className="flex md:justify-center lg:justify-end">
           <img src={herniasurgery} alt="" />
         </div>
       </div>

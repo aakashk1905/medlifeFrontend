@@ -17,14 +17,13 @@ const BlogsHero = () => {
       </div>
 
       {/* <div className="grid grid-cols-1 lg:grid-cols-5 max-w-[83vw] mx-auto lg:gap-10"> */}
-      <div className="flex flex-col lg:flex-row w-[99%] lg:w-4/5 justify-center items-center">
+      <div className="flex flex-col lg:flex-row w-[99%] lg:w-4/5 justify-center items-center relative">
         <div className="flex flex-col gap-3 lg:gap-5 w-[95%] lg:w-[55%] xl:w-[60%] items-center lg:items-start lg:justify-start justify-center">
           {/* Main heading */}
           <h1
-            className="text-center lg:text-start text-[28px] md:text-5xl lg:text-6xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-gray-600"
+            className="text-center lg:text-start text-[28px] md:text-5xl lg:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-gray-600"
           >
-            Stay Informed with
-            <br /> MedLifeEasy's Health Blog.
+            Stay Informed with MedLifeEasy's Health Blog.
           </h1>
           {/* Description */}
           <p
@@ -40,7 +39,7 @@ const BlogsHero = () => {
         </div>
 
         <img
-          className="hidden lg:flex absolute bottom-0 left-[600px] w-[350px]"
+          className="hidden lg:block absolute bottom-0 lg:left-[400px] left-[600px]  2xl:left-[600px]  w-[350px]"
           src={roundShape}
           alt=""
         />

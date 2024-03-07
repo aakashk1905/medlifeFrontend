@@ -60,8 +60,9 @@ const WriteReview = () => {
   return (
     <div>
       <Navbar></Navbar>
-      {/* Breadcrumbs menu */}
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-5">
+      <div className="flex flex-col items-center">
+        {/* Breadcrumbs menu */}
+      <div className="text-sm breadcrumbs w-[95%] lg:w-[90%]">
         <ul>
           <li>
             <Link to={"/"}>Home</Link>
@@ -70,7 +71,7 @@ const WriteReview = () => {
         </ul>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 px-5 md:px-10 py-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 w-[95%] md:w-4/5 py-12">
         <div className="shadow-xl p-3 rounded-md">
           <div className="border-b pb-2 border-gray-700 mb-5 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-center mb-4">
@@ -169,6 +170,7 @@ const WriteReview = () => {
             </div>
           </form>
         </div>
+      </div>
       </div>
       <Toaster position="top-center" />
 

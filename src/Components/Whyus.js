@@ -51,7 +51,7 @@ const Whyus = ({content}) => {
               )
           }
           </div>
-          <AppointmentModal className="w-full md:w-full lg:w-full xl:w-[280px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+          <AppointmentModal className="w-full sm:w-1/2 md:w-1/2 lg:w-full xl:w-[280px] 2xl:w-[350px] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
         </div>
       </div>
     </div>
