@@ -32,7 +32,8 @@ const BlogsDetails = () => {
           (window.location.href = `https://${window.location.hostname}/blog`)
       );
   }, [id, axiosBaseUrl]);
-  if (loading) return <Loader />;
+  if (loading) return <div className="w-[100vw] h-[100vh] flex justify-center"><Loader /></div> ;
+
   return (
     <div>
       <Navbar></Navbar>

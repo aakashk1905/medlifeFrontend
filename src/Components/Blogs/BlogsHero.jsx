@@ -33,7 +33,7 @@ const BlogsHero = () => {
             and Wellness Tips.
           </p>
 
-          <button className="w-[70%] md:w-[60%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
         </div>

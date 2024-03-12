@@ -13,7 +13,8 @@ const Navbar = () => {
       list: [
         "Piles Treatment",
         "Fistula Treatment",
-        "Pilonidal Sinus Treatment",
+        "Fissure Treatment",
+        "Pilonidal Sinus Surgery",
         "Rectal Prolapse",
       ],
       link: "proctology",
@@ -128,7 +129,8 @@ const Navbar = () => {
     // Sub disease
     { name: "Piles Treatment", link: "/treatment/piles" },
     { name: "Fistula Treatment", link: "/treatment/piles" },
-    { name: "Pilonidal Sinus Treatment", link: "/treatment/piles" },
+    { name: "Fissure Treatment", link: "/treatment/piles" },
+    { name: "Pilonidal Sinus Surgery", link: "/treatment/piles" },
     { name: "Rectal Prolapse", link: "/treatment/piles" },
 
     { name: "Hernia Treatment", link: "/treatment/hernia" },

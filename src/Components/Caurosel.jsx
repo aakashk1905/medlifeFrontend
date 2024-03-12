@@ -1,6 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import fbrev from "../Assests/fbrev.png";
-import revstars from "../Assests/revstars.png";
 import "swiper/swiper-bundle.css";
 import ReactStars from "react-rating-star-with-type";
 import Swipperbtn from "./Swipperbtn";
@@ -12,8 +10,7 @@ const Caurosel = () => {
   const axiosBaseUrl = useAxiosBaseUrl();
   const [isLoading, setIsLoading] = useState(true);
 
-  // Data fetch from API
-
+  // Data fetching from API
   const [allReviews, setAllReviews] = useState([]);
   useEffect(() => {
     axiosBaseUrl
@@ -50,6 +47,9 @@ const Caurosel = () => {
           1666: {
             slidesPerView: 3,
           },
+          // 1920: {
+          //   slidesPerView: 4,
+          // },
         }}
         pagination={{
           clickable: true,
@@ -65,7 +65,7 @@ const Caurosel = () => {
         allReviews.length > 0 ? (
           allReviews.map((review, index) => (
             <SwiperSlide>
-            <div className="px-[20px] py-5 flex justify-center items-center">
+            <div className="px-[43px] py-5 flex justify-center items-center w-full">
               <div className="bg-white w-full  p-3 rounded-xl shadow-md cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
                 <div className="flex gap-2 mb-3">
                   {/* <img src={fbrev} alt="" /> */}
@@ -88,8 +88,8 @@ const Caurosel = () => {
                 <div className="flex items-center gap-1 mb-4">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="21"
-                    height="21"
+                    width="19"
+                    height="19"
                     viewBox="0 0 21 21"
                     fill="none"
                   >
@@ -105,12 +105,12 @@ const Caurosel = () => {
                       </clipPath>
                     </defs>
                   </svg>
-                  <span>Highly Recommends</span>
+                  <span className="text-sm">Highly Recommends</span>
                 </div>
   
-                <p className="text-gray-800 text-sm md:text-base">
-                {/* {review?.review} */}
-                  एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
+                <p className="text-gray-800 text-sm md:text-[13px] text-justify">
+                {review?.review}
+                  {/* एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
                   मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
                   चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
                   प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु
@@ -121,7 +121,7 @@ const Caurosel = () => {
                   के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी
                   व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस
                   उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण
-                  योगदान दिया।
+                  योगदान दिया। */}
                 </p>
               </div>
             </div>

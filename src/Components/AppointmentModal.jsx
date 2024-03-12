@@ -71,7 +71,7 @@ const AppointmentModal = ({ text, className }) => {
         console.log(error);
       });
   };
-  // w-full xl:w-[255px] h-[64px]
+  
   return (
     <div className="">
       <button
@@ -97,7 +97,7 @@ const AppointmentModal = ({ text, className }) => {
           </div>
 
           <div>
-            <div className="mb-9 px-2">
+            <div className="mb-3 px-2">
               <h1 className="text-gray-700 font-semibold text-xl mb-1 text-center lg:text-start">
                 Elevating Your Surgical Experience
               </h1>
@@ -108,17 +108,17 @@ const AppointmentModal = ({ text, className }) => {
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 pr-3">
-              <div className="lg:grid grid-cols-2 gap-5 col-span-2 relative hidden border-r-2 border-gray-300 border-dotted">
+              <div className="lg:grid grid-cols-2 gap-5 col-span-2 relative hidden border-gray-300 pr-5 border-r-2 border-dotted">
                 <div className="">
-                  <div className="bg-[#50dbcf] pt-5 pr-5 h-[395px]">
-                    <div className="bg-[#cfe5ff] h-[395px]">
-                      <img className="h-[395px]" src={doctor1} alt="" />
+                  <div className="bg-[#50dbcf] pt-5 pr-5 h-[350px]">
+                    <div className="bg-[#cfe5ff] h-[330px]">
+                      <img className="h-[330px]" src={doctor1} alt="" />
                     </div>
                   </div>
 
-                  <div className="bg-gray-200 w-0.5 h-32 absolute right-[340px] bottom-[230px]"></div>
+                  <div className="bg-gray-200 w-0.5 h-32 absolute right-[350px] bottom-[200px]"></div>
                   {/* Bottom card */}
-                  <div className="w-5/6 absolute bottom-10">
+                  <div className="w-[70%] absolute bottom-2">
                     <div className="bg-[#FCFCFF] shadow py-3 px-6 flex justify-between items-center">
                       <div className="border-r-2 pr-12">
                         <h1 className="text-xl md:text-2xl font-bold text-[#5854a8]">
@@ -171,13 +171,13 @@ const AppointmentModal = ({ text, className }) => {
               </div>
 
               {/* Form */}
-              <div className="-mt-6 lg:-mt-[75px] px-2">
+              <div className="-mt-0 lg:-mt-[75px] px-2">
                 <div className="w-full shadow-lg rounded-3xl mb-3 border-t border-gray-100">
                   <form
                     onSubmit={handleSubmit}
                     className="flex flex-col items-center gap-3 bg-white p-3 rounded-3xl w-full"
                   >
-                    <div className="text-[#5854a8] text-lg md:text-2xl font-semibold mb-1">
+                    <div className="text-[#5854a8] text-lg md:text-2xl lg:text-xl xl:text-2xl font-semibold mb-1">
                       Book Free Consultation
                     </div>
                     <input

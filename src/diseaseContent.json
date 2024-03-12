@@ -369,17 +369,17 @@
             "diagnosis": {
                 "diagnosisHeader": "Diagnosing Piles:",
                 "diagnosisLists" : [
-                    "1. **Medical History:** Your healthcare provider will inquire about your symptoms, such as pain, itching, bleeding, or changes in bowel movements. They will also review your medical history, including any previous occurrences of piles.",
+                    "Medical History: Your healthcare provider will inquire about your symptoms, such as pain, itching, bleeding, or changes in bowel movements. They will also review your medical history, including any previous occurrences of piles.",
 
-                    "2. **Physical Examination:** A thorough physical examination of the anal region will be conducted to assess for external and internal piles. This involves visually inspecting the area and gently examining the anus and rectum for abnormalities, swelling, or lumps.",
+                    "Physical Examination: A thorough physical examination of the anal region will be conducted to assess for external and internal piles. This involves visually inspecting the area and gently examining the anus and rectum for abnormalities, swelling, or lumps.",
 
-                    "3. **Digital Rectal Examination (DRE):** In some cases, a DRE may be performed. It entails inserting a lubricated, gloved finger into the rectum to assess internal piles and check for other rectal abnormalities. This procedure is typically quick and minimally uncomfortable.",
+                    "Digital Rectal Examination (DRE): In some cases, a DRE may be performed. It entails inserting a lubricated, gloved finger into the rectum to assess internal piles and check for other rectal abnormalities. This procedure is typically quick and minimally uncomfortable.",
 
-                    "4. **Anoscopy or Proctoscopy:** These procedures involve using a small, lighted tube (anoscope or proctoscope) to closely examine the anal canal and rectum. Anoscopy and proctoscopy provide direct visualization, allowing for a detailed assessment of piles and other rectal disorders. They help determine the location, size, and severity of the piles, aiding in treatment planning.",
+                    "Anoscopy or Proctoscopy: These procedures involve using a small, lighted tube (anoscope or proctoscope) to closely examine the anal canal and rectum. Anoscopy and proctoscopy provide direct visualization, allowing for a detailed assessment of piles and other rectal disorders. They help determine the location, size, and severity of the piles, aiding in treatment planning.",
 
-                    "5. **Sigmoidoscopy:** This procedure utilizes a sigmoidoscope (lighted tube with a camera) to view the lower part of the colon and rectum. It helps visualize the rectum and lower sigmoid colon, aiding in identifying various conditions, including piles.",
+                    "Sigmoidoscopy: This procedure utilizes a sigmoidoscope (lighted tube with a camera) to view the lower part of the colon and rectum. It helps visualize the rectum and lower sigmoid colon, aiding in identifying various conditions, including piles.",
 
-                    "6. **Colonoscopy:** Colonoscopy examines the entire colon and rectum to check for abnormalities. It's particularly useful for evaluating rectal bleeding due to piles or other causes and ruling out more serious conditions. This comprehensive examination guides the healthcare provider in recommending the most appropriate treatment for piles."
+                    "Colonoscopy: Colonoscopy examines the entire colon and rectum to check for abnormalities. It's particularly useful for evaluating rectal bleeding due to piles or other causes and ruling out more serious conditions. This comprehensive examination guides the healthcare provider in recommending the most appropriate treatment for piles."
                 ]
             }
         }
@@ -388,13 +388,16 @@
         "parentDisease" : "Proctology",
         "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
         "diseaseImg" : "https://i.ibb.co/gwLGtwz/fistula.png",
-        "heroHeader": "Umbilical Fistula Surgery",
-        "subHeading": "सुरक्षित एवं सफल",
-        "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+        "heroHeader": "Understanding Anal Fistula Treatment",
+        "subHeading": "Benefits of Laser Surgery Procedure",
+        "details": "Addressing anal fistula promptly is essential as it typically doesn't heal without intervention. At Med Life Easy, we specialize in treating anal fistula, offering access to skilled medical professionals and cutting-edge laser treatment options. Our services also include personalized medical care coordination and attentive post-surgery care, ensuring a streamlined and supportive recovery experience.",
+        "listHeading" : "Are you going through any of these symptoms?",
         "subLists": [
-            "उन्नत 3D तकनीक",
-            "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-            "संक्रमण का कोई खतरा नहीं"
+            "Skin Tear and Lump around the Anal Region",
+            "Lump of Skin around the Tear",
+            "Burning or Itching in the Anal Area",
+            "Sharp Pain During Bowel Movement",
+            "Blood in Stool"
         ],
         "treatment": {
             "treatmentHeader": [
@@ -412,18 +415,118 @@
         },
         "SurgeryForm": {
             "surgeryHeader": [
-                "Explore Affordable Umbilical Hernia Surgery With",
+                "Understanding Anal Fistula: Causes and Symptoms"
+            ],
+            "surgerydetails" : "An anal fistula is an uncommon condition characterized by an abnormal connection or tunnel between the anal canal, which marks the end of the digestive tract, and the skin surrounding the anus. Typically, it develops as a consequence of an infection or the formation of an abscess—a localized collection of pus—in the anal glands, which are small glands situated near the anus.Symptoms of anal fistula can vary and may include persistent pain and discomfort in the anal area, swelling, redness, tenderness, and the presence of discharge or pus. Additional symptoms may encompass itching, fever, and a general sense of discomfort.",
+
+            "subHeader": "Types of Anal Fistulae:",
+            "types" : [
+                "1. Intersphincteric Fistula: This type is located between the internal and external sphincter muscles of the anus, commonly caused by an infected anal gland.",
+                "2. Transsphincteric Fistula: Extending through both the internal and external sphincter muscles, it often results from an infection spreading from an abscess.",
+                "3. Suprasphincteric Fistula: This variant extends above the internal sphincter muscle, typically due to infection spreading from an abscess.",
+                "4. Extrasphincteric Fistula: Extending beyond the external sphincter muscle, it's often associated with chronic infection.",
+                "Seeking medical attention for anal fistula is crucial to prevent discomfort and complications if left untreated."
+            ],
+            "causesHeader": "Causes of Recurrence after Laser Anal Fistula Surgery:",
+            "causesDetails" : [
+                "A successful laser anal fistula surgery ensures complete healing of the anal wound without any residual tract, external openings, or perianal discharge. Despite being highly effective, recurrence may occur due to various reasons",
+                "1. Poor Hygiene of the Surgical Site: Inadequate hygiene exposes the surgical wound to bacteria and germs, potentially leading to infection and ineffective treatment.",
+                "2. Non-compliance with Follow-up Instructions: Failure to adhere to postoperative guidelines may hinder recovery and increase the risk of complications.",
+                "3. Persistence of Preoperative Factors: Lifestyle factors contributing to the initial condition, if not addressed post-surgery, can lead to recurrence, necessitating further treatment."
+            ],
+            "type": "",
+            "timeHeader": "",
+            "time": "",
+            "costHeader": "",
+            "cost": "",
+            "footerTitle": "",
+            "formTitle": ""
+        },
+        "aboutDisease": {
+            "diseaseHeader": "Diagnosing an anal fistula involves a series of steps to ensure accurate identification and treatment:",
+            "details": "Umbilical Herniya is characterized by the formation of solid particles within the gallbladder. These stones can vary in size and may cause symptoms such as pain, discomfort, or bloating. In some cases, individuals with gallbladder stones may experience no symptoms at all.",
+            "symptoms": {
+                "symptomHeader": "Symptoms of Umbilical Herniya:",
+                "symptomsList": [
+                    "Abdominal pain, particularly in the upper right side",
+                    "Nausea or vomiting",
+                    "Sudden and intense pain in the upper abdomen, known as biliary colic",
+                    "Jaundice (yellowing of the skin and eyes)",
+                    "Fever and chills in cases of infection",
+                    "Back or shoulder pain",
+                    "Indigestion or bloating after meals"
+                ]
+            },
+            "diagnosis": {
+                "diagnosisHeader": "Diagnosing an anal fistula involves a series of steps to ensure accurate identification and treatment:",
+                "diagnosisLists": [
+                    "1. Medical History Review: The doctor will discuss the patient's medical history, including any previous surgeries or conditions related to the anal area.",
+"2. Physical Examination: A thorough visual examination of the anus and surrounding skin is conducted to observe any signs of inflammation, swelling, or discharge.",
+"3. Digital Rectal Exam: This involves the doctor gently inserting a lubricated, gloved finger into the rectum to feel for any abscesses or abnormalities in the anal canal.",
+"4. Additional Tests: Depending on the findings from the physical exam, further tests may be recommended to confirm the diagnosis. These tests may include: - MRI (Magnetic Resonance Imaging): An MRI scan provides detailed images of the anal region, helping to identify the location and extent of the fistula. - Fistulogram: During this procedure, a dye is injected into the anal fistula, aiding in visualizing its exact path and structure.",
+
+"Early detection and treatment of an anal fistula are crucial for preventing complications and improving outcomes. If you suspect you may have an anal fistula, it's important to seek medical attention promptly. Treatment Options for Anal Fistula:"
+                ]
+            }
+        }
+    },
+    "fissure": {
+        "parentDisease" : "Proctology",
+        "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+        "diseaseImg" : "https://i.ibb.co/7NbCt5q/sinus.png",
+        "heroHeader": "Effective Anal Fissure Treatment:",
+        "subHeading": "Advantages of Laser Surgery Procedure",
+        "details": "Prompt management of anal fissures is crucial to prevent chronicity. At Med Life Easy, we offer top-notch treatment for anal fissures, featuring state-of-the-art laser surgery and specialized anorectal specialists.",
+        "overviewHeading" : "Anal Fissure: A Brief Overview",
+        "overviewDetails" : "An anal fissure refers to a small tear in the lining of the anal canal, leading to discomfort, pain, and sometimes bleeding during bowel movements.",
+        "listHeading" : "Are you going through any of these symptoms?",
+        "subLists": [
+            "Skin Tear and Lump around the Anal Region",
+            "Lump of Skin around the Tear",
+            "Burning or Itching in the Anal Area",
+            "Sharp Pain During Bowel Movement",
+            "Blood in Stool"
+        ],
+        "treatment": {
+            "treatmentHeader": [
+                "Safe Umbilical Herniya Surgery With",
                 "Med Life Easy"
             ],
-            "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-            "typeHeader": "Type of Surgery",
-            "type": "Umbilical Hernia Surgery",
-            "timeHeader": "Time",
-            "time": "1-2 Days",
-            "costHeader": "Cost Range",
-            "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-            "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-            "formTitle": "Umbilical Herniya Surgery Cost Estimate"
+            "treatments": [
+                "Excellence in Healthcare",
+                "Patient-Centric Care",
+                " Personalized Approach",
+                "State-of-the-Art Facilities",
+                "Accepting All Insurance Plans",
+                "Zero-Cost EMI Options Available"
+            ]
+        },
+        "SurgeryForm": {
+            "surgeryHeader": [
+                "There are two primary types of anal fissures:"
+            ],
+            "surgeryDetails" : [
+                "1. Acute Anal Fissure: Typically caused by trauma to the anal canal, such as passing a large bowel movement. Treatment often involves ointments, medications, and home remedies, with symptoms typically improving within a few weeks.",
+
+                "2. Chronic Anal Fissure: Tears that persist for more than six weeks and are often associated with underlying conditions like inflammatory bowel disease or sexually transmitted infections. Chronic fissures may require surgical intervention for effective treatment."
+        ],
+            
+        "typeHeader": "Disease name",
+        "type": "Anal Fissure",
+        "surgeryNameHeader": "Surgery name",
+        "surgeryName": "Lateral Internal Sphincterotomy",
+        "timeHeader": "Duration ",
+        "time": "15-20 minutes",
+        "costHeader": "Treated by",
+        "cost": "General Surgeon",
+
+        "treatmentOptionHeader" : "Treatment options for anal fissures include:",
+        "treatmentOptionDetails" : [
+            "Dietary Changes: Adjustments in diet to promote softer stools and ease bowel movements.",
+"Topical Medications: Ointments and medications to reduce inflammation and promote healing.",
+"Surgery: In severe cases, surgical procedures like lateral internal sphincterotomy (LIS) may be necessary to alleviate symptoms and promote healing.",
+"Seeking medical attention for anal fissures is important to determine the appropriate treatment approach and alleviate discomfort."
+        ]
         },
         "aboutDisease": {
             "diseaseHeader": "What is Umbilical Herniya ",
@@ -441,22 +544,32 @@
                 ]
             },
             "diagnosis": {
-                "diagnosisHeader": "Diagnosis:",
-                "details": "Umbilical Hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+                "diagnosisHeader": "Diagnosing an Anal Fissure: Diagnosing an anal fissure typically involves the following steps:",
+                "diagnosisLists": [
+                    "1. Symptom Assessment and Medical History: Your doctor will inquire about your symptoms and medical history, including any relevant factors such as recent changes in bowel habits or previous occurrences of anal fissures.",
+                    "2. Physical Examination: A visual inspection of the anal area will be conducted to identify any visible signs of a fissure, such as a small tear or crack in the skin around the anus.",
+                    "3. Anoscopy: In some cases, a more detailed examination called anoscopy may be necessary. During this procedure, a small, flexible tube with a camera on the end is inserted into the rectum to closely examine the anus and rectum. Anoscopy is typically performed as an outpatient procedure in the doctor's clinic.",
+                    "4. Additional Tests: Depending on the clinical presentation, your doctor may recommend additional tests such as a stool sample or blood tests to rule out other potential causes of your symptoms, such as infections or inflammatory conditions.",
+                    "Once the diagnosis of an anal fissure is confirmed, your doctor will discuss the most appropriate treatment plan tailored to your individual needs. Treatment options may include medications, lifestyle modifications, or, in severe cases, surgical intervention."
+                ]
             }
         }
     },
     "pilonidal": {
-        "parentDisease" : "Proctology",
+        "parentDisease" : "Pilonidal",
         "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
         "diseaseImg" : "https://i.ibb.co/7NbCt5q/sinus.png",
-        "heroHeader": "Umbilical Pilonidal Surgery",
-        "subHeading": "सुरक्षित एवं सफल",
-        "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+        "heroHeader": "Pilonidal Sinus Surgery:",
+        "subHeading": "Risks, Benefits, and Treatments",
+        "details": "Pilonidal sinus surgery is crucial for addressing this painful anorectal condition effectively. Immediate surgical intervention is often necessary to alleviate symptoms and prevent complications. At Med Life Easy, we prioritize patient well-being by providing a streamlined patient journey. Our approach includes access to skilled surgeons, dedicated medical care coordinators, assistance with paperwork and insurance, and comprehensive post-surgery care. We are committed to ensuring a smooth and efficient experience for every patient undergoing pilonidal sinus surgery.",
+        "overviewHeading" : "",
+        "overviewDetails" : "",
         "subLists": [
-            "उन्नत 3D तकनीक",
-            "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-            "संक्रमण का कोई खतरा नहीं"
+            "Pain when sitting or standing",
+            "Swelling of the cyst",
+            "Reddened, sore skin around the area",
+            "Pus or blood draining from the abscess, causing a foul odor",
+            "Hair protruding from the lesion"
         ],
         "treatment": {
             "treatmentHeader": [
@@ -474,18 +587,30 @@
         },
         "SurgeryForm": {
             "surgeryHeader": [
-                "Explore Affordable Umbilical Hernia Surgery With",
-                "Med Life Easy"
+                "Pilonidal Sinus: An Overview"
             ],
-            "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-            "typeHeader": "Type of Surgery",
-            "type": "Umbilical Hernia Surgery",
-            "timeHeader": "Time",
-            "time": "1-2 Days",
-            "costHeader": "Cost Range",
-            "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-            "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-            "formTitle": "Umbilical Herniya Surgery Cost Estimate"
+            "surgeryInfo" : "Pilonidal sinus is a medical condition characterized by the formation of a cyst or abscess in the cleft of the buttocks. It is more prevalent in men than women, often affecting individuals who sit for extended periods.",
+            "surgeryTypeHeader" : "There are two main types of pilonidal sinus:",
+            "surgeryDetails" : [
+                "1. Acute Pilonidal Sinus: This type typically occurs as a one-time problem and does not recur once treated. Common symptoms include pain, tenderness, redness, and swelling in the area around the natal cleft. Acute pilonidal sinus is usually caused by an infection, which can be bacterial or fungal in nature.",
+                "2. Chronic Pilonidal Sinus: This is a long-term condition that worsens over time. Symptoms resemble those of acute pilonidal sinus but may be more severe. In chronic cases, a small pit or sinus may develop in the affected area, draining pus. Recurrent infections are common, leading to the formation of abscesses.",
+                "Treatment for pilonidal sinus varies depending on the severity of the condition: Initial-stage pilonidal sinus may be managed with medications and home remedies. Surgical intervention is necessary for severe cases to remove the sinus tract and prevent recurrence.",
+                "Seeking medical attention is crucial for proper diagnosis and treatment of pilonidal sinus, especially in chronic cases where surgical intervention may be required to alleviate symptoms and prevent complications."
+        ],
+            
+        "typeHeader": "Disease name",
+        "type": "Pilonidal Sinus",
+        "surgeryNameHeader": "Surgery name",
+        "surgeryName": "Endoscopic",
+        "timeHeader": "Duration ",
+        "time": "15 to 20 Minutes",
+        "costHeader": "Treated by",
+        "cost": "General Surgeon",
+
+        "treatmentOptionHeader" : " ",
+        "treatmentOptionDetails" : [
+            " "
+        ]
         },
         "aboutDisease": {
             "diseaseHeader": "What is Umbilical Herniya ",
@@ -503,8 +628,12 @@
                 ]
             },
             "diagnosis": {
-                "diagnosisHeader": "Diagnosis:",
-                "details": "Umbilical Hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+                "diagnosisHeader": "Diagnosing Pilonidal Sinus",
+                "diagnosisLists": [
+                    "1. Physical Examination: Your doctor will begin by physically examining the affected area. They will look for signs of inflammation, such as redness, swelling, or tenderness. Additionally, they may check for signs of infection, such as pus or drainage.",
+                    "2. Imaging Tests: In some cases, your doctor may recommend imaging tests such as ultrasound or MRI to gain a better understanding of the severity of the condition or to identify any potential complications.",
+                    "3. Biopsy: If there is uncertainty about the diagnosis, your doctor may perform a biopsy. During this procedure, a small sample of tissue is taken from the affected area and sent to a laboratory for analysis. This can help confirm the diagnosis of pilonidal sinus and rule out other possible conditions."
+                ]
             }
         }
     },
@@ -512,13 +641,16 @@
         "parentDisease" : "Proctology",
         "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
         "diseaseImg" : "https://i.ibb.co/ZNbDJDK/rectal.png",
-        "heroHeader": "Umbilical Rectal Surgery",
-        "subHeading": "सुरक्षित एवं सफल",
-        "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+        "heroHeader": "Treatment of Rectal Prolapse:",
+        "subHeading": "Diagnosis, Surgery, and Recovery",
+        "details": "Rectal prolapse is a proctological condition characterized by the descent of the rectum through the anus, potentially resulting in complications like strangulation, bleeding, and ulceration. Timely intervention is crucial. At Pristyn Care, we offer advanced surgical treatments for rectal prolapse to alleviate discomfort and restore normal function. Our team of proctologists is dedicated to providing comprehensive care. Schedule an appointment with us for expert evaluation and personalized treatment.",
+        "listHeading" : "Are you going through any of these symptoms?",
         "subLists": [
-            "उन्नत 3D तकनीक",
-            "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-            "संक्रमण का कोई खतरा नहीं"
+            "Bulge after coughing, sneezing, or lifting",
+            "Mucous discharge in your stool",
+            "Pain and rectal bleeding",
+            "Fecal incontinence",
+            "Anal pain, bleeding, or itching"
         ],
         "treatment": {
             "treatmentHeader": [
@@ -536,18 +668,18 @@
         },
         "SurgeryForm": {
             "surgeryHeader": [
-                "Explore Affordable Umbilical Hernia Surgery With",
-                "Med Life Easy"
+                "Rectal Prolapse: An Overview"
             ],
-            "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-            "typeHeader": "Type of Surgery",
-            "type": "Umbilical Hernia Surgery",
-            "timeHeader": "Time",
-            "time": "1-2 Days",
-            "costHeader": "Cost Range",
-            "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-            "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-            "formTitle": "Umbilical Herniya Surgery Cost Estimate"
+            "surgeryInfo" : "The rectum, situated at the end of the large intestine, serves as the holding area for stool before its passage through the digestive system. When stool reaches the rectum, the sensation of needing to defecate arises. Muscles work collectively to expel stool through the anus. Rectal prolapse occurs when the rectum protrudes outward, often accompanied by stool.The term 'prolapse' denotes the displacement of any organ from its original position. Rectal prolapse is more prevalent in women and typically affects individuals over the age of 50 or those with a history of chronic constipation or diarrhea.",
+
+            "typeHeader": "Disease name",
+        "type": "Rectal Prolapse",
+        "surgeryNameHeader": "Surgery name",
+        "surgeryName": "Rectopexy",
+        "timeHeader": "Duration ",
+        "time": "15 to 20 Minutes",
+        "costHeader": "Treated by",
+        "cost": "General Surgeon"
         },
         "aboutDisease": {
             "diseaseHeader": "What is Umbilical Herniya ",
@@ -565,8 +697,21 @@
                 ]
             },
             "diagnosis": {
-                "diagnosisHeader": "Diagnosis:",
-                "details": "Umbilical Hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+                "diagnosisHeader": "Diagnosis of Rectal Prolapse:",
+                "diagnosisLists": [
+                    "1. Physical Examination: The doctor conducts a thorough physical examination, observing the rectum and potentially inserting a gloved, lubricated finger into the anus to assess the strength of the anal sphincter and rectum. They may also inquire about symptoms and medical history, and observe the patient's squatting and straining during a simulated bowel movement.",
+                    "2. Additional Tests:",
+                    "a. Anal Electromyography (EMG): Measures the effectiveness of rectal muscles and nerves by placing electrodes a few inches into the rectum.",
+                    "b. Colonoscopy: Involves inserting a thin, flexible tube with a small camera (colonoscope) into the rectum for a visual examination.",
+                    "c. Anorectal Manometry: Uses a flexible tube with a small deflated balloon to measure the rectum's response to pressure.",
+                    "d. Barium Enema: A chalky liquid containing barium is placed in the rectum to produce clear X-ray images.",
+                    "e. Defecography: X-rays or MRIs monitor the colon during a bowel movement.",
+                    "f. Lower GI Series: Barium liquid in the large intestine produces clear X-ray images.",
+                    "g. Transit Study: Involves swallowing capsules with markers to assess how they pass through the intestines via X-ray over several days.",
+                    "3. Additional Exams: In some cases, urological or gynecological exams may be recommended to evaluate weak areas in the pelvic floor and assess if other organs, such as the uterus, have also prolapsed.",
+                    "These diagnostic procedures help healthcare providers accurately diagnose rectal prolapse and determine the most appropriate treatment plan for the patient."
+                ]
+                
             }
         }
     },

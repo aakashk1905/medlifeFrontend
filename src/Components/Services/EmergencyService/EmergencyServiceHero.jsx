@@ -31,7 +31,7 @@ const EmergencyServiceHero = () => {
           <p className="text-center lg:text-start text-gray-500  w-[100%] lg:w-[75%] lg:text-[clamp(18px,1.5vw,28px)]">
             For immediate assistance, call our Emergency Helpline:
           </p>
-          <button className="w-[70%] md:w-[60%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
         </div>

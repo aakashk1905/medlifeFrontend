@@ -40,29 +40,38 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
           {/* Description */}
           <p className="text-gray-600 mb-5 font-lato">{content ? content?.details : ""}</p>
 
-          {/* Bullet points (Tick icons) */}
-          <h2 className="text-md text-[#2ca9e1] font-semibold mb-3 font-lato">
+          
+          <h2 className="text-xl text-[#2ca9e1] font-bold mb-3 font-lato">
+            {content ? content?.overviewHeading : ""}
+          </h2>
+
+          <p className="text-gray-600 mb-5 font-lato">{content ? content?.overviewDetails : ""}</p>
+
+          <h2 className="text-xl text-[#2ca9e1] font-bold mb-3 font-lato">
             {content ? content?.listHeading : ""}
           </h2>
-          <div className="mb-6">
+
+
+          {/* Bullet points (Tick icons) */}
+          <div className="mb-2 grid grid-cols-1 md:grid-cols-2">
             {content?.subLists?.length > 0
               ? content?.subLists?.map((list, idx) => (
-                  <div key={idx} className="flex items-center gap-2 mb-2">
+                  <div key={idx} className="flex  gap-2 mb-4">
                     <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
                       <MdOutlineDone></MdOutlineDone>
                     </div>
-                    <p className="font-semibold text-gray-800 font-lato">{list}</p>
+                    <p className="font-semibold text-gray-800 font-lato -mt-[2px]">{list}</p>
                   </div>
                 ))
-              : "No Content Here"}
+              : ""}
           </div>
 
           <div className="flex flex-col lg:flex-row gap-3 w-full">
-          <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
             Call now +98 765 432 10
           </button>
          <div className='w-full'>
-         <AppointmentModal className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
+         <AppointmentModal className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16" text={"Book Your Appointment"}></AppointmentModal>
          </div>
         </div>
         </div>
@@ -75,7 +84,7 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
 
         {/* Right side image and bottom card */}
         <div className="relative col-span-2">
-          <div className="mt-1 lg:-mt-4 flex md:justify-center lg:justify-end">
+          <div className="mt-1 lg:-mt-4 flex justify-center lg:justify-end">
             <Form header={"Book Free Consultation"} />
           </div>
         </div>

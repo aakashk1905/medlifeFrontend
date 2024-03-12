@@ -88,29 +88,29 @@ const Getintouch = () => {
         </div>
 
         <form onSubmit={handleSubmit} className="w-full">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <input
             name="patientName"
               type="text"
-              className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6 focus:border-teal-700 transition duration-300 ease-in-out"
+              className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg 2xl:h-16 mb-4"
               placeholder="Patient Name / रोगी का नाम"
             />
 
             <input
             name="mobileNumber"
               type="number"
-              className="bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full mb-6 focus:border-teal-700 transition duration-300 ease-in-out"
+              className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg 2xl:h-16 mb-4"
               placeholder="Mobile No. / मोबाइल नंबर"
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div class="relative inline-block text-left w-full mb-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="relative inline-block text-left w-full mb-4">
               <select
                 id="city"
                 value={selectedCity}
                 onChange={handleChange}
-                className="block appearance-none cursor-pointer bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full focus:border-teal-700 transition duration-300 ease-in-out"
+                className="block appearance-none cursor-pointer bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg 2xl:h-16"
               >
                 {cities.map((city) => (
                   <option key={city} value={city}>
@@ -123,12 +123,12 @@ const Getintouch = () => {
               </div>
             </div>
 
-            <div class="relative inline-block text-left w-full mb-6">
+            <div class="relative inline-block text-left w-full mb-4">
               <select
                 id="city"
                 value={selectedDisease}
                 onChange={handleChange1}
-                className="block appearance-none cursor-pointer bg-white p-4 border border-gray-300 rounded-lg focus:outline-none w-full focus:border-teal-700 transition duration-300 ease-in-out"
+                className="block appearance-none cursor-pointer bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 rounded-lg 2xl:h-16"
               >
                 {disease.map((city) => (
                   <option key={city} value={city}>
@@ -143,7 +143,7 @@ const Getintouch = () => {
           </div>
 
           <div className="flex justify-center items-center">
-            <button className="git-cta">Book Free Appointment</button>
+            <button className="border border-[#00a0aa] bg-[#00a0aa] rounded-lg w-full md:w-1/2 lg:w-1/2 xl:w-[40%] h-12 2xl:h-16 text-white">Book Free Appointment</button>
           </div>
         </form>
       </div>

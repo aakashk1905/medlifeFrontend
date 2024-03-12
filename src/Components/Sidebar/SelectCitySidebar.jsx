@@ -126,13 +126,13 @@ const SelectCitySidebar = () => {
             </div>
           </div>
 
-          <div className="sticky top-0 z-30">
-            <h1 className="text-xl font-semibold text-teal-500 px-4 mt-2 mb-3 flex items-center gap-2">
+          <div className="sticky top-[90px] bg-white pb-4 z-30 px-4">
+            <h1 className="text-xl font-semibold text-teal-500 pt-2 pb-3 flex items-center gap-2">
               Select your City <FaAngleDown></FaAngleDown>
             </h1>
 
             {/* Content here */}
-            <div className="px-4 pb-5">
+            <div className="">
               <input
                 value={searchInput}
                 onChange={(e) => handleInputChange(e.target.value)}

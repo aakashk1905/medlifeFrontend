@@ -25,6 +25,7 @@ const HerniaPage = () => {
     "umbilical",
     "piles",
     "fistula",
+    "fissure",
     "pilonidal",
     "rectal",
     "uterus",
@@ -82,18 +83,6 @@ const HerniaPage = () => {
   return (
     <div>
       <Navbar></Navbar>
-      {/* Breadcrumbs menu
-      <div className="text-sm breadcrumbs px-5 md:px-10 mt-4">
-        <ul>
-          <li>
-            <Link>Home</Link>
-          </li>
-          <li>
-            <Link>Laparoscopy</Link>
-          </li>
-          <li className="capitalize">{subDisease}</li>
-        </ul>
-      </div> */}
       <DiseaseHeroSection
         subDisease={subDisease}
         content={diseaseContent[subDisease]}

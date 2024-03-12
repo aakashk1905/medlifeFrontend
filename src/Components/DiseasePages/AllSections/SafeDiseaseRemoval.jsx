@@ -14,10 +14,10 @@ const SafeDiseaseRemoval = ({ content }) => {
         </h1>
 
         {/* Bullet points (Tick icons) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
           {content?.treatment.treatments.length > 0
             ? content?.treatment.treatments.map((treatment, idx) => (
-                <div key={idx} className="flex gap-2 ">
+                <div key={idx} className="flex items-center gap-2 ">
                   <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
                     <MdOutlineDone></MdOutlineDone>
                   </div>
