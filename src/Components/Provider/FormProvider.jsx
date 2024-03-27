@@ -10,11 +10,6 @@ const FormProvider = ({children}) => {
     localStorage.setItem("selectedCity", cityName)
   },[cityName]);
 
-//   useEffect(() => {
-//    const selectedCity = localStorage.getItem("selectedCity");
-//    setCityName(selectedCity)
-//    console.log(selectedCity);
-//   },[cityName])
     return (
        <formContext.Provider value={cityValue}>{children}</formContext.Provider>
     );

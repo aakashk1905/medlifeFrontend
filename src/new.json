@@ -1,0 +1,84 @@
+"pilonidal": {
+    "parentDisease" : "Pilonidal",
+    "heroImg" : "https://i.ibb.co/cDCmbTL/proctology.png",
+    "diseaseImg" : "https://i.ibb.co/7NbCt5q/sinus.png",
+    "heroHeader": "Pilonidal Sinus Surgery:",
+    "subHeading": "Risks, Benefits, and Treatments",
+    "details": "Pilonidal sinus surgery is crucial for addressing this painful anorectal condition effectively. Immediate surgical intervention is often necessary to alleviate symptoms and prevent complications. At Med Life Easy, we prioritize patient well-being by providing a streamlined patient journey. Our approach includes access to skilled surgeons, dedicated medical care coordinators, assistance with paperwork and insurance, and comprehensive post-surgery care. We are committed to ensuring a smooth and efficient experience for every patient undergoing pilonidal sinus surgery.",
+    "overviewHeading" : "",
+    "overviewDetails" : "",
+    "subLists": [
+        "Pain when sitting or standing",
+        "Swelling of the cyst",
+        "Reddened, sore skin around the area",
+        "Pus or blood draining from the abscess, causing a foul odor",
+        "Hair protruding from the lesion"
+    ],
+    "treatment": {
+        "treatmentHeader": [
+            "Safe Umbilical Herniya Surgery With",
+            "Med Life Easy"
+        ],
+        "treatments": [
+            "Excellence in Healthcare",
+            "Patient-Centric Care",
+            " Personalized Approach",
+            "State-of-the-Art Facilities",
+            "Accepting All Insurance Plans",
+            "Zero-Cost EMI Options Available"
+        ]
+    },
+    "SurgeryForm": {
+        "surgeryHeader": [
+            "Pilonidal Sinus: An Overview"
+        ],
+        "surgeryInfo" : "Pilonidal sinus is a medical condition characterized by the formation of a cyst or abscess in the cleft of the buttocks. It is more prevalent in men than women, often affecting individuals who sit for extended periods.",
+        "surgeryTypeHeader" : "There are two main types of pilonidal sinus:",
+        "surgeryDetails" : [
+            "1. Acute Pilonidal Sinus: This type typically occurs as a one-time problem and does not recur once treated. Common symptoms include pain, tenderness, redness, and swelling in the area around the natal cleft. Acute pilonidal sinus is usually caused by an infection, which can be bacterial or fungal in nature.",
+            "2. Chronic Pilonidal Sinus: This is a long-term condition that worsens over time. Symptoms resemble those of acute pilonidal sinus but may be more severe. In chronic cases, a small pit or sinus may develop in the affected area, draining pus. Recurrent infections are common, leading to the formation of abscesses.",
+            "Treatment for pilonidal sinus varies depending on the severity of the condition: Initial-stage pilonidal sinus may be managed with medications and home remedies. Surgical intervention is necessary for severe cases to remove the sinus tract and prevent recurrence.",
+            "Seeking medical attention is crucial for proper diagnosis and treatment of pilonidal sinus, especially in chronic cases where surgical intervention may be required to alleviate symptoms and prevent complications."
+    ],
+        
+    "typeHeader": "Disease name",
+    "type": "Pilonidal Sinus",
+    "surgeryNameHeader": "Surgery name",
+    "surgeryName": "Endoscopic",
+    "timeHeader": "Duration ",
+    "time": "15 to 20 Minutes",
+    "costHeader": "Treated by",
+    "cost": "General Surgeon",
+
+    "treatmentOptionHeader" : " ",
+    "treatmentOptionDetails" : [
+        " "
+    ]
+    },
+    "aboutDisease": {
+        "diseaseHeader": "What is Umbilical Herniya ",
+        "details": "Umbilical Herniya is characterized by the formation of solid particles within the gallbladder. These stones can vary in size and may cause symptoms such as pain, discomfort, or bloating. In some cases, individuals with gallbladder stones may experience no symptoms at all.",
+        "symptoms": {
+            "symptomHeader": "Symptoms of Umbilical Herniya:",
+            "symptomsList": [
+                "Abdominal pain, particularly in the upper right side",
+                "Nausea or vomiting",
+                "Sudden and intense pain in the upper abdomen, known as biliary colic",
+                "Jaundice (yellowing of the skin and eyes)",
+                "Fever and chills in cases of infection",
+                "Back or shoulder pain",
+                "Indigestion or bloating after meals"
+            ]
+        },
+        "diagnosis": {
+            "diagnosisHeader": "Types of Appendix Surgery for Appendicitis:",
+            "diagnosisLists": [
+                "1. Open Appendectomy: 
+                In this surgical procedure, the surgeon makes a single large incision, typically 5-10 centimeters in length, in the lower right abdominal area. The appendix is completely removed through this incision, and the wound is closed using stitches.",
+                "2. Laparoscopic Appendectomy:
+                This is an advanced surgical technique for appendix removal. In this approach, the surgeon makes two or three small incisions in the abdomen instead of one large incision. A laparoscope, a thin tube with a camera and light attached to it, is inserted through one of the incisions, allowing the surgeon to visualize the inside of the abdomen. The appendix is then tied off and removed through one of the incisions. Finally, the incisions are closed with sutures or surgical tape and covered with a dressing.",
+                "3. Biopsy: If there is uncertainty about the diagnosis, your doctor may perform a biopsy. During this procedure, a small sample of tissue is taken from the affected area and sent to a laboratory for analysis. This can help confirm the diagnosis of pilonidal sinus and rule out other possible conditions."
+            ]
+        }
+    }
+},

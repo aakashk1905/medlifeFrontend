@@ -23,6 +23,7 @@ const Navbar = () => {
       name: "Laparoscopy",
       list: [
         "Hernia Treatment",
+        "Appendicitis",
         "Gallbladder Treatment",
         "Inguinal Hernia Treatment",
         "Umbilical Hernia Treatment",
@@ -134,6 +135,7 @@ const Navbar = () => {
     { name: "Rectal Prolapse", link: "/treatment/piles" },
 
     { name: "Hernia Treatment", link: "/treatment/hernia" },
+    { name: "Appendicitis", link: "/treatment/appendicitis" },
     { name: "Gallbladder Treatment", link: "/treatment/gallbladder" },
     { name: "Inguinal Hernia Treatment", link: "/treatment/inguinal" },
     { name: "Umbilical Hernia Treatment", link: "/treatment/umbilical" },

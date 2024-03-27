@@ -3,7 +3,6 @@ import { IoBagAdd } from "react-icons/io5";
 import { HiLocationMarker } from "react-icons/hi";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";
-import { Link } from "react-router-dom";
 import AppointmentModal from "../AppointmentModal";
 
 const OurDoctors = () => {
