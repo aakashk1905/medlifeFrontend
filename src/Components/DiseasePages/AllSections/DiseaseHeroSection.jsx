@@ -27,7 +27,7 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
         </ul>
       </div>
 
-      <div className="w-[94%] lg:w-[90%] xl:w-4/5 grid grid-cols-1 lg:grid-cols-5 gap-0 lg:gap-10 relative">
+      <div className="w-[94%] lg:w-[90%] xl:w-[90%] grid grid-cols-1 lg:grid-cols-5 gap-0 lg:gap-10 relative">
         <div className="pt-4 pb-10 z-10 col-span-3">
           {/* Main heading */}
           <h1 className="text-5xl text-gray-600 font-semibold mb-3 font-lato">

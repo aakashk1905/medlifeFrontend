@@ -17,8 +17,8 @@ const DiseaseHero = ({ content, disease }) => {
           <li className="capitalize">{disease}</li>
         </ul>
       </div>
-      <div className="flex w-[95%] lg:w-4/5 flex-col gap-10 lg:flex-row items-center justify-center">
-        <div className="flex flex-col gap-4 lg:gap-7 w-[95%] lg:w-[55%] xl:w-[60%]">
+      <div className="flex w-[95%] lg:w-[90%] flex-col gap-10 lg:flex-row items-center justify-center">
+        <div className="flex flex-col gap-4 lg:gap-7 flex-grow">
           {/* Main heading */}
           <h1 className="text-3xl text-gray-600 font-semibold lg:text-[clamp(28px,3vw,64px)] font-lato">
             {content?.heroHeader ? content.heroHeader : ""}
@@ -28,7 +28,7 @@ const DiseaseHero = ({ content, disease }) => {
             {content?.subHeading ? content.subHeading : ""}
           </h2>
           {/* Description */}
-          <p className="text-gray-500  w-[75%] lg:text-[clamp(18px,1.5vw,28px)] font-lato">
+          <p className="text-gray-500   lg:text-[clamp(18px,1.5vw,28px)] font-lato">
             {content?.details ? content.details : ""}
           </p>
           <button className="w-full sm:w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
@@ -37,8 +37,8 @@ const DiseaseHero = ({ content, disease }) => {
         </div>
 
         {/* Right side form */}
-        <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center lg:-mt-6 box-border ">
-          <div className=" w-full flex justify-center max-w-[550px] ">
+        <div className="w-[95%] md:w-full lg:w-[45%] xl:w-[40%] flex justify-center lg:-mt-6 box-border ">
+          <div className=" w-full flex justify-center ">
             <Form header={"Book Free Consultation"} />
           </div>
         </div>

@@ -39,7 +39,7 @@ const ReviewCard = () => {
         ? allReviews.map((review) => (
             <div
               key={review._id}
-              className="grid grid-cols-1 md:grid-cols-5 p-3 pb-3 mb-7 border-b w-[95%] md:w-4/5"
+              className="grid grid-cols-1 md:grid-cols-5 p-3 pb-3 mb-7 border-b w-[95%] md:w-[90%]"
             >
               <div className="border-b md:border-b-0 md:border-r pb-2 md:pb-0 mb-2 md:mr-2 ">
                 <p className="text-lg mb-2 text-[#17324A]">

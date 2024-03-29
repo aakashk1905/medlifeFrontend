@@ -8,8 +8,8 @@ import healthCare from "../../../Assests/timeline/healthcare 1.png";
 const Experience = () => {
     return (
         <div className='flex flex-col items-center py-10'>
-            <div className='w-[95%] lg:w-4/5'>
-                <h1 className='text-[32px] text-gray-800 text-center mb-6 font-semibold'>Your experience with us</h1>
+            <div className='w-[95%] lg:w-[90%]'>
+                <h1 className='text-[32px] text-gray-800 text-center mb-6 font-semibold font-lato'>Your Experience With Us</h1>
 
 
                 <div className='grid grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-y-0 gap-5 lg:gap-20'>

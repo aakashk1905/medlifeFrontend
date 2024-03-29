@@ -55,7 +55,7 @@ const BlogsDetails = () => {
       </div>
       
       <div className=" w-[95%] lg:w-[89.5%] grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-5 mb-5 lg:mb-10">
-          <div className="col-span-2 rounded-3xl shadow-lg h-full lg:h-[430px] 2xl:h-[510px]">
+          <div className="col-span-2 rounded-3xl shadow-lg h-full lg:h-[460px] xl:h-[430px] 2xl:h-[510px]">
             <img
               className="w-full h-full rounded-b-3xl rounded-t-3xl"
               src={blogDetails.avatar.url}
@@ -71,10 +71,10 @@ const BlogsDetails = () => {
 
       <div className="w-[95%] lg:w-[89.5%]">
       <div className="mb-5 lg:mb-10 flex flex-col gap-3">
-            <h1 className="text-[#17324A] text-2xl font-semibold ">
+            <h1 className="text-[#17324A] text-[32px] font-lato font-semibold">
               {blogDetails.title}
             </h1>
-            <p className="text-gray-500 leading-8 text-justify">
+            <p className="text-gray-500 leading-8 font-lato text-justify">
               {blogDetails.about}
             </p>
             </div>

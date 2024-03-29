@@ -25,7 +25,7 @@ const TermsConditions = () => {
           <div className="w-[95%] lg:w-4/5">
           <div className="">
             <div className="">
-              <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
+              <h1 className="text-4xl font-semibold font-lato text-gray-700 text-center mb-4">
                 Terms & Conditions
               </h1>
               <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
@@ -37,7 +37,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   OVERVIEW
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   This website is operated by MEDLIFEEASY PRIVATE LIMITED.
                   Throughout the site, the terms “we”, “us” and “our” refer to
                   MEDLIFEEASY. MEDLIFEEASY offers this website, including all
@@ -76,7 +76,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   1. ONLINE STORE TERMS
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   By agreeing to these Terms of Service, you represent that you
                   are at least the age of majority in your state or province of
                   residence, or that you are the age of majority in your state
@@ -98,7 +98,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   2. GENERAL CONDITIONS
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   We reserve the right to refuse service to anyone for any
                   reason at any time. You understand that your content (not
                   including credit card information), may be transferred
@@ -123,7 +123,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   3. ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   We are not responsible if information made available on this
                   site is not accurate, complete or current. The material on
                   this site is provided for general information only and should
@@ -145,7 +145,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   4. MODIFICATIONS TO THE SERVICE AND PRICES
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   Prices for our products are subject to change without notice{" "}
                   <br />
                   We reserve the right at any time to modify or discontinue the
@@ -162,7 +162,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   5. PRODUCTS OR SERVICES
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   Certain products or services may be available exclusively
                   online through the website. These products or services may
                   have limited quantities and are subject to return or exchange
@@ -193,7 +193,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   6. ACCURACY OF BILLING AND ACCOUNT INFORMATION
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   We reserve the right to refuse any order you place with us. We
                   may, in our sole discretion, limit or cancel quantities
                   purchased per person, per household or per order. These
@@ -221,7 +221,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   7. OPTIONAL TOOLS
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   We may provide you with access to third-party tools over which
                   we neither monitor nor have any control nor input. <br />
                   You acknowledge and agree that we provide access to such tools
@@ -247,7 +247,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   8. THIRD-PARTY LINKS
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   Certain content, products and services available via our
                   Service may include materials from third-parties. <br />
                   Third-party links on this site may direct you to third-party
@@ -273,7 +273,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   9. USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   If, at our request, you send certain specific submissions (for
                   example contest entries) or without a request from us you send
                   creative ideas, suggestions, proposals, plans, or other
@@ -311,7 +311,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   10. PERSONAL INFORMATION
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   Your submission of personal information through the store is
                   governed by our Privacy Policy.
                 </p>
@@ -322,7 +322,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   11. ERRORS, INACCURACIES AND OMISSIONS
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   Occasionally there may be information on our site or in the
                   Service that contains typographical errors, inaccuracies or
                   omissions that may relate to product descriptions, pricing,
@@ -347,7 +347,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   12. PROHIBITED USES
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   In addition to other prohibitions as set forth in the Terms of
                   Service, you are prohibited from using the site or its
                   content: (a) for any unlawful purpose; (b) to solicit others
@@ -379,7 +379,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   13. DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   We do not guarantee, represent or warrant that your use of our
                   service will be uninterrupted, timely, secure or error-free.{" "}
                   <br />
@@ -426,7 +426,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   14. INDEMNIFICATION
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   You agree to indemnify, defend and hold harmless MEDLIFEEASY
                   and our parent, subsidiaries, affiliates, partners, officers,
                   directors, agents, contractors, licensors, service providers,
@@ -444,7 +444,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   15. USEVERABILITY
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   In the event that any provision of these Terms of Service is
                   determined to be unlawful, void or unenforceable, such
                   provision shall nonetheless be enforceable to the fullest
@@ -460,7 +460,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   16. TERMINATION
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   The obligations and liabilities of the parties incurred prior
                   to the termination date shall survive the termination of this
                   agreement for all purposes. <br />
@@ -483,7 +483,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   17. ENTIRE AGREEMENT
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   The failure of us to exercise or enforce any right or
                   provision <br />
                   of these Terms of Service shall not constitute a waiver of
@@ -505,7 +505,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   18. GOVERNING LAW
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   These Terms of Service and any separate agreements whereby we
                   provide you Services shall be governed by and construed in
                   accordance with the laws of India and jurisdiction of PATNA
@@ -518,7 +518,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   19. CHANGES TO TERMS OF SERVICE
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   We reserve the right, at our sole discretion, to update,
                   change or replace any part of these Terms of Service by
                   posting updates and changes to our website. It is your
@@ -534,7 +534,7 @@ const TermsConditions = () => {
                 <h2 className="text-2xl font-medium text-gray-700 mb-2">
                   20. CONTACT INFORMATION
                 </h2>
-                <p className="text-gray-600 text-justify">
+                <p className=" font-lato text-gray-600 text-justify">
                   Questions about the Terms of Service should be sent to us at
                   info@medlifeeasy.com
                 </p>

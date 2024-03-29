@@ -15,9 +15,9 @@ const HospitalHero = () => {
         </ul>
       </div>
 
-      <div className="flex flex-col lg:flex-row w-[99%] lg:w-4/5 justify-center items-center">
-        <div className="flex flex-col gap-3 lg:gap-5 w-[95%] lg:w-[55%] xl:w-[60%]">
-          <h1 className="text-center lg:text-start text-[28px] md:text-6xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-gray-600">
+      <div className="flex flex-col lg:flex-row w-[95%] lg:w-[90%] justify-between">
+        <div className="flex flex-col gap-3 lg:gap-5 w-[95%] lg:w-[55%] xl:w-[60%] justify-center">
+          <h1 className="text-center lg:text-start text-[28px] md:text-6xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-[#344E5F]">
             Explore Our Partner Hospitals
           </h1>
 

@@ -41,14 +41,14 @@ const Modal = () => {
           <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-4 text-white">✕</button>
         </form>
         <div className='bg-[#00a79d] p-4 mb-3'>
-          <h1 className='text-2xl font-semibold text-white text-center'>Book Your Complimentary Consultation Now</h1>
+          <h1 className='text-2xl font-semibold text-white text-center font-lato'>Book Your Complimentary Consultation Now</h1>
         </div>
 
 
         <div>
           <div className='mb-5 px-7'>
-            <h1 className='text-gray-700 font-semibold text-xl mb-1'>Elevating Your Surgical Experience</h1>
-            <p className='text-gray-700'>Connect with our expert surgeon to discuss over 50+ medical conditions.</p>
+            <h1 className='text-gray-700 font-semibold font-lato text-xl mb-1'>Elevating Your Surgical Experience</h1>
+            <p className='text-gray-700 font-lato'>Connect with our expert surgeon to discuss over 50+ medical conditions.</p>
           </div>
 
           <div className='grid grid-cols-3 gap-5 pr-10'>

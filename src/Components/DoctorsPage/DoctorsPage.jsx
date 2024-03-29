@@ -13,7 +13,7 @@ const DoctorsPage = () => {
       </Helmet>
       <Navbar></Navbar>
       <DoctorsHeader></DoctorsHeader>
-      <OurDoctors></OurDoctors>
+    <OurDoctors></OurDoctors>
       <Footer></Footer>
     </div>
   );

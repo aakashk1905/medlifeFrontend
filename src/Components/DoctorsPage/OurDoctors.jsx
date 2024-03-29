@@ -49,7 +49,7 @@ const OurDoctors = () => {
                       className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 px-2 py-5 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center" 
                     >
                       <div className="grid grid-cols-3 mb-2 lg:mb-4">
-                        <div className="flex justify-center md:justify-start lg:justify-end mr-2 md:mr-0 lg:mr-4">
+                        <div className="flex justify-center md:justify-start lg:justify-end mr-2 md:mr-0 lg:mr-4 border rounded-md p-2">
                         <img
                           className="w-36 md:w-40 lg:w-32 aspect-video rounded-lg border-teal-500"
                           src={doctor.avatar.url}
@@ -79,17 +79,17 @@ const OurDoctors = () => {
 
                           <div className="flex flex-wrap gap-5 items-center mb-3">
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-lg text-gray-800">
+                              <p className="text-sm text-gray-800">
                                 {doctor?.specialization1}
                               </p>
                             </div>
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-lg text-gray-800">
+                              <p className="text-sm text-gray-800">
                                 {doctor?.specialization2}
                               </p>
                             </div>
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-lg text-gray-800">
+                              <p className="text-sm text-gray-800">
                                 {doctor?.specialization3}
                               </p>
                             </div>

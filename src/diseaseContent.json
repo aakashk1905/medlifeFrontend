@@ -29,11 +29,11 @@
       "surgeryInfo": "A hernia occurs when internal organs, tissues, muscles, or fat protrude through a weak spot in the abdominal muscle wall. While hernias are not usually dangerous, they can enlarge and lead to severe complications over time.",
       "surgeryTypeHeader": "Hernias can affect both males and females and come in various types:",
       "surgeryDetails": [
-        "1. Inguinal Hernia: Most common, occurs in the groin when part of the intestine or bladder protrudes through the abdominal wall or inguinal canal, primarily in males.",
-        "2. Umbilical Hernia: Intestine protrudes through weak abdominal muscles around the navel, common in infants but can affect adults.",
-        "3. Hiatal Hernia: The stomach pushes through the diaphragm, causing a bulge in the chest, typically in adults.",
-        "4. Femoral Hernia: Organs or tissues push through the groin near the femoral artery, more common in females.",
-        "5. Incisional Hernia: Occurs at a previous surgical incision site when organs push through weak scar tissue in the abdominal wall."
+        "Inguinal Hernia: Most common, occurs in the groin when part of the intestine or bladder protrudes through the abdominal wall or inguinal canal, primarily in males.",
+        "Umbilical Hernia: Intestine protrudes through weak abdominal muscles around the navel, common in infants but can affect adults.",
+        "Hiatal Hernia: The stomach pushes through the diaphragm, causing a bulge in the chest, typically in adults.",
+        "Femoral Hernia: Organs or tissues push through the groin near the femoral artery, more common in females.",
+        "Incisional Hernia: Occurs at a previous surgical incision site when organs push through weak scar tissue in the abdominal wall."
       ],
       "typeHeader": "Disease name",
       "type": "Hernia",
@@ -65,9 +65,9 @@
             "Imaging Tests: Various imaging tests may be recommended to confirm the diagnosis and plan the surgery accurately:"
         ],
         "diagnosisLists": [
-            "1. Ultrasound: Uses sound waves to create images of internal structures, helping determine the size, location, and contents of the hernia sac.",
-            "2. CT Scan: Provides detailed cross-sectional images to identify the type of hernia, its size, and any impact on surrounding structures.",
-            "3. MRI (Magnetic Resonance Imaging): Produces detailed images of soft tissues to evaluate the extent of herniation."
+            "Ultrasound: Uses sound waves to create images of internal structures, helping determine the size, location, and contents of the hernia sac.",
+            "CT Scan: Provides detailed cross-sectional images to identify the type of hernia, its size, and any impact on surrounding structures.",
+            "MRI (Magnetic Resonance Imaging): Produces detailed images of soft tissues to evaluate the extent of herniation."
         ]
       }
     }
@@ -138,14 +138,14 @@
             "diagnosisHeader": "Diagnosing Gallbladder Stones: Exploring Tests and Procedures",
             "diagnosisLists": [
                 "To diagnose gallbladder stones, healthcare professionals employ various methods, including a patient's medical history, physical examination, and several lab and imaging tests. Here's an overview of the common diagnostic approaches:",
-                "1. Medical History and Physical Examination: A healthcare provider will inquire about symptoms, medical history, family history of gallstones, and dietary habits. During a physical exam, they may check for abdominal pain or signs of gallbladder issues.",
-                "2. Abdominal Ultrasound: This imaging test is widely used to detect gallstones. A transducer is moved across the abdomen, transmitting signals to a computer that generates detailed images of abdominal structures.",
-                "3. Endoscopic Ultrasound (EUS): EUS helps identify smaller gallstones that may be missed on abdominal ultrasound. A thin tube with an ultrasound device is passed through the mouth and digestive tract to create precise images.",
-                "4. CT Scan (Computed Tomography): CT scan provides clear images of the gallbladder and surrounding organs, especially helpful for assessing complications or inconclusive ultrasound results.",
-                "5. Endoscopic Retrograde Cholangiopancreatography (ERCP): This procedure diagnoses and treats bile and pancreatic duct conditions. An endoscope is used to examine ducts and identify gallstones, followed by X-ray imaging.",
-                "6. MRCP (Magnetic Resonance Cholangiopancreatography): MRCP is a non-invasive MRI technique that visualizes the biliary system, including the common bile duct, providing clear images without radiation exposure.",
-                "7. Cholescintigraphy (HIDA Scan): This nuclear medicine test evaluates gallbladder and biliary system function by tracking a radioactive tracer injected into the bloodstream.",
-                "8. Blood Tests: Blood tests may reveal infections, jaundice, pancreatitis, or other complications associated with gallbladder stones."
+                "Medical History and Physical Examination: A healthcare provider will inquire about symptoms, medical history, family history of gallstones, and dietary habits. During a physical exam, they may check for abdominal pain or signs of gallbladder issues.",
+                "Abdominal Ultrasound: This imaging test is widely used to detect gallstones. A transducer is moved across the abdomen, transmitting signals to a computer that generates detailed images of abdominal structures.",
+                "Endoscopic Ultrasound (EUS): EUS helps identify smaller gallstones that may be missed on abdominal ultrasound. A thin tube with an ultrasound device is passed through the mouth and digestive tract to create precise images.",
+                "CT Scan (Computed Tomography): CT scan provides clear images of the gallbladder and surrounding organs, especially helpful for assessing complications or inconclusive ultrasound results.",
+                "Endoscopic Retrograde Cholangiopancreatography (ERCP): This procedure diagnoses and treats bile and pancreatic duct conditions. An endoscope is used to examine ducts and identify gallstones, followed by X-ray imaging.",
+                "MRCP (Magnetic Resonance Cholangiopancreatography): MRCP is a non-invasive MRI technique that visualizes the biliary system, including the common bile duct, providing clear images without radiation exposure.",
+                "Cholescintigraphy (HIDA Scan): This nuclear medicine test evaluates gallbladder and biliary system function by tracking a radioactive tracer injected into the bloodstream.",
+                "Blood Tests: Blood tests may reveal infections, jaundice, pancreatitis, or other complications associated with gallbladder stones."
             ],
             "diagnosisFooterDetails" : "By utilizing these diagnostic tools, healthcare providers can accurately diagnose gallbladder stones and determine the most appropriate treatment approach for patients."
             
@@ -185,15 +185,15 @@
         "Appendectomy: Removing the Appendix"
       ],
       "surgeryInfo" : "Appendectomy, also known as appendix removal surgery, is a procedure performed to eliminate an inflamed or infected appendix. This surgery is typically recommended in cases of acute appendicitis, where the condition progresses rapidly. In acute appendicitis, there is a heightened risk of the appendix rupturing spontaneously. If the appendix ruptures, the infection can spread throughout the body, potentially leading to fatal complications. Therefore, prompt treatment is crucial for acute appendicitis. Conversely, in chronic appendicitis, surgical intervention is elective since the pain is less severe, and the likelihood of other complications is minimal.If appendicitis is left untreated, it can lead to serious consequences. The infected bacteria trapped inside the appendix cause inflammation and blockage of the blood supply, resulting in the development of a hole or tear in the appendix wall. As pressure builds up due to the blockage, the appendix can burst. This causes bacteria and pus to spill into the abdominal cavity, which contains vital organs such as the liver, stomach, and intestines. This condition, known as a ruptured appendix, is a medical emergency and can lead to severe and life-threatening complications.",
-      "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-      "typeHeader": "Type of Surgery",
-      "type": "Appendix Surgery",
-      "timeHeader": "Time",
-      "time": "1-2 Days",
-      "costHeader": "Cost Range",
-      "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-      "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-      "formTitle": "Appendix Surgery Cost Estimate"
+      "subHeader": "",
+      "typeHeader": "",
+      "type": "",
+      "timeHeader": "",
+      "time": "",
+      "costHeader": "",
+      "cost": "",
+      "footerTitle": "",
+      "formTitle": ""
     },
     "aboutDisease": {
       "diseaseHeader": "What is Appendix Surgery",
@@ -213,8 +213,8 @@
       "diagnosis": {
         "diagnosisHeader": "Diagnosis:",
         "diagnosisLists": [
-            "1. Open Appendectomy: In this surgical procedure, the surgeon makes a single large incision, typically 5-10 centimeters in length, in the lower right abdominal area. The appendix is completely removed through this incision, and the wound is closed using stitches.",
-            "2. Laparoscopic Appendectomy:This is an advanced surgical technique for appendix removal. In this approach, the surgeon makes two or three small incisions in the abdomen instead of one large incision. A laparoscope, a thin tube with a camera and light attached to it, is inserted through one of the incisions, allowing the surgeon to visualize the inside of the abdomen. The appendix is then tied off and removed through one of the incisions. Finally, the incisions are closed with sutures or surgical tape and covered with a dressing."
+            "Open Appendectomy: In this surgical procedure, the surgeon makes a single large incision, typically 5-10 centimeters in length, in the lower right abdominal area. The appendix is completely removed through this incision, and the wound is closed using stitches.",
+            "Laparoscopic Appendectomy:This is an advanced surgical technique for appendix removal. In this approach, the surgeon makes two or three small incisions in the abdomen instead of one large incision. A laparoscope, a thin tube with a camera and light attached to it, is inserted through one of the incisions, allowing the surgeon to visualize the inside of the abdomen. The appendix is then tied off and removed through one of the incisions. Finally, the incisions are closed with sutures or surgical tape and covered with a dressing."
         ]
     }
     }
@@ -225,7 +225,7 @@
     "diseaseImg": "https://i.ibb.co/Jvsvvmm/lingual-Hernia.png",
     "heroHeader": "Inguinal Hernia Laparoscopic Surgery by Expert Surgeons",
     "subHeading": "",
-    "details": "If you've been diagnosed with an inguinal hernia and seek the best surgical solution, look no further. Our advanced treatments guarantee a speedy recovery, enabling you to resume life without discomfort. Count on Pristyn Care for effective solutions and personalized care throughout your hernia recovery journey.",
+    "details": "If you've been diagnosed with an inguinal hernia and seek the best surgical solution, look no further. Our advanced treatments guarantee a speedy recovery, enabling you to resume life without discomfort. Count on Med Life Easy for effective solutions and personalized care throughout your hernia recovery journey.",
     "subLists": [
 
     ],
@@ -240,23 +240,24 @@
         "Zero-Cost EMI Options Available"
       ]
     },
+    
+
     "SurgeryForm": {
       "surgeryHeader": [
         "Inguinal Hernia: An Overview"
       ],
-      "subHeader": "",
-      "surgeryDetails" : [
-        "An inguinal hernia happens when a portion of the intestine or abdominal tissue pushes through a weakened area in the abdominal wall, usually in the groin region. This can appear as a noticeable lump or bulge, leading to discomfort, particularly during actions like coughing, bending over, or lifting heavy objects. Inguinal hernias are more common in males and typically necessitate surgical intervention to avoid complications. If you suspect you have an inguinal hernia, prompt medical attention is essential for an accurate diagnosis and proper treatment, which may include surgery."
-],
+      "surgerydetails": "An inguinal hernia happens when a portion of the intestine or abdominal tissue pushes through a weakened area in the abdominal wall, usually in the groin region. This can appear as a noticeable lump or bulge, leading to discomfort, particularly during actions like coughing, bending over, or lifting heavy objects. Inguinal hernias are more common in males and typically necessitate surgical intervention to avoid complications. If you suspect you have an inguinal hernia, prompt medical attention is essential for an accurate diagnosis and proper treatment, which may include surgery.",
       "typeHeader": "",
       "type": "",
+      "surgeryNameHeader": "",
+      "surgeryName": "",
       "timeHeader": "",
       "time": "",
       "costHeader": "",
-      "cost": "",
-      "footerTitle": "",
-      "formTitle": ""
+      "cost": ""
     },
+
+
     "aboutDisease": {
       "diseaseHeader": "What is Inguinal Hernia Surgery",
       "details": "Appendix is characterized by the formation of solid particles within the gallbladder. These stones can vary in size and may cause symptoms such as pain, discomfort, or bloating. In some cases, individuals with gallbladder stones may experience no symptoms at all.",
@@ -276,10 +277,10 @@
         "diagnosisHeader": "Diagnosing Inguinal Hernia: What to Expect:",
         "diagnosisLists": [
           "Diagnosing an inguinal hernia typically involves a comprehensive approach encompassing medical history, physical examination, and diagnostic tests. During the physical examination, your healthcare provider will visually inspect and palpate the hernia and may ask you to cough or bear down to observe its emergence. If the hernia isn't visible externally, internal tests may be conducted. Here are the common diagnostic methods used:",
-          "1. Ultrasound: This non-invasive imaging technique helps confirm the presence, location, and extent of the inguinal hernia.",
-          "2. CT Scan: Computed tomography scans provide detailed abdominal images, aiding in diagnosing inguinal hernias and evaluating their size.",
-          "3. MRI: Magnetic resonance imaging offers detailed and clear images, sometimes utilized to diagnose inguinal hernias.",
-          "4. Blood Tests: These tests may be performed to check for signs of infection or inflammation, particularly if the hernia is complicated by infection."
+          "Ultrasound: This non-invasive imaging technique helps confirm the presence, location, and extent of the inguinal hernia.",
+          "CT Scan: Computed tomography scans provide detailed abdominal images, aiding in diagnosing inguinal hernias and evaluating their size.",
+          "MRI: Magnetic resonance imaging offers detailed and clear images, sometimes utilized to diagnose inguinal hernias.",
+          "Blood Tests: These tests may be performed to check for signs of infection or inflammation, particularly if the hernia is complicated by infection."
       ],
       "diagnosisFooterDetails" : "If you suspect an inguinal hernia or experience related symptoms like groin discomfort or bulging, it's crucial to consult a healthcare professional. Early diagnosis and appropriate treatment, including Inguinal Hernia Surgery, are vital for preventing complications."
       }
@@ -372,7 +373,7 @@
     "diseaseImg": "https://i.ibb.co/DtCYbg2/piles.png",
     "heroHeader": "Piles Treatment",
     "subHeading": "Laser Surgery Procedure & Operation Benefits",
-    "details": "One of the most common anorectal medical conditions, yet least talked about is piles. Piles, or hemorrhoids, are swollen tissues and blood vessels found inside the skin in the rectal region. You can get the best treatment for piles at Pristyn Care, with top-notch medical technologies and equipment. Book a consultation today with Pristyn Care to get rid of piles.",
+    "details": "One of the most common anorectal medical conditions, yet least talked about is piles. Piles, or hemorrhoids, are swollen tissues and blood vessels found inside the skin in the rectal region. You can get the best treatment for piles at Med Life Easy, with top-notch medical technologies and equipment. Book a consultation today with Med Life Easy to get rid of piles.",
     "listHeading": "Are you going through any of these symptoms?",
     "subLists": [
       "Swelling in Anal Region",
@@ -477,18 +478,18 @@
 
       "subHeader": "Types of Anal Fistulae:",
       "types": [
-        "1. Intersphincteric Fistula: This type is located between the internal and external sphincter muscles of the anus, commonly caused by an infected anal gland.",
-        "2. Transsphincteric Fistula: Extending through both the internal and external sphincter muscles, it often results from an infection spreading from an abscess.",
-        "3. Suprasphincteric Fistula: This variant extends above the internal sphincter muscle, typically due to infection spreading from an abscess.",
-        "4. Extrasphincteric Fistula: Extending beyond the external sphincter muscle, it's often associated with chronic infection.",
+        "Intersphincteric Fistula: This type is located between the internal and external sphincter muscles of the anus, commonly caused by an infected anal gland.",
+        "Transsphincteric Fistula: Extending through both the internal and external sphincter muscles, it often results from an infection spreading from an abscess.",
+        "Suprasphincteric Fistula: This variant extends above the internal sphincter muscle, typically due to infection spreading from an abscess.",
+        "Extrasphincteric Fistula: Extending beyond the external sphincter muscle, it's often associated with chronic infection.",
         "Seeking medical attention for anal fistula is crucial to prevent discomfort and complications if left untreated."
       ],
       "causesHeader": "Causes of Recurrence after Laser Anal Fistula Surgery:",
       "causesDetails": [
         "A successful laser anal fistula surgery ensures complete healing of the anal wound without any residual tract, external openings, or perianal discharge. Despite being highly effective, recurrence may occur due to various reasons",
-        "1. Poor Hygiene of the Surgical Site: Inadequate hygiene exposes the surgical wound to bacteria and germs, potentially leading to infection and ineffective treatment.",
-        "2. Non-compliance with Follow-up Instructions: Failure to adhere to postoperative guidelines may hinder recovery and increase the risk of complications.",
-        "3. Persistence of Preoperative Factors: Lifestyle factors contributing to the initial condition, if not addressed post-surgery, can lead to recurrence, necessitating further treatment."
+        "Poor Hygiene of the Surgical Site: Inadequate hygiene exposes the surgical wound to bacteria and germs, potentially leading to infection and ineffective treatment.",
+        "Non-compliance with Follow-up Instructions: Failure to adhere to postoperative guidelines may hinder recovery and increase the risk of complications.",
+        "Persistence of Preoperative Factors: Lifestyle factors contributing to the initial condition, if not addressed post-surgery, can lead to recurrence, necessitating further treatment."
       ],
       "type": "",
       "timeHeader": "",
@@ -516,11 +517,10 @@
       "diagnosis": {
         "diagnosisHeader": "Diagnosing an anal fistula involves a series of steps to ensure accurate identification and treatment:",
         "diagnosisLists": [
-          "1. Medical History Review: The doctor will discuss the patient's medical history, including any previous surgeries or conditions related to the anal area.",
-          "2. Physical Examination: A thorough visual examination of the anus and surrounding skin is conducted to observe any signs of inflammation, swelling, or discharge.",
-          "3. Digital Rectal Exam: This involves the doctor gently inserting a lubricated, gloved finger into the rectum to feel for any abscesses or abnormalities in the anal canal.",
-          "4. Additional Tests: Depending on the findings from the physical exam, further tests may be recommended to confirm the diagnosis. These tests may include: - MRI (Magnetic Resonance Imaging): An MRI scan provides detailed images of the anal region, helping to identify the location and extent of the fistula. - Fistulogram: During this procedure, a dye is injected into the anal fistula, aiding in visualizing its exact path and structure.",
-
+          "Medical History Review: The doctor will discuss the patient's medical history, including any previous surgeries or conditions related to the anal area.",
+          "Physical Examination: A thorough visual examination of the anus and surrounding skin is conducted to observe any signs of inflammation, swelling, or discharge.",
+          "Digital Rectal Exam: This involves the doctor gently inserting a lubricated, gloved finger into the rectum to feel for any abscesses or abnormalities in the anal canal.",
+          "Additional Tests: Depending on the findings from the physical exam, further tests may be recommended to confirm the diagnosis. These tests may include: - MRI (Magnetic Resonance Imaging): An MRI scan provides detailed images of the anal region, helping to identify the location and extent of the fistula. - Fistulogram: During this procedure, a dye is injected into the anal fistula, aiding in visualizing its exact path and structure.",
           "Early detection and treatment of an anal fistula are crucial for preventing complications and improving outcomes. If you suspect you may have an anal fistula, it's important to seek medical attention promptly. Treatment Options for Anal Fistula:"
         ]
       }
@@ -551,7 +551,7 @@
       "treatments": [
         "Excellence in Healthcare",
         "Patient-Centric Care",
-        " Personalized Approach",
+        "Personalized Approach",
         "State-of-the-Art Facilities",
         "Accepting All Insurance Plans",
         "Zero-Cost EMI Options Available"
@@ -560,9 +560,9 @@
     "SurgeryForm": {
       "surgeryHeader": ["There are two primary types of anal fissures:"],
       "surgeryDetails": [
-        "1. Acute Anal Fissure: Typically caused by trauma to the anal canal, such as passing a large bowel movement. Treatment often involves ointments, medications, and home remedies, with symptoms typically improving within a few weeks.",
+        "Acute Anal Fissure: Typically caused by trauma to the anal canal, such as passing a large bowel movement. Treatment often involves ointments, medications, and home remedies, with symptoms typically improving within a few weeks.",
 
-        "2. Chronic Anal Fissure: Tears that persist for more than six weeks and are often associated with underlying conditions like inflammatory bowel disease or sexually transmitted infections. Chronic fissures may require surgical intervention for effective treatment."
+        "Chronic Anal Fissure: Tears that persist for more than six weeks and are often associated with underlying conditions like inflammatory bowel disease or sexually transmitted infections. Chronic fissures may require surgical intervention for effective treatment."
       ],
 
       "typeHeader": "Disease name",
@@ -600,10 +600,10 @@
       "diagnosis": {
         "diagnosisHeader": "Diagnosing an Anal Fissure: Diagnosing an anal fissure typically involves the following steps:",
         "diagnosisLists": [
-          "1. Symptom Assessment and Medical History: Your doctor will inquire about your symptoms and medical history, including any relevant factors such as recent changes in bowel habits or previous occurrences of anal fissures.",
-          "2. Physical Examination: A visual inspection of the anal area will be conducted to identify any visible signs of a fissure, such as a small tear or crack in the skin around the anus.",
-          "3. Anoscopy: In some cases, a more detailed examination called anoscopy may be necessary. During this procedure, a small, flexible tube with a camera on the end is inserted into the rectum to closely examine the anus and rectum. Anoscopy is typically performed as an outpatient procedure in the doctor's clinic.",
-          "4. Additional Tests: Depending on the clinical presentation, your doctor may recommend additional tests such as a stool sample or blood tests to rule out other potential causes of your symptoms, such as infections or inflammatory conditions.",
+          "Symptom Assessment and Medical History: Your doctor will inquire about your symptoms and medical history, including any relevant factors such as recent changes in bowel habits or previous occurrences of anal fissures.",
+          "Physical Examination: A visual inspection of the anal area will be conducted to identify any visible signs of a fissure, such as a small tear or crack in the skin around the anus.",
+          "Anoscopy: In some cases, a more detailed examination called anoscopy may be necessary. During this procedure, a small, flexible tube with a camera on the end is inserted into the rectum to closely examine the anus and rectum. Anoscopy is typically performed as an outpatient procedure in the doctor's clinic.",
+          "Additional Tests: Depending on the clinical presentation, your doctor may recommend additional tests such as a stool sample or blood tests to rule out other potential causes of your symptoms, such as infections or inflammatory conditions.",
           "Once the diagnosis of an anal fissure is confirmed, your doctor will discuss the most appropriate treatment plan tailored to your individual needs. Treatment options may include medications, lifestyle modifications, or, in severe cases, surgical intervention."
         ]
       }
@@ -633,7 +633,7 @@
       "treatments": [
         "Excellence in Healthcare",
         "Patient-Centric Care",
-        " Personalized Approach",
+        "Personalized Approach",
         "State-of-the-Art Facilities",
         "Accepting All Insurance Plans",
         "Zero-Cost EMI Options Available"
@@ -644,8 +644,8 @@
       "surgeryInfo": "Pilonidal sinus is a medical condition characterized by the formation of a cyst or abscess in the cleft of the buttocks. It is more prevalent in men than women, often affecting individuals who sit for extended periods.",
       "surgeryTypeHeader": "There are two main types of pilonidal sinus:",
       "surgeryDetails": [
-        "1. Acute Pilonidal Sinus: This type typically occurs as a one-time problem and does not recur once treated. Common symptoms include pain, tenderness, redness, and swelling in the area around the natal cleft. Acute pilonidal sinus is usually caused by an infection, which can be bacterial or fungal in nature.",
-        "2. Chronic Pilonidal Sinus: This is a long-term condition that worsens over time. Symptoms resemble those of acute pilonidal sinus but may be more severe. In chronic cases, a small pit or sinus may develop in the affected area, draining pus. Recurrent infections are common, leading to the formation of abscesses.",
+        "Acute Pilonidal Sinus: This type typically occurs as a one-time problem and does not recur once treated. Common symptoms include pain, tenderness, redness, and swelling in the area around the natal cleft. Acute pilonidal sinus is usually caused by an infection, which can be bacterial or fungal in nature.",
+        "Chronic Pilonidal Sinus: This is a long-term condition that worsens over time. Symptoms resemble those of acute pilonidal sinus but may be more severe. In chronic cases, a small pit or sinus may develop in the affected area, draining pus. Recurrent infections are common, leading to the formation of abscesses.",
         "Treatment for pilonidal sinus varies depending on the severity of the condition: Initial-stage pilonidal sinus may be managed with medications and home remedies. Surgical intervention is necessary for severe cases to remove the sinus tract and prevent recurrence.",
         "Seeking medical attention is crucial for proper diagnosis and treatment of pilonidal sinus, especially in chronic cases where surgical intervention may be required to alleviate symptoms and prevent complications."
       ],
@@ -680,9 +680,9 @@
       "diagnosis": {
         "diagnosisHeader": "Diagnosing Pilonidal Sinus",
         "diagnosisLists": [
-          "1. Physical Examination: Your doctor will begin by physically examining the affected area. They will look for signs of inflammation, such as redness, swelling, or tenderness. Additionally, they may check for signs of infection, such as pus or drainage.",
-          "2. Imaging Tests: In some cases, your doctor may recommend imaging tests such as ultrasound or MRI to gain a better understanding of the severity of the condition or to identify any potential complications.",
-          "3. Biopsy: If there is uncertainty about the diagnosis, your doctor may perform a biopsy. During this procedure, a small sample of tissue is taken from the affected area and sent to a laboratory for analysis. This can help confirm the diagnosis of pilonidal sinus and rule out other possible conditions."
+          "Physical Examination: Your doctor will begin by physically examining the affected area. They will look for signs of inflammation, such as redness, swelling, or tenderness. Additionally, they may check for signs of infection, such as pus or drainage.",
+          "Imaging Tests: In some cases, your doctor may recommend imaging tests such as ultrasound or MRI to gain a better understanding of the severity of the condition or to identify any potential complications.",
+          "Biopsy: If there is uncertainty about the diagnosis, your doctor may perform a biopsy. During this procedure, a small sample of tissue is taken from the affected area and sent to a laboratory for analysis. This can help confirm the diagnosis of pilonidal sinus and rule out other possible conditions."
         ]
       }
     }
@@ -693,7 +693,7 @@
     "diseaseImg": "https://i.ibb.co/ZNbDJDK/rectal.png",
     "heroHeader": "Treatment of Rectal Prolapse:",
     "subHeading": "Diagnosis, Surgery, and Recovery",
-    "details": "Rectal prolapse is a proctological condition characterized by the descent of the rectum through the anus, potentially resulting in complications like strangulation, bleeding, and ulceration. Timely intervention is crucial. At Pristyn Care, we offer advanced surgical treatments for rectal prolapse to alleviate discomfort and restore normal function. Our team of proctologists is dedicated to providing comprehensive care. Schedule an appointment with us for expert evaluation and personalized treatment.",
+    "details": "Rectal prolapse is a proctological condition characterized by the descent of the rectum through the anus, potentially resulting in complications like strangulation, bleeding, and ulceration. Timely intervention is crucial. At Med Life Easy, we offer advanced surgical treatments for rectal prolapse to alleviate discomfort and restore normal function. Our team of proctologists is dedicated to providing comprehensive care. Schedule an appointment with us for expert evaluation and personalized treatment.",
     "listHeading": "Are you going through any of these symptoms?",
     "subLists": [
       "Bulge after coughing, sneezing, or lifting",
@@ -747,8 +747,8 @@
       "diagnosis": {
         "diagnosisHeader": "Diagnosis of Rectal Prolapse:",
         "diagnosisLists": [
-          "1. Physical Examination: The doctor conducts a thorough physical examination, observing the rectum and potentially inserting a gloved, lubricated finger into the anus to assess the strength of the anal sphincter and rectum. They may also inquire about symptoms and medical history, and observe the patient's squatting and straining during a simulated bowel movement.",
-          "2. Additional Tests:",
+          "Physical Examination: The doctor conducts a thorough physical examination, observing the rectum and potentially inserting a gloved, lubricated finger into the anus to assess the strength of the anal sphincter and rectum. They may also inquire about symptoms and medical history, and observe the patient's squatting and straining during a simulated bowel movement.",
+          "Additional Tests:",
           "a. Anal Electromyography (EMG): Measures the effectiveness of rectal muscles and nerves by placing electrodes a few inches into the rectum.",
           "b. Colonoscopy: Involves inserting a thin, flexible tube with a small camera (colonoscope) into the rectum for a visual examination.",
           "c. Anorectal Manometry: Uses a flexible tube with a small deflated balloon to measure the rectum's response to pressure.",
@@ -756,7 +756,7 @@
           "e. Defecography: X-rays or MRIs monitor the colon during a bowel movement.",
           "f. Lower GI Series: Barium liquid in the large intestine produces clear X-ray images.",
           "g. Transit Study: Involves swallowing capsules with markers to assess how they pass through the intestines via X-ray over several days.",
-          "3. Additional Exams: In some cases, urological or gynecological exams may be recommended to evaluate weak areas in the pelvic floor and assess if other organs, such as the uterus, have also prolapsed.",
+          "Additional Exams: In some cases, urological or gynecological exams may be recommended to evaluate weak areas in the pelvic floor and assess if other organs, such as the uterus, have also prolapsed.",
           "These diagnostic procedures help healthcare providers accurately diagnose rectal prolapse and determine the most appropriate treatment plan for the patient."
         ]
       }

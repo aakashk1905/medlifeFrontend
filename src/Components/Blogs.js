@@ -114,7 +114,7 @@ const Blogs = () => {
 
   return (
     <div className="py-7 w-full flex flex-col items-center ">
-      <div className=" w-[95%] md:w-4/5">
+      <div className=" w-[95%] md:w-[90%]">
         {/* Headline */}
         <h1 className="text-gray-700 text-4xl font-semibold text-center mb-10">
           Our Recent Blogs
@@ -133,7 +133,7 @@ const Blogs = () => {
                   src={blog.avatar.url}
                   alt=""
                 />
-                <div className="p-5 h-full flex flex-col items-start justify-between gap-[10px] box-border">
+                <div className="p-5 h-full flex flex-col items-start justify-between gap-[15px] box-border">
                   <h1 className="text-[#17324A] text-2xl font-semibold ">
                     {blog.title.length <= 30
                       ? blog.title

@@ -38,7 +38,7 @@ const AboutUs = () => {
 
 <div className="mt-5 w-[95%] lg:w-4/5">
         <div className="">
-        <h1 className="text-4xl font-medium text-gray-700 text-center mb-4">
+        <h1 className="text-4xl font-semibold font-lato text-gray-700 text-center mb-4">
           About Us
         </h1>
 
@@ -54,7 +54,7 @@ const AboutUs = () => {
              
 
 
-              <p className="text-gray-600 text-justify">
+              <p className="text-gray-600 font-lato text-justify">
               Medlife Easy acts as a wonderful platform to help the patient or Clients to choose doctors/Hospitals & Wellness Centers etc.
 
 Medlife Easy aims to provide a reliable & seamless connection b/w healthcare provider across various disciplines and the Patients or Clients who requires genuine & valued services for their treatments.
@@ -132,12 +132,12 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
             <div className="shadow-lg p-4 rounded-lg grid grid-cols-1 md:grid-cols-2 items-center gap-5 w-full lg:w-2/3">
                 <img className="border-2 border-blue-600 rounded-lg" src={drVivekKumer} alt="" />
                 <div>
-                    <h1 className="text-2xl font-bold text-gray-700 mb-3">Dr. Vivek Kumar</h1>
-                    <p className="text-gray-700">Managing Director</p>
-                    <p className="text-gray-700">MedLifeEasy Private Limited</p>
-                    <p className="text-gray-700 mb-4">Ex MD Apollo Trauma Center, Patna</p>
+                    <h1 className="text-2xl font-bold text-gray-700 mb-3 font-lato">Dr. Vivek Kumar</h1>
+                    <p className="text-gray-700 font-lato">Managing Director</p>
+                    <p className="text-gray-700 font-lato">MedLifeEasy Private Limited</p>
+                    <p className="text-gray-700 font-lato mb-4">Ex MD Apollo Trauma Center, Patna</p>
 
-                    <p className="text-gray-700 text-justify">He is a well known public figure in medical as well as sociopolitical arena.He has more than 15 years of experience in public relations and healthcare management.</p>
+                    <p className="text-gray-700 font-lato text-justify">He is a well known public figure in medical as well as sociopolitical arena.He has more than 15 years of experience in public relations and healthcare management.</p>
                 </div>
             </div>
          </div>
@@ -147,7 +147,7 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
         {/* Benefits section */}
          <div className="py-16">
       <div className="p-8 bg-[#F6FCFF] rounded-xl">
-        <h1 className="text-2xl text-start md:text-center font-semibold mb-9 text-gray-600">
+        <h1 className="text-2xl text-start md:text-center font-semibold font-lato mb-9 text-gray-600">
         Your Benefits With
           <span className="text-teal-600 ml-2">Med Life Easy</span>
         </h1>
@@ -159,28 +159,28 @@ Medlife Easy aims to provide a reliable & seamless connection b/w healthcare pro
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold text-gray-800">Low Cost Treatment</p>
+            <p className="font-semibold font-lato text-gray-800">Low Cost Treatment</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold text-gray-800">Top Rated Doctors</p>
+            <p className="font-semibold font-lato text-gray-800">Top Rated Doctors</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold text-gray-800"> Premium Hospital Networks</p>
+            <p className="font-semibold font-lato text-gray-800"> Premium Hospital Networks</p>
           </div>
           
               <div className="flex items-center gap-2">
             <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
               <MdOutlineDone></MdOutlineDone>
             </div>
-            <p className="font-semibold text-gray-800">Free Post Treatment Consultation</p>
+            <p className="font-semibold font-lato text-gray-800">Free Post Treatment Consultation</p>
           </div>
           
         </div>

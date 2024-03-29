@@ -17,11 +17,11 @@ const BlogsHero = () => {
       </div>
 
       {/* <div className="grid grid-cols-1 lg:grid-cols-5 max-w-[83vw] mx-auto lg:gap-10"> */}
-      <div className="flex flex-col lg:flex-row w-[99%] lg:w-4/5 justify-center items-center relative">
-        <div className="flex flex-col gap-3 lg:gap-5 w-[95%] lg:w-[55%] xl:w-[60%] items-center lg:items-start lg:justify-start justify-center">
+      <div className="flex flex-col lg:flex-row w-[99%] lg:w-[90%] justify-center items-center relative">
+        <div className="flex flex-col gap-3 lg:gap-7 w-[95%] lg:w-[55%] xl:w-[59%] items-center lg:items-start lg:justify-start justify-center z-10">
           {/* Main heading */}
           <h1
-            className="text-center lg:text-start text-[28px] md:text-5xl lg:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-gray-600"
+            className="text-center lg:text-start text-[28px] md:text-5xl lg:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-[#344E5F]"
           >
             Stay Informed with MedLifeEasy's Health Blog.
           </h1>
@@ -45,7 +45,7 @@ const BlogsHero = () => {
         />
 
           {/* Right side form */}
-          <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center mt-6 lg:-mt-6 box-border z-10">
+          <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center mt-6 lg:-mt-6 mb-2 box-border z-10">
           <div className=" w-full flex justify-center max-w-[550px] ">
             <Form header={"Book Free Consultation"} />
           </div>

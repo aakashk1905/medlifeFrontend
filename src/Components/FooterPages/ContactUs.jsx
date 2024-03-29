@@ -21,7 +21,7 @@ const ContactUs = () => {
 
         <div className="w-[95%] lg:w-4/5">
         <div className="">
-          <h1 className="text-4xl font-medium text-gray-700 text-center mb-4 mt-5">
+          <h1 className="text-4xl font-semibold font-lato text-gray-700 text-center mb-4 mt-5">
             Contact Us
           </h1>
           <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
@@ -34,13 +34,13 @@ const ContactUs = () => {
               {/* <div className="bg-gray-200 w-0.5 h-full">
 
               </div> */}
-              <h2 className="text-gray-700 text-xl font-bold mb-4">
+              <h2 className="text-gray-700 font-lato text-xl font-bold mb-4">
                 Corporate Office
               </h2>
 
               <div className="flex items-center gap-2 mb-7">
                 <IoMdCall className="text-[#00A79D] text-3xl"></IoMdCall>
-                <p className="flex flex-col">
+                <p className="flex flex-col font-lato">
                   <span>+91 995 599 2502</span>
                   <span>+91 995 599 2505</span>
                 </p>
@@ -48,17 +48,17 @@ const ContactUs = () => {
 
               <div className="flex items-center gap-2 mb-7">
                 <MdAccessTimeFilled className="text-[#00A79D] text-3xl"></MdAccessTimeFilled>
-                <p className="">10am to 10pm, all days</p>
+                <p className=" font-lato">10am to 10pm, all days</p>
               </div>
 
               <div className="flex items-center gap-2 mb-7">
                 <MdEmail className="text-[#00A79D] text-3xl"></MdEmail>
-                <p className="">info@medlifeeasy.com</p>
+                <p className=" font-lato">info@medlifeeasy.com</p>
               </div>
 
               <div className="flex items-center gap-2 mb-7">
                 <FaLocationDot className="text-[#00A79D] text-3xl"></FaLocationDot>
-                <p className="">
+                <p className=" font-lato">
                   H.NO. 2M/94, Bahadurpur Houshing Colony, <br /> Kankarbagh, Patna -
                   800 0026
                 </p>
@@ -81,7 +81,7 @@ const ContactUs = () => {
 
       {/* Map */}
       <div className="mt-10 mb-14">
-        <h1 className="text-4xl font-medium text-gray-700 text-center mb-5">
+        <h1 className="text-4xl font-semibold font-lato text-gray-700 text-center mb-5">
           View on map
         </h1>
         <div className="flex justify-center items-center">

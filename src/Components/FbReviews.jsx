@@ -1,87 +1,95 @@
-import fbrev from "../Assests/fbrev.png";
 import revstars from "../Assests/revstars.png";
 import revrec from "../Assests/revrec.png";
 import Swipperbtn from "./Swipperbtn";
-import 'swiper/css/pagination';
-import instagramLogo from "../Assests/instagramLogo.png"
+import "swiper/css/pagination";
+import instagramLogo from "../Assests/instagramLogo.png";
 import logo from "../Assests/logo.svg";
 
-
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
 
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/swiper-bundle.css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/swiper-bundle.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Loader from "./Loader/Loader";
-
 
 const FbReviews = () => {
   const [instagramPost, setInstagramPost] = useState();
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
-    axios.get(`https://graph.instagram.com/me/media?fields=id,thumbnail_url,media_url,timestamp,permalink,username&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}&limit=6`)
-    .then(res => {setInstagramPost(res.data.data)
-    setIsloading(false)
-    })
-  }, [])
-    return (
-
-<div className="bg-[#f6fafb] w-full flex flex-col items-center">
-<div className="w-[95%] md:w-4/5">
-<h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-10">Our Patient Loves us</h1>
-<div className='flex justify-center relative'>
-<Swiper slidesPerView={1}
-breakpoints={{
-  768: {
-    slidesPerView: 2
-  },
-  375: {
-    slidesPerView: 1
-  },
-  425: {
-    slidesPerView: 1
-  },
-  1024: {
-    slidesPerView: 2
-  },
-  1366 : {
-    slidesPerView: 3
-  },
-  1920 : {
-    slidesPerView: 4
-  }
-  
-}}
-pagination={{
-  clickable:true}}
-modules={[Pagination]} className="carousel">
-  
-{
-  isLoading? <Loader/> :
-  instagramPost?.map((post, index) => 
-  <SwiperSlide key={index}>
-<Link to={post.permalink} target="_blank" className="rev-card my-6">
-            <div className="rev-card-img-cont">
-              <div className="rev-card-img">
-                <div className="w-10 h-10 rounded-full">
-                <img className="" src={logo} alt="review" />
-                </div>
-                <div className="rev-name-cont">
-                  <div className="rev-name font-bold">Medlife Easy</div>
-                  <div className="star-cont">
-                    <img src={revstars} alt="" />
-                    {/* <div className="five">
+    axios
+      .get(
+        `https://graph.instagram.com/me/media?fields=id,thumbnail_url,media_url,timestamp,permalink,username&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}&limit=6`
+      )
+      .then((res) => {
+        setInstagramPost(res.data.data);
+        setIsloading(false);
+      });
+  }, []);
+  return (
+    <div className="bg-[#f6fafb] w-full flex flex-col items-center">
+      <div className="w-[95%] md:w-[90%]">
+        <h1 className="text-2xl md:text-4xl font-semibold text-gray-800  text-center mb-10">
+          Our Patient Loves us
+        </h1>
+        <div className="flex justify-center relative">
+          <Swiper
+            slidesPerView={1}
+            breakpoints={{
+              768: {
+                slidesPerView: 2,
+              },
+              375: {
+                slidesPerView: 1,
+              },
+              425: {
+                slidesPerView: 1,
+              },
+              1024: {
+                slidesPerView: 2,
+              },
+              1366: {
+                slidesPerView: 3,
+              },
+              1920: {
+                slidesPerView: 4,
+              },
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination]}
+            className="carousel"
+          >
+            {isLoading ? (
+              <Loader />
+            ) : (
+              instagramPost?.map((post, index) => (
+                <SwiperSlide key={index}>
+                  <Link
+                    to={post.permalink}
+                    target="_blank"
+                    className="rev-card my-6"
+                  >
+                    <div className="rev-card-img-cont">
+                      <div className="rev-card-img">
+                        <div className="w-10 h-10 rounded-full">
+                          <img className="" src={logo} alt="review" />
+                        </div>
+                        <div className="rev-name-cont">
+                          <div className="rev-name font-bold">Medlife Easy</div>
+                          <div className="star-cont">
+                            <img src={revstars} alt="" />
+                            {/* <div className="five">
                       <b className="fpf">4.8</b>/5
                     </div> */}
-                  </div>
-                </div>
-              </div>
-              {/* <svg
+                          </div>
+                        </div>
+                      </div>
+                      {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
                 height="32"
@@ -106,11 +114,10 @@ modules={[Pagination]} className="carousel">
                   </clipPath>
                 </defs>
               </svg> */}
-              <img className="w-10" src={instagramLogo} alt="" />
-            </div>
+                      <img className="w-10" src={instagramLogo} alt="" />
+                    </div>
 
-
-            {/* <div className="rev-rec-cont">
+                    {/* <div className="rev-rec-cont">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="21"
@@ -133,32 +140,35 @@ modules={[Pagination]} className="carousel">
               <span>Highly Recommends</span>
             </div> */}
 
-            <div className="rev-place">
-              <img className="w-full h-full object-cover object-center rounded-lg" src={post.thumbnail_url || post.media_url} alt="" />
-            </div>
-            
-            <div className="rev-divider"></div>
-            <div className="rev-card-img-cont">
-              <div className="rev-reac">
-                <img src={revrec} alt="revrec" />
-                <span>501</span>
-              </div>
-              <div className="rev-comm">54 comments</div>
-            </div>
-          </Link>
-</SwiperSlide>
-  )
-}
+                    <div className="rev-place">
+                      <img
+                        className="w-full h-full object-cover object-center rounded-lg"
+                        src={post.thumbnail_url || post.media_url}
+                        alt=""
+                      />
+                    </div>
 
+                    <div className="rev-divider"></div>
+                    <div className="rev-card-img-cont">
+                      <div className="rev-reac">
+                        <img src={revrec} alt="revrec" />
+                        <span>501</span>
+                      </div>
+                      <div className="rev-comm">54 comments</div>
+                    </div>
+                  </Link>
+                </SwiperSlide>
+              ))
+            )}
 
-<div className='absolute top-52 w-full z-10'>
-<Swipperbtn></Swipperbtn>
-</div>
-</Swiper>
-</div>
-</div>
-</div>
-    );
+            <div className="absolute top-52 w-full z-10">
+              <Swipperbtn></Swipperbtn>
+            </div>
+          </Swiper>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default FbReviews;

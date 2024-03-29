@@ -47,19 +47,22 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                     <div className="dd-top-left mr-2">
                       <img src={doctor.avatar.url} alt="ddrc" />
                     </div>
+
+                    <div className="dd-top-cont">
                     <div className="dd-top-right">
+                      <div>
                       <div className="dd-top-head">{doctor.doctorName}</div>
-                      <div className="dd-top-text">
+                      <div className="dd-top-text font-lato">
                         {" "}
                         MBBS, MS-{" "}
-                        <b style={{ color: "#00A0AA", fontSize: "17px" }}>
+                        <p style={{ color: "#00A0AA", fontSize: "17px" }}>
                           {doctor.diseaseHandle}
-                        </b>
+                        </p>
                       </div>
-                      <div className="bg-gray-500 w-52 h-0.5">
-  
-                      </div>
-                      <div className="dd-top-sub-head"> Specialization</div>
+                      <div className="bg-gray-500 w-52 h-0.5"></div>
+                      
+                      <div className=""> Specialization</div>
+
                       <div className="dd-top-sp-cont">
                         <div className="dd-top-sp text-base text-gray-800">
                           {doctor.specialization1}
@@ -67,16 +70,21 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                         <div className="dd-top-sp text-gray-800">{doctor.specialization2}</div>
                         <div className="dd-top-sp text-gray-800">{doctor.specialization3}</div>
                       </div>
-                      <div className="dd-top-stats-cont">
+                      </div>
+                    </div>
+
+                    <div className="dd-top-stats-cont">
                         <div className="dd-top-stats">
                         <IoBagAdd></IoBagAdd>
                           {doctor.experience}
                         </div>
                         <div className="dd-top-stats">
-                        <HiLocationMarker></HiLocationMarker>         {doctor.location}
+                        <HiLocationMarker></HiLocationMarker> {doctor.location}
                         </div>
                       </div>
-                    </div>
+
+                      </div>
+
                   </div>
                   <div className="dd-btm">
                     <div className="dd-call">Call now +98 765 432 10</div>
@@ -175,12 +183,13 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
         slidesPerView: 3,
       },
       1366: {
-        slidesPerView: 3,
+        slidesPerView: 2,
       },
       1920: {
-        slidesPerView: 4,
+        slidesPerView: 3,
       },
     }}
+    spaceBetween={0}
     pagination={{
       clickable: true,
     }}
@@ -195,20 +204,20 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                  <div className="dd-card">
                  <div className="dd-top">
                     <div className="dd-top-left mr-2">
-                      <img src={doctor.avatar.url} alt="ddrc" />
+                      <img className="h-44" src={doctor.avatar.url} alt="ddrc" />
                     </div>
+
+                    <div className="dd-top-cont">
                     <div className="dd-top-right">
                       <div className="dd-top-head">{doctor.doctorName}</div>
                       <div className="dd-top-text">
                         {" "}
                         MBBS, MS-{" "}
-                        <b style={{ color: "#00A0AA", fontSize: "17px" }}>
+                        <p style={{ color: "#00A0AA", fontSize: "17px" }}>
                           {doctor.diseaseHandle}
-                        </b>
+                        </p>
                       </div>
-                      <div className="bg-gray-500 w-52 h-0.5">
-  
-                      </div>
+                      <div className="bg-gray-500 w-52 h-[1px] mb-[1px]"></div>
                       <div className="dd-top-sub-head"> Specialization</div>
                       <div className="dd-top-sp-cont">
                         <div className="dd-top-sp text-base text-gray-800">
@@ -217,7 +226,10 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                         <div className="dd-top-sp text-gray-800">{doctor.specialization2}</div>
                         <div className="dd-top-sp text-gray-800">{doctor.specialization3}</div>
                       </div>
-                      <div className="dd-top-stats-cont">
+                      
+                    </div>
+
+                    <div className="dd-top-stats-cont">
                         <div className="dd-top-stats">
                         <IoBagAdd></IoBagAdd>
                           {doctor.experience}
@@ -226,7 +238,11 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
                         <HiLocationMarker></HiLocationMarker>         {doctor.location}
                         </div>
                       </div>
-                    </div>
+
+                      </div>
+
+
+
                   </div>
                   <div className="dd-btm">
                     <div className="dd-call">Call now +98 765 432 10</div>

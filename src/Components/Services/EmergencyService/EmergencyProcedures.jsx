@@ -6,11 +6,11 @@ const EmergencyProcedures = () => {
 
     return (
         <div className='bg-[#FFF] flex flex-col items-center'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-10 items-center py-4 border-b w-[90%] md:w-[88%] lg:w-4/5'>
-            <div>
+            <div className='flex flex-col lg:flex-row items-center py-4 border-b w-[95%] lg:w-[90%]'>
+            <div className='w-4/5'>
                 <h1 className='text-2xl font-semibold text-[#17324A] mb-6'>Emergency Procedures</h1>
-                <p className='text-sm mb-6 text-gray-900'>In case of an emergency, follow these steps:</p>
-                <ul className='list-inside list-disc mb-10'>
+                <p className='text-sm mb-6 text-gray-900 font-lato'>In case of an emergency, follow these steps:</p>
+                <ul className='list-inside list-disc mb-10 font-lato'>
                     <li className='mb-3 text-[#17324A] text-lg'>Stay Calm and Assess the Situation</li>
                     <li className='mb-3 text-[#17324A] text-lg'>Call Emergency Services Immediately</li>
                     <li className='mb-3 text-[#17324A] text-lg'>Provide Necessary Information to the Operator</li>

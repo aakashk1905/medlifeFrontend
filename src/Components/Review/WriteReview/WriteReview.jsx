@@ -71,7 +71,7 @@ const WriteReview = () => {
         </ul>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 w-[95%] md:w-4/5 py-12">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 w-[95%] md:w-[90%] py-12">
         <div className="shadow-xl p-3 rounded-md">
           <div className="border-b pb-2 border-gray-700 mb-5 flex flex-col justify-center items-center">
             <h2 className="text-2xl font-semibold text-center mb-4">
@@ -146,7 +146,7 @@ const WriteReview = () => {
                   <FaStar className="text-gray-300 text-3xl"></FaStar>
                 }
                 fullSymbol={
-                  <FaStar className="text-gray-600 text-3xl"></FaStar>
+                  <FaStar className="text-[#FFCE00] text-3xl"></FaStar>
                 }
               />
             </div>
@@ -164,7 +164,7 @@ const WriteReview = () => {
                 cols="30"
                 rows="10"
               ></textarea>
-              <button className="w-full md:w-[350px] h-[64px] bg-[#00A0AA] rounded-md text-white mb-20">
+              <button className="w-full md:w-[350px] h-12 2xl:h-16 bg-[#00A0AA] rounded-md text-white mb-20">
                 Submit
               </button>
             </div>

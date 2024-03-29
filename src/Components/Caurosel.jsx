@@ -44,6 +44,9 @@ const Caurosel = () => {
           1024: {
             slidesPerView: 2,
           },
+          1366: {
+            slidesPerView: 2,
+          },
           1666: {
             slidesPerView: 3,
           },
@@ -51,6 +54,7 @@ const Caurosel = () => {
           //   slidesPerView: 4,
           // },
         }}
+        spaceBetween={0}
         pagination={{
           clickable: true,
         }}
@@ -65,8 +69,8 @@ const Caurosel = () => {
         allReviews.length > 0 ? (
           allReviews.map((review, index) => (
             <SwiperSlide>
-            <div className="px-[43px] py-5 flex justify-center items-center w-full">
-              <div className="bg-white w-full  p-3 rounded-xl shadow-md cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
+            <div className="px-[20px] py-5 flex justify-center items-center w-full">
+              <div className="bg-white min-h-[300px] w-full p-3 rounded-xl shadow-md cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
                 <div className="flex gap-2 mb-3">
                   {/* <img src={fbrev} alt="" /> */}
                   <div className="w-12 h-12 rounded-full p-1 bg-[#00a79d] text-white flex justify-center items-center">
@@ -110,18 +114,7 @@ const Caurosel = () => {
   
                 <p className="text-gray-800 text-sm md:text-[13px] text-justify">
                 {review?.review}
-                  {/* एक किडनी रोगी के रूप में मेड लाइफ इज़ी से मुझे जो असाधारण देखभाल
-                  मिली, उससे मैं अविश्वसनीय रूप से संतुष्ट हूं। उनकी विशेषज्ञ
-                  चिकित्सा टीम के साथ मिलकर व्यक्तिगत उपचार योजना ने एक सुचारू और
-                  प्रभावी पुनर्प्राप्ति प्रक्रिया सुनिश्चित की। चौकस और दयालु
-                  स्टाफ ने मेरी चिंताओं को दूर करने के लिए हर संभव प्रयास किया,
-                  जिससे मुझे वास्तव में मेरी देखभाल का एहसास हुआ। सर्वोच्च
-                  चिकित्सा सेवाएं प्रदान करने की मेड लाइफ ईज़ी की प्रतिबद्धता ने
-                  एक स्थायी सकारात्मक प्रभाव छोड़ा है। किडनी से संबंधित समस्याओं
-                  के लिए व्यापक और विश्वसनीय स्वास्थ्य देखभाल चाहने वाले किसी भी
-                  व्यक्ति को मैं पूरे दिल से उनकी सेवाओं की अनुशंसा करता हूं। उस
-                  उत्कृष्ट समर्थन के लिए आभारी हूं जिसने मेरी भलाई में महत्वपूर्ण
-                  योगदान दिया। */}
+                  
                 </p>
               </div>
             </div>
@@ -133,7 +126,7 @@ const Caurosel = () => {
 
         
 
-        <div className="absolute top-[48%] w-[100%] z-10">
+        <div className="absolute top-[48%] w-full z-10">
           <Swipperbtn></Swipperbtn>
         </div>
       </Swiper>

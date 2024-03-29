@@ -5,7 +5,7 @@ const ExploreMedLife = ({ content }) => {
   return (
     <div className="bg-[#ecf7fc] flex flex-col items-center">
       {/* grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-7 items-centergrid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-7 items-center */}
-      <div className=" lg:w-4/5 py-2 px-5 lg:px-0 flex flex-col lg:flex-row justify-between gap-10 w-full">
+      <div className=" lg:w-[90%] py-2 px-5 lg:px-0 flex flex-col lg:flex-row justify-between gap-10 w-full">
         {/* Left side details */}
         <div className="w-[95%]">
           {content?.SurgeryForm?.surgeryHeader && (
@@ -47,7 +47,7 @@ const ExploreMedLife = ({ content }) => {
                   className="text-sm mb-2 font-lato font-normal text-justify"
                   key={index}
                 >
-                  <strong>{title}</strong>: {description}
+                  <span className="font-bold text-gray-800">{title}</span>: {description}
                 </p>
               );
             })}
@@ -79,7 +79,7 @@ const ExploreMedLife = ({ content }) => {
                   className="text-sm mb-2 font-lato font-normal text-justify"
                   key={index}
                 >
-                  <strong>{title}</strong>: {description}
+                  <span className="font-bold text-gray-800">{title}</span>: {description}
                 </p>
               );
             })}
@@ -98,7 +98,7 @@ const ExploreMedLife = ({ content }) => {
                   className="text-sm mb-2 font-lato font-normal text-justify"
                   key={index}
                 >
-                  <strong>{title}</strong>: {description}
+                  <span className="font-bold text-gray-800">{title}</span>: {description}
                 </p>
               );
             })}
@@ -168,7 +168,7 @@ const ExploreMedLife = ({ content }) => {
                     className="text-sm mb-2 font-lato font-normal text-justify"
                     key={index}
                   >
-                    <strong>{title}</strong>: {description}
+                    <span className="font-bold text-gray-800">{title}</span>: {description}
                   </p>
                 );
               }

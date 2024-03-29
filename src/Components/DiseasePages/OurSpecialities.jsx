@@ -9,7 +9,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 const OurSpecialities = () => {
   return (
     <div className="w-full flex bg-[#F2F4F5] justify-center py-16 my-10">
-      <div className=" w-[95%] md:w-4/5">
+      <div className=" w-[95%] md:w-[90%]">
         <h1 className="text-2xl font-semibold mb-4 text-center font-lato">
           Our Specialities
         </h1>

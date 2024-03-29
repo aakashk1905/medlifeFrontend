@@ -9,11 +9,11 @@ import gynecology from "../../../Assests/Emergency type/gynecology 1.png";
 
 const EmergencyType = () => {
     return (
-        <div className='pb-16 flex flex-col items-center'>
-            <div className='w-[90%] lg:w-4/5'>
+        <div className='pb-16 flex flex-col items-center justify-center'>
+            <div className='w-[95%] lg:w-[90%]'>
                 <h1 className='text-4xl font-semibold text-[#17324A] text-start md:text-center mt-10 mb-16'>Types of Emergencies Handled</h1>
 
-                <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-8'>
+                <div className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7 gap-5'>
                     {/* Accident card */}
                 <div className='flex flex-col gap-3 w-32'>
                 <div className='shadow-lg p-2 rounded-md flex justify-center items-center w-32'>

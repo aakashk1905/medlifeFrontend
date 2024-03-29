@@ -17,9 +17,9 @@ const DoctorsHeader = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col w-[95%] lg:w-4/5 lg:flex-row gap-10 items-center justify-center">
+      <div className="flex flex-col w-[95%] lg:w-[90%] lg:flex-row gap-10 items-center justify-center">
         <div className="flex flex-col gap-4 w-[95%] lg:w-[55%] xl:w-[60%] items-center lg:items-start lg:justify-start justify-center">
-          <h1 className="text-center lg:text-start text-[28px] md:text-4xl lg:text-[clamp(28px, 3vw, 64px)] font-bold text-gray-600">
+          <h1 className="text-center lg:text-start text-[28px] md:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-bold text-[#17324A]">
             Consult with Top Rated Experienced Doctors Online!
           </h1>
 

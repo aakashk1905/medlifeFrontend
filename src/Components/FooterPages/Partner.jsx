@@ -29,15 +29,15 @@ const Partner = () => {
 
         <div className="w-[95%] lg:w-4/5 flex flex-col items-center">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-4xl font-medium text-gray-700 text-center mt-5 lg:mt-0 mb-4">
+          <h1 className="text-4xl font-lato font-semibold text-gray-700 text-center mt-5 lg:mt-0 mb-4">
             Partner With Us
           </h1>
           <div className="bg-[#E3E3E3] w-full h-0.5 mb-8"></div>
 
-          <h1 className="text-2xl font-medium text-gray-700 text-center mb-3">
+          <h1 className="text-2xl font-semibold text-gray-700 text-center mb-3">
             Looking for Partnership with MEDLIFEEASY?
           </h1>
-          <p className="text-gray-600 mb-6 text-center">
+          <p className="text-gray-600 font-lato mb-6 text-center">
           MedLifeEasy private limited is a leading company as an online healthcare service provider. We enable our user to book treatments, choose doctors, hospitals & wellness centers. We also have empanelled with various hospitals, clinics, wellness center, diagnostic center & labs. To give your business a boost.
           </p>
         </div>
