@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import piles from "../Assests/surgeries image/piles (2).png";
-import analFistula from "../Assests/surgeries image/Anal Fistula.png";
-import analFissure from "../Assests/surgeries image/Anal Fissure.png";
+import analFistula from "../Assests/surgeries image/anal fistula.png";
+import analFissure from "../Assests/surgeries image/anal fissure.png";
 import gallstones from "../Assests/surgeries image/Gallstone.png";
 import kidneyStones from "../Assests/surgeries image/Kidney Stones.png";
 import cotaract from "../Assests/surgeries image/Cataract.png";
 import lasikEye from "../Assests/surgeries image/Lasik eye surgery.png";
-import hernia from "../Assests/surgeries image/Hernia (2).png";
+import hernia from "../Assests/surgeries image/hernia (2).png";
 import Enlarged from "../Assests/surgeries image/enlarged prostate.png";
 import LaserCircumcisio from "../Assests/surgeries image/Laser Circumcision.png";
 import UterineFibroid from "../Assests/surgeries image/Uterine Fibroid.png";
