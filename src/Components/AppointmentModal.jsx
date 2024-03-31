@@ -54,8 +54,8 @@ const AppointmentModal = ({ text, className }) => {
     "Supaul",
     "Siwan",
     "Vaishali",
-    "West Champaran"
-  ]
+    "West Champaran",
+  ];
   const disease = ["Select Disease", "Hernia", "Gynacology", "Fever"];
 
   const axiosBaseUrl = useAxiosBaseUrl();
@@ -101,7 +101,7 @@ const AppointmentModal = ({ text, className }) => {
         console.log(error);
       });
   };
-  
+
   return (
     <div className="">
       <button
@@ -229,7 +229,7 @@ const AppointmentModal = ({ text, className }) => {
                       onChange={(e) => setMobileNumber(e.target.value)}
                     />
 
-                    <div class="relative inline-block text-left w-full">
+                    <div className="relative inline-block text-left w-full">
                       <select
                         value={selectedCity}
                         onChange={(e) => setSelectedCity(e.target.value)}
@@ -241,14 +241,14 @@ const AppointmentModal = ({ text, className }) => {
                           </option>
                         ))}
                       </select>
-                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
                         <IoIosArrowDown></IoIosArrowDown>
                       </div>
                     </div>
 
                     <CityDropdown onCityChange={setSelectedCity} type="city" />
 
-                    <div class="relative inline-block text-left w-full">
+                    <div className="relative inline-block text-left w-full">
                       <select
                         value={selectedDisease}
                         onChange={(e) => {
@@ -262,7 +262,7 @@ const AppointmentModal = ({ text, className }) => {
                           </option>
                         ))}
                       </select>
-                      <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+                      <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
                         <IoIosArrowDown></IoIosArrowDown>
                       </div>
                     </div>

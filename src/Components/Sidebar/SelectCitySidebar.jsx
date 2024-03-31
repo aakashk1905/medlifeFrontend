@@ -7,7 +7,6 @@ import logo from "../../Assests/logo.svg";
 import { Link } from "react-router-dom";
 
 const SelectCitySidebar = () => {
-
   const districts = [
     "Araria",
     "Arwal",
@@ -46,8 +45,8 @@ const SelectCitySidebar = () => {
     "Supaul",
     "Siwan",
     "Vaishali",
-    "West Champaran"
-]
+    "West Champaran",
+  ];
 
   // Dropdown functionality
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -55,8 +54,46 @@ const SelectCitySidebar = () => {
   const [filteredCities, setFilteredCities] = useState(districts);
   const [selectedCity, setSelectedCity] = useState("");
 
+  const handleGetLocation = () => {
+    if (navigator.geolocation) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          reverseGeocode(latitude, longitude);
+        },
+        (error) => {
+          console.log("Error getting location: " + error.message);
+        }
+      );
+    } else {
+      console.log("Geolocation is not supported by this browser.");
+    }
+  };
+
+  const reverseGeocode = async (latitude, longitude) => {
+    const url = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=f1ac6bd91a45445b99ef1b27b53364b8`;
+
+    try {
+      const response = await fetch(url);
+      const data = await response.json();
+      if (data.results.length > 0) {
+        console.log("data.results[0].components", data.results[0].components);
+        const cityName =
+          data.results[0].components.city || data.results[0].components.town || data.results[0].components._normalized_city;
+
+        setSelectedCity(cityName);
+        localStorage.setItem("selectedCity", cityName);
+      } else {
+        console.log("Could not determine city.");
+      }
+    } catch (error) {
+      console.log("Error fetching city data: " + error.message);
+    }
+  };
 
   useEffect(() => {
+    handleGetLocation();
+
     const storedCity = localStorage.getItem("selectedCity");
     if (storedCity) {
       setSelectedCity(storedCity);
@@ -98,7 +135,9 @@ const SelectCitySidebar = () => {
           <div className="flex items-center gap-2">
             <div className="flex items-center gap-2 w-36 justify-end">
               <FaLocationDot className="text-white"></FaLocationDot>
-              <p className="text-white">{selectedCity === "null" ? "Select City" : selectedCity }</p>
+              <p className="text-white">
+                {selectedCity === "null" ? "Select City" : selectedCity}
+              </p>
             </div>
           </div>
         </label>
@@ -112,11 +151,9 @@ const SelectCitySidebar = () => {
         <ul className="w-80 min-h-full bg-white text-base-content">
           <div className="bg-teal-500 p-3 sticky top-0">
             <div className="flex items-center justify-between">
-            <Link to={"/"}>
-            <img className="" src={logo} alt="logo" />
-          </Link>
-              {/* 
-              <h1 className="text-xl font-semibold text-gray-100 px-4 mt-2 mb-3 flex items-center gap-2">Select your City <FaAngleDown></FaAngleDown></h1> */}
+              <Link to={"/"}>
+                <img className="" src={logo} alt="logo" />
+              </Link>
 
               <RxCross2
                 onClick={closeDrawer}
@@ -154,9 +191,7 @@ const SelectCitySidebar = () => {
             ))}
           </div>
 
-          <div className="hidden">
-            {selectedCity && <Form />}
-          </div>
+          <div className="hidden">{selectedCity && <Form />}</div>
 
           <div className="p-4"></div>
         </ul>

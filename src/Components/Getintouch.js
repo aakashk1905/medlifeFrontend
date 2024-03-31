@@ -104,7 +104,7 @@ const Getintouch = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div class="relative inline-block text-left w-full mb-4">
+            <div className="relative inline-block text-left w-full mb-4">
               <select
                 id="city"
                 value={selectedCity}
@@ -117,12 +117,12 @@ const Getintouch = () => {
                   </option>
                 ))}
               </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
                 <IoIosArrowDown></IoIosArrowDown>
               </div>
             </div>
 
-            <div class="relative inline-block text-left w-full mb-4">
+            <div className="relative inline-block text-left w-full mb-4">
               <select
                 id="city"
                 value={selectedDisease}
@@ -135,7 +135,7 @@ const Getintouch = () => {
                   </option>
                 ))}
               </select>
-              <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
+              <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-gray-700">
                 <IoIosArrowDown></IoIosArrowDown>
               </div>
             </div>

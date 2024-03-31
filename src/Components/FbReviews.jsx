@@ -20,14 +20,18 @@ const FbReviews = () => {
   const [isLoading, setIsloading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get(
-        `https://graph.instagram.com/me/media?fields=id,thumbnail_url,media_url,timestamp,permalink,username&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}&limit=6`
-      )
-      .then((res) => {
-        setInstagramPost(res.data.data);
-        setIsloading(false);
-      });
+    try {
+      axios
+        .get(
+          `https://graph.instagram.com/me/media?fields=id,thumbnail_url,media_url,timestamp,permalink,username&access_token=${process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN}&limit=6`
+        )
+        .then((res) => {
+          setInstagramPost(res.data.data);
+          setIsloading(false);
+        });
+    } catch (e) {
+      console.log(e);
+    }
   }, []);
   return (
     <div className="bg-[#f6fafb] w-full flex flex-col items-center">

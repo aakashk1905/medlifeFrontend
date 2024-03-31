@@ -4,12 +4,11 @@ import proctospe from "../Assests/proctospe.png";
 import ext from "../Assests/external.png";
 import { Link } from "react-router-dom";
 
-
 const Specialities = () => {
   const cardsContainerRef = useRef(null);
 
   const handleScroll = (direction) => {
-    const scrollAmount = 320;
+    const scrollAmount = 235;
     const container = cardsContainerRef.current;
 
     if (container) {
@@ -25,111 +24,142 @@ const Specialities = () => {
       img: proctospe,
       name: "Proctology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "proctology"
+      link: "proctology",
     },
     {
       img: proctospe,
       name: "Laparoscopy",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "laparoscopy"
+      link: "laparoscopy",
     },
     {
       img: proctospe,
       name: "Gynaecology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "gynaecology"
+      link: "gynaecology",
     },
     {
       img: proctospe,
       name: "ENT",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "ent"
+      link: "ent",
     },
     {
       img: proctospe,
       name: "Vascular",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "vascular"
+      link: "vascular",
     },
     {
       img: proctospe,
       name: "Aesthetics",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "aesthetics"
+      link: "aesthetics",
     },
     {
       img: proctospe,
       name: "Orthopedics",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "orthopedics"
+      link: "orthopedics",
     },
     {
       img: proctospe,
       name: "Ophthalmology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "ophthalmology"
+      link: "ophthalmology",
     },
     {
       img: proctospe,
       name: "Fertility",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "fertility"
+      link: "fertility",
     },
     {
       img: proctospe,
       name: "Dentistry",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "dentistry"
+      link: "dentistry",
     },
     {
       img: proctospe,
       name: "Weight Loss",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "weightloss"
+      link: "weightloss",
     },
     {
       img: proctospe,
       name: "Dermatology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
-      link : "dermatology"
+      link: "dermatology",
     },
-  ]
+  ];
   return (
     <div className="spe-cont">
       <div className="spe-inner-cont">
         <div className="hero-btm-head">Our Specialities</div>
 
         <div className="spe-card-cont">
-        {
-  specialitiesInfo.map((info, index) => {
-    return (
-      <div key={index} className="spe-card">
-        <img src={info.img} alt="procto" />
-        <div className="spe-card-inner-cont">
-          <div className="spe-card-head">{info.name}</div>
-          <div className="spe-card-text">
-            {info.details}
-          </div>
-          {/* <div className="spe-card-det">
+          {specialitiesInfo.map((info, index) => {
+            return (
+              <div key={index} className="spe-card">
+                <img src={info.img} alt="procto" />
+                <div className="spe-card-inner-cont">
+                  <div className="spe-card-head">{info.name}</div>
+                  <div className="spe-card-text">{info.details}</div>
+                  {/* <div className="spe-card-det">
             View Details
             <img src={ext} alt="external"></img>
           </div> */}
-          <Link to={`/${info.link}`} className="spe-card-det">
-            View Details
-          </Link>
+                  <Link to={`/${info.link}`} className="spe-card-det">
+                    View Details
+                  </Link>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      </div>
-    );
-  })
-}
-
-        </div>
-
 
         <div className="rev-car-cont revv">
           <div className="arrow-div" onClick={() => handleScroll("left")}>
             &lt;
           </div>
+
+          <div ref={cardsContainerRef} className="rev-cards-cont">
+            {/* {Array.from({ length: 10 }, (_, i) => (
+              <div className="spe-card" key={i}>
+                <img src={proctospe} alt="procto" />
+                <div className="spe-card-inner-cont">
+                  <div className="spe-card-head">Proctology</div>
+                  <div className="spe-card-text">
+                    Specialised & advanced treatment for Anorectal Disease…
+                  </div>
+                  <div className="spe-card-det">
+                    View Details
+                    <img src={ext} alt="external"></img>
+                  </div>
+                </div>
+              </div>
+            ))} */}
+            {specialitiesInfo.map((info, index) => {
+              return (
+                <div key={index} className="spe-card">
+                  <img src={info.img} alt="procto" />
+                  <div className="spe-card-inner-cont">
+                    <div className="spe-card-head">{info.name}</div>
+                    <div className="spe-card-text">{info.details}</div>
+                    {/* <div className="spe-card-det">
+            View Details
+            <img src={ext} alt="external"></img>
+          </div> */}
+                    <Link to={`/${info.link}`} className="spe-card-det">
+                      View Details
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
           <div className="arrow-div" onClick={() => handleScroll("right")}>
             &gt;
           </div>

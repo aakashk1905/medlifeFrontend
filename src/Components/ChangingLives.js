@@ -18,7 +18,7 @@ const ChangingLives = () => {
               viewBox="0 0 30 37"
               fill="none"
             >
-              <g clip-path="url(#clip0_221_1573)">
+              <g clipPath="url(#clip0_221_1573)">
                 <mask
                   id="mask0_221_1573"
                   style={{ maskType: "luminance" }}
@@ -80,7 +80,7 @@ const ChangingLives = () => {
               viewBox="0 0 30 31"
               fill="none"
             >
-              <g clip-path="url(#clip0_221_1593)">
+              <g clipPath="url(#clip0_221_1593)">
                 <path
                   d="M30 8.22333H22.9783V0.5H7.02167V8.22333H0V26.9258H3.9575V30.5H26.0408V26.9258H30V8.22333ZM8.2975 1.77667H21.7025V25.6492H19.0217V20.5425H10.9783V25.6492H8.2975V1.77667ZM17.745 25.6492H12.1917V21.8158H17.745V25.6492ZM1.27667 25.6492V9.5H7.02167V25.6492H1.27667ZM24.7658 29.2233H5.23417V26.9258H24.8333V29.2233H24.7658ZM28.7233 25.6492H22.9783V9.5H28.7233V25.6492Z"
                   fill="#2CA9E1"
@@ -162,7 +162,7 @@ const ChangingLives = () => {
               viewBox="0 0 30 35"
               fill="none"
             >
-              <g clip-path="url(#clip0_221_1618)">
+              <g clipPath="url(#clip0_221_1618)">
                 <mask
                   id="mask0_221_1618"
                   //   style="mask-type:luminance"
@@ -213,7 +213,7 @@ const ChangingLives = () => {
               viewBox="0 0 30 25"
               fill="none"
             >
-              <g clip-path="url(#clip0_221_1635)">
+              <g clipPath="url(#clip0_221_1635)">
                 <mask
                   id="mask0_221_1635"
                   //   style="mask-type:luminance"
@@ -268,7 +268,7 @@ const ChangingLives = () => {
               viewBox="0 0 30 30"
               fill="none"
             >
-              <g clip-path="url(#clip0_221_1653)">
+              <g clipPath="url(#clip0_221_1653)">
                 <mask
                   id="mask0_221_1653"
                   //   style="mask-type:luminance"
@@ -367,7 +367,7 @@ const ChangingLives = () => {
               viewBox="0 0 30 28"
               fill="none"
             >
-              <g clip-path="url(#clip0_221_1682)">
+              <g clipPath="url(#clip0_221_1682)">
                 <path
                   d="M25.7212 21.6123H27.8115V23.5822H25.7212V21.6123ZM22.1432 21.5916H24.2188V23.5748H22.1432V21.5916ZM25.7108 18.4835H27.8358V20.4475H25.7108V18.4835ZM22.1447 18.4753H24.2166V20.4556H22.1447V18.4753ZM22.1366 15.3731H24.2513V17.3142H22.1366V15.3731ZM25.7167 15.3679H27.8166V17.3475H25.7167V15.3679ZM25.7167 12.248H27.8196V14.2312H25.7152L25.7167 12.248ZM22.1218 12.2384H24.2439V14.2179H22.1218V12.2384ZM20.1475 25.2382H30.0037V4.37646H20.1445L20.1475 25.2382Z"
                   fill="#2CA9E1"
