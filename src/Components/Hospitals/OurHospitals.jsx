@@ -19,8 +19,9 @@ const OurHospitals = () => {
           Our Hospital Partners
         </h1>
 
-        {/* Blogs card */}
+        {/* Hospital cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-7">
+
           <div className="shadow-lg rounded-lg flex flex-col">
             <div className="relative">
               <div className="bg-white absolute top-0 left-0 px-4 py-1 rounded-r-lg">
@@ -30,11 +31,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl font-bold font-lato w-full">
                 Orchid Hospital
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -61,13 +60,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_5").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_5" className="modal">
-                <div className="modal-box p-0 max-w-3xl">
+                <div className="modal-box p-0 max-w-3xl bg-white">
                   <form method="dialog">
                     {/* if there is a button in form, it will close the modal */}
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
@@ -144,11 +143,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl  font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl  font-bold font-lato w-full">
                 CISRO Hospital
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -175,13 +172,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_6").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_6" className="modal">
-                <div className="modal-box p-0 max-w-3xl ">
+                <div className="modal-box p-0 max-w-3xl bg-white ">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
                       ✕
@@ -250,11 +247,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl  font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl  font-bold font-lato w-full">
                 Harrison Hospital
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -281,13 +276,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_7").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_7" className="modal">
-                <div className="modal-box p-0 max-w-3xl ">
+                <div className="modal-box p-0 max-w-3xl bg-white ">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
                       ✕
@@ -362,11 +357,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl  font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl  font-bold font-lato w-full">
                 Mediversal Group
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -393,13 +386,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_8").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_8" className="modal">
-                <div className="modal-box p-0 max-w-3xl ">
+                <div className="modal-box p-0 max-w-3xl bg-white ">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
                       ✕
@@ -475,11 +468,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl  font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl  font-bold font-lato w-full">
                 Pancardia Hospital
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -506,13 +497,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_9").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_9" className="modal">
-                <div className="modal-box p-0 max-w-3xl ">
+                <div className="modal-box p-0 max-w-3xl bg-white ">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
                       ✕
@@ -587,11 +578,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl  font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl  font-bold font-lato w-full">
                 Shri Sai...
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -618,13 +607,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_10").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_10" className="modal">
-                <div className="modal-box p-0 max-w-3xl ">
+                <div className="modal-box p-0 max-w-3xl bg-white ">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
                       ✕
@@ -700,11 +689,9 @@ const OurHospitals = () => {
             </div>
 
             <div className="px-4 h-full flex flex-col items-start py-2 gap-1 justify-between">
-              <h1 className="text-gray-600 text-xl  font-bold font-lato flex justify-between items-center w-full">
+              <h1 className="text-gray-600 text-xl  font-bold font-lato w-full">
                 Shiva Hospital
-                <span className="text-gray-500 text-lg font-bold font-lato">
-                  Since 2004
-                </span>
+                
               </h1>
 
               <p className="text-gray-500 text-justify flex gap-2 font-lato">
@@ -731,13 +718,13 @@ const OurHospitals = () => {
                 onClick={() =>
                   document.getElementById("my_modal_11").showModal()
                 }
-                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800"
+                className="bg-gray-200 rounded-lg p-3 font-semibold text-purple-800 mt-2"
               >
                 View Hospital
               </button>
 
               <dialog id="my_modal_11" className="modal">
-                <div className="modal-box p-0 max-w-3xl ">
+                <div className="modal-box p-0 max-w-3xl bg-white ">
                   <form method="dialog">
                     <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 z-10">
                       ✕
@@ -803,6 +790,7 @@ const OurHospitals = () => {
               </dialog>
             </div>
           </div>
+
         </div>
       </div>
     </div>

@@ -11,49 +11,46 @@ const Form = ({ header }) => {
   const [selectedCity, setSelectedCity] = useState();
   const [selectedDisease, setSelectedDisease] = useState("");
 
-  const cities = [
-    "Patna",
-    "Gaya",
-    "Bhagalpur",
-    "Muzaffarpur",
-    "Purnia",
-    "Darbhanga",
-    "Arrah",
-    "Begusarai",
-    "Katihar",
-    "Munger",
-    "Chhapra",
-    "Danapur",
-    "Bettiah",
-    "Saharsa",
-    "Sasaram",
-    "Hajipur",
-    "Dehri",
-    "Siwan",
-    "Motihari",
-    "Nawada",
-    "Bagaha",
-    "Buxar",
-    "Kishanganj",
-    "Sitamarhi",
-    "Jamalpur",
-    "Jehanabad",
-    "Aurangabad",
-    "Lakhisarai",
-    "Sheikhpura",
-    "Madhubani",
-    "Samastipur",
-    "Buxar",
-    "Supaul",
-    "Bhabua",
-    "Barh",
-    "Mokama",
-    "Forbesganj",
+  const districts = [
     "Araria",
-    "Sherghati",
-    "Raxaul",
-    "Nokha",
-  ];
+    "Arwal",
+    "Aurangabad",
+    "Banka",
+    "Begusarai",
+    "Bhagalpur",
+    "Bhojpur",
+    "Buxar",
+    "Darbhanga",
+    "East Champaran",
+    "Gaya",
+    "Gopalganj",
+    "Jamui",
+    "Jehanabad",
+    "Khagaria",
+    "Kishanganj",
+    "Kaimur",
+    "Katihar",
+    "Lakhisarai",
+    "Madhubani",
+    "Munger",
+    "Madhepura",
+    "Muzaffarpur",
+    "Nalanda",
+    "Nawada",
+    "Patna",
+    "Purnia",
+    "Rohtas",
+    "Saharsa",
+    "Samastipur",
+    "Sheohar",
+    "Sheikhpura",
+    "Saran",
+    "Sitamarhi",
+    "Supaul",
+    "Siwan",
+    "Vaishali",
+    "West Champaran"
+]
 
   const disease = [
     "Select Disease",
@@ -226,7 +223,7 @@ const Form = ({ header }) => {
             onChange={(e) => setSelectedCity(e.target.value)}
             className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 transition 2xl:h-16 duration-300 ease-in-out cursor-pointer w-full h-12 rounded-lg"
           >
-            {cities.map((city, ind) => (
+            {districts.map((city, ind) => (
               <option key={ind} value={city}>
                 {city}
               </option>

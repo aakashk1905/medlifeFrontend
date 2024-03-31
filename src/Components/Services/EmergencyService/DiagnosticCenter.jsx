@@ -6,8 +6,10 @@ const DiagnosticCenter = () => {
     <div className="bg-[#FFF] flex flex-col items-center py-9">
       <div className="w-[95%] lg:w-[90%]">
         <div className="flex flex-col lg:flex-row gap-10 items-center py-4 border-b font-lato w-full">
-          <div className='w-4/5'>
-          <h1 className='text-2xl font-semibold text-[#17324A] mb-6'>Diagnostic Centers</h1>
+          <div className="w-4/5">
+            <h1 className="text-2xl font-semibold text-[#17324A] mb-6">
+              Diagnostic Centers
+            </h1>
             <p className="mb-3 text-[#17324A] text-lg text-justify">
               Seamless access to certified diagnostic centers citywide, with
               hassle-free appointment booking for ultrasound, x-ray, MRI, and CT
@@ -28,9 +30,12 @@ const DiagnosticCenter = () => {
             </p>
 
             <div className="flex flex-col xl:flex-row gap-3 w-full">
-              <button className="w-full md:w-4/5 h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
-                Call now +98 765 432 10
-              </button>
+              <a
+                href="tel:+9876543210"
+                className="w-full md:w-4/5 h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa] flex items-center justify-center"
+              >
+                <div>Call now +98 765 432 10</div>
+              </a>
               <div className="w-full">
                 <AppointmentModal
                   className="w-full md:w-4/5 h-[64px]"

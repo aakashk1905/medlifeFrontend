@@ -7,53 +7,52 @@ import logo from "../../Assests/logo.svg";
 import { Link } from "react-router-dom";
 
 const SelectCitySidebar = () => {
-  const biharCities = [
-    "Patna",
-    "Gaya",
-    "Bhagalpur",
-    "Muzaffarpur",
-    "Purnia",
-    "Darbhanga",
-    "Arrah",
-    "Begusarai",
-    "Katihar",
-    "Munger",
-    "Chhapra",
-    "Danapur",
-    "Bettiah",
-    "Saharsa",
-    "Sasaram",
-    "Hajipur",
-    "Dehri",
-    "Siwan",
-    "Motihari",
-    "Nawada",
-    "Bagaha",
-    "Buxar",
-    "Kishanganj",
-    "Sitamarhi",
-    "Jamalpur",
-    "Jehanabad",
-    "Aurangabad",
-    "Lakhisarai",
-    "Sheikhpura",
-    "Madhubani",
-    "Samastipur",
-    "Buxar",
-    "Supaul",
-    "Bhabua",
-    "Barh",
-    "Mokama",
-    "Forbesganj",
+
+  const districts = [
     "Araria",
-    "Sherghati",
-    "Raxaul",
-    "Nokha",
-  ];
+    "Arwal",
+    "Aurangabad",
+    "Banka",
+    "Begusarai",
+    "Bhagalpur",
+    "Bhojpur",
+    "Buxar",
+    "Darbhanga",
+    "East Champaran",
+    "Gaya",
+    "Gopalganj",
+    "Jamui",
+    "Jehanabad",
+    "Khagaria",
+    "Kishanganj",
+    "Kaimur",
+    "Katihar",
+    "Lakhisarai",
+    "Madhubani",
+    "Munger",
+    "Madhepura",
+    "Muzaffarpur",
+    "Nalanda",
+    "Nawada",
+    "Patna",
+    "Purnia",
+    "Rohtas",
+    "Saharsa",
+    "Samastipur",
+    "Sheohar",
+    "Sheikhpura",
+    "Saran",
+    "Sitamarhi",
+    "Supaul",
+    "Siwan",
+    "Vaishali",
+    "West Champaran"
+]
+
   // Dropdown functionality
   const [openDropdown, setOpenDropdown] = useState(null);
   const [searchInput, setSearchInput] = useState("");
-  const [filteredCities, setFilteredCities] = useState(biharCities);
+  const [filteredCities, setFilteredCities] = useState(districts);
   const [selectedCity, setSelectedCity] = useState("");
 
 
@@ -77,7 +76,7 @@ const SelectCitySidebar = () => {
 
   const handleInputChange = (value) => {
     setSearchInput(value);
-    const filtered = biharCities.filter((city) =>
+    const filtered = districts.filter((city) =>
       city.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredCities(filtered);

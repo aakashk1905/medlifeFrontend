@@ -5,6 +5,7 @@ import Swipperbtn from "./Swipperbtn";
 import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import { useEffect, useState } from "react";
 import Loader from "./Loader/Loader";
+import { Pagination } from 'swiper/modules';
 
 const Caurosel = () => {
   const axiosBaseUrl = useAxiosBaseUrl();
@@ -27,6 +28,7 @@ const Caurosel = () => {
   return (
     <div className="flex justify-center relative py-[12px]">
       <Swiper
+      modules={[Pagination]}
         slidesPerView={1}
         breakpoints={{
           700: {
@@ -58,7 +60,6 @@ const Caurosel = () => {
         pagination={{
           clickable: true,
         }}
-        modules={[]}
         className="carousel"
       >
        {
@@ -69,7 +70,7 @@ const Caurosel = () => {
         allReviews.length > 0 ? (
           allReviews.map((review, index) => (
             <SwiperSlide>
-            <div className="px-[20px] py-5 flex justify-center items-center w-full">
+            <div className="px-[20px] py-5 flex justify-center items-center w-full mb-10">
               <div className="bg-white min-h-[300px] w-full p-3 rounded-xl shadow-md cursor-pointer transform transition-transform duration-300 hover:-translate-y-2">
                 <div className="flex gap-2 mb-3">
                   {/* <img src={fbrev} alt="" /> */}
@@ -126,7 +127,7 @@ const Caurosel = () => {
 
         
 
-        <div className="absolute top-[48%] w-full z-10">
+        <div className="absolute top-[48%] w-full z-10 hidden md:block">
           <Swipperbtn></Swipperbtn>
         </div>
       </Swiper>

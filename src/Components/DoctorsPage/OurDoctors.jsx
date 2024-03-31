@@ -46,18 +46,23 @@ const OurDoctors = () => {
                   <div className="w-full lg:w-5/6">
                     <div
                       key={doctor._id}
-                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 px-2 py-5 rounded-md grid grid-cols-1 lg:grid-cols-2 items-center" 
+                      className="bg-white shadow-md shadow-md-top shadow-md-bottom border-t-2 border-gray-100 px-2 py-5 rounded-md grid grid-cols-1 lg:grid-cols-3 items-center" 
                     >
-                      <div className="grid grid-cols-3 mb-2 lg:mb-4">
+                      {/* grid grid-cols-3 mb-2 lg:mb-4 */}
+                      <div className="col-span-2">
+
+                        <div className="flex gap-2">
+                        
                         <div className="flex justify-center md:justify-start lg:justify-end mr-2 md:mr-0 lg:mr-4 border rounded-md p-2">
                         <img
-                          className="w-36 md:w-40 lg:w-32 aspect-video rounded-lg border-teal-500"
+                          className="w-full md:w-40 lg:w-32 aspect-video rounded-lg border-teal-500"
                           src={doctor.avatar.url}
                           alt=""
                         />
                         </div>
-
-                        <div className="col-span-2 -ml-0 md:-ml-10 lg:-ml-0">
+                        
+                        {/* ml-2 sm:ml-0 md:-ml-10 lg:-ml-9 */}
+                        <div className="">
                           <div className="">
                             <h1 className="text-[#17324A] text-2xl font-semibold mb-1">
                               {doctor?.doctorName}
@@ -77,19 +82,19 @@ const OurDoctors = () => {
                             Specialization
                           </h3>
 
-                          <div className="flex flex-wrap gap-5 items-center mb-3">
+                          <div className="flex  gap-2 items-center mb-3">
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-sm text-gray-800">
+                              <p className="text-[8px] sm:text-sm text-gray-800">
                                 {doctor?.specialization1}
                               </p>
                             </div>
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-sm text-gray-800">
+                              <p className="text-[8px] sm:text-sm text-gray-800">
                                 {doctor?.specialization2}
                               </p>
                             </div>
                             <div className="bg-[#F1FEFF] border border-[#9cf9ff] p-1 rounded-md ">
-                              <p className="text-sm text-gray-800">
+                              <p className="text-[8px] sm:text-sm text-gray-800">
                                 {doctor?.specialization3}
                               </p>
                             </div>
@@ -109,13 +114,20 @@ const OurDoctors = () => {
                             </h2>
                           </div>
                         </div>
+                        </div>
+
                       </div>
 
                      <div className="flex justify-start md:justify-end pr-0 lg:pr-16 w-full">
                      <div className="grid grid-cols-2 lg:grid-cols-1 gap-5 w-full lg:w-80">
-                        <button className="w-full border border-[#00a0aa] px-4 py-3 rounded-lg text-[#00a0aa] text-[9px] md:text-sm">
-                          Call now +98 765 432 10
-                        </button>
+
+                        <a href="tel:+9876543210" >
+          <div className="w-full border border-[#00a0aa] px-4 py-3 rounded-lg text-[#00a0aa] text-[9px] md:text-sm flex items-center justify-center">
+            Call now +98 765 432 10
+           </div>
+           </a>
+
+                        
                         <AppointmentModal className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa] text-[9px] md:text-sm" text={"Book Your Appointment"}></AppointmentModal>
                         {/* <button className="w-full bg-[#00a0aa] px-4 py-3 rounded-lg text-white border border-[#00a0aa] text-xs md:text-sm">
                           Book Your Appoinment

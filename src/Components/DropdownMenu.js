@@ -45,7 +45,7 @@ const DropdownMenu = ({ name, list, st, link }) => {
         </button>
       </Link>
       {isDropdownOpen && (
-        <ul className="dropdown-menu z-30">
+        <ul className={`dropdown-menu z-30 ${list.length > 5 ? 'scrollDropdown' : ''}`}>
           {list && list.length > 0 ? (
             list.map((listItem, index) => (
               <Link

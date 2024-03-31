@@ -180,9 +180,9 @@ const ExploreMedLife = ({ content }) => {
             </h2>
           )}
 
-          <button className="w-full md:w-[350px] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <a href="tel:+9876543210" className="w-full md:w-[350px] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa] flex justify-center items-center">
             Call now +98 765 432 10
-          </button>
+          </a>
         </div>
 
         <div className="w-full lg:w-[40%] h-fit flex justify-center mt-4 lg:mt-0">

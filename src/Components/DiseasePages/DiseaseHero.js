@@ -31,9 +31,14 @@ const DiseaseHero = ({ content, disease }) => {
           <p className="text-gray-500   lg:text-[clamp(18px,1.5vw,28px)] font-lato">
             {content?.details ? content.details : ""}
           </p>
-          <button className="w-full sm:w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+
+          <a href="tel:+9876543210" >
+          <div className="w-full sm:w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa] flex items-center justify-center">
             Call now +98 765 432 10
-          </button>
+           </div>
+           </a>
+
+          
         </div>
 
         {/* Right side form */}

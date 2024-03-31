@@ -16,16 +16,46 @@ const AppointmentModal = ({ text, className }) => {
   const [selectedCity, setSelectedCity] = useState("");
   const [selectedDisease, setSelectedDisease] = useState("");
 
-  const cities = [
-    "Select City",
-    "Patna",
-    "Gaya",
+  const districts = [
+    "Araria",
+    "Arwal",
+    "Aurangabad",
+    "Banka",
+    "Begusarai",
     "Bhagalpur",
-    "Muzaffarpur",
-    "Purnia",
+    "Bhojpur",
+    "Buxar",
     "Darbhanga",
-    "Bihar Sharif",
-  ];
+    "East Champaran",
+    "Gaya",
+    "Gopalganj",
+    "Jamui",
+    "Jehanabad",
+    "Khagaria",
+    "Kishanganj",
+    "Kaimur",
+    "Katihar",
+    "Lakhisarai",
+    "Madhubani",
+    "Munger",
+    "Madhepura",
+    "Muzaffarpur",
+    "Nalanda",
+    "Nawada",
+    "Patna",
+    "Purnia",
+    "Rohtas",
+    "Saharsa",
+    "Samastipur",
+    "Sheohar",
+    "Sheikhpura",
+    "Saran",
+    "Sitamarhi",
+    "Supaul",
+    "Siwan",
+    "Vaishali",
+    "West Champaran"
+  ]
   const disease = ["Select Disease", "Hernia", "Gynacology", "Fever"];
 
   const axiosBaseUrl = useAxiosBaseUrl();
@@ -205,7 +235,7 @@ const AppointmentModal = ({ text, className }) => {
                         onChange={(e) => setSelectedCity(e.target.value)}
                         className="block appearance-none bg-white border border-gray-300 px-4 pr-8 focus:outline-none focus:border-teal-700 cursor-pointer w-full h-12 rounded-lg"
                       >
-                        {cities.map((city) => (
+                        {districts.map((city) => (
                           <option key={city} value={city}>
                             {city}
                           </option>

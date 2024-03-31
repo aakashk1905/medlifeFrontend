@@ -67,9 +67,11 @@ const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
           </div>
 
           <div className="flex flex-col lg:flex-row gap-3 w-full">
-          <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
+          <a href="tel:+9876543210" className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa] flex justify-center items-center">
             Call now +98 765 432 10
-          </button>
+          </a>
+
+
          <div className='w-full'>
          <AppointmentModal className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16" text={"Book Your Appointment"}></AppointmentModal>
          </div>

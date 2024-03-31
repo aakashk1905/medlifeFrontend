@@ -7,6 +7,8 @@ import { HiLocationMarker } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Swipperbtn from "../Swipperbtn";
+import { Pagination } from 'swiper/modules';
+import AppointmentModal from "../AppointmentModal";
 
 
 
@@ -87,8 +89,14 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
 
                   </div>
                   <div className="dd-btm">
-                    <div className="dd-call">Call now +98 765 432 10</div>
-                    <div className="dd-book">Book Appointment</div>
+                  <a href="tel:+9876543210" className="dd-call"> Call now +98 765 432d 10</a>
+                    {/* <div className="dd-book">Book Appointment</div> */}
+                    <div className="w-full">
+              <AppointmentModal
+                className="w-full text-[14px] h-12 2xl:h-16"
+                text={"Book Your Appointment"}
+              ></AppointmentModal>
+            </div>
                   </div>
                 </div>
               ))
@@ -162,6 +170,7 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
   
           <div className="flex justify-center relative py-[12px]">
         <Swiper
+         modules={[Pagination]}
     slidesPerView={1}
     breakpoints={{
       700: {
@@ -201,7 +210,7 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
             ) : allDoctors.length > 0 ? (
               allDoctors.map((doctor) => (
                 <SwiperSlide key={doctor._id}>
-                 <div className="dd-card">
+                 <div className="dd-card mb-12">
                  <div className="dd-top">
                     <div className="dd-top-left mr-2">
                       <img className="h-44" src={doctor.avatar.url} alt="ddrc" />
@@ -241,12 +250,17 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
 
                       </div>
 
-
-
                   </div>
                   <div className="dd-btm">
-                    <div className="dd-call">Call now +98 765 432 10</div>
-                    <div className="dd-book">Book Appointment</div>
+                    
+                  <a href="tel:+9876543210" className="dd-call"> Call now +98 765 432 10</a>
+                    {/* <div className="dd-book">Book Appointment</div> */}
+                    <div className="w-full">
+              <AppointmentModal
+                className="w-full text-[14px] h-12 2xl:h-16"
+                text={"Book Your Appointment"}
+              ></AppointmentModal>
+            </div>
                   </div>
                  </div>
                 </SwiperSlide>
@@ -258,7 +272,7 @@ const DiseaseDoc = ({ docHeading, diseaseName }) => {
 
             
 
-            <div className="absolute top-[40%] w-[100%] z-10">
+            <div className="absolute top-[40%] w-[100%] z-10 hidden md:block">
       <Swipperbtn></Swipperbtn>
     </div>
         </Swiper>

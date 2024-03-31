@@ -20,22 +20,23 @@ const BlogsHero = () => {
       <div className="flex flex-col lg:flex-row w-[99%] lg:w-[90%] justify-center items-center relative">
         <div className="flex flex-col gap-3 lg:gap-7 w-[95%] lg:w-[55%] xl:w-[59%] items-center lg:items-start lg:justify-start justify-center z-10">
           {/* Main heading */}
-          <h1
-            className="text-center lg:text-start text-[28px] md:text-5xl lg:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-[#344E5F]"
-          >
+          <h1 className="text-center lg:text-start text-[28px] md:text-5xl lg:text-5xl lg:text-[clamp(28px, 3vw, 64px)] font-semibold text-[#344E5F]">
             Stay Informed with MedLifeEasy's Health Blog.
           </h1>
           {/* Description */}
-          <p
-            className="text-center lg:text-start text-gray-500 lg:text-[clamp(18px,1.5vw,28px)]"
-          >
+          <p className="text-center lg:text-start text-gray-500 lg:text-[clamp(18px,1.5vw,28px)]">
             Your Source for Expert Insights, Latest Medical <br /> Discoveries,
             and Wellness Tips.
           </p>
 
-          <button className="w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
-            Call now +98 765 432 10
-          </button>
+          <a
+            href="tel:+9876543210"
+            className="w-full flex justify-center lg:justify-start"
+          >
+            <div className="w-[70%] md:w-[60%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa] flex items-center justify-center">
+              Call now +98 765 432 10
+            </div>
+          </a>
         </div>
 
         <img
@@ -44,13 +45,12 @@ const BlogsHero = () => {
           alt=""
         />
 
-          {/* Right side form */}
-          <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center mt-6 lg:-mt-6 mb-2 box-border z-10">
+        {/* Right side form */}
+        <div className="w-[95%] lg:w-[45%] xl:w-[40%] flex justify-center mt-6 lg:-mt-6 mb-2 box-border z-10">
           <div className=" w-full flex justify-center max-w-[550px] ">
             <Form header={"Book Free Consultation"} />
           </div>
         </div>
-
       </div>
     </div>
   );

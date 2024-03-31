@@ -25,17 +25,23 @@ const AmbulanceService = () => {
             </li>
           </ul>
 
-                <div className="flex flex-col xl:flex-row gap-3 w-full">
-          <button className="w-full md:w-4/5 h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa]">
-            Call now +98 765 432 10
-          </button>
-         <div className='w-full'>
-         <AppointmentModal className="w-full md:w-4/5 h-[64px]" text={"Book Your Appointment"}></AppointmentModal>
-         </div>
-        </div>
+          <div className="flex flex-col xl:flex-row gap-3 w-full">
+            <a
+              href="tel:+9876543210"
+              className="w-full md:w-4/5 h-[64px] border border-[#00a0aa] rounded-lg text-[#00a0aa] flex items-center justify-center"
+            >
+              <div>Call now +98 765 432 10</div>
+            </a>
+            <div className="w-full">
+              <AppointmentModal
+                className="w-full md:w-4/5 h-[64px]"
+                text={"Book Your Appointment"}
+              ></AppointmentModal>
             </div>
+          </div>
         </div>
-        </div>
+      </div>
+    </div>
   );
 };
 

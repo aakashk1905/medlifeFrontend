@@ -1,6 +1,6 @@
 {
   "hernia": {
-    "parentDisease": "Laproscopy",
+    "parentDisease": "Laparoscopy",
     "heroImg": "https://i.ibb.co/FW9ChW6/stomach-pain.png",
     "diseaseImg": "https://i.ibb.co/ryXcct4/hernia.png",
     "heroHeader": "",
@@ -73,7 +73,7 @@
     }
   },
   "gallbladder": {
-    "parentDisease": "Laproscopy",
+    "parentDisease": "Laparoscopy",
     "heroImg": "https://i.ibb.co/FW9ChW6/stomach-pain.png",
     "diseaseImg": "https://i.ibb.co/WsQg0w2/gallbladder.png",
     "heroHeader": "",
@@ -153,7 +153,7 @@
     }
   },
   "appendicitis": {
-    "parentDisease": "Laproscopy",
+    "parentDisease": "Laparoscopy",
     "heroImg": "https://i.ibb.co/FW9ChW6/stomach-pain.png",
     "diseaseImg": "https://i.ibb.co/QHqLdNB/apendix.png",
     "heroHeader": "Minimally Invasive Laparoscopic Appendectomy for Appendicitis",
@@ -220,7 +220,7 @@
     }
   },
   "inguinal": {
-    "parentDisease": "Laproscopy",
+    "parentDisease": "Laparoscopy",
     "heroImg": "https://i.ibb.co/FW9ChW6/stomach-pain.png",
     "diseaseImg": "https://i.ibb.co/Jvsvvmm/lingual-Hernia.png",
     "heroHeader": "Inguinal Hernia Laparoscopic Surgery by Expert Surgeons",
@@ -287,7 +287,7 @@
     }
   },
   "umbilical": {
-    "parentDisease": "Laproscopy",
+    "parentDisease": "Laparoscopy",
     "heroImg": "https://i.ibb.co/FW9ChW6/stomach-pain.png",
     "diseaseImg": "https://i.ibb.co/DtWWYfs/umblical-Hernia.png",
     "heroHeader": "Minimally Invasive Umbilical Hernia Laparoscopic Surgery",

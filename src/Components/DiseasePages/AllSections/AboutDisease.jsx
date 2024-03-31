@@ -36,9 +36,12 @@ const AboutDisease = ({ content }) => {
           )}
 
           <div className="flex flex-col md:flex-row gap-3 w-full mt-4">
-            <button className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa]">
-              Call now +98 765 432 10
-            </button>
+
+            <a href="tel:+9876543210" className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16 border border-[#00a0aa] rounded-lg text-[#00a0aa] flex justify-center items-center">
+            Call now +98 765 432 10
+          </a>
+
+
             <div className="w-full">
               <AppointmentModal
                 className="w-full md:w-1/2 lg:w-full xl:w-[65%] h-12 2xl:h-16"
@@ -49,7 +52,7 @@ const AboutDisease = ({ content }) => {
         </div>
 
         {/* Right side image */}
-        <div className="flex md:justify-center items-center lg:justify-end">
+        <div className="flex justify-center items-center lg:justify-end">
           <img className="h-1/2" src={herniasurgery} alt="" />
         </div>
       </div>

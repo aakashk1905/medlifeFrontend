@@ -1,15 +1,45 @@
 import React, { useState } from "react";
 
-const cities = [
-  "Select City",
-  "Patna",
-  "Gaya",
+const districts = [
+  "Araria",
+  "Arwal",
+  "Aurangabad",
+  "Banka",
+  "Begusarai",
   "Bhagalpur",
-  "Muzaffarpur",
-  "Purnia",
+  "Bhojpur",
+  "Buxar",
   "Darbhanga",
-  "Bihar Sharif",
-];
+  "East Champaran",
+  "Gaya",
+  "Gopalganj",
+  "Jamui",
+  "Jehanabad",
+  "Khagaria",
+  "Kishanganj",
+  "Kaimur",
+  "Katihar",
+  "Lakhisarai",
+  "Madhubani",
+  "Munger",
+  "Madhepura",
+  "Muzaffarpur",
+  "Nalanda",
+  "Nawada",
+  "Patna",
+  "Purnia",
+  "Rohtas",
+  "Saharsa",
+  "Samastipur",
+  "Sheohar",
+  "Sheikhpura",
+  "Saran",
+  "Sitamarhi",
+  "Supaul",
+  "Siwan",
+  "Vaishali",
+  "West Champaran"
+]
 
 const CityDropdown = ({ onCityChange, type }) => {
   const [selectedCity, setSelectedCity] = useState("");
@@ -18,7 +48,7 @@ const CityDropdown = ({ onCityChange, type }) => {
     <>
       {type === "city" && (
         <div className="cities-scroll w-full">
-          {cities.map(
+          {districts.map(
             (city, ind) =>
               ind !== 0 && (
                 <div

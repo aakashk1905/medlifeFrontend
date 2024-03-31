@@ -29,8 +29,8 @@ const ContactUs = () => {
 
         <div className="">
           {/* <h1 className="text-2xl font-medium text-gray-700 text-center mb-10">Get in touch with us</h1> */}
-          <div className="shadow-lg rounded-l-none md:rounded-l-lg py-3 flex gap-20 flex-wrap justify-center items-center">
-            <div className="p-5">
+          <div className="shadow-lg rounded-l-none md:rounded-l-lg py-3 flex gap-20 flex-wrap justify-center">
+            <div className="mt-8">
               {/* <div className="bg-gray-200 w-0.5 h-full">
 
               </div> */}
@@ -41,8 +41,8 @@ const ContactUs = () => {
               <div className="flex items-center gap-2 mb-7">
                 <IoMdCall className="text-[#00A79D] text-3xl"></IoMdCall>
                 <p className="flex flex-col font-lato">
-                  <span>+91 995 599 2502</span>
-                  <span>+91 995 599 2505</span>
+                  <a href="tel:+91 995 599 2502">+91 995 599 2502</a>
+                  <a href="tel:++91 995 599 2505">+91 995 599 2505</a>
                 </p>
               </div>
 

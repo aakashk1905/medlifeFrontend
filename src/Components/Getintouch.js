@@ -12,7 +12,6 @@ const cities = [
   "Muzaffarpur",
   "Purnia",
   "Darbhanga",
-  "Bihar Sharif",
 ];
 const disease = [
   "Select Disease / रोग का चयन करें",

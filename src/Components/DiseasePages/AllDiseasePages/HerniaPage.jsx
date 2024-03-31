@@ -20,6 +20,7 @@ const HerniaPage = () => {
   const pages = [
     "hernia",
     "gallbladder",
+    "laparoscopy",
     "appendicitis",
     "inguinal",
     "umbilical",
