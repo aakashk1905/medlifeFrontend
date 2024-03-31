@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import piles from "../Assests/surgeries image/piles (2).png";
-import analFistula from "../Assests/surgeries image/anal fistula.png";
-import analFissure from "../Assests/surgeries image/anal fissure.png";
+import analFistula from "../Assests/surgeries image/Anal Fistula.png";
+import analFissure from "../Assests/surgeries image/Anal Fissure.png";
 import gallstones from "../Assests/surgeries image/Gallstone.png";
 import kidneyStones from "../Assests/surgeries image/Kidney Stones.png";
 import cotaract from "../Assests/surgeries image/Cataract.png";
 import lasikEye from "../Assests/surgeries image/Lasik eye surgery.png";
-import hernia from "../Assests/surgeries image/hernia (2).png";
+import hernia from "../Assests/surgeries image/Hernia (2).png";
 import Enlarged from "../Assests/surgeries image/enlarged prostate.png";
 import LaserCircumcisio from "../Assests/surgeries image/Laser Circumcision.png";
 import UterineFibroid from "../Assests/surgeries image/Uterine Fibroid.png";
@@ -54,68 +54,73 @@ import ShoulderReplacement from "../Assests/surgeries image/Shoulder-Replacement
 import MeniscusTear from "../Assests/surgeries image/Meniscus-Tear 1.png";
 
 import { MdKeyboardArrowDown } from "react-icons/md";
+import { Link } from "react-router-dom";
 
+
+// don't have
 const Surgeries = () => {
   const surgeriesData = [
-    { image: piles, name: "Piles" },
-    { image: analFistula, name: "Anal Fistula" },
-    { image: analFissure, name: "Anal Fissure" },
-    { image: gallstones, name: "Gallstones" },
-    { image: kidneyStones, name: "Kidney Stones" },
-    { image: cotaract, name: "Cataract" },
-    { image: lasikEye, name: "Lasik Eye Surgery" },
-    { image: hernia, name: "Hernia" },
-    { image: Enlarged, name: "Enlarged Prostate (BPH)" },
+    { image: piles, name: "Piles", link: "treatment/piles" },
+    { image: analFistula, name: "Anal Fistula", link: "treatment/fistula" },
+    { image: analFissure, name: "Anal Fissure", link: "treatment/fissure" },
+    { image: gallstones, name: "Gallstones", link: "treatment/gallbladder" },
+    { image: kidneyStones, name: "Kidney Stones", link: "treatment/piles" },    // don't have
+    { image: cotaract, name: "Cataract", link: "treatment/cataract" },
+    { image: lasikEye, name: "Lasik Eye Surgery", link: "treatment/lasik" },
+    { image: hernia, name: "Hernia", link: "treatment/hernia" },
+    { image: Enlarged, name: "Enlarged Prostate (BPH)", link: "treatment/piles" },         // don't have
 
-    { image: LaserCircumcisio, name: "Laser Circumcisio" },
-    { image: UterineFibroid, name: "Uterine Fibroid" },
-    { image: Hymenoplasty, name: "Hymenoplasty" },
-    { image: IVF, name: "IVF" },
-    { image: IUI, name: "IUI" },
-    { image: Gynecomastia, name: "Gynecomastia" },
-    { image: Liposuction, name: "Liposuction" },
-    { image: Lipoma, name: "Lipoma" },
-    { image: AclTear, name: "AclTear" },
+    { image: LaserCircumcisio, name: "Laser Circumcisio", link: "treatment/piles" },       // don't have
+    { image: UterineFibroid, name: "Uterine Fibroid", link: "treatment/piles" },           // don't have
+    { image: Hymenoplasty, name: "Hymenoplasty", link: "treatment/piles" },                // don't have
+    { image: IVF, name: "IVF", link: "treatment/ivf" },
+    { image: IUI, name: "IUI", link: "treatment/iui" },                                    
+    { image: Gynecomastia, name: "Gynecomastia", link: "treatment/piles" },                // don't have
+    { image: Liposuction, name: "Liposuction", link: "treatment/piles" },                  // don't have
+    { image: Lipoma, name: "Lipoma", link: "treatment/piles" },                            // don't have
+    { image: AclTear, name: "AclTear", link: "treatment/acl" },
 
-    { image: SpineSurgery, name: "Spine Surgery" },
-    { image: VaricoseVeins, name: "VaricoseVeins" },
-    { image: DeepVeinThrombosis, name: "DeepVein Thrombosis" },
-    { image: DiabeticFootUlcer, name: "Diabetic Foot Ulcer" },
-    { image: Varicocele, name: "Varicocele" },
-    { image: ZSRCircumcision, name: "ZSR Circumcision" },
-    { image: PilonidalSinus, name: "Pilonidal Sinus" },
-    { image: KneeReplacement, name: "Knee Replacement" },
-    { image: HipReplacement, name: "Hip Replacement" },
+    { image: SpineSurgery, name: "Spine Surgery", link: "treatment/spine" },
+    { image: VaricoseVeins, name: "VaricoseVeins", link: "treatment/varicose" },
+    { image: DeepVeinThrombosis, name: "DeepVein Thrombosis", link: "treatment/piles" },     // don't have
+    { image: DiabeticFootUlcer, name: "Diabetic Foot Ulcer", link: "treatment/piles" },      // don't have
+    { image: Varicocele, name: "Varicocele", link: "treatment/varicocele" },
+    { image: ZSRCircumcision, name: "ZSR Circumcision", link: "treatment/piles" },           // don't have
+    { image: PilonidalSinus, name: "Pilonidal Sinus", link: "treatment/pilonidal" },
+    { image: KneeReplacement, name: "Knee Replacement", link: "treatment/knee" },
+    { image: HipReplacement, name: "Hip Replacement", link: "treatment/hip" },
 
-    { image: Abortion, name: "Abortion" },
-    { image: Hysterectomy, name: "Hysterectomy" },
-    { image: Vaginoplasty, name: "Vaginoplasty" },
-    { image: BreastAugmentation, name: "Breast Augmentation" },
-    { image: BreastLift, name: "Breast Lift" },
-    { image: BreastLump, name: "Breast Lump" },
-    { image: BreastReduction, name: "Breast Reduction" },
-    { image: HairTransplant, name: "Hair Transplant" },
-    { image: Rhinoplasty, name: "Rhinoplasty" },
+    { image: Abortion, name: "Abortion", link: "treatment/piles" },                           // don't have
+    { image: Hysterectomy, name: "Hysterectomy", link: "treatment/piles" },                   // don't have
+    { image: Vaginoplasty, name: "Vaginoplasty", link: "treatment/piles" },                   // don't have
+    { image: BreastAugmentation, name: "Breast Augmentation", link: "treatment/piles" },      // don't have
+    { image: BreastLift, name: "Breast Lift", link: "treatment/piles" },                      // don't have
+    { image: BreastLump, name: "Breast Lump", link: "treatment/piles" },                      // don't have
+    { image: BreastReduction, name: "Breast Reduction", link: "treatment/piles" },            // don't have
+    { image: HairTransplant, name: "Hair Transplant", link: "treatment/hair" },
+    { image: Rhinoplasty, name: "Rhinoplasty", link: "treatment/piles" },                     // don't have
 
-    { image: MTP, name: "MTP" },
-    { image: Labiaplasty, name: "Labiaplasty" },
-    { image: Endometriosis, name: "Endometriosis" },
-    { image: EctopicPregnancy, name: "Ectopic Pregnancy" },
-    { image: UmbilicalHernia, name: "Umbilical Hernia" },
-    { image: InguinalHernia, name: "Inguinal Hernia" },
-    { image: ShoulderDislocation, name: "Shoulder Dislocation" },
-    { image: CarpalTunnelSyndrome, name: "Carpal Tunnel Syndrome" },
-    { image: SebaceousCyst, name: "Sebaceous Cyst" },
+    { image: MTP, name: "MTP", link: "treatment/piles" },                                     // don't have
+    { image: Labiaplasty, name: "Labiaplasty", link: "treatment/piles" },                     // don't have
+    { image: Endometriosis, name: "Endometriosis", link: "treatment/piles" },                 // don't have
+    { image: EctopicPregnancy, name: "Ectopic Pregnancy", link: "treatment/piles" },          // don't have
+    { image: UmbilicalHernia, name: "Umbilical Hernia", link: "treatment/umbilical" },
+    { image: InguinalHernia, name: "Inguinal Hernia", link: "treatment/inguinal" },
+    { image: ShoulderDislocation, name: "Shoulder Dislocation", link: "treatment/piles" },    // don't have
+    { image: CarpalTunnelSyndrome, name: "Carpal Tunnel Syndrome", link: "treatment/piles" }, // don't have
+    { image: SebaceousCyst, name: "Sebaceous Cyst", link: "treatment/piles" },                // don't have
 
-    { image: DentalImplant, name: "Dental Implant" },
-    { image: TeethAligners, name: "Teeth Aligners" },
-    { image: DentalBraces, name: "Dental Braces" },
-    { image: Mastoidectomy, name: "Mastoidectomy" },
-    { image: Hydrocelectomy, name: "Hydrocelectomy" },
-    { image: Appendectomy, name: "Appendectomy" },
-    { image: ShoulderReplacement, name: "Shoulder Replacement" },
-    { image: MeniscusTear, name: "Meniscus Tear" },
-  ];
+    { image: DentalImplant, name: "Dental Implant", link: "treatment/dental" },
+    { image: TeethAligners, name: "Teeth Aligners", link: "treatment/teeth" },
+    { image: DentalBraces, name: "Dental Braces", link: "treatment/dental" },
+    { image: Mastoidectomy, name: "Mastoidectomy", link: "treatment/piles" },                 // don't have
+    { image: Hydrocelectomy, name: "Hydrocelectomy", link: "treatment/piles" },               // don't have
+    { image: Appendectomy, name: "Appendectomy", link: "treatment/piles" },                   // don't have
+    { image: ShoulderReplacement, name: "Shoulder Replacement", link: "treatment/piles" },    // don't have
+    { image: MeniscusTear, name: "Meniscus Tear", link: "treatment/piles" },                  // don't have
+];
+
+
 
   const [showAllCards, setShowAllCards] = useState(false);
 
@@ -135,14 +140,14 @@ const Surgeries = () => {
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8  w-full max-w-[90%] gap-9">
           {displayedSurgeries.map((surgery, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <Link to={`/${surgery?.link}`} key={index} className="flex flex-col items-center">
               <img
                 className="mb-0.5 border border-[#E1E3E4] rounded-lg bg-[#FFF] w-20 p-2"
                 src={surgery.image}
                 alt={surgery.name}
               />
               <p className="text-gray-800 text-center">{surgery.name}</p>
-            </div>
+            </Link>
           ))}
         </div>
 

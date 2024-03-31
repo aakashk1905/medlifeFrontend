@@ -34,6 +34,11 @@ const Sidebar = () => {
       link: "gynaecology",
     },
     {
+      name: "Urology",
+      list: ["Uterus Removal", "Ovarian Cyst"],
+      link: "gynaecology",
+    },
+    {
       name: "ENT",
       list: [
         "Tympanoplasty",

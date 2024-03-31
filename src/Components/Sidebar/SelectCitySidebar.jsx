@@ -79,10 +79,12 @@ const SelectCitySidebar = () => {
       if (data.results.length > 0) {
         console.log("data.results[0].components", data.results[0].components);
         const cityName =
-          data.results[0].components.city || data.results[0].components.town || data.results[0].components._normalized_city;
+          data.results[0].components.city || data.results[0].components.town || data.results[0].components._normalized_city || data.results[0].components.state_district;
 
-        setSelectedCity(cityName);
+        if(cityName){
+          setSelectedCity(cityName);
         localStorage.setItem("selectedCity", cityName);
+        }
       } else {
         console.log("Could not determine city.");
       }
