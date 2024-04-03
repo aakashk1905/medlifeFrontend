@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 
 const PatientReview = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      })
     return (
         <div>
             <div className='grid grid-cols-1 md:grid-cols-5 p-3 pb-3 mb-7 border-b'>

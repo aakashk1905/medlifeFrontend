@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import herniasurgery from "../../../Assests/herniasurgery.png";
 import AppointmentModal from "../../AppointmentModal";
+import ReactGA from 'react-ga';
 
 const AboutDisease = ({ content }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className=" bg-[#ecf7fc] w-full flex justify-center my-5">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-0 w-[95%] lg:w-[90%]">

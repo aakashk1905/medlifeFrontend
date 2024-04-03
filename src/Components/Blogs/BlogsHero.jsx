@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import roundShape from "../../Assests/rounded-shape.png";
 import Form from "../Form";
 import { Link } from "react-router-dom";
+import ReactGA from 'react-ga';
+
 
 const BlogsHero = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="bg-[#fcf8ff] flex flex-col items-center">
       {/* Breadcrumbs menu */}

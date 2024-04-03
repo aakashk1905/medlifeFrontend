@@ -4,8 +4,13 @@ import { Link } from "react-router-dom";
 import AppointmentModal from "../../AppointmentModal";
 import { Helmet } from "react-helmet-async";
 import Form from "../../Form";
+import { useEffect } from "react";
+import ReactGA from 'react-ga';
 
 const DiseaseHeroSection = ({ content, subDisease, diseaseName }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
 
   return (
     <div className="bg-[#fcf8ff] flex flex-col items-center">

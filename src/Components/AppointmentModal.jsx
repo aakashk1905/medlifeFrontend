@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import phone from "../Assests/Modal images and icons/phone.png";
 import doctor from "../Assests/Modal images and icons/doctor.png";
 import customer from "../Assests/Modal images and icons/customer-care 1.png";
@@ -9,8 +9,12 @@ import { Toaster, toast } from "sonner";
 import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import CityDropdown from "./CityDropdown";
 import { twMerge } from "tailwind-merge";
+import ReactGA from 'react-ga';
 
 const AppointmentModal = ({ text, className }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const [patientName, setPatientName] = useState("");
   const [mobileNumber, setMobileNumber] = useState("");
   const [selectedCity, setSelectedCity] = useState("");

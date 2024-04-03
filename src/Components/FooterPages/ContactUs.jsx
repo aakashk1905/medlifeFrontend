@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import { IoMdCall } from "react-icons/io";
@@ -9,8 +9,12 @@ import "../styles/Officeaddress.css";
 import Footer from "../Footer";
 import Form from "../Form";
 import { Helmet } from "react-helmet-async";
+import ReactGA from 'react-ga';
 
 const ContactUs = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div>
       <Helmet>

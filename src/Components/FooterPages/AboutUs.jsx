@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar";
 import aboutUs from "../../Assests/aboutUs.png";
 import patient from "../../Assests/About us page icons/patient.png"
@@ -12,8 +12,12 @@ import { MdOutlineDone } from "react-icons/md";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import ReactGA from 'react-ga';
 
 const AboutUs = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="">
       <Helmet>

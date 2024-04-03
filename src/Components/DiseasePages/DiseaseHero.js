@@ -1,8 +1,13 @@
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import Form from "../Form";
+import { useEffect } from "react";
+import ReactGA from 'react-ga';
 
 const DiseaseHero = ({ content, disease }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="bg-[#fcf8ff] w-full flex flex-col gap-[10px] items-center pb-5">
       <Helmet>

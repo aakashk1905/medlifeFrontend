@@ -8,8 +8,12 @@ import Footer from "../../Footer";
 import useAxiosBaseUrl from "../../../hooks/useBaseUrl";
 import Rating from "react-rating";
 import { Toaster, toast } from "sonner";
+import ReactGA from 'react-ga';
 
 const WriteReview = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const [ratings, setRatings] = useState(0);
   const [reviewInfo, setReviewInfo] = useState({});
   const axiosBaseUrl = useAxiosBaseUrl();

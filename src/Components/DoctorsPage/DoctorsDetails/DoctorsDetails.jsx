@@ -9,8 +9,12 @@ import { Link, useParams } from "react-router-dom";
 import Rectangle from "../.././../Assests/Rectangle 19194.png";
 import useAxiosBaseUrl from "../../../hooks/useBaseUrl";
 import Loader from "../../Loader/Loader";
+import ReactGA from 'react-ga';
 
 const DoctorsDetails = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const { id } = useParams();
   const axiosBaseUrl = useAxiosBaseUrl();
   const [loading, setLoading] = useState(true);

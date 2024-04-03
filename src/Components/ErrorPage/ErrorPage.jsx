@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from './../Navbar';
 import errorImage from "../../Assests/404.png"
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 import { IoReturnUpBack } from "react-icons/io5";
+import ReactGA from 'react-ga';
 
 const ErrorPage = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      })
     return (
         <div>
             <Navbar></Navbar>

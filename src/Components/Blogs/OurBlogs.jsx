@@ -2,8 +2,12 @@ import React, { useEffect, useState } from "react";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";
 import { Link } from "react-router-dom";
+import ReactGA from 'react-ga';
 
 const OurBlogs = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const axiosBaseUrl = useAxiosBaseUrl();
   const [loading, setLoading] = useState(true);
 

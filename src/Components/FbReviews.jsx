@@ -76,7 +76,7 @@ const FbReviews = () => {
                   <Link
                     to={post.permalink}
                     target="_blank"
-                    className="rev-card my-6"
+                    className="rev-card mb-9"
                   >
                     <div className="rev-card-img-cont">
                       <div className="rev-card-img">

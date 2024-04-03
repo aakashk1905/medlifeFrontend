@@ -5,8 +5,12 @@ import Form from "../Form";
 import { FaAngleDown } from "react-icons/fa6";
 import logo from "../../Assests/logo.svg";
 import { Link } from "react-router-dom";
+import ReactGA from 'react-ga';
 
 const SelectCitySidebar = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const districts = [
     "Araria",
     "Arwal",

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Landingpage.css";
 import Hero from "../Components/Hero";
 import Specialities from "../Components/Specialities";
@@ -18,7 +18,11 @@ import { Helmet } from "react-helmet-async";
 import Surgeries from "./Surgeries";
 import FbReviews from "../Components/FbReviews";
 import Navbar from "../Components/Navbar";
+import ReactGA from 'react-ga';
 const Landingpage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="lp-cont">
       <Helmet>

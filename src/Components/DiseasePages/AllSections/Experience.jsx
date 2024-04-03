@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import hospital from "../../../Assests/timeline/hospital 1.png";
 import healthInsurance from "../../../Assests/timeline/health-insurance (1) 1.png";
 import healthInsurance1 from "../../../Assests/timeline/health-insurance 1.png";
 import ambulance from "../../../Assests/timeline/ambulance 1.png";
 import healthCare from "../../../Assests/timeline/healthcare 1.png";
+import ReactGA from 'react-ga';
 
 const Experience = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      })
     return (
         <div className='flex flex-col items-center py-10'>
             <div className='w-[95%] lg:w-[90%]'>

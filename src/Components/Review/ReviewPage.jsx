@@ -49,7 +49,7 @@
 // export default ReviewPage;
 
 
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCaretLeft, FaCaretRight } from "react-icons/fa";
 import Navbar from "../Navbar";
 import ReviewHeader from "./ReviewHeader";
@@ -57,8 +57,12 @@ import ReviewCard from "./ReviewCard";
 import Getintouch from "../Getintouch";
 import Officeaddress from "../Officeaddress";
 import Footer from "../Footer";
+import ReactGA from 'react-ga';
 
 const ReviewPage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="w-full">
       <Navbar></Navbar>

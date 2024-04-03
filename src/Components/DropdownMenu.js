@@ -1,9 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/DropdownMenu.css";
 import { Link } from "react-router-dom";
+import ReactGA from 'react-ga';
 
 const DropdownMenu = ({ name, list, st, link }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  console.log(link);
 
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
@@ -20,6 +22,10 @@ const DropdownMenu = ({ name, list, st, link }) => {
   const handleMouseLeave = () => {
     setIsDropdownOpen(false);
   };
+
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
 
   return (
     <div
@@ -50,10 +56,11 @@ const DropdownMenu = ({ name, list, st, link }) => {
             list.map((listItem, index) => (
               <Link
                 onClick={() => handleItemClick()}
-                to={`/treatment/${listItem.split(" ")[0].toLowerCase()}`}
+                // listItem.link
+                to={`/treatment/${listItem?.link}`}
                 key={index}
               >
-                <li>{listItem}</li>
+                <li>{listItem?.name}</li>
               </Link>
             ))
           ) : (

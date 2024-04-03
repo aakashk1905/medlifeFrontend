@@ -9,10 +9,14 @@ import "swiper/swiper-bundle.css";
 import Swipperbtn from "../Swipperbtn";
 import { Pagination } from 'swiper/modules';
 import AppointmentModal from "../AppointmentModal";
+import ReactGA from 'react-ga';
 
 
 
 const DiseaseDoc = ({ docHeading, diseaseName }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const [loading, setLoading] = useState(true);
 
 

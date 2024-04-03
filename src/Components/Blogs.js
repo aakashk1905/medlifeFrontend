@@ -89,9 +89,13 @@ import useAxiosBaseUrl from "../hooks/useBaseUrl";
 import Loader from "./Loader/Loader";
 import { Link } from "react-router-dom";
 import pic from "../Assests/Dr-Manu-Bora-for-ACL-Treatment.jpg";
+import ReactGA from 'react-ga';
 
 
 const Blogs = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const axiosBaseUrl = useAxiosBaseUrl();
   const [loading, setLoading] = useState(true);
 

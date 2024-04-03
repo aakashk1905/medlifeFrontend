@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
+import ReactGA from 'react-ga';
 
 const DiseaseInfo = ({ content, disease }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="py-12 w-full flex justify-center bg-[#ECF7FC]">
       <div className="w-[95%] md:w-[90%]">

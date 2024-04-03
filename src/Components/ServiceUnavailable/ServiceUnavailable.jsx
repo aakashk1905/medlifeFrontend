@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
 import { Link } from 'react-router-dom';
 import { IoReturnUpBack } from 'react-icons/io5';
 import serviceUnavailable from "../../Assests/service-unavailable.png"
+import ReactGA from 'react-ga';
 
 
 const ServiceUnavailable = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      })
     return (
         <div>
             <Navbar></Navbar>

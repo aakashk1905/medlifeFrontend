@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Form from "../../Form";
+import ReactGA from 'react-ga';
 
 const ExploreMedLife = ({ content }) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="bg-[#ecf7fc] flex flex-col items-center">
       {/* grid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-7 items-centergrid grid-cols-1 lg:grid-cols-3 gap-0 lg:gap-7 items-center */}

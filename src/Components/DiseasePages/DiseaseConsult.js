@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/DiseaseConsult.css";
 import dcr from "../../Assests/dcr.svg";
+import ReactGA from 'react-ga';
 const DiseaseConsult = ({content}) => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="dc-cont">
       <div className="dc-inner-cont">

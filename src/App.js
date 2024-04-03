@@ -33,6 +33,9 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "./App.css";
 import FormProvider from "./Components/Provider/FormProvider";
+import ReactGA from 'react-ga';
+ReactGA.initialize('G-ZH1TFBC5PG');
+
 const queryClient = new QueryClient();
 function App() {
   return (

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import ReactGA from 'react-ga';
 
 const TermsConditions = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div>
       <Helmet>

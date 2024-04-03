@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Navbar from '../Navbar';
 import { Link } from 'react-router-dom';
 import bankLogo from "../../Assests/bankLogo.png"
 import Footer from '../Footer';
 import { Helmet } from 'react-helmet-async';
+import ReactGA from 'react-ga';
 
 const Payments = () => {
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+      })
     return (
         <div className='h-[100vh] flex flex-col'>
             <Helmet>

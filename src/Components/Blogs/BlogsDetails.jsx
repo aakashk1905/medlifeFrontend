@@ -6,11 +6,16 @@ import Navbar from "../Navbar";
 import useAxiosBaseUrl from "../../hooks/useBaseUrl";
 import Loader from "../Loader/Loader";
 import pic from "../../Assests/Dr-Manu-Bora-for-ACL-Treatment.jpg"
+import ReactGA from 'react-ga';
 
 const BlogsDetails = () => {
   const { id } = useParams();
   const axiosBaseUrl = useAxiosBaseUrl();
   const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
 
   // Data fetch from API
 
@@ -33,6 +38,7 @@ const BlogsDetails = () => {
       );
   }, [id, axiosBaseUrl]);
   if (loading) return <div className="w-[100vw] h-[100vh] flex justify-center"><Loader /></div> ;
+
 
   return (
     <div>

@@ -13,14 +13,19 @@ import DiseaseInfo from "../Components/DiseasePages/DiseaseInfo";
 import OurSpecialities from "../Components/DiseasePages/OurSpecialities";
 import SafeDiseaseRemoval from "../Components/DiseasePages/AllSections/SafeDiseaseRemoval";
 import Navbar from "../Components/Navbar";
+import ReactGA from 'react-ga';
 
 const DiseasePage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const { disease } = useParams();
   const naviagate = useNavigate();
   const pages = [
     "proctology",
     "laparoscopy",
     "gynaecology",
+    "urology",
     "ent",
     "vascular",
     "aesthetics",

@@ -13,22 +13,73 @@ import SafeDiseaseRemoval from "../AllSections/SafeDiseaseRemoval";
 import AboutDisease from "../AllSections/AboutDisease";
 import diseaseContent from "../../../diseaseContent.json";
 import Experience from "../AllSections/Experience";
+import { useEffect } from "react";
+import ReactGA from 'react-ga';
 
 const HerniaPage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const { subDisease } = useParams();
 
   const pages = [
+    "surgical",
+    "mtp",
+    "ectopic",
+    "molar",
+    "miscarriage",
+    "bartholin",
+    "endometriosis",
+    "adenomyosis",
+    "pcosPcod",
+    "pregnancy",
+    "laser",
+    "hymenoplasty",
+    "vaginoplasty",
+    "labiaplasty",
+    "vaginal",
+
+
+    "circumcision",
+    "stapler",
+    "kidney",
+    "hydrocele",
+    "eswl",
+    "rirs",
+    "pcnl",
+    "ursl",
+    "enlarged",
+    "frenuloplasty",
+    "balanitis",
+    "balanoposthitis",
+    "paraphimosis",
+    "foreskin",
+    "prostatectomy",
+    "tight",
+    "phimosis",
+    "swollen",
+    "corn",
+    "vasectomy",
+    "testicular",
+    "epididymal",
+    "toenail",
+
+
     "hernia",
     "gallbladder",
     "laparoscopy",
     "appendicitis",
     "inguinal",
     "umbilical",
+
+
     "piles",
     "fistula",
     "fissure",
     "pilonidal",
     "rectal",
+
+
     "uterus",
     "ovarian",
     "tympanoplasty",
@@ -46,26 +97,79 @@ const HerniaPage = () => {
     "vocal",
     "nasal",
     "turbinate",
+
+
     "varicose",
     "varicocele",
+    "dvt",
+    "diabetic",
+    "uterine",
+
+
     "gynecomastia",
     "liposuction",
-    "hair",
-    "knee",
+    "lipoma",
+    "breast-lift",
+    "sebaceous",
+    "rhinoplasty",
+    "breast-augmentation",
+    "axillary",
+    "tummy",
+    "breast-lump",
+    "breast-reduction",
+    "double",
+    "buccal",
+    "earlobe",
+    "blepharoplasty",
+    "beard",
+    "cleft",
+
+
+
+    "knee-replacement",
+    "carpal",
     "acl",
+    "meniscus",
     "hip",
     "spine",
+    "shoulder-dislocation",
+    "shoulder-replacement",
+    "rotator",
+    "arthroscopy",
+    "knee-arthroscopy",
+    "shoulder-arthroscopy",
+    "total",
+
+
+
     "lasik",
     "cataract",
+    "retinal",
+    "glaucoma",
+    "squint",
+    "diabetic-retinopathy",
+    "vitrectomy",
+    "prk",
+    "smile",
+    "femto",
+    "icl",
+    "contoura",
     "phaco",
+
+
+
     "ivf",
     "iui",
     "dental",
     "dentalbraces",
     "teeth",
+
+
     "bariatric",
-    "intragastric",
+    "spatz",
     "weightloss",
+
+
     "botox",
     "vampire",
     "face",

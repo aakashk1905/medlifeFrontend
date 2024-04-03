@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
@@ -6,8 +6,12 @@ import handshake from "../../Assests/handshake-businessmen 1.png";
 import { IoIosArrowDown } from "react-icons/io";
 import Form from "../Form";
 import { Helmet } from "react-helmet-async";
+import ReactGA from 'react-ga';
 
 const Partner = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div>
       <Helmet>

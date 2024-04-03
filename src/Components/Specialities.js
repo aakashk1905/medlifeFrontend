@@ -3,6 +3,18 @@ import "./styles/Specialities.css";
 import proctospe from "../Assests/proctospe.png";
 import ext from "../Assests/external.png";
 import { Link } from "react-router-dom";
+import proctology from "../Assests/Our specialities image/PROCTOLOGY.jpg";
+import laparoscopy from "../Assests/Our specialities image/Laparoscopy.jpg";
+import gynaecology from "../Assests/Our specialities image/Gynaecology.jpg";
+import urology from "../Assests/Our specialities image/urology-1.jpg";
+import ent from "../Assests/Our specialities image/ent.jpg";
+import vascular from "../Assests/Our specialities image/vascular.jpg";
+import aesthetics from "../Assests/Our specialities image/Aesthetics.jpg";
+import ophthalmology from "../Assests/Our specialities image/Ophthalmology.jpg";
+import fertility from "../Assests/Our specialities image/Fertility.jpg";
+import dentistry from "../Assests/Our specialities image/Dentistry.jpg";
+import weightLoss from "../Assests/Our specialities image/Weight Loss.jpg";
+import dermatology from "../Assests/Our specialities image/Dermatology.jpg";
 
 const Specialities = () => {
   const cardsContainerRef = useRef(null);
@@ -21,78 +33,79 @@ const Specialities = () => {
   };
   const specialitiesInfo = [
     {
-      img: proctospe,
+      img: proctology,
       name: "Proctology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "proctology",
     },
     {
-      img: proctospe,
+      img: laparoscopy,
       name: "Laparoscopy",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "laparoscopy",
     },
     {
-      img: proctospe,
+      img: gynaecology,
       name: "Gynaecology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "gynaecology",
     },
     {
-      img: proctospe,
+      img: urology,
+      name: "Urology",
+      details: "Specialised & advanced treatment for Anorectal Disease…",
+      link: "urology",
+    },
+    {
+      img: ent,
       name: "ENT",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "ent",
     },
     {
-      img: proctospe,
+      img: vascular,
       name: "Vascular",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "vascular",
     },
     {
-      img: proctospe,
+      img: aesthetics,
       name: "Aesthetics",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "aesthetics",
     },
     {
-      img: proctospe,
-      name: "Orthopedics",
-      details: "Specialised & advanced treatment for Anorectal Disease…",
-      link: "orthopedics",
-    },
-    {
-      img: proctospe,
+      img: ophthalmology,
       name: "Ophthalmology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "ophthalmology",
     },
     {
-      img: proctospe,
+      img: fertility,
       name: "Fertility",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "fertility",
     },
     {
-      img: proctospe,
+      img: dentistry,
       name: "Dentistry",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "dentistry",
     },
     {
-      img: proctospe,
+      img: weightLoss,
       name: "Weight Loss",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "weightloss",
     },
     {
-      img: proctospe,
+      img: dermatology,
       name: "Dermatology",
       details: "Specialised & advanced treatment for Anorectal Disease…",
       link: "dermatology",
     },
   ];
+  
   return (
     <div className="spe-cont">
       <div className="spe-inner-cont">
@@ -102,7 +115,7 @@ const Specialities = () => {
           {specialitiesInfo.map((info, index) => {
             return (
               <div key={index} className="spe-card">
-                <img src={info.img} alt="procto" />
+                <img className="spe-img" src={info.img} alt="procto" />
                 <div className="spe-card-inner-cont">
                   <div className="spe-card-head">{info.name}</div>
                   <div className="spe-card-text">{info.details}</div>
@@ -143,7 +156,7 @@ const Specialities = () => {
             {specialitiesInfo.map((info, index) => {
               return (
                 <div key={index} className="spe-card">
-                  <img src={info.img} alt="procto" />
+                  <img className="spe-img" src={info.img} alt="procto" />
                   <div className="spe-card-inner-cont">
                     <div className="spe-card-head">{info.name}</div>
                     <div className="spe-card-text">{info.details}</div>

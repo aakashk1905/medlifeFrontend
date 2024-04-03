@@ -12,6 +12,12 @@
   box-sizing: border-box;
 }
 
+.spe-img{
+  height: 160px;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  width: 100%;
+}
+
 .spe-inner-cont {
   width: 90%;
   gap: 25px;
@@ -33,7 +39,7 @@
   background: var(--material-theme-sys-light-surface-container-lowest, #fff);
   display: flex;
   width: 226px;
-  height: 328px;
+  
   justify-content: center;
   align-items: flex-start;
   align-content: flex-start;

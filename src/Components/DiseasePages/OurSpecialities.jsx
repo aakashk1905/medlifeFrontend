@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import hernia from "../../Assests/Specialities/hernia.png";
 import gallstones from "../../Assests/Specialities/gallstones.png";
 import appendicities from "../../Assests/Specialities/Appendicitis.png";
 import InguinalHernia from "../../Assests/Specialities/Inguinal Hernia.png";
 import UmbilicalHernia from "../../Assests/Specialities/Umbilical Hernia.png";
 import { FaArrowRightLong } from "react-icons/fa6";
+import ReactGA from 'react-ga';
 
 const OurSpecialities = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="w-full flex bg-[#F2F4F5] justify-center py-16 my-10">
       <div className=" w-[95%] md:w-[90%]">

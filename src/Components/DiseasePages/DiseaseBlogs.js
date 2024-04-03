@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import kidney from "../../Assests/db1.png";
 import "./styles/DiseaseBlogs.css";
+import ReactGA from 'react-ga';
 const DiseaseBlogs = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div className="blogs-cont">
       <div className="db-btm-head">

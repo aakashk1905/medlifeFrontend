@@ -1,115 +1,236 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { RxCross2 } from "react-icons/rx";
 import { IoMdMenu } from "react-icons/io";
 import logo from "../../Assests/logo.svg";
+import ReactGA from 'react-ga';
 
 const Sidebar = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   const btmMenus = [
     {
       name: "Proctology",
       list: [
-        "Piles Treatment",
-        "Fistula Treatment",
-        "Fistula Treatment",
-        "Pilonidal Sinus Treatment",
-        "Rectal Prolapse",
+        {
+          name: "Piles Treatment",
+          link : "piles"
+        },
+        {
+          name: "Fistula Treatment",
+          link : "fistula"
+        },
+        {
+          name: "Fissure Treatment",
+          link : "fissure"
+        },
+        {
+          name: "Pilonidal Sinus Surgery",
+          link : "pilonidal"
+        },
+        {
+          name: "Rectal Prolapse",
+          link : "rectal"
+        },
       ],
       link: "proctology",
     },
     {
       name: "Laparoscopy",
-      list: [
-        "Hernia Treatment",
-        "Gallbladder Treatment",
-        "Inguinal Hernia Treatment",
-        "Umbilical Hernia Treatment",
+      list : [
+        { name: "Hernia Treatment", link: "hernia" },
+        { name: "Appendicitis", link: "appendicitis" },
+        { name: "Gallbladder Treatment", link: "gallbladder" },
+        { name: "Inguinal Hernia Treatment", link: "inguinal" },
+        { name: "Umbilical Hernia Treatment", link: "umbilical" },
       ],
       link: "laparoscopy",
     },
+
     {
       name: "Gynaecology",
-      list: ["Uterus Removal", "Ovarian Cyst"],
+      list: [
+        { name: "Surgical Abortion", link: "surgical" },
+        { name: "MTP", link: "mtp" },
+        { name: "Ectopic Pregnancy Treatment", link: "ectopic" },
+        { name: "Molar Pregnancy Treatment", link: "molar" },
+        { name: "Uterus Removal", link: "uterus" },
+        { name: "Ovarian Cyst", link: "ovarian" },
+        { name: "Miscarriage Treatment", link: "miscarriage" },
+        { name: "Bartholin Cyst Treatment", link: "bartholin" },
+        { name: "Endometriosis Treatment", link: "endometriosis" },
+        { name: "Adenomyosis Treatment", link: "adenomyosis" },
+        { name: "PCOS-PCOD Treatment", link: "pcos-pcod" },
+        { name: "Pregnancy Care Treatment", link: "pregnancy" },
+        { name: "Laser Vaginal Tightening", link: "laser" },
+        { name: "Hymenoplasty", link: "hymenoplasty" },
+        { name: "Vaginoplasty", link: "vaginoplasty" },
+        { name: "Labiaplasty", link: "labiaplasty" },
+        { name: "Vaginal Wart Removal", link: "vaginal" },
+      ],
       link: "gynaecology",
     },
     {
       name: "Urology",
-      list: ["Uterus Removal", "Ovarian Cyst"],
-      link: "gynaecology",
+      list: [
+        { name: "Circumcision", link: "circumcision" },
+        { name: "Stapler Circumcision", link: "stapler" },
+        { name: "Kidney Stones Treatment", link: "kidney" },
+        { name: "Hydrocele", link: "hydrocele" },
+        { name: "ESWL", link: "eswl" },
+        { name: "RIRS", link: "rirs" },
+        { name: "PCNL", link: "pcnl" },
+        { name: "URSL", link: "ursl" },
+        { name: "Enlarged Prostate", link: "enlarged" },
+        { name: "Frenuloplasty Surgery", link: "frenuloplasty" },
+        { name: "Balanitis", link: "balanitis" },
+        { name: "Balanoposthitis", link: "balanoposthitis" },
+        { name: "Paraphimosis", link: "paraphimosis" },
+        { name: "Foreskin Infection", link: "foreskin" },
+        { name: "Prostatectomy", link: "prostatectomy" },
+        { name: "Tight Foreskin", link: "tight" },
+        { name: "Phimosis", link: "phimosis" },
+        { name: "Swollen Penis", link: "swollen" },
+        { name: "Corn Removal", link: "corn" },
+        { name: "Vasectomy", link: "vasectomy" },
+        { name: "Testicular Torsion", link: "testicular" },
+        { name: "Epididymal cyst", link: "epididymal" },
+        { name: "Toenail Removal", link: "toenail" },
+      ],
+      link: "urology",
     },
     {
       name: "ENT",
       list: [
-        "Tympanoplasty",
-        "Adenoidectomy",
-        "Sinus Treatment",
-        "Septoplasty",
-        "Mastoidectomy",
-        "FESS Surgery",
-        "Thyroidectomy",
-        "Tonsillectomy",
-        "Stapedectomy",
-        "Myringotomy",
-        "Throat Surgery",
-        "Ear Surgery",
-        "Vocal Cord Polyps",
-        "Nasal Polyps",
-        "Turbinate Reduction",
+        { name: "Tympanoplasty", link: "tympanoplasty" },
+        { name: "Adenoidectomy", link: "adenoidectomy" },
+        { name: "Sinus Treatment", link: "sinus" },
+        { name: "Septoplasty", link: "septoplasty" },
+        { name: "Mastoidectomy", link: "mastoidectomy" },
+        { name: "FESS Surgery", link: "fess" },
+        { name: "Thyroidectomy", link: "thyroidectomy" },
+        { name: "Tonsillectomy", link: "tonsillectomy" },
+        { name: "Stapedectomy", link: "stapedectomy" },
+        { name: "Myringotomy", link: "myringotomy" },
+        { name: "Throat Surgery", link: "throat" },
+        { name: "Ear Surgery", link: "ear" },
+        { name: "Vocal Cord Polyps", link: "vocal" },
+        { name: "Nasal Polyps", link: "nasal" },
+        { name: "Turbinate Reduction", link: "turbinate" },
       ],
       link: "ent",
     },
     {
       name: "Vascular",
-      list: ["Varicose Veins Treatment", "Varicocele Treatment"],
+      list: [
+        { name: "Varicose Veins Treatment", link: "varicose" },
+        { name: "Varicocele Treatment", link: "varicocele" },
+        { name: "DVT Treatment", link: "dvt" },
+        { name: "Diabetic Foot Ulcer Treatment", link: "diabetic" },
+        { name: "Uterine Fibroids", link: "uterine" },
+      ],
       link: "vascular",
     },
     {
       name: "Aesthetics",
-      list: ["Gynecomastia", "Liposuction", "Hair Transplant"],
+      list: [
+        { name: "Gynecomastia", link: "gynecomastia" },
+        { name: "Liposuction", link: "liposuction" },
+        { name: "Lipoma Surgery", link: "lipoma" },
+        { name: "Breast Lift Surgery", link: "breast-lift" },
+        { name: "Sebaceous Cyst Surgery", link: "sebaceous" },
+        { name: "Rhinoplasty", link: "rhinoplasty" },
+        { name: "Breast Augmentation Surgery", link: "breast-augmentation" },
+        { name: "Axillary Breast", link: "axillary" },
+        { name: "Tummy Tuck", link: "tummy" },
+        { name: "Breast Lump", link: "breast-lump" },
+        { name: "Breast Reduction", link: "breast-reduction" },
+        { name: "Double Chin", link: "double" },
+        { name: "Buccal Fat", link: "buccal" },
+        { name: "Earlobe Repair", link: "earlobe" },
+        { name: "Blepharoplasty", link: "blepharoplasty" },
+        { name: "Beard Transplant", link: "beard" },
+        { name: "Cleft Lip", link: "cleft" },
+      ],
       link: "aesthetics",
     },
     {
       name: "Orthopedics",
       list: [
-        "Knee Replacement",
-        "ACL Tear Treatment",
-        "Hip Replacement Surgery",
-        "Spine Surgery",
+        { name: "Knee Replacement", link: "knee-replacement" },
+        { name: "ACL Tear Treatment", link: "acl" },
+        { name: "Hip Replacement Surgery", link: "hip" },
+        { name: "Spine Surgery", link: "spine" },
+        { name: "Shoulder Dislocation", link: "shoulder-dislocation" },
+        { name: "Shoulder Replacement", link: "shoulder-replacement" },
+        { name: "Rotator Cuff Repair", link: "rotator" },
+        { name: "Arthroscopy Surgery", link: "arthroscopy" },
+        { name: "Knee Arthroscopy", link: "knee-arthroscopy" },
+        { name: "Shoulder Arthroscopy", link: "shoulder-arthroscopy" },
+        { name: "Total Knee Replacement", link: "total" },
+        { name: "Carpal Tunnel Syndrome", link: "carpal" },
+        { name: "Meniscus Tear Treatment", link: "meniscus" },
       ],
       link: "orthopedics",
     },
     {
       name: "Ophthalmology",
-      list: ["Lasik Eye Surgery", "Cataract Surgery", "Phaco Surgery"],
+      list: [
+        { name: "Lasik Eye Surgery", link: "lasik" },
+        { name: "Cataract Surgery", link: "cataract" },
+        { name: "Retinal Detachment", link: "retinal" },
+        { name: "Glaucoma Treatment", link: "glaucoma" },
+        { name: "Squint Surgery", link: "squint" },
+        { name: "Diabetic Retinopathy", link: "diabetic" },
+        { name: "Vitrectomy", link: "vitrectomy" },
+        { name: "PRK Lasik", link: "prk" },
+        { name: "SMILE Lasik surgery", link: "smile" },
+        { name: "FEMTO Lasik surgery", link: "femto" },
+        { name: "ICL surgery", link: "icl" },
+        { name: "Contoura Vision", link: "contoura" },
+        { name: "Phaco Surgery", link: "phaco" },
+      ],
       link: "ophthalmology",
     },
     {
       name: "Fertility",
-      list: ["IVF Treatment", "IUI Treatment"],
+      list: [
+  { name: "IVF Treatment", link: "ivf" },
+  { name: "IUI Treatment", link: "iui" }
+],
       link: "fertility",
     },
     {
       name: "Dentistry",
-      list: ["Dental Implant Surgery", "Dental Braces", "Teeth Aligners"],
+      list: [
+        { name: "Dental Implant Surgery", link: "dental" },
+        { name: "Dental Braces", link: "dental" },
+        { name: "Teeth Aligners", link: "teeth" }
+      ],
       link: "dentistry",
     },
     {
       name: "Weight Loss",
-      list: ["Bariatric Surgery", "Intragastric Balloon", "Weightloss Surgery"],
+      list: [
+        { name: "Bariatric Surgery", link: "bariatric" },
+        { name: "SPATZ Intragastric Balloon", link: "spatz" },
+        { name: "Weightloss Surgery", link: "weightloss" }
+      ],
       link: "weightloss",
     },
     {
       name: "Dermatology",
       list: [
-        "Botox",
-        "Vampire Facial",
-        "Face Threadlift",
-        "Hair Transplant",
-        "FUE",
-        "FUT",
-        "DHI Hair Transplant",
-        "GFC Hair Transplant",
+        { name: "Botox", link: "botox" },
+        { name: "Vampire Facial", link: "vampire" },
+        { name: "Face Threadlift", link: "face" },
+        { name: "Hair Transplant", link: "hair" },
+        { name: "FUE", link: "fue" },
+        { name: "FUT", link: "fut" },
+        { name: "DHI Hair Transplant", link: "dhi" },
+        { name: "GFC Hair Transplant", link: "gfc" }
       ],
       link: "dermatology",
     },
@@ -225,12 +346,10 @@ const Sidebar = () => {
                           <Link
                             onClick={handleLinkClick}
                             className="hover:bg-gray-100 transition duration-300 p-2 rounded-md"
-                            to={`/treatment/${listItem
-                              .split(" ")[0]
-                              .toLowerCase()}`}
+                            to={`/treatment/${listItem?.link}`}
                             key={index}
                           >
-                            <li className="text-gray-700">{listItem}</li>
+                            <li className="text-gray-700">{listItem?.name}</li>
                           </Link>
                         ))
                       ) : (

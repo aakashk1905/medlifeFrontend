@@ -52,72 +52,69 @@ import Hydrocelectomy from "../Assests/surgeries image/Hydrocelectomy 1.png";
 import Appendectomy from "../Assests/surgeries image/Appendectomy 1.png";
 import ShoulderReplacement from "../Assests/surgeries image/Shoulder-Replacement 1.png";
 import MeniscusTear from "../Assests/surgeries image/Meniscus-Tear 1.png";
-
 import { MdKeyboardArrowDown } from "react-icons/md";
 import { Link } from "react-router-dom";
 
-
-// don't have
 const Surgeries = () => {
   const surgeriesData = [
     { image: piles, name: "Piles", link: "treatment/piles" },
     { image: analFistula, name: "Anal Fistula", link: "treatment/fistula" },
     { image: analFissure, name: "Anal Fissure", link: "treatment/fissure" },
     { image: gallstones, name: "Gallstones", link: "treatment/gallbladder" },
-    { image: kidneyStones, name: "Kidney Stones", link: "treatment/piles" },    // don't have
+    { image: kidneyStones, name: "Kidney Stones", link: "treatment/kidney" },
     { image: cotaract, name: "Cataract", link: "treatment/cataract" },
     { image: lasikEye, name: "Lasik Eye Surgery", link: "treatment/lasik" },
     { image: hernia, name: "Hernia", link: "treatment/hernia" },
-    { image: Enlarged, name: "Enlarged Prostate (BPH)", link: "treatment/piles" },         // don't have
+    { image: Enlarged, name: "Enlarged Prostate (BPH)", link: "treatment/enlarged" },
 
-    { image: LaserCircumcisio, name: "Laser Circumcisio", link: "treatment/piles" },       // don't have
-    { image: UterineFibroid, name: "Uterine Fibroid", link: "treatment/piles" },           // don't have
-    { image: Hymenoplasty, name: "Hymenoplasty", link: "treatment/piles" },                // don't have
+    { image: LaserCircumcisio, name: "Laser Circumcisio", link: "treatment/laser" },
+    { image: UterineFibroid, name: "Uterine Fibroid", link: "treatment/uterine" },
+    { image: Hymenoplasty, name: "Hymenoplasty", link: "treatment/hymenoplasty" },
     { image: IVF, name: "IVF", link: "treatment/ivf" },
     { image: IUI, name: "IUI", link: "treatment/iui" },                                    
-    { image: Gynecomastia, name: "Gynecomastia", link: "treatment/piles" },                // don't have
-    { image: Liposuction, name: "Liposuction", link: "treatment/piles" },                  // don't have
-    { image: Lipoma, name: "Lipoma", link: "treatment/piles" },                            // don't have
+    { image: Gynecomastia, name: "Gynecomastia", link: "treatment/gynecomastia" },
+    { image: Liposuction, name: "Liposuction", link: "treatment/liposuction" },
+    { image: Lipoma, name: "Lipoma", link: "treatment/lipoma" },
     { image: AclTear, name: "AclTear", link: "treatment/acl" },
 
     { image: SpineSurgery, name: "Spine Surgery", link: "treatment/spine" },
     { image: VaricoseVeins, name: "VaricoseVeins", link: "treatment/varicose" },
-    { image: DeepVeinThrombosis, name: "DeepVein Thrombosis", link: "treatment/piles" },     // don't have
-    { image: DiabeticFootUlcer, name: "Diabetic Foot Ulcer", link: "treatment/piles" },      // don't have
+    { image: DeepVeinThrombosis, name: "Deep Vein Thrombosis", link: "treatment/piles" },     // don't have
+    { image: DiabeticFootUlcer, name: "Diabetic Foot Ulcer", link: "treatment/diabetic" },
     { image: Varicocele, name: "Varicocele", link: "treatment/varicocele" },
     { image: ZSRCircumcision, name: "ZSR Circumcision", link: "treatment/piles" },           // don't have
     { image: PilonidalSinus, name: "Pilonidal Sinus", link: "treatment/pilonidal" },
     { image: KneeReplacement, name: "Knee Replacement", link: "treatment/knee" },
     { image: HipReplacement, name: "Hip Replacement", link: "treatment/hip" },
 
-    { image: Abortion, name: "Abortion", link: "treatment/piles" },                           // don't have
+    { image: Abortion, name: "Abortion", link: "treatment/abortion" },
     { image: Hysterectomy, name: "Hysterectomy", link: "treatment/piles" },                   // don't have
-    { image: Vaginoplasty, name: "Vaginoplasty", link: "treatment/piles" },                   // don't have
-    { image: BreastAugmentation, name: "Breast Augmentation", link: "treatment/piles" },      // don't have
-    { image: BreastLift, name: "Breast Lift", link: "treatment/piles" },                      // don't have
-    { image: BreastLump, name: "Breast Lump", link: "treatment/piles" },                      // don't have
-    { image: BreastReduction, name: "Breast Reduction", link: "treatment/piles" },            // don't have
+    { image: Vaginoplasty, name: "Vaginoplasty", link: "treatment/vaginoplasty" },
+    { image: BreastAugmentation, name: "Breast Augmentation", link: "treatment/breast" },
+    { image: BreastLift, name: "Breast Lift", link: "treatment/breast" },
+    { image: BreastLump, name: "Breast Lump", link: "treatment/breast" },
+    { image: BreastReduction, name: "Breast Reduction", link: "treatment/breast" },
     { image: HairTransplant, name: "Hair Transplant", link: "treatment/hair" },
-    { image: Rhinoplasty, name: "Rhinoplasty", link: "treatment/piles" },                     // don't have
+    { image: Rhinoplasty, name: "Rhinoplasty", link: "treatment/rhinoplasty" },
 
-    { image: MTP, name: "MTP", link: "treatment/piles" },                                     // don't have
-    { image: Labiaplasty, name: "Labiaplasty", link: "treatment/piles" },                     // don't have
-    { image: Endometriosis, name: "Endometriosis", link: "treatment/piles" },                 // don't have
-    { image: EctopicPregnancy, name: "Ectopic Pregnancy", link: "treatment/piles" },          // don't have
+    { image: MTP, name: "MTP", link: "treatment/mtp" },
+    { image: Labiaplasty, name: "Labiaplasty", link: "treatment/labiaplasty" },
+    { image: Endometriosis, name: "Endometriosis", link: "treatment/endometriosis" },
+    { image: EctopicPregnancy, name: "Ectopic Pregnancy", link: "treatment/ectopic" },
     { image: UmbilicalHernia, name: "Umbilical Hernia", link: "treatment/umbilical" },
     { image: InguinalHernia, name: "Inguinal Hernia", link: "treatment/inguinal" },
-    { image: ShoulderDislocation, name: "Shoulder Dislocation", link: "treatment/piles" },    // don't have
-    { image: CarpalTunnelSyndrome, name: "Carpal Tunnel Syndrome", link: "treatment/piles" }, // don't have
-    { image: SebaceousCyst, name: "Sebaceous Cyst", link: "treatment/piles" },                // don't have
+    { image: ShoulderDislocation, name: "Shoulder Dislocation", link: "treatment/shoulder" },
+    { image: CarpalTunnelSyndrome, name: "Carpal Tunnel Syndrome", link: "treatment/carpal" },
+    { image: SebaceousCyst, name: "Sebaceous Cyst", link: "treatment/sebaceous" },
 
     { image: DentalImplant, name: "Dental Implant", link: "treatment/dental" },
     { image: TeethAligners, name: "Teeth Aligners", link: "treatment/teeth" },
     { image: DentalBraces, name: "Dental Braces", link: "treatment/dental" },
-    { image: Mastoidectomy, name: "Mastoidectomy", link: "treatment/piles" },                 // don't have
+    { image: Mastoidectomy, name: "Mastoidectomy", link: "treatment/mastoidectomy" },
     { image: Hydrocelectomy, name: "Hydrocelectomy", link: "treatment/piles" },               // don't have
     { image: Appendectomy, name: "Appendectomy", link: "treatment/piles" },                   // don't have
-    { image: ShoulderReplacement, name: "Shoulder Replacement", link: "treatment/piles" },    // don't have
-    { image: MeniscusTear, name: "Meniscus Tear", link: "treatment/piles" },                  // don't have
+    { image: ShoulderReplacement, name: "Shoulder Replacement", link: "treatment/shoulder" },
+    { image: MeniscusTear, name: "Meniscus Tear", link: "treatment/meniscus" },
 ];
 
 

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../Navbar";
 import { Link } from "react-router-dom";
 import Footer from "../Footer";
 import { Helmet } from "react-helmet-async";
+import ReactGA from 'react-ga';
 
 const PrivacyPolicy = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  })
   return (
     <div>
       <Helmet>
@@ -46,7 +50,8 @@ const PrivacyPolicy = () => {
 When you register with us and use the Application, you generally provide (a) your name, email address, age, user name, password and other registration information; (b) transaction-related information, such as when you make purchases, respond to any offers, or download or use applications from us; (c) information you provide us when you contact us for help; (d) credit card information for purchase and use of the Application, and; (e) information you enter into our system when using the Application, such as contact information and project management information. <br />
 
 We may also use the information you provided us to contact your from time to time to provide you with important information, required notices and marketing promotions.
-              </p>
+              </p>import ReactGA from 'react-ga';
+
             </div>
 
             {/* Automatically Collected Information Section */}
