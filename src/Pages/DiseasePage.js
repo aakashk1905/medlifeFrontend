@@ -51,7 +51,7 @@ const DiseasePage = () => {
         disease={disease}
         content={mainDiseaseContent[disease]}
       ></DiseaseInfo>
-      <OurSpecialities></OurSpecialities>
+      <OurSpecialities content={mainDiseaseContent[disease]}></OurSpecialities>
       {/* <DiseaseBlogs /> */}
       {/* <DiseaseConsult content={mainDiseaseContent[disease]} /> */}
       <DiseaseDoc docHeading={"Meet Our Doctors"} diseaseName={disease} />

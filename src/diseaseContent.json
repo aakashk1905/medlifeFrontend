@@ -476,7 +476,7 @@
       "surgeryHeader": ["Understanding Anal Fistula: Causes and Symptoms"],
       "surgerydetails": "An anal fistula is an uncommon condition characterized by an abnormal connection or tunnel between the anal canal, which marks the end of the digestive tract, and the skin surrounding the anus. Typically, it develops as a consequence of an infection or the formation of an abscess—a localized collection of pus—in the anal glands, which are small glands situated near the anus.Symptoms of anal fistula can vary and may include persistent pain and discomfort in the anal area, swelling, redness, tenderness, and the presence of discharge or pus. Additional symptoms may encompass itching, fever, and a general sense of discomfort.",
 
-      "subHeader": "Types of Anal Fistulae:",
+      "subHeader": "Types of Anal Fistula:",
       "types": [
         "Intersphincteric Fistula: This type is located between the internal and external sphincter muscles of the anus, commonly caused by an infected anal gland.",
         "Transsphincteric Fistula: Extending through both the internal and external sphincter muscles, it often results from an infection spreading from an abscess.",
@@ -768,13 +768,14 @@
     "parentDisease": "Gynaecology",
     "heroImg": "https://i.ibb.co/cDCmbTL/proctology.png",
     "diseaseImg": "https://i.ibb.co/ZNbDJDK/rectal.png",
-    "heroHeader": "Surgical Abortions Surgery",
-    "subHeading": "सुरक्षित एवं सफल",
-    "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+    "heroHeader": "Effortless Abortion Procedure in 20 Minutes - Female Gynecologist, Secure and Lawful",
+    "subHeading": "",
+    "details": "Connect with the gynecologists at Med Life Easy for a secure surgical abortion. With legal certification to conduct surgical abortions, our clinics maintain proper licensing, ensuring complete confidentiality throughout the process.",
+    "listHeading": "Why are you seeking an Abortion?",
     "subLists": [
-      "उन्नत 3D तकनीक",
-      "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-      "संक्रमण का कोई खतरा नहीं"
+      "Unplanned pregnancy",
+      "Harmful pregnancy",
+      "Pregnancy not supported by the partner"
     ],
     "treatment": {
       "treatmentHeader": [
@@ -792,18 +793,40 @@
     },
     "SurgeryForm": {
       "surgeryHeader": [
-        "Explore Affordable Umbilical Hernia Surgery With",
-        "Med Life Easy"
+        "Understanding Surgical Abortion"
       ],
-      "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-      "typeHeader": "Type of Surgery",
-      "type": "Umbilical Hernia Surgery",
-      "timeHeader": "Time",
-      "time": "1-2 Days",
-      "costHeader": "Cost Range",
-      "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-      "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-      "formTitle": "Umbilical Herniya Surgery Cost Estimate"
+      "surgerydetails": "A surgical abortion is a medical intervention designed to terminate a pregnancy. During this procedure, the contents of the uterus, including the fetus, are removed through surgery. It's a suitable option for individuals seeking to end a pregnancy in a safe clinical or hospital environment. Surgical abortions entail the extraction of the fetus and placenta from the mother's womb.Commonly referred to as 'suction aspiration abortion,' surgical abortion is typically performed as a one-day procedure in a clinic or hospital, administered under local anesthesia. It's an appropriate option for women who are further along in their pregnancies or for those for whom abortion pills are not effective. In India, according to the Medical Termination of Pregnancy (MTP) Act, surgical abortions are legally permitted only until the 24th week of pregnancy.",
+
+      "featureHeader": "Key Features:",
+      "features": [
+        "Safe, legal, and painless abortion procedures in Bihar.",
+        "Highly skilled female gynecologists with extensive experience in Bihar.",
+        "State-of-the-art facilities dedicated to abortion services in Bihar.",
+        "Strict adherence to confidentiality protocols in Bihar.",
+        "Professional guidance and counseling during and after the procedure in Bihar."
+      ],
+
+      "subHeader": "Why Choose Med Life Easy for Surgical Abortions in Bihar?",
+      "subLists" : [
+        "Licensed Facilities",
+        "Certified Female Gynecologists",
+        "Confidential Consultations"
+      ],
+      "surgeryTypeHeader": "Leading Healthcare Center: Med Life Easy is recognized as a premier healthcare center in Bihar for safe abortion services.",
+      "surgeryDetails": [
+        "Trusted Reputation: With the trust of thousands of patients in Bihar, we've built a reputation for delivering safe, affordable, and legal surgical abortion services.",
+        "Adherence to Legal Standards: All surgical abortions at Med Life Easy in Bihar comply with the latest amendments in the MTP Act, 1971, ensuring ethical and legal practices.",
+        "Comprehensive Counseling: Our gynecologists provide thorough counseling and support throughout the procedure in Bihar, prioritizing transparency, empathy, and fairness."
+      ],
+
+      "typeHeader": "Disease name",
+      "type": "NA",
+      "surgeryNameHeader": "Surgery name",
+      "surgeryName": "Dilation and Evacuation, Dilation and Curettage",
+      "timeHeader": "Duration ",
+      "time": "20-30 Mins",
+      "costHeader": "Treated by",
+      "cost": "Gynaecologist"
     },
     "aboutDisease": {
       "diseaseHeader": "What is Umbilical Herniya ",
@@ -821,8 +844,37 @@
         ]
       },
       "diagnosis": {
-        "diagnosisHeader": "Diagnosis:",
-        "details": "Umbilical Hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+        "diagnosisHeader": "What Occurs During Surgical Abortion?",
+        "occureDetails" : "Surgical abortion is typically a minor procedure. Depending on the stage of pregnancy, the following types of surgical abortions are commonly performed:",
+        "occureTreatment" : [
+          {
+            "occureHeader" : "Vacuum Aspiration:",
+            "occureTreatmentLists": [
+              "Vacuum aspiration is carried out up to 14 weeks of pregnancy.",
+              "The procedure is conducted under either local or general anesthesia.",
+              "It involves using a vacuum source to detach and remove the embryo or fetus through the cervix.",
+              "A thin cannula attached to a pump is inserted into the uterus. When the pump is activated, the fetal tissues are gently removed from the uterine wall."
+          ]
+          },
+          {
+            "occureHeader" : "Dilation & Curettage:",
+            "occureTreatmentLists": [
+              "Dilation & Curettage is a quick, bladeless, and painless procedure that ensures complete expulsion with same-day discharge.",
+              "Initially, medication is administered to dilate the cervix, which is crucial for the expulsion of pregnancy tissue through the birth canal. This process may take around 30-40 minutes or more.",
+              "Once the cervix is dilated, the surgeon employs a curettage instrument to remove all pregnancy tissues from the uterus.",
+              "After a few hours, the cervix naturally contracts, ending the pregnancy without any incisions or sutures."
+          ]
+          },
+          {
+            "occureHeader" : "Induction Abortion:",
+            "occureTreatmentLists": [
+              "During induction abortion, medication is administered to induce labor, prompting the uterus to contract and expel the pregnancy.",
+              "Suction may be used to clear out the uterus, and hospitalization for a day may be required as the procedure can take some time.",
+              "If you experience cramps or severe pain, the doctor may prescribe sedatives to alleviate discomfort."
+          ]
+          }
+        ],
+        "details": ""
       }
     }
   },
@@ -830,14 +882,16 @@
     "parentDisease": "Gynaecology",
     "heroImg": "https://i.ibb.co/cDCmbTL/proctology.png",
     "diseaseImg": "https://i.ibb.co/ZNbDJDK/rectal.png",
-    "heroHeader": "MTP Surgery",
-    "subHeading": "सुरक्षित एवं सफल",
-    "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+    "heroHeader": "Medical Termination of Pregnancy (Abortion with Medication)",
+    "subHeading": "",
+    "details": "Medical abortion is widely chosen as a method to terminate pregnancies and is considered safe, affordable, and low-risk. If you have decided on abortion, you can consult with our certified gynecologists at Med Life Easy. Our doctors are experienced in performing medical termination of pregnancy and are renowned for the support they offer to each patient.",
+    "listHeading": "Why are you seeking an Abortion?",
     "subLists": [
-      "उन्नत 3D तकनीक",
-      "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-      "संक्रमण का कोई खतरा नहीं"
-    ],
+      "Unplanned pregnancy",
+      "Harmful pregnancy",
+      "Pregnancy as a result of rape",
+      "Pregnancy not supported by the partner"
+  ],
     "treatment": {
       "treatmentHeader": [
         "Safe Umbilical Herniya Surgery With",
@@ -854,10 +908,24 @@
     },
     "SurgeryForm": {
       "surgeryHeader": [
-        "Explore Affordable Umbilical Hernia Surgery With",
-        "Med Life Easy"
+        "Understanding Medical Termination of Pregnancy (Abortion with Medication)"
       ],
-      "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
+      "surgeryInfo": "Medical termination of pregnancy, or medical abortion, is a procedure utilized to end a pregnancy using medications instead of surgical intervention. This method involves the administration of two different medications to terminate the pregnancy. Normally, pregnancy requires a high level of the hormone progesterone to progress. The medications used in medical abortion block the action of progesterone, halting the pregnancy's progression. Medical abortion can be performed as soon as a pregnancy is detected and is typically carried out until the 8th or 9th week of gestation.Abortion via medication is a low-risk, non-invasive approach to terminating a pregnancy, with effectiveness reaching nearly 99 percent of cases. According to a report published by Science Direct, India witnessed 390,928 medical terminations of pregnancy (MTP) from April 2018 to March 2019, resulting in an estimated abortion rate (including spontaneous and MTP) of 2.84 per 1000 women of reproductive age (15–49 years).",
+
+      "featureHeader": "Key Features:",
+      "features": [
+        "Safe, legal, and painless abortion procedures",
+        "Quick 15-minute procedure with discharge within 2 hours",
+        "Highly experienced female gynecologists",
+        "State-of-the-art clinics dedicated to abortion services",
+        "Unmatched level of confidentiality guaranteed"
+      ],
+
+      "healthcareHeader": "Med Life Easy - Leading Healthcare Center in Bihar for Safe Medical Termination of Pregnancy",
+      "healthcareLists" : [
+        "Medical termination of pregnancy (MTP) demands utmost precision and adherence to legal regulations, and at Med Life Easy, we are dedicated to ensuring precisely that.",
+        "As a registered healthcare center licensed to perform medical termination of pregnancy up to the 7th week of gestation in Bihar, Med Life Easy is renowned for providing safe, affordable, and high-quality abortion care that prioritizes legality and privacy. With the trust earned from our patients and the expertise of our gynecologists who conduct medical abortions with ethical considerations, Med Life Easy stands out as one of the top healthcare centers in Bihar for medical abortion services. All medical abortions performed at Med Life Easy adhere strictly to the latest amendments in the MTP Act, 1971."
+      ],
       "typeHeader": "Type of Surgery",
       "type": "Umbilical Hernia Surgery",
       "timeHeader": "Time",
@@ -892,13 +960,11 @@
     "parentDisease": "Gynaecology",
     "heroImg": "https://i.ibb.co/cDCmbTL/proctology.png",
     "diseaseImg": "https://i.ibb.co/ZNbDJDK/rectal.png",
-    "heroHeader": "Ectopic Pregnancy Treatment",
-    "subHeading": "सुरक्षित एवं सफल",
-    "details": "लेप्रोस्कोपिक हर्निया सर्जरी, एक न्यूनतम इनवेसिव दृष्टिकोण, सर्जरी के क्षेत्र में एक गेम-चेंजर बन गई है, जो रोगियों को कई लाभ प्रदान करती है। Medlife Easy में, हम इस अत्याधुनिक तकनीक को बिहार में हर्निया के लिए सुलभ बनाने के लिए पूरी तरह समर्पित हैं।",
+    "heroHeader": "Ectopic Pregnancy Treatment by Expert Gynecologists at Med Life Easy",
+    "subHeading": "",
+    "details": "If you've been diagnosed with an ectopic pregnancy, seek guidance from the experienced obstetrics-gynecologists at Med Life Easy for effective treatment.",
     "subLists": [
-      "उन्नत 3D तकनीक",
-      "दर्दरहित सर्जरी (Painless Surgery) तथा जल्द रिकवरी",
-      "संक्रमण का कोई खतरा नहीं"
+      
     ],
     "treatment": {
       "treatmentHeader": [
@@ -916,18 +982,32 @@
     },
     "SurgeryForm": {
       "surgeryHeader": [
-        "Explore Affordable Umbilical Hernia Surgery With",
-        "Med Life Easy"
+        ""
       ],
-      "subHeader": "Experience a Swift Recovery with Our Expert Surgeons",
-      "typeHeader": "Type of Surgery",
-      "type": "Umbilical Hernia Surgery",
-      "timeHeader": "Time",
-      "time": "1-2 Days",
-      "costHeader": "Cost Range",
-      "cost": " Starting from 55,000 INR to 90,000 INR, with an Average of 60,000 INR",
-      "footerTitle": "For a Precise Cost Estimate and Personalized Assistance",
-      "formTitle": "Umbilical Herniya Surgery Cost Estimate"
+      "treatmentHeader" : "Treatment for Ectopic Pregnancy in Bihar",
+      "treatmentDetails" : {
+        "treatmentHeaderDetails" : [
+          "Ectopic pregnancy occurs when a fertilized egg implants outside the uterus, commonly in the fallopian tubes, ovaries, abdominal cavity, or other organs.",
+        "Since a fertilized egg cannot normally develop outside the uterus, an ectopic pregnancy can lead to life-threatening complications. Therefore, it's crucial to remove the ectopic tissues as early as possible to prevent such complications.",
+        "The treatment for ectopic pregnancy in Bihar typically involves the following approaches, depending on factors such as the stage of pregnancy and the individual's symptoms:"
+        ],
+
+        "treatmentDetailsLists": [
+          "Medications: In some cases, medications may be used to stop the growth of the ectopic pregnancy and help the body reabsorb the pregnancy tissue.",
+          "Abdominal Surgery: Surgical intervention may be necessary to remove the ectopic pregnancy. This procedure involves making an incision in the abdomen to access and remove the pregnancy tissue.",
+          "Dilation and Curettage (D&C) or Laparoscopic Method: These minimally invasive procedures involve the insertion of a thin tube or laparoscope through a small incision to remove the ectopic pregnancy tissue."
+        ],
+        "treatmentFooterDetails" : "It's essential to consult with a gynecologist or obstetrician-gynecologist in Bihar for proper evaluation and personalized treatment based on individual circumstances. Early detection and timely intervention are crucial for managing ectopic pregnancies effectively."
+      },
+      "subHeader": "",
+      "typeHeader": "",
+      "type": "",
+      "timeHeader": "",
+      "time": "",
+      "costHeader": "",
+      "cost": " ",
+      "footerTitle": "",
+      "formTitle": ""
     },
     "aboutDisease": {
       "diseaseHeader": "What is Umbilical Herniya ",
@@ -945,8 +1025,30 @@
         ]
       },
       "diagnosis": {
-        "diagnosisHeader": "Diagnosis:",
-        "details": "Umbilical Hernia diagnosis relies on a thorough examination of symptoms, a patient's medical history, and, if necessary, imaging tests. During the examination, the doctor may ask the patient to cough, as this often accentuates the visibility of a hernia."
+        "diagnosisHeader": "Diagnosis and Treatment for Ectopic Pregnancy in Bihar",
+        "diagnosisSubHeader" : "Diagnosis - Ectopic Pregnancy:",
+        "diagnosisSubDetails" : "An ectopic pregnancy is typically diagnosed during a routine visit to the Ob-Gyn clinic. To confirm if the pregnancy is ectopic, the gynecologist usually conducts the following tests:",
+        "diagnosisLists": [
+          "Urine Test: This test is performed at the doctor's clinic using a urine test strip or by collecting a urine sample. Pregnancy is confirmed if the urine shows the presence of the hormone human chorionic gonadotropin (hCG).",
+
+          "Blood Test: Similar to the urine test, a blood sample is taken to check for the presence of hCG hormone. Pregnancy is confirmed if the hormone is detected in the blood.",
+
+          "Ultrasound: An ultrasound, a standard imaging test, helps detect if the fertilized egg has implanted within the uterine wall or outside. If the egg is found to be implanted outside the uterus, immediate treatment is required as ectopic pregnancy is considered an emergency.",
+
+          "Anoscopy or Proctoscopy: These procedures involve using a small, lighted tube (anoscope or proctoscope) to closely examine the anal canal and rectum. Anoscopy and proctoscopy provide direct visualization, allowing for a detailed assessment of piles and other rectal disorders. They help determine the location, size, and severity of the piles, aiding in treatment planning.",
+
+          "Sigmoidoscopy: This procedure utilizes a sigmoidoscope (lighted tube with a camera) to view the lower part of the colon and rectum. It helps visualize the rectum and lower sigmoid colon, aiding in identifying various conditions, including piles.",
+
+          "Colonoscopy: Colonoscopy examines the entire colon and rectum to check for abnormalities. It's particularly useful for evaluating rectal bleeding due to piles or other causes and ruling out more serious conditions. This comprehensive examination guides the healthcare provider in recommending the most appropriate treatment for piles."
+        ],
+
+        "occureHeader": "Treatment for Ectopic Pregnancy:",
+        "occureDetails" : "While termination of ectopic pregnancy through medication is possible, it is not commonly preferred due to the procedure's duration and the need for continuous monitoring and follow-ups. Additionally, medical management carries an increased risk of repeat ectopic pregnancy.However, if ectopic pregnancy is detected early in the cycle and the patient prefers medical management, the following medication may be administered:",
+
+        "occureSubHeader": "Medication: Methotrexate",
+        "occureSubDetails" : "Methotrexate is administered directly via injection in a single dose. hCG levels are monitored before and after the procedure, and if they do not decrease after the first dose, a second dose may be required. Confirmation of termination is typically done through ultrasound.",
+
+        "details": ""
       }
     }
   },

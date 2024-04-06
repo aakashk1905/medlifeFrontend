@@ -220,7 +220,7 @@ const AppointmentModal = ({ text, className }) => {
                       value={patientName}
                       name="patientName"
                       placeholder="Patient Name "
-                      className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
+                      className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 2xl:h-16 rounded-lg"
                       onChange={(e) => setPatientName(e.target.value)}
                     />
                     <input
@@ -229,7 +229,7 @@ const AppointmentModal = ({ text, className }) => {
                       placeholder="Mobile Number"
                       name="mobileNumber"
                       value={mobileNumber}
-                      className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 w-full h-12 rounded-lg"
+                      className="bg-white border border-gray-300 px-4 focus:outline-none focus:border-teal-700 transition duration-300 ease-in-out w-full h-12 2xl:h-16 rounded-lg"
                       onChange={(e) => setMobileNumber(e.target.value)}
                     />
 

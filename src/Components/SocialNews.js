@@ -7,7 +7,8 @@ const SocialNews = () => {
       <div className="hero-btm-head">Some Social News From Our Patients</div>
       <div className="sn-vid-cont">
         <div className="sn-vid">
-        {/* <div className="">
+        {/* <div className="w-96">
+
         <video controls>
             <source src={instagramVideon} type="video/mp4" />
             

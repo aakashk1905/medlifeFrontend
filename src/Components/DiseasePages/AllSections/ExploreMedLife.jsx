@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import Form from "../../Form";
 import ReactGA from 'react-ga';
+import { MdOutlineDone } from "react-icons/md";
 
 const ExploreMedLife = ({ content }) => {
   useEffect(() => {
@@ -27,11 +28,7 @@ const ExploreMedLife = ({ content }) => {
             </p>
           )}
 
-          {content?.SurgeryForm?.surgeryTypeHeader && (
-            <h1 className="text-2xl font-bold mb-3 text-gray-600">
-              {content?.SurgeryForm?.surgeryTypeHeader}
-            </h1>
-          )}
+          
 
           {content?.SurgeryForm?.surgeryForm &&
             content?.SurgeryForm?.surgeryForm?.map((type, index) => {
@@ -43,18 +40,7 @@ const ExploreMedLife = ({ content }) => {
               </p>;
             })}
 
-          {content?.SurgeryForm?.surgeryDetails &&
-            content?.SurgeryForm?.surgeryDetails?.map((type, index) => {
-              const [title, description] = type.split(":");
-              return (
-                <p
-                  className="text-sm mb-2 font-lato font-normal text-justify"
-                  key={index}
-                >
-                  <span className="font-bold text-gray-800">{title}</span>: {description}
-                </p>
-              );
-            })}
+          
 
           {content?.SurgeryForm?.surgerydetails && (
             <p className="text-sm mb-5 text-gray-800 font-lato text-justify">
@@ -74,6 +60,115 @@ const ExploreMedLife = ({ content }) => {
               {content?.SurgeryForm?.subHeader}
             </h3>
           )}
+
+          {content?.SurgeryForm?.subLists?.length > 0 && 
+          content?.SurgeryForm?.subLists.map((list, index) => 
+          <h3 key={index} className="text-base font-bold text-gray-600 mb-3">
+              {list}
+            </h3>
+          )}
+
+{content?.SurgeryForm?.surgeryTypeHeader && (
+            <h1 className="text-2xl font-bold mb-3 text-gray-600">
+              {content?.SurgeryForm?.surgeryTypeHeader}
+            </h1>
+          )}
+
+{content?.SurgeryForm?.surgeryDetails &&
+            content?.SurgeryForm?.surgeryDetails?.map((type, index) => {
+              const [title, description] = type.split(":");
+              return (
+                <p
+                  className="text-sm mb-2 font-lato font-normal text-justify"
+                  key={index}
+                >
+                  <span className="font-bold text-gray-800">{title}</span>: {description}
+                </p>
+              );
+            })}
+
+{content?.SurgeryForm?.healthcareHeader && (
+            <h1 className="text-2xl font-bold mb-3 text-gray-600">
+              {content?.SurgeryForm?.healthcareHeader}
+            </h1>
+          )}
+
+{content?.SurgeryForm?.healthcareLists?.length > 0 &&
+            content?.SurgeryForm?.healthcareLists?.map((list, index) => {
+              return (
+                <p
+                  className="text-sm mb-2 font-lato font-normal text-justify"
+                  key={index}
+                >
+                  -{list}
+                </p>
+              );
+            })}
+
+
+{content?.SurgeryForm?.treatmentHeader && (
+            <h1 className="text-2xl font-bold mb-3 text-gray-600">
+              {content?.SurgeryForm?.treatmentHeader}
+            </h1>
+          )}
+
+{content?.SurgeryForm?.treatmentDetails?.treatmentHeaderDetails?.length > 0 &&
+            content?.SurgeryForm?.treatmentDetails?.treatmentHeaderDetails?.map((detail, index) => {
+              return (
+                <p
+                  className="text-sm mb-2 font-lato font-normal text-justify"
+                  key={index}
+                >
+                  -{detail}
+                </p>
+              );
+            })}
+
+<div className="mb-2 flex flex-col gap-2">
+            {content?.SurgeryForm?.treatmentDetails?.treatmentDetailsLists?.length > 0
+              ? content?.SurgeryForm?.treatmentDetails?.treatmentDetailsLists?.map((list, index) => (
+                  <div key={index} className="flex  gap-2 mb-4">
+                    <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
+                      <MdOutlineDone></MdOutlineDone>
+                    </div>
+                    <p className="font-semibold text-gray-800 font-lato -mt-[2px]">{list}</p>
+                  </div>
+                ))
+              : ""}
+          </div>
+
+          {content?.SurgeryForm?.treatmentDetails?.treatmentFooterDetails &&
+            
+                <p
+                  className="text-sm mb-2 font-lato font-normal text-justify"
+                >
+                  {content?.SurgeryForm?.treatmentDetails?.treatmentFooterDetails}
+                </p>}
+
+
+{content?.SurgeryForm?.featureHeader && (
+            <h1 className="text-2xl font-bold mb-3 text-gray-600">
+              {content?.SurgeryForm?.featureHeader}
+            </h1>
+          )}
+
+<div className="mb-2 flex flex-col gap-2">
+            {content?.SurgeryForm?.features?.length > 0
+              ? content?.SurgeryForm?.features?.map((feature, index) => (
+                  <div key={index} className="flex  gap-2 mb-4">
+                    <div className="bg-[#2ca9e1] p-1 w-5 h-5 rounded-full flex justify-center items-center text-white">
+                      <MdOutlineDone></MdOutlineDone>
+                    </div>
+                    <p className="font-semibold text-gray-800 font-lato -mt-[2px]">{feature}</p>
+                  </div>
+                ))
+              : ""}
+          </div>
+
+          
+
+
+
 
           {content?.SurgeryForm?.types &&
             content?.SurgeryForm?.types?.map((type, index) => {
